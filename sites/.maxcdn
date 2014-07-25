@@ -1,0 +1,3 @@
+SITE="http://mirror.oss.maxcdn.com/anthonos/"
+SITE_NAME="MAXCDN"
+return 0

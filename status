@@ -1,0 +1,34 @@
+#!/bin/bash
+STATUS_SRC=/data/Homepagr/.status
+STATUS=/data/Homepage/status
+echo -e "\e[1mMAIN\e[0m: http://repo.anthonos.org"
+MAIN=$(curl http://repo.anthonos.org/last_update)
+echo -e "\e[1m======== MIRRORS ========\e[0m"
+# SITE: HTTP(S)/FTP address to mirror
+# SITENAME: Mirror Name
+# CONTACT: email, irc, etc.
+# To ignore site, make it hidden.
+generate_site(){
+  . ${STATUS_SRC}/sites/$1
+  echo -e "\e[1m${SITENAME}\e[0m: ${SITE} ($1)"
+  TIMESTAMP=`curl -m 10 ${SITE}/last_update` 
+
+  # Is it a date-generated string?
+  if date_block=$(date -ud@$TIMESTAMP); then ISDATE=true; else date_block="Error fetching time, contact ${CONTACT:-Mirror admin}"; fi
+  if [ "$MAIN" == "$TIMESTAMP" ]; then
+    LABEL="success"
+    LATEST="Yes"
+  else
+    LABEL="danger"
+  [ $ISDATE ] && date_block+=" ,$(($MAIN-$TIMESTAMP)) secs late"
+  fi
+  echo "<tr class="$LABEL"><td>${SITENAME}</td><td><a href=${SITE}>${SITE}</a></td><td>${date_block}</td><td><span class='label label-$LABEL'>$LATEST</span></td></tr>" >> ${STATUS}/index.php
+}
+
+FOOTER="</tbody></table><p>此页最后更新：$(date -u)</p></div><script type=text/javascript src=https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js></script><script type=text/javascript src=https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js></script></body></html>"
+cat ${STATUS_SRC}/header.php > "${STATUS}/index.php"
+echo "<tr class="well"><td>安同社区服务器</td><td><a href=http://repo.anthonos.org/>http://repo.anthonos.org/</a></td><td>$(date -ud@$MAIN)</td><td><span class='label label-info'>不适用</span></td></tr>" >> ${STATUS}/index.php
+for i in $(ls ${STATUS_SRC}/sites); do generate_site $i; done
+echo "$FOOTER" >> "${STATUS}/index.php"
+
+
