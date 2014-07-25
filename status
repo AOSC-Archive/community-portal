@@ -1,5 +1,5 @@
 #!/bin/bash
-STATUS_SRC=/data/Homepagr/.status
+STATUS_SRC=/data/Homepage/.status
 STATUS=/data/Homepage/status
 echo -e "\e[1mMAIN\e[0m: http://repo.anthonos.org"
 MAIN=$(curl http://repo.anthonos.org/last_update)
