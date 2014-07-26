@@ -7,6 +7,41 @@ body {
   color: #555;
 }
 
+.section-welcome {
+}
+
+.shortcuts {
+	text-align:center;
+}
+
+.shortcuts img {
+	width:150px;
+	height:150px;
+}
+
+.shortcuts a img {
+	width:30px;
+	height:30px;
+}
+
+.shortcuts a {
+	margin:9px 0;
+	padding:13px 0;
+}
+
+.section-project {
+	text-align:center;
+}
+
+.section-project img {
+	width:128px;
+	height:128px:
+}
+
+.section-project h2 {
+	line-height:3em;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -81,6 +116,7 @@ h6, .h6 {
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #777;
 }
 .blog-title {
   margin-top: 30px;
@@ -162,6 +198,7 @@ h6, .h6 {
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
 }
+
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
