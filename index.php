@@ -77,18 +77,9 @@
 
             <div class="col-sm-9 col-sm-offset-1 WQYMicroHei">
               <h2 class="blog-post-title WQYMicroHei">LinkC</h2>
-              <p>A simple open source IM client + server with POSIX socket.
-              <p><a href="http://portal.anthonos.org/linkc" class="btn btn-md btn-block btn-success">LinkC Project Page</a></p><br />
-            </div>
-
-            <div class="col-sm-2">
-              <img src="/img/github.png" height="128" width="128">
-            </div>
-
-            <div class="col-sm-9 col-sm-offset-1 WQYMicroHei">
-              <h2 class="blog-post-title WQYMicroHei">GitHub Projects</h2>
-              <p>Projects like Autobuild that builds up the foundation of this community.
-              <p><a href="http://portal.anthonos.org/linkc" class="btn btn-md btn-block btn-success">GitHub Organization Page</a></p><br />
+              <p>A helper for installing AOSC OS based distribution from your HDD, while using
+                                              Windows.</p>
+              <p><a href="http://portal.anthonos.org/ast" class="btn btn-md btn-block btn-success">Anthon Starter Project Page</a></p><br />
             </div>
 
           </div>
