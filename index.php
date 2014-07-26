@@ -91,6 +91,16 @@
               <p><a href="http://portal.anthonos.org/linkc" class="btn btn-md btn-block btn-success">GitHub Organization Page</a></p><br />
             </div>
 
+            <div class="col-sm-2">
+              <img src="/img/localization.png" height="128" width="128">
+            </div>
+
+            <div class="col-sm-9 col-sm-offset-1 WQYMicroHei">
+              <h2 class="blog-post-title WQYMicroHei">Localization</h2>
+              <p>So you are a good linguist, but not so at tech? Pop in.
+              <p><a href="http://l10n.anthonos.org" class="btn btn-md btn-block btn-success">AOSC Localizaiton Site</a></p><br />
+            </div>
+
           </div>
 
         </div>
