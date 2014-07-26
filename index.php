@@ -37,25 +37,18 @@
           <div class="blog-post">
             <h2 class="blog-post-title WQYMicroHei">Welcome</h2>
             <p class="blog-post-meta WQYMicroHei">to this certain corner of open source world<p>
-            AOSC (Anthon Open Source Community) is the community of:
-            <ul>
-              <li> Freedom</li>
-              <li> Tolarency</li>
-              <li> Open Source Computing</li>
-            </ul>
-          </div>
-
-          <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">What's happenning here</h2>
-            <p class="blog-post-meta WQYMicroHei">just a better way to tell you it's an index...<p>
-            <p><b>AOSC hosts and maintains a bucketful of open source projects.</b>
-            <p>Here below is an index for this Community Portal:
-            <ul>
-              <li> <a href="http://projects-dev.anthonos.org/aosc-os/">Home of AOSC OS</a></li>
-              <li> <a href="http://projects-dev.anthonos.org/aosc-os/">Home of Anthon Starter</a></li>
-              <li> <a href="http://projects-dev.anthonos.org/aosc-os/">Home of LinkC</a></li>
-              <li> <a href="http://projects-dev.anthonos.org/aosc-os/">Home of GitHub Projects</a></li>
-            </ul>
+            <p>AOSC (Anthon Open Source Community) is yet another open source oriented community, (mainly) founded and
+            led by students from China. Yet the community is open for participation from all over the world. And we are
+            still trying to make this page available in your own language!
+            <p>AOSC maintains a bucketful of projects:
+            <div class="list-group">
+              <a href="#" class="sidebar-module">
+              <h4 class="list-group-item-heading">AOSC OS</h4>
+              <p class="list-group-item-text">A Linux Distribution building project, the first project of this community.
+                                              AOSC OS is an independent Linux distribution with simplified system structure
+                                              and portable features for anyone.</p>
+              </a>
+            </div>
           </div>
 
         </div>
