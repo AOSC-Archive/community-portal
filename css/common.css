@@ -1,0 +1,31 @@
+.nowarp {
+  white-space: nowrap;
+}
+.footer {
+  text-align: center;
+}
+.footer .sponsors {
+  margin: 0px auto 20px;
+}
+.footer .sponsors img {
+  margin: auto 20px;
+  height: 45px;
+  width: auto;
+}
+.col-md-4 {
+  text-align: center;
+}
+.my_gallery {
+  float: center;
+}
+.my_gallery img{
+  margin: 10px;
+}
+.my-container{
+}
+.my-col-fl{
+  float: left;
+}
+.my-col-fr{
+  float: right;
+}
