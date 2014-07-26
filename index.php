@@ -40,15 +40,48 @@
             <p>AOSC (Anthon Open Source Community) is yet another open source oriented community, (mainly) founded and
             led by students from China. Yet the community is open for participation from all over the world. And we are
             still trying to make this page available in your own language!
-            <p>AOSC maintains a bucketful of projects:
-            <div class="list-group">
-              <a href="#" class="sidebar-module">
-              <h4 class="list-group-item-heading">AOSC OS</h4>
-              <p class="list-group-item-text">A Linux Distribution building project, the first project of this community.
+          </div>
+
+          <div class="blog-post">
+
+            <h2 class="blog-post-title WQYMicroHei">Great Projects</h2>
+            <p clas="blog-post-meta WQYMicroHei">of AOSC</p><br />
+
+            <div class="col-sm-2">
+              <img src="/img/os3.svg" height="128" width="128">
+            </div>
+
+            <div class="col-sm-9 col-sm-offset-1 WQYMicroHei">
+              <h2 class="blog-post-title WQYMicrohei">AOSC OS</h2>
+              <p>A Linux Distribution building project, the first project of this community.
                                               AOSC OS is an independent Linux distribution with simplified system structure
                                               and portable features for anyone.</p>
-              </a>
+              <p>AnthonOS and CentralPoint are the two final products of this project.</p>
+              <p><a href="http://portal.anthonos.org/aosc-os" class="btn btn-md btn-block btn-success">AOSC OS Project Page</a></p><br />
             </div>
+
+            <div class="col-sm-2">
+              <img src="/img/ast.png" height="128" width="128">
+            </div>
+
+            <div class="col-sm-9 col-sm-offset-1 WQYMicroHei">
+              <h2 class="blog-post-title WQYMicroHei">Anthon Starter</h2>
+              <p>A helper for installing AOSC OS based distribution from your HDD, while using
+                                              Windows.</p>
+              <p><a href="http://portal.anthonos.org/ast" class="btn btn-md btn-block btn-success">Anthon Starter Project Page</a></p><br />
+            </div>
+
+            <div class="col-sm-2">
+              <img src="/img/linkc.png" height="128" width="128">
+            </div>
+
+            <div class="col-sm-9 col-sm-offset-1 WQYMicroHei">
+              <h2 class="blog-post-title WQYMicroHei">LinkC</h2>
+              <p>A helper for installing AOSC OS based distribution from your HDD, while using
+                                              Windows.</p>
+              <p><a href="http://portal.anthonos.org/ast" class="btn btn-md btn-block btn-success">Anthon Starter Project Page</a></p><br />
+            </div>
+
           </div>
 
         </div>
