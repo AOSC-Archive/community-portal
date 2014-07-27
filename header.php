@@ -1,69 +1,90 @@
+<?php
+define('IN_FRAME', true);
+
+$langues = array(
+  'en' => array(
+    'title' => 'Mirror Status',
+    'AOSC' => 'AOSC',
+    'text' => '<p>This is the mirror status page. We recommend you to use a mirror that is close to you for better downloading. For more information, go to each mirror\'s home page.</p>
+    <p><a href="/status/help.php">Mirror HOWTO</a></p>',
+    'No' => 'No',
+    'Yes' => 'Yes',
+    'N/A' => 'N/A',
+    'Name' => 'Mirror Name',
+    'Address' => 'Mirror address',
+    'LastUpd' => 'Last Update',
+    'Latest' => 'Latest?',
+	// Mirror Names, To be replaced by bash via sed
+	[MIRROR_NAME_EN]
+  ),
+  'zh-CN' => array(
+    'title' => '镜像站',
+    'AOSC' => '安同开源社区',
+    'text' => '<p>这里是镜像源列表与状态页面。我们建议您使用一个离您更近的源，以便获得更好的下载速度。欲获取更多信息，请前往各源的主页。</p>
+    <p><a href="/status/help.php">镜像源设置指南</a></p>',
+    'No' => '否',
+    'Yes' => '是',
+    'N/A' => '不适用',
+    'Name' => '源名称',
+    'Address' => '源地址',
+    'LastUpd' => '最近更新',
+    'Latest' => '是否最新',
+	// 源名称，由 bash 脚本通过 sed 填实
+	[MIRROR_NAME_SC]
+  ),
+  'zh-TW' => array(
+    'title' => '鏡像站',
+    'AOSC' => '安同開源社區',
+    'text' => '<p>這裡是鏡像源列表與狀態頁面。我們建議您使用一個離您更近的源，以便獲得更好的下載速度。欲獲取更多信息，請前往各源的主頁。 </p>
+    <p><a href="/status/help.php">鏡像源設置指南</a></p>',
+    'No' => '否',
+    'Yes' => '是',
+    'N/A' => '不適用',
+    'Name' => '源名稱',
+    'Address' => '源地址',
+    'LastUpd' => '最近更新',
+    'Latest' => '是否最新',
+    // 源名稱，由 bash 腳本通過 sed 填實
+	[MIRROR_NAME_TC]
+  ),
+);
+include '../modules/langue.php';?>
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="<?php echo $langue;?>">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- DOGE! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, YeXiaoxing <ye@xiaoxing.us>" />
+    <link rel="shortcut icon" href="/img/favicon.png" />
 
-<head>
-    <meta charset="utf-8">
-    <title>源状态 | AnthonOS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/cerulean/bootstrap.min.css" rel="stylesheet">
-</head>
+    <title><?php echo "$langues[$langue]['title'] - $langues[$langue]['AOSC']";?></title>
 
-<body>
-    <div class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 30px;">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">AnthonOS</a>
-            </div>
-            <div class="navbar-collapse collapse" style="height: 0px; ">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">源状态</a>
-                    </li>
-                    <li><a href="help.html">帮助</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">社区 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="http://wenda.anthonos.org">问答</a>
-                            </li>
-                            <li><a href="http://wiki.anthonos.org">百科</a>
-                            </li>
-                            <li><a href="http://news.anthonos.org">资讯</a>
-                            </li>
-                            <li><a href="http://bugs.anthonos.org/">反馈</a>
-                            </li>
-                            <li><a href="http://mirror.anthonos.org/">仓库</a>
-                            </li>
-                            <li><a href="https://github.com/TheNextProject/">Git</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/carousel.css" rel="stylesheet" />
+    <link href="/css/common.css" rel="stylesheet" />
+  </head>
+
+  <body>
+  <!-- Navbar -->
+   <?php include '../templates/navbar.php';?>
+   
+  <div class="container" style=" margin-top: 50px; ">
+    <div class="well">
+      <h3><?php echo $langues[$langue]['title'] ?></h3>
+      <?php echo $langues[$langue]['text'] ?>
     </div>
-    <div class="container" style=" margin-top: 50px; ">
-        <div class="well">
-            <h3>
-                安同源镜像状态</h3>
-            <p>
-                <!-- This is something. -->
-            </p>
-        </div>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>源名称</th>
-                    <th>源地址</th>
-                    <th>最后更新时间</th>
-                    <th>是否最新</th>
-                </tr>
-            </thead>
-            <tbody>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th><?php echo $langues[$langue]['Name'] ?></th>
+          <th><?php echo $langues[$langue]['Address'] ?></th>
+          <th><?php echo $langues[$langue]['LastUpd'] ?></th>
+          <th><?php echo $langues[$langue]['Latest'] ?></th>
+        </tr>
+      </thead>
+      <tbody> <!-- END OF HEADER, TO BE FILLED BY BASH REPORTS -->
+      
