@@ -25,59 +25,34 @@
 		<div class="container section-welcome">
 			<div class="col-md-8">
 			<h1>Welcome!</h1>
-				<p class="blog-post-meta">AOSC (Anthon Open Source Community) is yet another open source oriented community, (mainly) founded and led by students from China. Yet the community is open for participation from all over the world. And we are still trying to make this page available in your own language!</p>
-                        <div class="col-md-3">
+			<p>AOSC (Anthon Open Source Community) is a community is open for participation from all over the world.</p>
+                        <div class="col-sm-3">
 				<a href="#" class="btn btn-default btn-md btn-block">What's New</a>
 			</div>
 			</div>
 
 			<div class="col-md-4 shortcuts">
-				<img src="/img/aosc.png"/ width="256px" height"256px">
+				<img src="/img/aosc.png"/ width="192px" height"192px">
                         </div>
 
 		</div>
 	</div>
 
-
-	<div class="container">
-		<h2>As a User, we may help each other!</h2>
-		<div class="bs-callout">
-			<h4>Read wiki to know how to get started immediately.</h4>
-			<p>Wiki, blablablalba......</p>
-		</div>
-		<div class="bs-callout">
-			<h2>Report bug during your use.</h2>
-			<p>Bug,blabla...</p>
-		</div>
-		<div class="bs-callout">
-			<h2>Localize those in english.</h2>
-			<p>Localiztion,blabla...</p>
-		</div>
-	</div>
-
-	<div class="container marketing">
-		<h1>More, I can be a source code contributer!</h1>
-		<div class="row section-project">
-			<div class="col-md-4">
-				<img src="/img/os3.svg" class="img-circle" width="128px" height"128px">
-				<h2>AOSC OS</h2>
-				<p>A Linux Distribution building project, the first project of this community. AOSC OS is an independent Linux distribution with simplified system structure and portable features for anyone.</p>
-				<p>AnthonOS and CentralPoint are the two final products of this project</p>
-				<a href="#" role=button" class="btn btn-default">View details</a>
+        <div class="row">
+		<div class="container">
+			<div class="col-md-8">
+				<div class="col-sm-2">
+				</div>
 			</div>
-
-			<div class="col-md-4">
-				<img src="/img/ast.png" class="img-circle" width="128px" height"128px">
-				<h2>Anthon Starter</h2>
-				<p>A helper for installing AOSC OS based distribution from your HDD, while using Windows.</p>
-				<a href="#" role=button" class="btn btn-default">View details</a>
-			</div>
-
-			<div class="col-md-4">
-				<img src="/img/linkc.png" class="img-circle" width="128px" height="128px">
-				<h2>LinkC</h2>
-				<p>A simple open source IM client + server with POSIX socket. </p>
-				<a href="#" role=button" class="btn btn-default">View details</a>
+			<div class="col-md-3 col-sm-offset-1">
+				<h4><span class="glyphicon glyphicon-save"></span> Downloads</h4>
+				<a href="#" class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;AnthonOS "Doge"<br></a>
+				<a href="#" class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;CentralPoint "10032"<br><span class="small text-warning">Beta Version</span></a>
+				<a href="#" class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Anthon Starter<br><span class="small text-warning">0.1.2.0, Unstable</span></a>
+				<a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;AOSC OS3 "Tabitha"<br><span class="small text-warning">Developer Preview</span></a>
+				<a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Nirvana "RPM Branch"<br><span class="small text-warning">Developer Preview</span></a>
+				<a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;LinkC<br><span class="small text-warning">Git Snapshot</span></a>
+				<a href="#" class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;GitHub Repo<br></a>
 			</div>
 		</div>
 	</div>
