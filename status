@@ -39,9 +39,9 @@ generate_site(){
   SITENAME_EN=${SITENAME_EN:-$SITENAME}
   SITENAME_SC=${SITENAME_SC:-$SITENAME_EN}
   SITENAME_TC=${SITENAME_TC:-$SITENAME_SC}
-  echo "    '$1' => '$SITENAME_EN'" >> MIRROR_NAME_EN
-  echo "    '$1' => '$SITENAME_SC'" >> MIRROR_NAME_SC
-  echo "    '$1' => '$SITENAME_TC'" >> MIRROR_NAME_TC
+  echo "    '$1' => '$SITENAME_EN'," >> MIRROR_NAME_EN
+  echo "    '$1' => '$SITENAME_SC'," >> MIRROR_NAME_SC
+  echo "    '$1' => '$SITENAME_TC'," >> MIRROR_NAME_TC
 }
 
 FOOTER="</tbody></table><p><?php echo \"\$langues[\$langue]['page_gen']\"$(date -u)</p></div><script type=text/javascript src=https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js></script><script type=text/javascript src=https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js></script></body></html>"
