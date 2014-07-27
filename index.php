@@ -63,6 +63,14 @@
                                                    Linux distributions from all over the world.</p>
 						<p>This is the project behind AnthonOS and CentralPoint.</p>
                                         </div>
+                                        <div class="col-sm-1">
+                                                <img src="/img/ast.png" width="48px" height="48px">
+                                        </div>
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                                <h4><b><a href="http://portal.anthonos.org/ast/">Anthon Starter</a></b></h4>
+						<p>Anthon Starter is a HDD installation helper for AOSC OS. This project focuses on making installation
+						   of AOSC OS from Windows easier.</p>
+                                        </div>
 					<div class="col-sm-1">
 						<img src="/img/localization.png" width="48px" height="48px">
 					</div>
@@ -72,6 +80,22 @@
                                                    what they are. Localization of open source software makes it easier for everyone to use open
                                                    source software more easily and efficiently.</p>
 					</div>
+                                        <div class="col-sm-1">
+                                                <img src="/img/linkc.png" width="48px" height="48px">
+                                        </div>
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                                <h4><b><a href="http://portal.anthonos.org/linkc/">LinkC</a></b></h4>
+						<p>LinkC is a portable yet independent IM based on POSIX socket, and a protocol implemented called
+						   LinkC Network Protocol, supports Intranet and Internet IM chatting via UDP or HTTP.</p>
+                                        </div>
+                                        <div class="col-sm-1">
+                                                <img src="/img/github.png" width="48px" height="48px">
+                                        </div>
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                                <h4><b><a href="http://github.com/AOSC-Dev">Other Projects</a></b></h4>
+						<p>Other projects, as small as AOSC-VersionHelper for displaying system version, as critical as Autobuild
+						   for building AOSC OS. They are hosted on GitHub for open participation, PR's are always welcomed.</p>
+                                        </div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-offset-1">
