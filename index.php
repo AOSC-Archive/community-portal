@@ -24,26 +24,25 @@
 	<div class="row jumbotron">
 		<div class="container section-welcome">
 			<div class="col-md-8">
-			<h1>Welcome to AOSC!</h1>
-				<p>AOSC (Anthon Open Source Community) is yet another open source oriented community, (mainly) founded and led by students from China. Yet the community is open for participation from all over the world. And we are still trying to make this page available in your own language!</p>
+			<h1>Welcome!</h1>
+				<p class="blog-post-meta">AOSC (Anthon Open Source Community) is yet another open source oriented community, (mainly) founded and led by students from China. Yet the community is open for participation from all over the world. And we are still trying to make this page available in your own language!</p>
+                        <div class="col-md-3">
+				<a href="#" class="btn btn-default btn-md btn-block">What's New</a>
+			</div>
 			</div>
 
 			<div class="col-md-4 shortcuts">
-				<img src="/img/aosc.png"/>
-				<a href="#" role="button" class="btn btn-primary btn-lg btn-block">下载最新系统：AnthonOS "Doge"</a>
-				<a href="#" role="button" class="btn btn-success btn-lg btn-block">
-					帮助应用本地化
-					<img src="/img/localization.png"></img>
-				</a>
-			</div>
+				<img src="/img/aosc.png"/ width="256px" height"256px">
+                        </div>
+
 		</div>
 	</div>
 
 
 	<div class="container">
-		<h1>As a User, we may help each other!</h1>
+		<h2>As a User, we may help each other!</h2>
 		<div class="bs-callout">
-			<h2>Read wiki to know how to get started immediately.</h2>
+			<h4>Read wiki to know how to get started immediately.</h4>
 			<p>Wiki, blablablalba......</p>
 		</div>
 		<div class="bs-callout">
@@ -60,7 +59,7 @@
 		<h1>More, I can be a source code contributer!</h1>
 		<div class="row section-project">
 			<div class="col-md-4">
-				<img src="/img/os3.svg" class="img-circle">
+				<img src="/img/os3.svg" class="img-circle" width="128px" height"128px">
 				<h2>AOSC OS</h2>
 				<p>A Linux Distribution building project, the first project of this community. AOSC OS is an independent Linux distribution with simplified system structure and portable features for anyone.</p>
 				<p>AnthonOS and CentralPoint are the two final products of this project</p>
@@ -68,14 +67,14 @@
 			</div>
 
 			<div class="col-md-4">
-				<img src="/img/ast.png" class="img-circle">
+				<img src="/img/ast.png" class="img-circle" width="128px" height"128px">
 				<h2>Anthon Starter</h2>
 				<p>A helper for installing AOSC OS based distribution from your HDD, while using Windows.</p>
 				<a href="#" role=button" class="btn btn-default">View details</a>
 			</div>
 
 			<div class="col-md-4">
-				<img src="/img/linkc.png" class="img-circle">
+				<img src="/img/linkc.png" class="img-circle" width="128px" height="128px">
 				<h2>LinkC</h2>
 				<p>A simple open source IM client + server with POSIX socket. </p>
 				<a href="#" role=button" class="btn btn-default">View details</a>

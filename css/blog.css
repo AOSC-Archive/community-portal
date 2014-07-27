@@ -201,6 +201,12 @@ h6, .h6 {
   color: #999;
 }
 
+.blog-heading {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #999;
+}
+
 
 /*
  * Footer
