@@ -14,8 +14,8 @@ $langues = array(
     'Address' => 'Mirror address',
     'LastUpd' => 'Last Update',
     'Latest' => 'Latest?',
-	// Mirror Names, To be replaced by bash via sed
-	[MIRROR_NAME_EN]
+    // Mirror Names, To be replaced by bash via sed
+[MIRROR_NAME_EN]
   ),
   'zh-CN' => array(
     'title' => '镜像站',
@@ -29,8 +29,8 @@ $langues = array(
     'Address' => '源地址',
     'LastUpd' => '最近更新',
     'Latest' => '是否最新',
-	// 源名称，由 bash 脚本通过 sed 填实
-	[MIRROR_NAME_SC]
+    // 源名称，由 bash 脚本通过 sed 填实
+[MIRROR_NAME_SC]
   ),
   'zh-TW' => array(
     'title' => '鏡像站',
@@ -45,7 +45,7 @@ $langues = array(
     'LastUpd' => '最近更新',
     'Latest' => '是否最新',
     // 源名稱，由 bash 腳本通過 sed 填實
-	[MIRROR_NAME_TC]
+[MIRROR_NAME_TC]
   ),
 );
 include '../modules/langue.php';?>
