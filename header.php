@@ -9,7 +9,7 @@ $langues = array(
     <p><a href="/status/help.php">Mirror HOWTO</a></p>',
     'No' => 'No',
     'Yes' => 'Yes',
-    'N/A' => 'N/A',
+    'NA' => 'N/A',
     'Name' => 'Mirror Name',
     'Address' => 'Mirror address',
     'LastUpd' => 'Last Update',
@@ -28,7 +28,7 @@ $langues = array(
     <p><a href="/status/help.php">镜像源设置指南</a></p>',
     'No' => '否',
     'Yes' => '是',
-    'N/A' => '不适用',
+    'NA' => '不适用',
     'Name' => '源名称',
     'Address' => '源地址',
     'LastUpd' => '最近更新',
@@ -47,7 +47,7 @@ $langues = array(
     <p><a href="/status/help.php">鏡像源設置指南</a></p>',
     'No' => '否',
     'Yes' => '是',
-    'N/A' => '不適用',
+    'NA' => '不適用',
     'Name' => '源名稱',
     'Address' => '源地址',
     'date_error' => '日期轉換錯誤，請聯繫',
@@ -97,4 +97,3 @@ include '../modules/langue.php';?>
         </tr>
       </thead>
       <tbody> <!-- END OF HEADER, TO BE FILLED BY BASH REPORTS -->
-      
