@@ -24,13 +24,9 @@
 	<div class="row jumbotron">
 		<div class="container section-welcome">
 			<div class="col-md-8">
-			<h1>Welcome!</h1>
-			<p>AOSC (Anthon Open Source Community) is a community is open for participation from all over the world.</p>
-                        <div class="col-sm-3">
-				<a href="#" class="btn btn-default btn-md btn-block">What's New</a>
+				<h1>Welcome!</h1>
+				<p>AOSC (Anthon Open Source Community) is a community is open for participation from all over the world.</p>
 			</div>
-			</div>
-
 			<div class="col-md-4 shortcuts">
 				<img src="/img/aosc.png"/ width="192px" height"192px">
                         </div>
@@ -41,7 +37,41 @@
         <div class="row">
 		<div class="container">
 			<div class="col-md-8">
-				<div class="col-sm-2">
+				<div class="col-sm-1">
+					<img src="/img/question.png">
+				</div>
+				<div class="col-md-10 col-sm-offset-1">
+					<h2>What is AOSC?</h2>
+					<p>"AOSC" stands for Anthon Open Source Community. Anthon Open Source Community is a community that
+                                           focuses on improvement of open source software. We are taking action to make open source software
+                                           more friendly to everyone.</p>
+				</div>
+				<hr />
+				<div class="col-sm-1">
+					<img src="/img/claimation.png">
+				</div>
+				<div class="col-md-10 col-sm-offset-1">
+					<h2>Take Action!</h2>
+					<p>It's not only about talking, let's take action for improvement!</p><br />
+                                        <div class="col-sm-1">
+                                                <img src="/img/os3.png" width="48px" height="48px">
+                                        </div>
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                                <h4><b><a href="http://portal.anthonos.org/aosc-os/">AOSC OS</a></b></h4>
+						<p>AOSC OS is one of the most important projects of the community - a Linux Distribution buliding
+                                                   project. AOSC OS is built independently with references from Linux From Scratch and other great
+                                                   Linux distributions from all over the world.</p>
+						<p>This is the project behind AnthonOS and CentralPoint.</p>
+                                        </div>
+					<div class="col-sm-1">
+						<img src="/img/localization.png" width="48px" height="48px">
+					</div>
+					<div class="col-sm-10 col-sm-offset-1">
+						<h4><b><a href="http://l10n.anthonos.org/">Localization</a></b></h4>
+						<p>We believe the best way to make open source software better is to make more people understand
+                                                   what they are. Localization of open source software makes it easier for everyone to use open
+                                                   source software more easily and efficiently.</p>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-offset-1">
