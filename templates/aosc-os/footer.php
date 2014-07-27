@@ -1,6 +1,9 @@
-    <div class="blog-footer WQYMicroHei">
-      <p>Powered by<a href="http://getbootstrap.com"> Bootstrap </a>, and<a href="https://twitter.com/mdo"> @mdo</a>.</p>
-      <p>
-        <a href="#">Back to Top</a>
-      </p>
-    </div>
+<div class="blog-footer">
+	<div class="col-md-3">
+		<h4>Main Sites</h4>
+		<a href="http://portal.anthonos.org/">Community Portal</a>
+                <a href="http://portal.anthonos.org/aosc-os/">AOSC OS</a>
+                <a href="http://portal.anthonos.org/ast/">Anthon Starter</a>
+                <a href="http://portal.anthonos.org/linkc/">LinkC</a>
+	</div>
+</div>
