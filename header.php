@@ -70,7 +70,7 @@ include '../modules/langue.php';?>
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, YeXiaoxing <ye@xiaoxing.us>" />
     <link rel="shortcut icon" href="/img/favicon.png" />
 
-    <title><?php echo "$langues[$langue]['title'] - $langues[$langue]['AOSC']";?></title>
+    <title><?php echo $langues[$langue]['title'] "-" $langues[$langue]['AOSC'];?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet" />
