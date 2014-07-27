@@ -12,6 +12,11 @@ echo -e "\e[1m======== MIRRORS ========\e[0m"
   # main_name: 'AOSC Main Server' // (repo.anthonos.org)
   # page_gen: 'Page Generated at:' // $(date -u)
 
+# PHP notice and workaround:
+  # The langues 2D array isn't working inside the double quote 
+  #  (It returns Array['something'] instead). There may be something to do with the 
+  #  Word-splitting.
+
 # SITE: HTTP(S)/FTP address to mirror
 # SITENAME_{EN,SC,TC}: Mirror Name
 # CONTACT: email, irc, etc.
@@ -26,29 +31,34 @@ generate_site(){
   TIMESTAMP=`curl -m 10 ${SITE}/last_update` 
 
   # Is it a date-generated string?
-  if date_block=$(date -ud@$TIMESTAMP); then ISDATE=true; else date_block="<?php echo \"\$langues[\$langue]['date_error'] ${CONTACT:-\$langues[\$langue]['mirror_admin']}\" ?>"; fi
+  if date_block=$(date -ud@$TIMESTAMP); then ISDATE=true; else date_block="<?php echo \$langues[\$langue]['date_error'] $(print_contact) ?>"; fi
   [ $ISDATE ] && delta=$(($MAIN-$TIMESTAMP))
   if [ "$delta" == "0" ]; then
     LABEL="success"
     LATEST="Yes"
-  else 
+  else LABEL="No"
     if [ "$delta" -lt "4000" ]
     then LABEL="warning"
     else LABEL="danger"
     fi
   fi
   latest_block="<span class='label label-$LABEL' title='ΔT=${delta:-N/A} secs'>$LATEST</span>"
-  echo "<tr class="$LABEL"><td><?php echo \"\$langues[\$langue][$1]\" ?></td><td><a href=\"${SITE}\">${SITE}</a></td><td>${date_block}</td><td>${latest_block}</td></tr>" >> ${STATUS}/index.php
+  echo "<tr class="$LABEL"><td><?php echo \$langues[\$langue][$1] ?></td><td><a href=\"${SITE}\">${SITE}</a></td><td>${date_block}</td><td>${latest_block}</td></tr>" >> ${STATUS}/index.php
   # Dump SITENAMEs, with fallbacks
   echo "    '$1' => '$SITENAME_EN'," >> MIRROR_NAME_EN
   echo "    '$1' => '$SITENAME_SC'," >> MIRROR_NAME_SC
   echo "    '$1' => '$SITENAME_TC'," >> MIRROR_NAME_TC
 }
 
-FOOTER="</tbody></table><p><?php echo \"\$langues[\$langue]['page_gen']\" ?>$(date -u)</p></div><script type=text/javascript src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script><script type=text/javascript src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script></body></html>"
+# PHP Helper
+print_contact() {
+  if [ $CONTACT ]; then echo "\"$CONTACT\""; else echo "\$langues[\$langue]['mirror_admin']"; fi
+}
+
+FOOTER="</tbody></table><p><?php echo\$langues[\$langue]['page_gen'] ?>$(date -u)</p></div><script type=text/javascript src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script><script type=text/javascript src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script></body></html>"
 cat ${STATUS_SRC}/header.php > "${STATUS}/index.php"
 rm -f MIRROR_NAME_{EN,SC,TC}
-echo "<tr class="well"><td><?php echo \"\$langues[\$langue]['main_name']\" ?></td><td><a href=\"http://repo.anthonos.org/\">http://repo.anthonos.org/</a></td><td>$(date -ud@$MAIN)</td><td><span class='label label-info'<?php echo \"\$langues[\$langue]['N/A']\" ?></span></td></tr>" >> ${STATUS}/index.php
+echo "<tr class="well"><td><?php echo \$langues[\$langue]['main_name'] ?></td><td><a href=\"http://repo.anthonos.org/\">http://repo.anthonos.org/</a></td><td>$(date -ud@$MAIN)</td><td><span class='label label-info'<?php echo \$langues[\$langue]['N/A'] ?></span></td></tr>" >> ${STATUS}/index.php
 for i in $(ls ${STATUS_SRC}/sites); do generate_site $i; done
 echo "$FOOTER" >> "${STATUS}/index.php"
 
