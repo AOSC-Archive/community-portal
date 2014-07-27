@@ -40,8 +40,24 @@
 	</div>
 
 
+	<div class="container">
+		<h1>As a User, we may help each other!</h1>
+		<div class="bs-callout">
+			<h2>Read wiki to know how to get started immediately.</h2>
+			<p>Wiki, blablablalba......</p>
+		</div>
+		<div class="bs-callout">
+			<h2>Report bug during your use.</h2>
+			<p>Bug,blabla...</p>
+		</div>
+		<div class="bs-callout">
+			<h2>Localize those in english.</h2>
+			<p>Localiztion,blabla...</p>
+		</div>
+	</div>
+
 	<div class="container marketing">
-		<h1>I can be a developer!</h1>
+		<h1>More, I can be a source code contributer!</h1>
 		<div class="row section-project">
 			<div class="col-md-4">
 				<img src="/img/os3.svg" class="img-circle">
