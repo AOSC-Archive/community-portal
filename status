@@ -28,9 +28,9 @@ generate_site(){
     LABEL="success"
     LATEST="Yes"
   else 
-    if [ "$delta" > "4000" ]
-    then LABEL="danger"
-    else LABEL="warning"
+    if [ "$delta" -lt "4000" ]
+    then LABEL="warning"
+    else LABEL="danger"
     fi
   fi
   latest_block="<span class='label label-$LABEL' title='ΔT=${delta:-N/A} secs'>$LATEST</span>"
@@ -47,7 +47,7 @@ generate_site(){
 FOOTER="</tbody></table><p><?php echo \"\$langues[\$langue]['page_gen']\"$(date -u)</p></div><script type=text/javascript src=https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js></script><script type=text/javascript src=https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js></script></body></html>"
 cat ${STATUS_SRC}/header.php > "${STATUS}/index.php"
 rm -f MIRROR_NAME_{EN,SC,TC}
-echo "<tr class="well"><td><?php echo \"\$langues[\$langue]['main_name']\" ?></td><td><a href=http://repo.anthonos.org/>http://repo.anthonos.org/</a></td><td>$(date -ud@$MAIN)</td><td><span class='label label-info'>不适用</span></td></tr>" >> ${STATUS}/index.php
+echo "<tr class="well"><td><?php echo \"\$langues[\$langue]['main_name']\" ?></td><td><a href=http://repo.anthonos.org/>http://repo.anthonos.org/</a></td><td>$(date -ud@$MAIN)</td><td><span class='label label-info'<?php echo \"\$langues[\$langue]['N/A']\" ?></span></td></tr>" >> ${STATUS}/index.php
 for i in $(ls ${STATUS_SRC}/sites); do generate_site $i; done
 echo "$FOOTER" >> "${STATUS}/index.php"
 
