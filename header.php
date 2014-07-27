@@ -14,6 +14,9 @@ $langues = array(
     'Address' => 'Mirror address',
     'LastUpd' => 'Last Update',
     'Latest' => 'Latest?',
+    'date_error' => 'Error when converting date, contact',
+    'mirror_admin' => 'Mirror admin',
+    'main_name' => 'AOSC Main Server',
     // Mirror Names, To be replaced by bash via sed
 [MIRROR_NAME_EN]
   ),
@@ -29,6 +32,9 @@ $langues = array(
     'Address' => '源地址',
     'LastUpd' => '最近更新',
     'Latest' => '是否最新',
+    'date_error' => '日期转换错误，请联系',
+    'mirror_admin' => '该镜像站的管理员',
+    'main_name' => '安同开源社区主服务器',
     // 源名称，由 bash 脚本通过 sed 填实
 [MIRROR_NAME_SC]
   ),
@@ -42,8 +48,9 @@ $langues = array(
     'N/A' => '不適用',
     'Name' => '源名稱',
     'Address' => '源地址',
-    'LastUpd' => '最近更新',
-    'Latest' => '是否最新',
+    'date_error' => '日期轉換錯誤，請聯繫',
+    'mirror_admin' => '該鏡像站的管理員',
+    'main_name' => '安同開源社區主伺服器'
     // 源名稱，由 bash 腳本通過 sed 填實
 [MIRROR_NAME_TC]
   ),
