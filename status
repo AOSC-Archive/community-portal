@@ -50,3 +50,15 @@ rm -f MIRROR_NAME_{EN,SC,TC}
 echo "<tr class="well"><td><?php echo \"\$langues[\$langue]['main_name']\" ?></td><td><a href=http://repo.anthonos.org/>http://repo.anthonos.org/</a></td><td>$(date -ud@$MAIN)</td><td><span class='label label-info'>不适用</span></td></tr>" >> ${STATUS}/index.php
 for i in $(ls ${STATUS_SRC}/sites); do generate_site $i; done
 echo "$FOOTER" >> "${STATUS}/index.php"
+
+sed -e '/\[MIRROR_NAME_EN\]/{
+r MIRROR_NAME_EN
+d }' -i "${STATUS}/index.php"
+
+sed -e '/\[MIRROR_NAME_SC\]/{
+r MIRROR_NAME_SC
+d }' -i "${STATUS}/index.php"
+
+sed -e '/\[MIRROR_NAME_TC\]/{
+r MIRROR_NAME_TC
+d }' -i "${STATUS}/index.php"
