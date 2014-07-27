@@ -38,7 +38,7 @@ generate_site(){
     fi
   fi
   latest_block="<span class='label label-$LABEL' title='ΔT=${delta:-N/A} secs'>$LATEST</span>"
-  echo "<tr class="$LABEL"><td><?php echo \"\$langues[\$langue][$1]\"</td><td><a href=\"${SITE}\">${SITE}</a></td><td>${date_block}</td><td>${latest_block}</td></tr>" >> ${STATUS}/index.php
+  echo "<tr class="$LABEL"><td><?php echo \"\$langues[\$langue][$1]\" ?></td><td><a href=\"${SITE}\">${SITE}</a></td><td>${date_block}</td><td>${latest_block}</td></tr>" >> ${STATUS}/index.php
   # Dump SITENAMEs, with fallbacks
   echo "    '$1' => '$SITENAME_EN'," >> MIRROR_NAME_EN
   echo "    '$1' => '$SITENAME_SC'," >> MIRROR_NAME_SC
