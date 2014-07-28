@@ -31,7 +31,7 @@ generate_site(){
   TIMESTAMP=`curl -m 10 ${SITE}/last_update` 
 
   # Is it a date-generated string?
-  if date_block=$(date -ud@$TIMESTAMP); then ISDATE=true; else date_block="<?=\$langues[\$langue]['date_error'] $(print_contact) ?>"; fi
+  if ! (date_block=$(date -ud@$TIMESTAMP) 2>&1 | grep ".*"); then ISDATE=true; else date_block="<?=\$langues[\$langue]['date_error'] $(print_contact) ?>"; fi
   [ $ISDATE ] && delta=$(($MAIN-$TIMESTAMP))
   if [ "$delta" == "0" ]; then
     LABEL="success"
