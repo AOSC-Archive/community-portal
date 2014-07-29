@@ -23,14 +23,15 @@
 
 	<div class="row jumbotron">
 		<div class="container section-welcome">
-			<div class="col-md-8">
-				<h1>Welcome!</h1>
-				<p>AOSC (Anthon Open Source Community) is a community is open for participation from all over the world.</p>
-			</div>
-			<div class="col-md-4 shortcuts">
-				<img src="/img/aosc.png"/ width="192px" height"192px">
-                        </div>
-
+			<div class="row">
+				<div class="col-md-8 col-xs-8">
+					<h1>Welcome!</h1>
+					<p>AOSC (Anthon Open Source Community) is a community is open for participation from all over the world.</p>
+				</div>
+				<div class="col-md-4 col-xs-4 shortcuts">
+					<img src="/img/aosc.png"/ width="192px" height"192px">
+	            </div>
+        	</div>
 		</div>
 	</div>
 

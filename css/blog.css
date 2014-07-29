@@ -213,8 +213,9 @@ h6, .h6 {
  * Footer
  */
 
+ /* 使用em作为单位，代替px，便于在不同屏幕上显示 */
 .blog-footer {
-  padding: 40px 0;
+  padding: 3em 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
@@ -223,6 +224,13 @@ h6, .h6 {
 
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+/* 添加Footer样式，设置block的间距*/
+.footer-block{
+  margin-bottom: 2em;
+}
+.footer-block div{
+  margin-bottom: 2em;
 }
 
 span.glyphicon-decor {
