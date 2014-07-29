@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <meta name="description" content="Homepage of LinkC">
     <meta name="author" content="SternW Zhang<SternWZhang@outlook.com>">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/img/favicons/linkc.ico">
 
     <title>LinkC - Home</title>
 
@@ -25,17 +25,17 @@
 
       <div class="blog-header">
       <img src="/img/linkc.png" height="150" width="150" align=right hspace="40" >
-        <h1 class="blog-title WQYMicroHei">LinkC</h1>
-        <p class="lead blog-description WQYMicroHei">a simple open source IM client + server with POSIX socket</p>
+        <h1 class="blog-title">LinkC</h1>
+        <p class="lead blog-description">a simple open source IM client + server with POSIX socket</p>
       </div>
 
       <div class="row">
 
-        <div class="col-sm-8 blog-main WQYMicroHei">
+        <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">Development News</h2>
-            <p class="blog-post-meta WQYMicroHei">Updated [2014-07-26]<p>
+            <h2 class="blog-post-title">Development News</h2>
+            <p class="blog-post-meta">Updated [2014-07-26]<p>
             <p>LinkC is now on its 4th rewrite, with "LinkC Netowrk Protocol v2".
             <ul>
               <li> Intranet and non-peer NAT devices are now supported;</li>
@@ -49,8 +49,8 @@
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">What's Next</h2>
-            <p class="blog-post-meta WQYMicroHei">Updated [2014-07-26]<p>
+            <h2 class="blog-post-title">What's Next</h2>
+            <p class="blog-post-meta">Updated [2014-07-26]<p>
             <p>Development of LinkC is slow at this moment, but future plan are listed below:
             <ul>
               <li> More complete chatting window (message echoes and message history);</li>
@@ -61,7 +61,7 @@
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">Known Issue</h2>
+            <h2 class="blog-post-title">Known Issue</h2>
             <ul>
               <li> Hardening server side for defending attacks like DDoS;</li>
               <li> Message repost is not working;</li>
@@ -76,13 +76,13 @@
 
     </div><!-- /.container -->
 
-    <?php include '../templates/aosc-os/footer.php';?>
+    <?php include '../templates/portal/footer.php';?>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jquery-min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

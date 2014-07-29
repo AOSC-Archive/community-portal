@@ -26,16 +26,16 @@
 
       <div class="blog-header">
       <img src="/img/os3.svg" height="150" width="150" align=right hspace="40" >
-        <h1 class="blog-title WQYMicroHei">AOSC OS</h1>
-        <p class="lead blog-description WQYMicroHei">Her origin...</p>
+        <h1 class="blog-title">AOSC OS</h1>
+        <p class="lead blog-description">Her origin...</p>
       </div>
 
       <div class="row">
 
-        <div class="col-sm-9 blog-main WQYMicroHei">
+        <div class="col-sm-9 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">"Boring String"</h2>
+            <h2 class="blog-post-title">"Boring String"</h2>
             <br />
             <p>The registered trademark Linux(R) is used pursuant to a sublicense from LMI, the exclusive licensee
             of Linus Torvalds, owner of the mark on a world-wide basis.
@@ -53,12 +53,12 @@
 
     </div><!-- /.container -->
 
-    <?php include '../../templates/aosc-os/footer.php';?>
+    <?php include '../../templates/portal/footer.php';?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jquery-min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

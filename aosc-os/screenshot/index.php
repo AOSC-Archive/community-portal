@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <meta name="description" content="Home of AOSC OS">
     <meta name="author" content="Junde Yi<lmy441900@gmail.com>, Jeff Bai <jeffbaichina@members.fsf.org>">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/img/favicons/aosc-os.ico">
 
     <title>AOSC OS - Screenshots</title>
 
@@ -32,8 +32,8 @@
 
       <div class="blog-header">
       <img src="/img/anos.png" height="150" width="150" align=right hspace="40" >
-        <h1 class="blog-title WQYMicroHei">AnthonOS</h1>
-        <p class="lead blog-description WQYMicroHei">Desktop-Oriented Linux Distribution of AOSC</p>
+        <h1 class="blog-title">AnthonOS</h1>
+        <p class="lead blog-description">Desktop-Oriented Linux Distribution of AOSC</p>
       </div>
 
       <div class="row">
@@ -49,8 +49,8 @@
 
         <div class="blog-header">
         <img src="/img/cp.png" height="150" width="150" align=right hspace="40" >
-          <h1 class="blog-title WQYMicroHei">CentralPoint</h1>
-          <p class="lead blog-description WQYMicroHei">The Distribution for Smaller-Scale Servers</p>
+          <h1 class="blog-title">CentralPoint</h1>
+          <p class="lead blog-description">The Distribution for Smaller-Scale Servers</p>
         </div>
 
         <div class="blog-post">
@@ -64,13 +64,14 @@
 
     </div>
 
-    <?php include '../../templates/aosc-os/footer.php';?>
+    <?php include '../../templates/portal/footer.php';?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jquery-min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     </script>
   </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <meta name="description" content="Homepage of Anthon Starter">
     <meta name="author" content="Junde Yi<lmy441900@gmail.com>">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/img/favicons/ast.ico">
 
     <title>Anthon Starter - Home</title>
 
@@ -25,17 +25,17 @@
 
       <div class="blog-header">
       <img src="/img/ast.png" height="150" width="150" align=right hspace="40" >
-        <h1 class="blog-title WQYMicroHei">Anthon Starter</h1>
-        <p class="lead blog-description WQYMicroHei">AOSC OS HDD Installation Helper</p>
+        <h1 class="blog-title">Anthon Starter</h1>
+        <p class="lead blog-description">AOSC OS HDD Installation Helper</p>
       </div>
 
       <div class="row">
 
-        <div class="col-sm-8 blog-main WQYMicroHei">
+        <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">Feature Plan of 0.2 Branch Issued</h2>
-            <p class="blog-post-meta WQYMicroHei">News [2014-07-17]<p>
+            <h2 class="blog-post-title">Feature Plan of 0.2 Branch Issued</h2>
+            <p class="blog-post-meta">News [2014-07-17]<p>
             Building of base structure of Anthon Starter 0.2 branch is finished. According to current source structure, the
             next version of Anthon Starter: version 0.2.0 will have the following features available:
             <ul>
@@ -54,8 +54,8 @@
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">Feature Plan of 0.2 Discussed</h2>
-            <p class="blog-post-meta WQYMicroHei">News [2014-07-11]<p>
+            <h2 class="blog-post-title">Feature Plan of 0.2 Discussed</h2>
+            <p class="blog-post-meta">News [2014-07-11]<p>
             Our team has started structural build of Anthon Starter 0.2. According to our discussion,
             this particular version will have the following new features:
             <ul>
@@ -67,7 +67,7 @@
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">It Just Gets Better Everyday!</h2>
+            <h2 class="blog-post-title">It Just Gets Better Everyday!</h2>
             <br />
             Latest Stable Release: <strong>0.1.2.0</strong><br />
             Scheduled Release: <strong>0.1.2.1</strong><br />
@@ -86,7 +86,7 @@
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">We need your participation!</h2>
+            <h2 class="blog-post-title">We need your participation!</h2>
             <br />
             If you are interested, you may join us! No matter if you are good at:
             <ul>
@@ -100,13 +100,13 @@
         </div>
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset WQYMicroHei">
+          <div class="sidebar-module sidebar-module-inset">
             <h4>Bulletin</h4>
             <p>Version 0.1.2.0 is released.<br />If you got trouble using this version, please don't hesitate to report them, we will try our best
             to fix them in the next release (0.1.2.1).</p>
           </div>
 
-          <div class="sidebar-module WQYMicroHei">
+          <div class="sidebar-module">
             <h4>Downloads</h4>
               <a href="http://repo.anthonos.org/projects/anthon-starter_0.1.2.0.7z" class="btn btn-warning btn-lg btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Latest: 0.1.2.0<br><span class="small text-warning">Pretty Buggy</span> </a>
             <p><ol class="list-unstyled">
@@ -121,7 +121,7 @@
               <li><a href="http://repo.anthonos.org/junde-studio/Projects/Anthon-Starter/anthon_win_0.1.0.0.7z">0.1.0.0</a></li>
             </ol>
           </div>
-          <div class="sidebar-module WQYMicroHei">
+          <div class="sidebar-module">
             <h4>Other Links</h4>
             <ol class="list-unstyled">
               <li><a href="http://github.com/AOSC-Dev/Anthon-Starter">Git Repository</a></li>
@@ -133,37 +133,13 @@
 
     </div><!-- /.container -->
 
-    <?php include '../templates/aosc-os/footer.php';?>
+    <?php include '../templates/portal/footer.php'; ?>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script>
-    <script type="text/javascript"> 
-    function youziku46747() {
-        var resultStr = $(".WQYMicroHei").text();
-        var md5 = "";
-        resultStr = Trim(resultStr);
-        resultStr = SelectWord(resultStr);
-        md5 = $.md5("c5735e89f122450b97f376e401dbe1b1"+"WQYMicroHei" + resultStr);
-        $.getJSON("http://www.youziku.com/webfont/CSSPOST?jsoncallback=?", { "id": md5, "guid": "c5735e89f122450b97f376e401dbe1b1", "type": "5" }, function (json) {
-            if (json.result == 0) {/*alert("需要生成");*/
-                $.post("http://www.youziku.com/webfont/PostCorsCreateFont", { "name": "WQYMicroHei", "gid": "c5735e89f122450b97f376e401dbe1b1", "type": "5", "text": resultStr }, function (json) {
-                if (json == "0") { /*alert("参数不对");*/
-                } else if (json == "2") {/*alert("超过每日生成字体数的上限");*/
-                } else if (json == "3") { /*alert("当前正在生成请稍后");*/
-                } else {/*alert("正在生成");*/
-                }
-            });
-            }
-            else {/*alert("下载css文件");*/
-                loadExtentFile("http://www.youziku.com/webfont/css?id=" + md5 + "&guid=" + "c5735e89f122450b97f376e401dbe1b1" + "&type=5");
-            }
-        });
-    }
-    </script>
+    <script src="/js/jquery-min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

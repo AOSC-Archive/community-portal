@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <meta name="description" content="Summary of AOSC OS">
     <meta name="author" content="Junde Yi<lmy441900@gmail.com>, Jeff Bai <jeffbaichina@members.fsf.org>">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/img/favicons/aosc-os.ico">
 
     <title>AOSC OS - Summary</title>
 
@@ -26,17 +26,17 @@
 
       <div class="blog-header">
       <img src="/img/os3.svg" height="150" width="150" align=right hspace="40" >
-        <h1 class="blog-title WQYMicroHei">AOSC OS</h1>
-        <p class="lead blog-description WQYMicroHei">What we are doing now...</p>
+        <h1 class="blog-title">AOSC OS</h1>
+        <p class="lead blog-description">What we are doing now...</p>
       </div>
 
       <div class="row">
 
-        <div class="col-sm-9 blog-main WQYMicroHei">
+        <div class="col-sm-9 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">AOSC OS3</h2>
-            <p class="lead blog-description WQYMicroHei">the Yellow circular badge</p>
+            <h2 class="blog-post-title">AOSC OS3</h2>
+            <p class="lead blog-description">the Yellow circular badge</p>
             <p>AOSC OS3 is the distribution building project for the year 2014 - 2015, based on the established base of
             AOSC OS2. Updates, changes are lined up for the year. Project "Nirvana" are intended as the new distribution
             branch with RPM package management. Here below are the final projects intended for the year:
@@ -48,8 +48,8 @@
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">AOSC OS2</h2>
-            <p class="lead blog-description WQYMicroHei">the Blue circular badge</p>
+            <h2 class="blog-post-title">AOSC OS2</h2>
+            <p class="lead blog-description">the Blue circular badge</p>
             <p>AOSC OS2 is the distribution building project for the year 2013 - 2014, this is the first generation of our
             community's independent distribution. Two final products are intended for this generation of project:
             <ul>
@@ -59,8 +59,8 @@
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">AOSC OS1</h2>
-            <p class="lead blog-description WQYMicroHei">the Red circular badge</p>
+            <h2 class="blog-post-title">AOSC OS1</h2>
+            <p class="lead blog-description">the Red circular badge</p>
             <p>AOSC OS1 is the distribution <b>customization</b> project for the year 2011 - 2013, this is the first generation of our
             community's distribution project. Only one final products are intended for this generation of project:
             <ul>
@@ -76,12 +76,12 @@
 
     </div><!-- /.container -->
 
-    <?php include '../../templates/aosc-os/footer.php';?>
+    <?php include '../../templates/portal/footer.php';?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jquery-min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

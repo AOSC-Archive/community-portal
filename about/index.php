@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <meta name="description" content="Summary of AOSC OS">
     <meta name="author" content="Junde Yi<lmy441900@gmail.com>, Jeff Bai <jeffbaichina@members.fsf.org>">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/img/favicons/aosc.ico">
 
     <title>AOSC OS - Summary</title>
 
@@ -22,27 +22,35 @@
 
     <?php include '../templates/portal/navbar.php';?>
 
-    <div class="container">
-
-      <div class="blog-header">
-      <img src="/img/aosc.png" height="150" width="150" align=right hspace="40" >
-        <h1 class="blog-title WQYMicroHei">About</h1>
-        <p class="lead blog-description WQYMicroHei">Us</p>
+  <div class="row jumbotron">
+    <div class="container section-welcome">
+      <div class="row">
+        <div class="col-md-8 col-xs-8">
+          <h1>About</h1>
+          <p>Us</p>
+        </div>
+        <div class="col-md-4 col-xs-4 shortcuts">
+          <img src="/img/aosc.png">
+        </div>
       </div>
+		</div>
+	</div>
+    
+    <div class="container">
 
       <div class="row">
 
-        <div class="col-sm-9 blog-main WQYMicroHei">
+        <div class="col-sm-9 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">Who are we?</h2>
+            <h2 class="blog-post-title">Who are we?</h2>
             <br />
             <p>We are members of this open source community, some of us are students and the others may be
             people working for their own lives and families.
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">What do we do?</h2>
+            <h2 class="blog-post-title">What do we do?</h2>
             <br />
             <p>As members of this open source (oriented) community, of cource we are fighting for improvement
             of open source software and solutions. To do this:
@@ -55,7 +63,7 @@
           </div>
 
           <div class="blog-post">
-            <h2 class="blog-post-title WQYMicroHei">How do I participate?</h2>
+            <h2 class="blog-post-title">How do I participate?</h2>
             <br />
             <p>For now, the best way to participate is to join the community group.
               <ul>
@@ -78,7 +86,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jquery-min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
