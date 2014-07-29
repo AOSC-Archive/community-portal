@@ -58,7 +58,7 @@
                                                 <img src="/img/os3.png" width="48px" height="48px">
                                         </div>
                                         <div class="col-sm-10 col-sm-offset-1">
-                                                <h4><b><a href="/aosc-os/">AOSC OS</a></b></h4>
+                                                <h4><b><a href="/aosc-os/" target=_blank>AOSC OS</a></b></h4>
 						<p>AOSC OS is one of the most important projects of the community - a Linux Distribution buliding
                                                    project. AOSC OS is built independently with references from Linux From Scratch and other great
                                                    Linux distributions from all over the world.</p>
@@ -68,7 +68,7 @@
                                                 <img src="/img/ast.png" width="48px" height="48px">
                                         </div>
                                         <div class="col-sm-10 col-sm-offset-1">
-                                                <h4><b><a href="/ast/">Anthon Starter</a></b></h4>
+                                                <h4><b><a href="/ast/" target=_blank>Anthon Starter</a></b></h4>
 						<p>Anthon Starter is a HDD installation helper for AOSC OS. This project focuses on making installation
 						   of AOSC OS from Windows easier.</p><br />
                                         </div>
@@ -85,7 +85,7 @@
                                                 <img src="/img/linkc.png" width="48px" height="48px">
                                         </div>
                                         <div class="col-sm-10 col-sm-offset-1">
-                                                <h4><b><a href="/linkc/">LinkC</a></b></h4>
+                                                <h4><b><a href="/linkc/" target=_blank>LinkC</a></b></h4>
 						<p>LinkC is a portable yet independent IM based on POSIX socket, and a protocol implemented called
 						   LinkC Network Protocol, supports Intranet and Internet IM chatting via UDP or HTTP.</p><br />
                                         </div>
@@ -104,17 +104,17 @@
 				<div class="sidebar-module sidebar-module-inset">
 					<h4>Bulletin</h4>
 					<p>Patch 1 version of AnthonOS "Doge" is now released, with several fixes on installation support.</p>
-					<p>For more details please check the <a href="/news/" target=_blank>"News"</a> page</p>
+					<p>For more details please check the <a href="/news/">"News"</a> page</p>
 				</div>
 
-				<h4><span class="glyphicon glyphicon-save"></span> Downloads</h4>
-				<a href="#" class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;AnthonOS "Doge"<br></a>
-				<a href="#" class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;CentralPoint "10032"<br><span class="small text-warning">Beta Version</span></a>
-				<a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Anthon Starter<br><span class="small text-warning">0.1.2.0, Unstable</span></a>
-				<a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;AOSC OS3 "Tabitha"<br><span class="small text-warning">Developer Preview</span></a>
-				<a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Nirvana "RPM Branch"<br><span class="small text-warning">Developer Preview</span></a>
-				<a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;LinkC<br><span class="small text-warning">Git Snapshot</span></a>
-				<a href="#" class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;GitHub Repo<br></a>
+				<h4><span class="glyphicon glyphicon-save"></span>&nbsp;&nbsp;Downloads</h4>
+				<a href="https://anthonos.org/download" target=_blank class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;AnthonOS "Doge"<br><span class="small">Final Release</span></a>
+				<a href="#" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;CentralPoint "10032"<br><span class="small">Beta Version</span></a>
+				<a href="#" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;AOSC OS3 "Tabitha"<br><span class="small">Developer Preview</span></a>
+				<a href="#" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;Nirvana "RPM Branch"<br><span class="small">Developer Preview</span></a>
+				<a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;Anthon Starter<br><span class="small">0.1.2.0, Unstable</span></a>
+				<a href="#" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;LinkC<br><span class="small">Git Snapshot</span></a>
+				<a href="https://github.com/AOSC-Dev" target=_blank class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;GitHub Repositories<br></a>
 			</div>
 		</div>
 	</div>

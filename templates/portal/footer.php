@@ -4,7 +4,7 @@
 			<div class="col-md-12 col-sm-12 footer-block">
 				<div class="col-md-4 col-sm-4">
 					<h4 align="left">Main Sites</h4>
-					<p align="left"><a href="#">Community Portal</a>
+					<p align="left"><a href="/">Community Portal</a>
 					<p align="left"><a href="/aosc-os/">AOSC OS</a>
 			    <p align="left"><a href="/ast/">Anthon Starter</a>
 		      <p align="left"><a href="/linkc/">LinkC</a>

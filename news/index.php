@@ -8,7 +8,7 @@
     <meta name="author" content="Junde Yi<lmy441900@gmail.com>, Jeff Bai <jeffbaichina@members.fsf.org>">
     <link rel="icon" href="/img/favicons/aosc.ico">
 
-    <title>AOSC OS - Summary</title>
+    <title>Community Portal - News</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
