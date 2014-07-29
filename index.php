@@ -49,6 +49,16 @@
 				</div>
 				<div class="col-sm-1">
 					<br /><img src="/img/claimation.png">
+          <br /><br />
+          
+          <div class="col-sm-1 col-sm-offset-10"> <!-- Line on the left -->
+            <table align="center" width="4" border="0" cellspacing="0" cellpadding="0" height="800">
+              <tr>
+                <td width="4" bgcolor="#666666"></td>
+              </tr>
+            </table>
+          </div>
+          
 				</div>
 				<div class="col-md-10 col-sm-offset-1 blog-post">
 					<h2><br />Take Action!</h2>
