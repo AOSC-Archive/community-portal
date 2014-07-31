@@ -126,7 +126,7 @@
         </div>
 
         <h4><span class="glyphicon glyphicon-save"></span>&nbsp;&nbsp;Downloads</h4>
-        <a href="###" <!-- https://anthonos.org/download --> target=_blank class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;AnthonOS "Doge"<br><span class="small">Final Release</span></a>
+        <a href="###" target=_blank class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;AnthonOS "Doge"<br><span class="small">Final Release</span></a>
         <a href="http://mb.anthonos.org/os2-releases/centralpoint/Beta2/aosc-centralpoint_beta2-10032_pc+mac_lang-c_stripped.iso" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;CentralPoint "10032"<br><span class="small">Beta Version</span></a>
         <a href="http://mb.anthonos.org/os3-releases/os3-next/Developer_Preview/aosc-os3_developer-preview_dpkg_lang_c_stripped.tar.xz" class="btn btn-primary btn-md btn-block disabled" role="button"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;AOSC OS3 "Tabitha"<br><span class="small">Developer Preview</span></a>
         <a href="http://mb.anthonos.org/os3-releases/os3-next/Developer_Preview/aosc-os3_developer-preview_rpm_lang_c_stripped.tar.xz" class="btn btn-primary btn-md btn-block disabled" role="button"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;Nirvana "RPM Branch"<br><span class="small">Developer Preview</span></a>
