@@ -126,12 +126,12 @@
         </div>
 
         <h4><span class="glyphicon glyphicon-save"></span>&nbsp;&nbsp;Downloads</h4>
-        <a href="https://anthonos.org/download" target=_blank class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;AnthonOS "Doge"<br><span class="small">Final Release</span></a>
-        <a href="#" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;CentralPoint "10032"<br><span class="small">Beta Version</span></a>
-        <a href="#" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;AOSC OS3 "Tabitha"<br><span class="small">Developer Preview</span></a>
-        <a href="#" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;Nirvana "RPM Branch"<br><span class="small">Developer Preview</span></a>
-        <a href="#" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;Anthon Starter<br><span class="small">0.1.2.0, Unstable</span></a>
-        <a href="#" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;LinkC<br><span class="small">Git Snapshot</span></a>
+        <a href="<!-- https://anthonos.org/download -->" target=_blank class="btn btn-success btn-md btn-block disabled" role="button"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;AnthonOS "Doge"<br><span class="small">Final Release</span></a>
+        <a href="http://mb.anthonos.org/os2-releases/centralpoint/Beta2/aosc-centralpoint_beta2-10032_pc+mac_lang-c_stripped.iso" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;CentralPoint "10032"<br><span class="small">Beta Version</span></a>
+        <a href="http://mb.anthonos.org/os3-releases/os3-next/Developer_Preview/aosc-os3_developer-preview_dpkg_lang_c_stripped.tar.xz" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;AOSC OS3 "Tabitha"<br><span class="small">Developer Preview</span></a>
+        <a href="http://mb.anthonos.org/os3-releases/os3-next/Developer_Preview/aosc-os3_developer-preview_rpm_lang_c_stripped.tar.xz" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;Nirvana "RPM Branch"<br><span class="small">Developer Preview</span></a>
+        <a href="http://mb.anthonos.org/projects/anthon-starter_0.1.2.0.7z" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;Anthon Starter<br><span class="small">0.1.2.0, Unstable</span></a>
+        <a href="https://github.com/AOSC-Dev/LinkC/archive/master.zip" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;LinkC<br><span class="small">Git Snapshot</span></a>
         <a href="https://github.com/AOSC-Dev" target=_blank class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;GitHub Repositories<br></a>
       </div>
     </div>
