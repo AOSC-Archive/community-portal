@@ -3,7 +3,7 @@
  */
 
 body {
-  font-family: "Microsoft YaHei UI", "Segoe UI", "SIMHEI";
+  font-family: sans-serif;
   color: #555;
 }
 
@@ -65,7 +65,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Microsoft YaHei UI", "Segoe UI", "SIMHEI", sans-serif;
+  font-family: sans-serif;
   font-weight: normal;
   color: #333;
 }

@@ -48,7 +48,7 @@
             <p>On July 11th Junde Yi and his team for Anthon Starter announced the release of Anthon Starter 0.1.2.0. 
             Anthon Starter is a tool for installation / boot deployment of AOSC OS, and it's currently based on Batch. 
             <p>Yi also announced his plan for 0.2.0 branch, as it will be more portable according to his annoucement.
-            <p>For more details please check out the <a href="http://projects-dev.anthonos.org/ast">Anthon Starter Homepage</a>.
+            <p>For more details please check out the <a href="/ast">Anthon Starter Homepage</a>.
           </div>
 
           <div class="blog-post">
@@ -65,7 +65,7 @@
               <li> It's pretty big due to inclusion of development toolkits and some unnecessary debug symbols;</li>
               <li> GRUB may think that there's a OSX if you boot the iso on a flash drive;</li>
             </ul>
-            <p>For more details and download please check out the <a href="http://projects-dev.anthonos.org/aosc-os">AOSC OS Homepage</a>.
+            <p>For more details and download please check out the <a href="/aosc-os">AOSC OS Homepage</a>.
           </div>
 
           <div class="blog-post">
