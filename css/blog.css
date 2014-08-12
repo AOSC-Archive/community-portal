@@ -3,7 +3,7 @@
  */
 
 body {
-  font-family: sans-serif;
+  font-family: source-sans, sans;
   color: #555;
 }
 
@@ -65,11 +65,13 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: sans-serif;
-  font-weight: normal;
+  font-family: source-sans, sans;
   color: #333;
 }
 
+p, .p {
+  font-size: 17px;
+}
 
 /*
  * Override Bootstrap's default container.
@@ -234,4 +236,11 @@ h6, .h6 {
 
 span.glyphicon-decor {
     font-size: 36px;
+}
+
+/* Source Sans Pro Web Font */
+@font-face {
+  font-family: source-sans;
+  src: url("/fonts/SourceSansPro-Regular.ttf.woff") format("woff");
+  font-weight: regular;
 }
