@@ -40,7 +40,6 @@
     <div class="container">
       <div class="col-md-8">
 
-        
         <div class="col-sm-1">
           <img src="/img/question.png">
         </div>
@@ -57,7 +56,7 @@
           <img src="/img/claimation.png">
           <br /><br />
         </div>
-        
+
         <div class="col-md-10 col-sm-offset-1 blog-post">
           <h2><br />Take Action!</h2>
           <p>It's not only about talking, let's take action for improvement! By using, testing, crititizing or even
@@ -126,7 +125,14 @@
         </div>
 
         <h4><span class="glyphicon glyphicon-save"></span>&nbsp;&nbsp;Downloads</h4>
-        <a href="###" target=_blank class="btn btn-success btn-md btn-block" role="button"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;AnthonOS "Doge"<br><span class="small">Final Release</span></a>
+	<div class="dropdown" margin-bottom="5px">
+        	<button class="btn btn-success btn-md btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;AnthonOS "Doge"<br><span class="small">Final Release</span><span class="caret"></span></button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			<li role="presentation"><a role="menuitem" tabindex="" href="http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc+mac_zh-CN_patch-1.iso">Chinese Simplified</a></li>
+			<li role="presentation"><a role="menuitem" tabindex="" href="http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc+mac_zh-TW_patch-1.iso">Chinese Traditional (Taiwan)</a></li>
+			<li role="presentation"><a role="menuitem" tabindex="" href="http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc+mac_en-US_patch-1.iso">English (America)</a></li>
+		</ul>
+	</div>
         <a href="http://mb.anthonos.org/os2-releases/centralpoint/Beta2/aosc-centralpoint_beta2-10032_pc+mac_lang-c_stripped.iso" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;CentralPoint "10032"<br><span class="small">Beta Version</span></a>
         <a href="http://mb.anthonos.org/projects/anthon-starter_0.1.2.0.7z" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;Anthon Starter<br><span class="small">0.1.2.0, Unstable</span></a>
         <a href="https://github.com/AOSC-Dev/LinkC/archive/master.zip" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;LinkC<br><span class="small">Git Snapshot</span></a>
