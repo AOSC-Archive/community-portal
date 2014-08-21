@@ -125,7 +125,7 @@
         </div>
 
         <h4><span class="glyphicon glyphicon-save"></span>&nbsp;&nbsp;Downloads</h4>
-	<div class="dropdown" margin-bottom="5px">
+	<div class="dropdown btn-block">
         	<button class="btn btn-success btn-md btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;AnthonOS "Doge"<br><span class="small">Final Release</span><span class="caret"></span></button>
 		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 			<li role="presentation"><a role="menuitem" tabindex="" href="http://mb.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc+mac_zh-CN_patch-1.iso">Chinese Simplified</a></li>
