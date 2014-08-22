@@ -48,17 +48,16 @@
           <p>
           "AOSC" stands for Anthon Open Source Community. Anthon Open Source Community is a community that
           focuses on improvement of open source software. We are taking action to make open source software
-          more friendly to everyone.
+          more friendly to everyone.<br /><br />
           </p>
         </div>
+
         <div class="col-sm-1">
-          <br />
           <img src="/img/claimation.png">
           <br /><br />
         </div>
-
-        <div class="col-md-10 col-sm-offset-1 blog-post">
-          <h2><br />Take Action!</h2>
+        <div class="col-md-10 col-sm-offset-1">
+          <h2>Take Action!</h2>
           <p>It's not only about talking, let's take action for improvement! By using, testing, crititizing or even
               contributing to the projects, they are just going to get better.</p><br />
         </div>
@@ -117,7 +116,7 @@
           <h2><a href="http://github.com/AOSC-Dev" target=_blank>Other Projects</a></h2>
           <p>
           Other projects, as simple as AOSC-VersionHelper for displaying system version, as critical as Autobuild
-          for building AOSC OS. They are hosted on GitHub for open participation, PRs are always welcomed.
+          for building AOSC OS. They are hosted on GitHub for open participation, PRs are always welcomed.<br /><br />
           </p>
         </div>
         
