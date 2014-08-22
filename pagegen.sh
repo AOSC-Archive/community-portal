@@ -3,7 +3,7 @@
 # ENVIRONMENT VARIABLES `ARRAY' and `LANGUAGES' overrides the settings.
 
 ARRAY="${ARRAY:-$2}"
-LANGUAGES="${3:-en zh-CN zh-TW en}"
+LANGUAGES="${3:-en zh-CN zh-TW}"
 
 exec >$1 || exit 1
 
@@ -28,7 +28,7 @@ cat << _EOF
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="<?=\$langues[\$langue]['page-description']">
+    <meta name="description" content="<?=\$langues[\$langue]['page-description'] ?>">
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, Lion Yang <ionxlion@foxmail.com>, YeXiaoxing <ye@xiaoxing.us>">
     <link rel="shortcut icon" href="/img/favicon.png">
 
@@ -40,7 +40,7 @@ cat << _EOF
     <link href="/css/common.css" rel="stylesheet">
   </head>
   <body>
-    
+    <?php include 'templates/navbar.php';?>
     
     <!-- Bootstrap core JavaScript
     ==================================================
