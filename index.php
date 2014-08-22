@@ -61,60 +61,66 @@
           <h2><br />Take Action!</h2>
           <p>It's not only about talking, let's take action for improvement! By using, testing, crititizing or even
               contributing to the projects, they are just going to get better.</p><br />
-              <div class="col-sm-1">
-                <img src="/img/os3.png" width="48px" height="48px">
-              </div>
-              <div class="col-sm-10 col-sm-offset-1">
-                <h4><b><a href="/aosc-os/" target=_blank>AOSC OS</a></b></h4>
-                  <p>
-                  AOSC OS is one of the most important projects of the community - a Linux Distribution buliding
-                  project. AOSC OS is built independently with references from Linux From Scratch and other great
-                  Linux distributions from all over the world.
-                  </p>
-                  <p>This is the project behind AnthonOS and CentralPoint.</p><br />
-              </div>
-              <div class="col-sm-1">
-                <img src="/img/ast.png" width="48px" height="48px">
-              </div>
-              <div class="col-sm-10 col-sm-offset-1">
-                <h4><b><a href="/ast/" target=_blank>Anthon Starter</a></b></h4>
-                <p>
-                Anthon Starter is a HDD installation helper for AOSC OS. This project focuses on making installation
-                of AOSC OS from Windows easier.
-                </p><br />
-              </div>
-              <div class="col-sm-1">
-                <img src="/img/localization.png" width="48px" height="48px">
-              </div>
-              <div class="col-sm-10 col-sm-offset-1">
-                <h4><b><a href="http://l10n.anthonos.org/" target=_blank>Localization</a></b></h4>
-                <p>
-                We believe the best way to make open source software better is to make more people understand
-                what they are. Localization of open source software makes it easier for everyone to use open
-                source software more easily and efficiently.
-                </p><br />
-              </div>
-              <div class="col-sm-1">
-                <img src="/img/linkc.png" width="48px" height="48px">
-              </div>
-              <div class="col-sm-10 col-sm-offset-1">
-                <h4><b><a href="/linkc/" target=_blank>LinkC</a></b></h4>
-                <p>
-                LinkC is a portable yet independent IM based on POSIX socket, and a protocol implemented called
-                LinkC Network Protocol, supports Intranet and Internet IM chatting via UDP or HTTP.
-                </p><br />
-              </div>
-              <div class="col-sm-1">
-                <img src="/img/github.png" width="48px" height="48px">
-              </div>
-              <div class="col-sm-10 col-sm-offset-1">
-                <h4><b><a href="http://github.com/AOSC-Dev" target=_blank>Other Projects</a></b></h4>
-                <p>
-                Other projects, as simple as AOSC-VersionHelper for displaying system version, as critical as Autobuild
-                for building AOSC OS. They are hosted on GitHub for open participation, PRs are always welcomed.
-                </p>
-              </div>
         </div>
+        
+        <div class="col-sm-1">
+          <img src="/img/os3.png" width="64px" height="64px">
+        </div>
+        <div class="col-sm-10 col-sm-offset-1">
+          <h2><a href="/aosc-os/" target=_blank>AOSC OS</a></h2>
+          <p>
+          AOSC OS is one of the most important projects of the community - a Linux Distribution buliding
+          project. AOSC OS is built independently with references from Linux From Scratch and other great
+          Linux distributions from all over the world.
+          </p>
+          <p>This is the project behind AnthonOS and CentralPoint.</p><br />
+        </div>
+        
+        <div class="col-sm-1">
+          <img src="/img/ast.png" width="64px" height="64px">
+        </div>
+        <div class="col-sm-10 col-sm-offset-1">
+          <h2><a href="/ast/" target=_blank>Anthon Starter</a></h4>
+          <p>
+          Anthon Starter is a HDD installation helper for AOSC OS. This project focuses on making installation
+          of AOSC OS from Windows easier.
+          </p><br />
+        </div>
+        
+        <div class="col-sm-1">
+          <img src="/img/localization.png" width="64px" height="64px">
+        </div>
+        <div class="col-sm-10 col-sm-offset-1">
+          <h2><a href="http://l10n.anthonos.org/" target=_blank>Localization</a></h2>
+          <p>
+          We believe the best way to make open source software better is to make more people understand
+          what they are. Localization of open source software makes it easier for everyone to use open
+          source software more easily and efficiently.
+          </p><br />
+        </div>
+              
+        <div class="col-sm-1">
+          <img src="/img/linkc.png" width="64px" height="64px">
+        </div>
+        <div class="col-sm-10 col-sm-offset-1">
+          <h2><a href="/linkc/" target=_blank>LinkC</a></h2>
+          <p>
+          LinkC is a portable yet independent IM based on POSIX socket, and a protocol implemented called
+          LinkC Network Protocol, supports Intranet and Internet IM chatting via UDP or HTTP.
+          </p><br />
+        </div>
+        
+        <div class="col-sm-1">
+          <img src="/img/github.png" width="64px" height="64px">
+        </div>
+        <div class="col-sm-10 col-sm-offset-1">
+          <h2><a href="http://github.com/AOSC-Dev" target=_blank>Other Projects</a></h2>
+          <p>
+          Other projects, as simple as AOSC-VersionHelper for displaying system version, as critical as Autobuild
+          for building AOSC OS. They are hosted on GitHub for open participation, PRs are always welcomed.
+          </p>
+        </div>
+        
       </div>
 
       <div class="col-md-3 col-sm-offset-1">
