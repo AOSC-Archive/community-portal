@@ -42,6 +42,7 @@
 					<br />
 					<p align="left">
                     Powered by <a href="http://getbootstrap.com/" target=_blank>Bootstrap 3.x</a>. Page designed by Taylor Yang, Duminhui and Jeff Bai.
+                    <a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a>
                     <br />
                     Fonts by <a href="http://glyphicons.com/" target=_blank>Glyphicons</a> and <a href="http://sourceforge.net/projects/sourcesans.adobe/" target=_blank>Adobe Source Sans Pro</a>.
                     </p>
