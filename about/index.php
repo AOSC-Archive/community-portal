@@ -75,6 +75,20 @@
             </div>
           </div>
 
+          <div class="blog-post">
+            <h2 class="blog-post-title">Thanks!</h2>
+            <br />
+            <p>There are good guys all around the world that provided us with good server and network resources!
+            <p>Here's some of the awesome ones we want to mention of:
+              <ul>
+                <li> <a href="http://www.ucloud.com/">UCloud</a> - where this website is hosted on.</li>
+                <li> <a href="http://www.ncnu.edu.tw/">National Chi Nan University</a> - our public compiling server.</li>
+                <li> <a href="http://studio.bluet.org/">BlueT</a> - awesome server for repository.</li>
+                <li> <a href="http://www.upyun.com/">Upyun</a> - CDN contents.</li>
+                <li> <a href="http://www.qiniutek.com/">Qiniu</a> - CDN contents.</li>
+                <li> <a href="http://www.maxcdn.com/">MaxCDN</a> - awesome CDN resources for repository mirrors.</li>
+          </div>
+
         </div>
 
       </div><!-- /.row -->
