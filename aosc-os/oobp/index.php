@@ -46,7 +46,7 @@
             <br /><br />
 			<?php
             for ($a=1;$a<=3;$a++)
-              echo '<a target="_blank" href="/img/oobp-logo/'.$a.'.png"><img src="/img/oobp-logo/'.$a.'.png" id="img'.$a.'" alt="img'.$a.'" width="48"></a>';
+              echo '<img src="/img/oobp-logo/'.$a.'.png" id="img'.$a.'" alt="img'.$a.'" width="48">';
             ?>
 			<br /><br />
 			<p><h4><b>And here are the download links:</b></h4></p>
@@ -55,7 +55,7 @@
               <li> OOBP with Pantheon, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-pantheon_fairy-wars_amd64_dpkg_stripped_20140821.tar.xz">DPKG/Apt</a>, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-pantheon_fairy-wars_amd64_rpm_stripped_20140821.tar.xz">RPM/Yum</a></li>
               <li> OOBP with Xfce, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-xfce_scarlet-devil_amd64_dpkg_stripped_20140821.tar.xz">DPKG/Apt</a>, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-xfce_scarlet-devil_amd64_rpm_stripped_20140821.tar.xz">RPM/Yum</a></li>
             </ul>
-			<br /><br />
+			<br />
 			<p><h4><b>How do I use them?</b></h4></p>
 			<p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be
 			RTFM (no, we mean Read The Fine Manuals). Basic steps to install and use these tarball releases were
