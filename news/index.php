@@ -42,6 +42,24 @@
 
         <div class="col-sm-9 blog-main">
 
+	<div class="blog-post">
+            <h2 class="blog-post-title">Support of Version 0.1 Stopped</h2>
+            <p class="blog-post-meta">August 30th, 2014<p>
+            On the discussion about 0.1 we have discussed the endless bugs in 0.1. Developer @liushuyu said that he was 
+            considering to give up 0.1.X for however hard he has tried, there were still many bugs which were caused by CMD.<br />
+            (See also <a href="https://github.com/AOSC-Dev/Anthon-Starter/issues/4">issue #4</a>)<br />
+            <br />
+            So with a long-term consideration, we decided to give up all the development and technological support of version
+            0.1.x. If you're going to use 0.1.x version of Anthon-Starter, you'll have no guarantee. We are very sorry to have
+            caused you so much inconvenience.<br />
+            <br />
+            We need your support! The development of 0.2 is pushing forward slowly. Source code can be seed at out git repository
+            on Github.<br />
+            <br />
+            Source codes and binaries of 0.1.x is still avaliable online. You can still download them, but we won't
+            guarantee whether they won't cause damage or not.
+          </div>
+
           <div class="blog-post">
             <h2 class="blog-post-title">Anthon Starter 0.1.2.0 Hits Green</h2>
             <p class="lead blog-description">July 11th, 2014</p>
