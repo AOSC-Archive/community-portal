@@ -43,18 +43,20 @@
 			<p>These Out Of Box Preview, for now, comes in the form of tarball (for now); a variety of editions
 			(spins if you prefer) are released.
 			<p>The following editions are ready for OOBP:
-            <p>
+            <br /><br />
 			<?php
-            for ($a=1;$a<=11;$a++)
-              echo '<a target="_blank" href="/img/oobp-logo/'.$a.'.png"><img src="/img/oobp/'.$a.'.png" id="img'.$a.'" alt="img'.$a.'" width="48"></a>';
+            for ($a=1;$a<=3;$a++)
+              echo '<a target="_blank" href="/img/oobp-logo/'.$a.'.png"><img src="/img/oobp-logo/'.$a.'.png" id="img'.$a.'" alt="img'.$a.'" width="48"></a>';
             ?>
-			<p><h4>And here are the download links:</h4></p>
+			<br /><br />
+			<p><h4><b>And here are the download links:</b></h4></p>
             <ul>
               <li> OOBP with Enlightenment, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-enlightenment_mountain-of-faith_amd64_dpkg_stripped_20140821.tar.xz">DPKG/Apt</a>, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-enlightenment_mountain-of-faith_amd64_rpm_stripped_20140821.tar.xz">RPM/Yum</a></li>
               <li> OOBP with Pantheon, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-pantheon_fairy-wars_amd64_dpkg_stripped_20140821.tar.xz">DPKG/Apt</a>, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-pantheon_fairy-wars_amd64_rpm_stripped_20140821.tar.xz">RPM/Yum</a></li>
               <li> OOBP with Xfce, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-xfce_scarlet-devil_amd64_dpkg_stripped_20140821.tar.xz">DPKG/Apt</a>, <a href="http://repo.anthonos.org/os3-releases/os3-next/OOBP/aosc-os3_oobp-xfce_scarlet-devil_amd64_rpm_stripped_20140821.tar.xz">RPM/Yum</a></li>
             </ul>
-			<p><h4>How do I use them?</h4></p>
+			<br /><br />
+			<p><h4><b>How do I use them?</b></h4></p>
 			<p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be
 			RTFM (no, we mean Read The Fine Manuals). Basic steps to install and use these tarball releases were
 			shown as below:
@@ -70,7 +72,7 @@
 			  <li> Install GRUB (search it up, man...);</li>
 			  <li> Unmount the partition, and reboot;</li>
 			  <li> Boom (if this happenned, report it on IRC or throw it on the <a href="http://bugs.anthonos.org">bug tracker</a>);</li>
-			<ul>
+			</ul><br />
 			<p>Happy hacking...</p>
           </div>
 
