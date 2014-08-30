@@ -35,28 +35,25 @@
 
           <div class="blog-post">
             <h2 class="blog-post-title">Support of Version 0.1 Stopped</h2>
-            <p class="blog-post-meta">News [2014-08-30]<p>
-            On the discussion about 0.1 we have discussed the endless bugs in 0.1. Developer @liushuyu said that he was 
+            <p class="blog-post-meta">News [2014-08-30]</p>
+            <p>On the discussion about 0.1 we have discussed the endless bugs in 0.1. Developer @liushuyu said that he was 
             considering to give up 0.1.X for however hard he has tried, there were still many bugs which were caused by CMD.<br />
-            (See also <a href="https://github.com/AOSC-Dev/Anthon-Starter/issues/4">issue #4</a>)<br />
-            <br />
-            So with a long-term consideration, we decided to give up all the development and technological support of version
+            (See also <a href="https://github.com/AOSC-Dev/Anthon-Starter/issues/4">issue #4</a>)</p>
+            <p>So with a long-term consideration, we decided to give up all the development and technological support of version
             0.1.x. If you're going to use 0.1.x version of Anthon-Starter, you'll have no guarantee. We are very sorry to have
-            caused you so much inconvenience.<br />
-            <br />
-            We need your support! The development of 0.2 is pushing forward slowly. Source code can be seed at out git repository
-            on Github.<br />
-            <br />
-            Source codes and binaries of 0.1.x is still avaliable online. You can still download them, but we won't
-            guarantee whether they won't cause damage or not.
+            caused you so much inconvenience.</p>
+            <p>We need your support! The development of 0.2 is pushing forward slowly. Source code can be seed at out git repository
+            on Github.</p>
+            <p>Source codes and binaries of 0.1.x is still avaliable online. You can still download them, but we won't
+            guarantee whether they won't cause damage or not.</p>
           </div>
           
           
           <div class="blog-post">
             <h2 class="blog-post-title">Feature Plan of 0.2 Branch Issued</h2>
-            <p class="blog-post-meta">News [2014-07-17]<p>
-            Building of base structure of Anthon Starter 0.2 branch is finished. According to current source structure, the
-            next version of Anthon Starter: version 0.2.0 will have the following features available:
+            <p class="blog-post-meta">News [2014-07-17]</p>
+            <p>Building of base structure of Anthon Starter 0.2 branch is finished. According to current source structure, the
+            next version of Anthon Starter: version 0.2.0 will have the following features available:</p>
             <ul>
               <li> 90% of the source will be coded in C, critical system calls will still be controlled by Batch;</li>
               <li> Support of POSIX paramenter switch (long paramenters);</li>
@@ -65,20 +62,20 @@
               <li> Optimized checksum algorithm (thanks to Zixing Liu);</li>
               <li> ...</li>
             </ul>
-            Participation is still welcomed. Anthon Starter is currently hosted on our
+            <p>Participation is still welcomed. Anthon Starter is currently hosted on our
             <a href="https://github.com/AOSC-Dev/Anthon-Starter/tree/0.2.0-devel">Git Repository.</a>
             Simply use this command: <br />
-              <p><pre>git clone -b 0.2.0-devel https://github.com/AOSC-Dev/Anthon-Starter.git</pre>
-            to get the latest source from our 0.2.0-devel branch.
+              <p><pre>git clone -b 0.2.0-devel https://github.com/AOSC-Dev/Anthon-Starter.git</pre></p>
+            to get the latest source from our 0.2.0-devel branch.</p>
           </div>
 
           <div class="blog-post">
             <h2 class="blog-post-title">Feature Plan of 0.2 Discussed</h2>
-            <p class="blog-post-meta">News [2014-07-11]<p>
-            Our team has started structural build of Anthon Starter 0.2. According to our discussion,
-            this particular version will have the following new features:
+            <p class="blog-post-meta">News [2014-07-11]</p>
+            <p>Our team has started structural build of Anthon Starter 0.2. According to our discussion,
+            this particular version will have the following new features:</p>
             <ul>
-              <li> <u> Rewrite of program in C;</u>( Wow )</li>
+              <li> <u>Rewrite of program in C;</u>( Wow )</li>
               <li> CLI only for earlier stage;</li>
               <li> Simple GUI will be added on later;</li>
               <li> Newer components;</li>
@@ -88,10 +85,10 @@
           <div class="blog-post">
             <h2 class="blog-post-title">It Just Gets Better Everyday!</h2>
             <br />
-            Latest Stable Release: <strong>0.1.2.0</strong><br />
-            Scheduled Release: <strong>0.2.0.0</strong><br />
+            <p>Latest Stable Release: <strong>0.1.2.0</strong></p>
+            <p>Scheduled Release: <strong>0.2.0.0</strong></p>
             <br />
-            Anthon Starter currently support the following features:
+            <p>Anthon Starter currently support the following features:</p>
             <ul>
               <li> Modular program structure;</li>
               <li> EFI + GPT support;</li>
@@ -107,14 +104,14 @@
           <div class="blog-post">
             <h2 class="blog-post-title">We need your participation!</h2>
             <br />
-            If you are interested, you may join us! No matter if you are good at:
+            <p>If you are interested, you may join us! No matter if you are good at:</p>
             <ul>
               <li> Coding;</li>
               <li> Artwork;</li>
               <li> Tucao;</li>
               <li> Translation;</li>
             </ul>
-            Simply find a way to contact with us (on the <a href="http://projects-dev.anthonos.org/ast/about/">"About"</a> page), you may become a developer!
+            <p>Simply find a way to contact with us (on the <a href="http://projects-dev.anthonos.org/ast/about/">"About"</a> page), you may become a developer!</p>
           </div>
         </div>
 

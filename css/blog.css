@@ -69,10 +69,6 @@ h6, .h6 {
   color: #333;
 }
 
-p, .p {
-  font-size: 17px;
-}
-
 /*
  * Override Bootstrap's default container.
  */
