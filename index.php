@@ -139,7 +139,7 @@
 		</ul>
 	</div>
         <a href="http://mb.anthonos.org/os2-releases/centralpoint/Beta2/aosc-centralpoint_beta2-10032_pc+mac_lang-c_stripped.iso" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;CentralPoint "10032"<br><span class="small">Beta Version</span></a>
-        <a href="http://mb.anthonos.org/projects/anthon-starter_0.1.2.0.7z" class="btn btn-warning btn-md btn-block" role="button"><span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;Anthon Starter<br><span class="small">0.1.2.0, Unstable</span></a>
+        <a href="https://github.com/AOSC-Dev/Anthon-Starter/archive/0.2.0-devel.zip" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;Anthon Starter<br><span class="small">Git Snapshot</span></a>
         <a href="https://github.com/AOSC-Dev/LinkC/archive/master.zip" class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;LinkC<br><span class="small">Git Snapshot</span></a>
         <a href="https://github.com/AOSC-Dev" target=_blank class="btn btn-primary btn-md btn-block" role="button"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;GitHub Repositories<br></a>
       </div>

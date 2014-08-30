@@ -34,6 +34,25 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
+            <h2 class="blog-post-title">Support of Version 0.1 Stopped</h2>
+            <p class="blog-post-meta">News [2014-08-30]<p>
+            On the discussion about 0.1 we have discussed the endless bugs in 0.1. Developer @liushuyu said that he was 
+            considering to give up 0.1.X for however hard he has tried, there were still many bugs which were caused by CMD.<br />
+            (See also <a href="https://github.com/AOSC-Dev/Anthon-Starter/issues/4">issue #4</a>)<br />
+            <br />
+            So with a long-term consideration, we decided to give up all the development and technological support of version
+            0.1.x. If you're going to use 0.1.x version of Anthon-Starter, you'll have no guarantee. We are very sorry to have
+            caused you so much inconvenience.<br />
+            <br />
+            We need your support! The development of 0.2 is pushing forward slowly. Source code can be seed at out git repository
+            on Github.<br />
+            <br />
+            Source codes and binaries of 0.1.x is still avaliable online. You can still download them, but we won't
+            guarantee whether they won't cause damage or not.
+          </div>
+          
+          
+          <div class="blog-post">
             <h2 class="blog-post-title">Feature Plan of 0.2 Branch Issued</h2>
             <p class="blog-post-meta">News [2014-07-17]<p>
             Building of base structure of Anthon Starter 0.2 branch is finished. According to current source structure, the
@@ -70,7 +89,7 @@
             <h2 class="blog-post-title">It Just Gets Better Everyday!</h2>
             <br />
             Latest Stable Release: <strong>0.1.2.0</strong><br />
-            Scheduled Release: <strong>0.1.2.1</strong><br />
+            Scheduled Release: <strong>0.2.0.0</strong><br />
             <br />
             Anthon Starter currently support the following features:
             <ul>
@@ -102,20 +121,19 @@
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
             <h4>Bulletin</h4>
-            <p>Version 0.1.2.0 is released.<br />If you got trouble using this version, please don't hesitate to report them, we will try our best
-            to fix them in the next release (0.1.2.1).</p>
+            <p><b>Support and development of version 0.1.x has stopped.</b><br />The next generation of Anthon-Starter 0.2 is written in C, and is developing. We need your participation.</p>
           </div>
 
           <div class="sidebar-module">
             <h4>Downloads</h4>
-              <a href="http://repo.anthonos.org/projects/anthon-starter_0.1.2.0.7z" class="btn btn-warning btn-lg btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Latest: 0.1.2.0<br><span class="small text-warning">Pretty Buggy</span> </a>
+              <a href="http://repo.anthonos.org/projects/anthon-starter_0.1.2.0.7z" class="btn btn-info disabled btn-lg btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Latest: <b>NO</b><br><span class="small text-warning">Support of 0.1.x Has Stopped</span> </a>
             <p><ol class="list-unstyled">
-              <li><a href="###"><strong>0.1.2.1 </strong>[Planning]</a></li>
-              <li><a href="###"><strong>0.2.0.0 </strong>[Planning]</a></li>
+              <li><a href="https://github.com/AOSC-Dev/Anthon-Starter/archive/0.2.0-devel.zip"><strong>0.2.0.0</strong> [Git Snapshot (Zipball)]</a></li>
             </ol></p>
             <h4>Historical Release</h4>
             <h5>These version are no longer maintained, proceed with caution.</h5>
             <ol class="list-unstyled">
+              <li><a href="http://repo.anthonos.org/projects/anthon-starter_0.1.2.0.7z">0.1.2.0</a></li>
               <li><a href="http://repo.anthonos.org/junde-studio/Projects/Anthon-Starter/anthonos-starter_0.1.1.3.7z">0.1.1.3</a></li>
               <li><a href="http://repo.anthonos.org/junde-studio/Projects/Anthon-Starter/anthon_win_0.1.0.3.7z">0.1.0.3</a></li>
               <li><a href="http://repo.anthonos.org/junde-studio/Projects/Anthon-Starter/anthon_win_0.1.0.0.7z">0.1.0.0</a></li>
@@ -124,7 +142,7 @@
           <div class="sidebar-module">
             <h4>Other Links</h4>
             <ol class="list-unstyled">
-              <li><a href="http://github.com/AOSC-Dev/Anthon-Starter">Git Repository</a></li>
+              <li><a href="http://github.com/AOSC-Dev/Anthon-Starter" target=_blank>Git Repository</a></li>
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->

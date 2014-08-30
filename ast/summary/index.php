@@ -77,11 +77,12 @@
             <h3>0.1.2 Branch</h3>
             <ul>
               <li>0.1.2.0: Release on 2014/7/10;</li>
+              <li>Support <b>ENDED</b> on: 2014/8/30</li>
             </ul>
             <p>0.1.2 was a major strip down on code and structure: support of German and Traditional Chinese (Taiwan) interface
             was dropped. GPT + EFI systems are supported at this point; Added support for AOSC OS2 and image checksum. Some of
-            the components were updated.
-            <p><b>EOL (End Of Line) will be at the point 0.3 is released (in the future).</b></p><br />
+            the components were updated.<br />
+            <br />
             <h3>0.2 Branch (Future Plan)</h3>
             <p>0.2.0 will be written in C instead of Batch. Only CLI will be supported in the first place, GUI will be added later.
             <p>System configuration probing will be supported.<br />
@@ -99,7 +100,7 @@
             Anthon Starter is an open source (even free) software, it's released under:
             <ul>
               <li> Apache License 2.0 (0.1 Branch)</li>
-              <li> GNU LGPL 2.1 (0.2 Branch)</li>
+              <li> GNU GPL 2 or Later (0.2 Branch)</li>
             </ul>
             <p>The source code are open and free for usage, and non-free components will not be included in the licence.
             Thus, this is <b>NOT</b> strictly a FOSS.

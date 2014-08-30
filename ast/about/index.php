@@ -43,9 +43,11 @@
             <h2 class="blog-post-title">The Team</h2>
             <br />
             <ul>
-              <li> Minyong Li <a href="mailto:lmy441900@gmail.com">lmy441900@gmail.com</a></li>
-              <li> Zixing Liu <a href="mailto:liushuyu011@gmail.com">liushuyu011@gmail.com</a></li>
-              <li> Haoming Xu <a href="mailto:18929292333@163.com">18929292333@163.com</a></li>
+              <li>Junde Yi <a href="mailto:lmy441900@gmail.com">lmy441900@gmail.com</a></li>
+              <li>Zixing Liu <a href="mailto:liushuyu011@gmail.com">liushuyu011@gmail.com</a></li>
+              <li>Nino <a href="mailto:campermsn@gmail.com">campermsn@gmail.com</a></li>
+              <li>Minhui Du <a href="mailto:duminghui@126.com">duminghui@126.com</a></li>
+              <li>Haoming Xu <a href="mailto:18929292333@163.com">18929292333@163.com</a></li>
             </ul>
           </div>
 
