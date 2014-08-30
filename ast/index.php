@@ -128,7 +128,7 @@
             <h4>Downloads</h4>
               <a href="http://repo.anthonos.org/projects/anthon-starter_0.1.2.0.7z" class="btn btn-info disabled btn-lg btn-block" role="button"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Latest: <b>NO</b><br><span class="small text-warning">Support of 0.1.x Has Stopped</span> </a>
             <p><ol class="list-unstyled">
-              <li><a href="https://github.com/AOSC-Dev/Anthon-Starter/archive/0.2.0-devel.zip"><strong>0.2.0.0</strong> [Git Snapshot (Zipball)]</a></li>
+              <li><a href="https://github.com/AOSC-Dev/Anthon-Starter/archive/0.2.0-devel.zip"><strong>0.2.0.0</strong> [Git Snapshot (Zipped)]</a></li>
             </ol></p>
             <h4>Historical Release</h4>
             <h5>These version are no longer maintained, proceed with caution.</h5>
