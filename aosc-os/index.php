@@ -48,6 +48,8 @@
           <div class="blog-post">
             <h2 class="blog-post-title">What's next...</h2>
             <p class="blog-post-meta">as of tomorrow<p>
+			<b>OOBP (out of box preview) testing kick-started!</b>
+			<p>Check it out at the "OOBP" page!</p><br />
             <b>The development of AOSC OS3 (2014 - 2015) has started for the next generation of AnthonOS and CentralPoint.</b>
             <p>...and here's some of the best bits for the next year!</b>
             <ul>
