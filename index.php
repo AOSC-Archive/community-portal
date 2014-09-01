@@ -68,7 +68,7 @@
         <div class="col-sm-10 col-sm-offset-1">
           <h2><a href="/aosc-os/" target=_blank>AOSC OS</a></h2>
           <p>
-          AOSC OS is one of the most important projects of the community - a Linux Distribution buliding
+          AOSC OS is one of the most important projects of the community - a Linux Distribution building
           project. AOSC OS is built independently with references from Linux From Scratch and other great
           Linux distributions from all over the world.
           </p>
