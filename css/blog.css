@@ -182,6 +182,18 @@ h6, .h6 {
   border-radius: 30px;
 }
 
+/* Items */
+.rowitem .col-sm-10 {
+  margin-bottom: 20px;
+}
+.rowitem .col-sm-1 {
+  margin-bottom: 10px;
+}
+.rowitem .col-sm-1 img {
+  width: 64px;
+  height: 64px;
+}
+
 
 /*
  * Blog posts

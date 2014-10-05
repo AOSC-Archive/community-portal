@@ -26,29 +26,26 @@
 					<p align="left"><a href="mailto:aosc@members.fsf.org">E-Mail</a></p>
 				</div>
 			</div>
-			<br />
-			<br />
 			<div class="col-md-12 col-sm-12">
 				<div class="col-md-1 col-sm-1 pull-left">
-					<img src="/img/aosc.png" width="50px" height="50px" class="img-responsive">
+					<img src="/img/aosc.png" class="img-responsive" style="width:50px;height:50px;">
 				</div>
 				<div class="col-md-11 col-sm-11">
 					<h4 align="left">Anthon Open Source Community</h4>
 					<p align="left">Copyleft 2011 - 2014, for every member of the community.</p>
 				</div>
-			</div>
-			<div class="col-md-12 col-sm-12">
-				<div class="col-sm-9">
-					<br />
-					<p align="left">
-                    Powered by <a href="http://getbootstrap.com/" target=_blank>Bootstrap 3.x</a>. Page designed by Taylor Yang, Duminhui and Jeff Bai.
-                    <br /><a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a>
-                    </p>
-                    <p align="left">
-                    Fonts by <a href="http://glyphicons.com/" target=_blank>Glyphicons</a> and <a href="http://sourceforge.net/projects/sourcesans.adobe/" target=_blank>Adobe Source Sans Pro</a>.
-                    </p>
-				</div>
-			</div>
+        <div class="col-sm-9" style="margin-top:20px;">
+          <p align="left">
+          Powered by <a href="http://getbootstrap.com/" target=_blank>Bootstrap 3.x</a>. Page designed by Lion Yang, Duminhui and Jeff Bai.
+          </p>
+          <p align="left">
+          <a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a>
+          </p>
+          <p align="left">
+          Fonts by <a href="http://glyphicons.com/" target=_blank>Glyphicons</a> and <a href="http://sourceforge.net/projects/sourcesans.adobe/" target=_blank>Adobe Source Sans Pro</a>.
+          </p>
+        </div>
+      </div>
 		</div>
 	</div>
 </div>
