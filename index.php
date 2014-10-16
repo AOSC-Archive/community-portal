@@ -122,7 +122,7 @@ include 'templates/lang.php';
             <img src="/img/ast.png">
           </div>
           <div class="col-sm-10 col-sm-offset-1">
-            <h2><a href="/ast/" target=_blank>Anthon Starter</a></h4>
+            <h2><a href="/ast/" target=_blank>Anthon Starter</a></h2>
             <p>
             Anthon Starter is a HDD installation helper for AOSC OS. This project focuses on making installation
             of AOSC OS from Windows easier.
