@@ -1,5 +1,5 @@
 #!/bin/bash
-# USAGE: .utils/pagegen.sh FILE WORD_ARRAY [ LANGUAGES ]
+# USAGE: .utils/pagegen.sh FILE "WORD_ARRAY" [ LANGUAGES ]
 # ENVIRONMENT VARIABLES `ARRAY' and `LANGUAGES' overrides the settings.
 
 ARRAY="${ARRAY:-$2}"
@@ -47,8 +47,8 @@ cat << _EOF
     <link href="/css/blog.css" rel="stylesheet">
     <?php include 'templates/font.php'; ?></head>
   <body>
-    <?php include 'templates/navbar.php';?>
-    
+    <?php include 'templates/portal/navbar.php';?>
+     
     <!-- Bootstrap core JavaScript
     ==================================================
     Placed at the end of the document so the pages load faster -->
