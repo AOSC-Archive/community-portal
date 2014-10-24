@@ -10,17 +10,19 @@ exec >$1 || exit 1
 echo "<?php
 define('IN_FRAME', true);"
 echo
-echo '$langues = array('
+echo '$langs = array('
 for i in $LANGUAGES; do
   echo "  '$i' => array ("
-  for j in title page_description $ARRAY; do
+  for j in title $ARRAY; do
     echo "    '$j' => ' ',"
   done
+  # echo '/* COMMA FIXME */'
   echo '  ),'
 done
+# echo '/* COMMA FIXME */'
 echo ');'
 echo
-echo "include 'modules/langue.php' ?>"
+echo "include 'templates/lang.php' ?>"
 echo
 cat << _EOF
 <!DOCTYPE html>
@@ -28,17 +30,22 @@ cat << _EOF
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="<?=\$langues[\$langue]['page-description'] ?>">
+    <!-- Get these right! -->
+    <meta name="description" content="AOSC Page Description in All languages">
+    <meta name="keyword" content="TODO"> 
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, Lion Yang <ionxlion@foxmail.com>, YeXiaoxing <ye@xiaoxing.us>">
     <link rel="shortcut icon" href="/img/favicon.png">
 
-    <title><?=\$langues[\$langue]['title'] ?></title>
+    <title><?=\$langs[\$lang]['title'] ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/carousel.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
-  </head>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/blog.css" rel="stylesheet">
+    <?php include 'templates/font.php'; ?></head>
   <body>
     <?php include 'templates/navbar.php';?>
     
@@ -50,3 +57,4 @@ cat << _EOF
   </body>
 </html>
 _EOF
+echo "Completed blank page generation." >&2
