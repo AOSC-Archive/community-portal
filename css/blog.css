@@ -235,10 +235,10 @@ h6, .h6 {
   margin-bottom: 0;
 }
 /* 添加Footer样式，设置block的间距*/
-.footer-block{
+.footer-block {
   margin-bottom: 2em;
 }
-.footer-block div{
+.footer-block div {
   margin-bottom: 2em;
 }
 
@@ -251,4 +251,8 @@ span.glyphicon-decor {
   font-family: source-sans;
   src: url("/fonts/SourceSansPro-Regular.ttf.woff") format("woff");
   font-weight: regular;
+}
+
+.jumbotron {
+  border-radius: 0 0 6px 6px !important;
 }
