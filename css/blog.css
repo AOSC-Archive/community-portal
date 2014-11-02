@@ -7,6 +7,12 @@ body {
   color: #555;
 }
 
+.hung-icon{
+  margin-left: -84px;
+  display: block;
+  position: absolute;
+}
+
 .section-welcome {
   font-size: 16px;
 }
@@ -173,7 +179,7 @@ h6, .h6 {
 /* Pagination */
 .pager {
   margin-bottom: 60px;
-  text-align: left;
+  text-align: justify;
 }
 .pager > li > a {
   width: 140px;

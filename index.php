@@ -71,12 +71,14 @@ include 'templates/lang.php';
   <div class="row jumbotron">
     <div class="container section-welcome">
       <div class="row">
-        <div class="col-sm-8 col-xs-12">
-          <h1><?php echo $langs[$lang]['welcome'];?></h1>
-          <p><?php echo $langs[$lang]['welcome-text'];?></p>
-        </div>
-        <div class="col-sm-3 col-sm-offset-1 shortcuts hidden-xs">
-          <img src="/img/aosc.png">
+        <div class="col-sm-10 col-sm-offset-1">
+          <div class="col-sm-8 col-xs-12">
+            <h1><?php echo $langs[$lang]['welcome'];?></h1>
+            <p><?php echo $langs[$lang]['welcome-text'];?></p>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1 shortcuts hidden-xs">
+            <img src="/img/aosc.png">
+          </div>
         </div>
       </div>
     </div>
@@ -84,62 +86,58 @@ include 'templates/lang.php';
   
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-         <div class="col-sm-1">
-           <img src="/img/question.png">
-         </div>
-         <div class="col-sm-10 col-sm-offset-1">
-           <h2><?php echo $langs[$lang]['ws-aosc?'];?></h2>
-           <p><?php echo $langs[$lang]['ws-aosc?-text'];?></p>
-         </div>
-       </div>
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hung-icon hidden-xs">
+              <img src="/img/question.png">
+            </div>
+            <h2><?php echo $langs[$lang]['ws-aosc?'];?></h2>
+            <p><?php echo $langs[$lang]['ws-aosc?-text'];?></p>
+          </div>
 
-       <div class="col-sm-6">
-         <div class="col-sm-1">
-           <img src="/img/claimation.png">
-         </div>
-         <div class="col-sm-10 col-sm-offset-1">
-           <h2><?php echo $langs[$lang]['take-action'];?></h2>
-           <p><?php echo $langs[$lang]['take-action-text'];?></p>
-         </div>
-       </div>
-      </div>
-     <hr class="divider"></hr>
-    </div>
-
-    <div class="container">
-      <div class="row col-sm-10">
-          <h1>Community News</h1>
-      </div>
-      <div class="row col-sm-10">
-        <div class="col-sm-4">
-          <h4>AOSC OS3 OOBP Coming Soon</h4>
-          <p>After 3 months of development. AOSC OS3 builds with several
-          different desktop environments are almost ready and will be
-          released very soon.
-          </p>
-          <p>Be sure to check for downloads at the 
-          <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP Section</a>
-          of AOSC OS sub-site.
-          </a>
+          <div class="col-sm-5 col-sm-offset-2">
+            <div class="hung-icon hidden-xs">
+              <img src="/img/claimation.png">
+            </div>
+            <h2><?php echo $langs[$lang]['take-action'];?></h2>
+            <p><?php echo $langs[$lang]['take-action-text'];?></p>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <h4>LinkC to Change Core</h4>
-          <p>According to our LinkC developers, LinkC will switch to a new
-          protocol implementation called Gurgle, check it out at the
-          <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.
-          </p>
-          <p>* LinkC is a standalone Instant Messaging client and server developed
-               by the community</p>
-        </div>
-        <div class="col-sm-4">
-          <h4>AnthonOS "Doge" Finally Released</h4>
-          <p>AnthonOS, based on AOSC OS2 has released as a final product
-          of our 2013-2014 development cycle. It will be maintained before AOSC OS3
-          comes to its debut. Security updates and several backports from AOSC OS3
-          will be available.</p>
-          <p>Downloads are available from the 
-          <a href="https://portal.antonos.org/aosc-os">AOSC OS Sub-site</a>.</p>
+        
+        <hr class="divider"></hr>
+        <h1>News</h1>
+        
+        <div class="row">
+          <div class="col-sm-4">
+              <h4>AOSC OS3 OOBP Coming Soon</h4>
+              <p>After 3 months of development. AOSC OS3 builds with several
+              different desktop environments are almost ready and will be
+              released very soon.
+              </p>
+              <p>Be sure to check for downloads at the 
+              <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP Section</a>
+              of AOSC OS sub-site.
+              </a>
+          </div>
+          <div class="col-sm-4">
+              <h4>LinkC to Change Core</h4>
+              <p>According to our LinkC developers, LinkC will switch to a new
+              protocol implementation called Gurgle, check it out at the
+              <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.
+              </p>
+              <p>* LinkC is a standalone Instant Messaging client and server developed
+                   by the community</p>
+          </div>
+          <div class="col-sm-4">
+            <h4>AnthonOS "Doge" Finally Released</h4>
+            <p>AnthonOS, based on AOSC OS2 has released as a final product
+            of our 2013-2014 development cycle. It will be maintained before AOSC OS3
+            comes to its debut. Security updates and several backports from AOSC OS3
+            will be available.</p>
+            <p>Downloads are available from the 
+            <a href="https://portal.antonos.org/aosc-os">AOSC OS Sub-site</a>.</p>
+          </div>
         </div>
       </div>
     </div>
