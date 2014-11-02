@@ -3,6 +3,7 @@ define('IN_FRAME', true);
 $langs = array(
   'en' => array(
     'title'=>'Community Portal - AOSC',
+    'beta-alert'=>'This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.'
     'welcome'=>'Welcome!',
     'welcome-text'=>'AOSC ( Anthon Open Source Community ) is an open community, which welcomes participation from all over the world.',
     'ws-aosc?'=>'What is AOSC?',
@@ -15,6 +16,7 @@ $langs = array(
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 安同开源社区',
+    'beta-alert'=>'此站点目前依然在建设中，页面质量可能时好时坏。敬请谅解。'
     'welcome'=>'欢迎！',
     'welcome-text'=>'安同开源社区 ( AOSC，Anthon Open Source Community ) 是一个开放的社区，我们欢迎来自全世界的参与者。',
     'ws-aosc?'=>'安同开源社区是?',
@@ -27,6 +29,7 @@ $langs = array(
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 - 安同開源社區',
+    'beta-alert'=>'此站點目前依然在建設中，頁面質量可能時好時壞。敬請諒解。'
     'welcome'=>'歡迎！',
     'welcome-text'=>'安同開源社區 ( AOSC，Anthon Open Source Community ) 是一個開放的社區，我們歡迎來自全世界的參與者。',
     'ws-aosc?'=>'安同開源社區是？',
@@ -64,7 +67,7 @@ include 'templates/lang.php';
   <?php include 'templates/portal/navbar.php'; ?>
 
   <div class="alert alert-warning" role="alert">
-    This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.
+    <?php echo $langs[$lang]['beta-alert'];?>
   </div>
   
   <!-- Main title -->
