@@ -103,8 +103,8 @@ include 'templates/lang.php';
      <hr class="divider"></hr>
     </div>
 
-    <div class="container col-sm-offset-1">
-      <div class="row">
+    <div class="container">
+      <div class="row col-sm-offset-1">
           <h1>Community News</h1>
       </div>
       <div class="row">
