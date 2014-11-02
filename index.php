@@ -3,7 +3,7 @@ define('IN_FRAME', true);
 $langs = array(
   'en' => array(
     'title'=>'Community Portal - AOSC',
-    'beta-alert'=>'This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.'
+    'beta-alert'=>'This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.',
     'welcome'=>'Welcome!',
     'welcome-text'=>'AOSC ( Anthon Open Source Community ) is an open community, which welcomes participation from all over the world.',
     'ws-aosc?'=>'What is AOSC?',
