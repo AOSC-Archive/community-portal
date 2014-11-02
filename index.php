@@ -100,9 +100,8 @@ include 'templates/lang.php';
          </div>
        </div>
      </div>
+     <hr class="divider"></hr>
     </div>
-
-    <hr class="divider"></hr>
 
     <div class="row">
       <div class="col-sm-12 col-sm-offset-0.5">
