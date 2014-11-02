@@ -63,6 +63,10 @@ include 'templates/lang.php';
   <body>
   <?php include 'templates/portal/navbar.php'; ?>
 
+  <div class="alert alert-warning" role="alert">
+    This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.
+  </div>
+  
   <div class="container">
     <!-- Main title -->
     <div class="row jumbotron">
@@ -77,10 +81,6 @@ include 'templates/lang.php';
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="alert alert-warning" role="alert">
-    This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.
     </div>
 
     <div class="row">
