@@ -99,15 +99,15 @@ include 'templates/lang.php';
            <p><?php echo $langs[$lang]['take-action-text'];?></p>
          </div>
        </div>
-     </div>
+      </div>
      <hr class="divider"></hr>
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row col-sm-10">
           <h1>Community News</h1>
       </div>
-      <div class="row">
+      <div class="row col-sm-10">
         <div class="col-sm-4">
           <h4>AOSC OS3 OOBP Coming Soon</h4>
           <p>After 3 months of development. AOSC OS3 builds with several
