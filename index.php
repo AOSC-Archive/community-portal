@@ -103,7 +103,7 @@ include 'templates/lang.php';
      <hr class="divider"></hr>
     </div>
 
-    <div class="container col-sm-11">
+    <div class="container">
       <div class="row">
           <h1>Community News</h1>
       </div>
@@ -140,6 +140,7 @@ include 'templates/lang.php';
       </div>
     </div>
   </div>
+  
   <?php include 'templates/portal/footer.php';?>
 
   <!-- Bootstrap core JavaScript
