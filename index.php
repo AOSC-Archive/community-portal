@@ -67,22 +67,22 @@ include 'templates/lang.php';
     This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.
   </div>
   
-  <div class="container">
-    <!-- Main title -->
-    <div class="row jumbotron">
-      <div class="container section-welcome">
-        <div class="row">
-          <div class="col-sm-8 col-xs-12">
-            <h1><?php echo $langs[$lang]['welcome'];?></h1>
-            <p><?php echo $langs[$lang]['welcome-text'];?></p>
-          </div>
-          <div class="col-sm-3 col-sm-offset-1 shortcuts hidden-xs">
-            <img src="/img/aosc.png">
-          </div>
+  <!-- Main title -->
+  <div class="row jumbotron">
+    <div class="container section-welcome">
+      <div class="row">
+        <div class="col-sm-8 col-xs-12">
+          <h1><?php echo $langs[$lang]['welcome'];?></h1>
+          <p><?php echo $langs[$lang]['welcome-text'];?></p>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 shortcuts hidden-xs">
+          <img src="/img/aosc.png">
         </div>
       </div>
     </div>
-
+  </div>
+  
+  <div class="container">
     <div class="row">
       <div class="col-sm-6">
          <div class="col-sm-1">
