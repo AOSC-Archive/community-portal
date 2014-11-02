@@ -103,14 +103,12 @@ include 'templates/lang.php';
      <hr class="divider"></hr>
     </div>
 
-    <div class="container">
+    <div class="container col-sm-offset-1">
       <div class="row">
-        <div class="col-sm-10">
           <h1>Community News</h1>
-        </div>
       </div>
       <div class="row">
-        <div class="col-sm-3 col-sm-offset-1">
+        <div class="col-sm-4">
           <h4>AOSC OS3 OOBP Coming Soon</h4>
           <p>After 3 months of development. AOSC OS3 builds with several
           different desktop environments are almost ready and will be
@@ -121,7 +119,7 @@ include 'templates/lang.php';
           of AOSC OS sub-site.
           </a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <h4>LinkC to Change Core</h4>
           <p>According to our LinkC developers, LinkC will switch to a new
           protocol implementation called Gurgle, check it out at the
@@ -130,7 +128,7 @@ include 'templates/lang.php';
           <p>* LinkC is a standalone Instant Messaging client and server developed
                by the community</p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <h4>AnthonOS "Doge" Finally Released</h4>
           <p>AnthonOS, based on AOSC OS2 has released as a final product
           of our 2013-2014 development cycle. It will be maintained before AOSC OS3
