@@ -103,13 +103,12 @@ include 'templates/lang.php';
      <hr class="divider"></hr>
     </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-sm-offset-0.5">
-        <h1>Community News</h1>
-      </div>
-    </div>
-    
     <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-sm-offset-0.5">
+          <h1>Community News</h1>
+        </div>
+      </div>
       <div class="row">
         <div class="col-sm-4 col-sm-offset-0.5">
           <h4>AOSC OS3 OOBP Coming Soon</h4>
