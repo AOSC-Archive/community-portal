@@ -3,6 +3,11 @@ define('IN_FRAME', true);
 $langs = array(
   'en' => array(
     'title'=>'Community Portal - AOSC',
+    'portal'=>'Portal',
+    'projects'=>'Projects',
+    'about'=>'About',
+    'localization'=>'Localization',
+    'docs'=>'TechBase',
     'beta-alert'=>'This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.',
     'welcome'=>'Welcome!',
     'welcome-text'=>'AOSC ( Anthon Open Source Community ) is an open community, which welcomes participation from all over the world.',
@@ -16,6 +21,11 @@ $langs = array(
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 安同开源社区',
+    'portal'=>'门户',
+    'projects'=>'项目',
+    'about'=>'关于',
+    'localization'=>'本地化',
+    'docs'=>'知识库',
     'beta-alert'=>'此站点目前依然在建设中，页面质量可能时好时坏。敬请谅解。',
     'welcome'=>'欢迎！',
     'welcome-text'=>'安同开源社区 ( AOSC，Anthon Open Source Community ) 是一个开放的社区，我们欢迎来自全世界的参与者。',
@@ -29,6 +39,11 @@ $langs = array(
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 - 安同開源社區',
+    'portal'=>'門戶',
+    'projects'=>'項目',
+    'about'=>'關於',
+    'localization'=>'本地化',
+    'docs'=>'知識庫',
     'beta-alert'=>'此站點目前依然在建設中，頁面質量可能時好時壞。敬請諒解。',
     'welcome'=>'歡迎！',
     'welcome-text'=>'安同開源社區 ( AOSC，Anthon Open Source Community ) 是一個開放的社區，我們歡迎來自全世界的參與者。',
