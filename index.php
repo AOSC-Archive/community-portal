@@ -78,6 +78,10 @@ include 'templates/lang.php';
         </div>
       </div>
     </div>
+    
+    <div class="alert alert-warning" role="alert">
+    This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.
+    </div>
 
     <div class="row">
       <div class="col-sm-6">
