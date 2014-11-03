@@ -18,6 +18,12 @@ $langs = array(
     'take-action'=>'Take Action!',
     'take-action-text'=>"It's not only about talking, let's take action for improvement! By using, testing, criticizing or even
                 contributing to the projects, they are just going to get better.",
+    'news-topic-1'=>'AOSC OS3 OOBP Coming Soon',
+    'news-text-1'=>'After 3 months of development. AOSC OS3 builds with several
+              different desktop environments are almost ready and will be
+              released very soon.<p></p>Be sure to check for downloads at the 
+              <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP Section</a>
+              of AOSC OS sub-site.',
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 安同开源社区',
@@ -30,12 +36,15 @@ $langs = array(
     'welcome'=>'欢迎！',
     'welcome-text'=>'安同开源社区 ( AOSC，Anthon Open Source Community ) 是一个开放的社区，我们欢迎来自全世界的参与者。',
     'ws-aosc?'=>'安同开源社区是?',
-    'ws-aosc?-text'=>'"AOSC" stands for Anthon Open Source Community. Anthon Open Source Community is a community that
-            focuses on improvement of open source software. We are taking action to make open source software
-            more friendly to everyone.',
+    'ws-aosc?-text'=>'"AOSC" 是安同开源社区 "Anthon Open Source Community" 的缩写。安同开源社区是一个重视改进开源软件体验
+            的社区。我们用实际行动让开源软件变得更友好。',
     'take-action'=>'马上行动！',
-    'take-action-text'=>"It's not only about talking, let's take action for improvement! By using, testing, criticizing or even
-                contributing to the projects, they are just going to get better.",
+    'take-action-text'=>'空谈误事，让我们用实际行动来改进开源软件吧！无论是一次体验、一次测试、一句批评，甚至是给项目贡献代码，
+                开源软件的未来将会更美好！',
+    'news-topic-1'=>'AOSC OS3 OOBP 预览版即将发布',
+    'news-text-1'=>'经过三个月的开发，带有许多富有特色的桌面环境的 AOSC OS3 预览版本将在短期内发布。</p>
+              <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 分区</a>
+              发布。',
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 - 安同開源社區',
@@ -54,6 +63,10 @@ $langs = array(
     'take-action'=>'馬上行動！',
     'take-action-text'=>"It's not only about talking, let's take action for improvement! By using, testing, criticizing or even
                 contributing to the projects, they are just going to get better.",
+    'news-topic-1'=>'AOSC OS3 OOBP 預覽版即將發布',
+    'news-text-1'=>'經過三個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 預覽版本將在短期內發布。</p>
+              <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 區塊</a>
+              發布。',
   ),
 );
 include 'templates/lang.php';
@@ -128,15 +141,9 @@ include 'templates/lang.php';
         
         <div class="row">
           <div class="col-sm-4">
-              <h4>AOSC OS3 OOBP Coming Soon</h4>
-              <p>After 3 months of development. AOSC OS3 builds with several
-              different desktop environments are almost ready and will be
-              released very soon.
+              <h4><?php echo $langs[$lang]['news-topic-1'];?></h4>
+              <p><?php echo $langs[$lang]['news-text-1'];?>
               </p>
-              <p>Be sure to check for downloads at the 
-              <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP Section</a>
-              of AOSC OS sub-site.
-              </a>
           </div>
           <div class="col-sm-4">
               <h4>LinkC to Change Core</h4>
