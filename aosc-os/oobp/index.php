@@ -98,6 +98,7 @@ include '../../templates/lang.php' ?>
                   <div class="col-sm-2">
                   </div>
                   <div class="col-sm-10">
+                    <br />
                     <h2>AOSC OS with GNOME</h2>
                     <p>AOSC OS Out-of-Box Preview with GNOME desktop, version 3.14. GNOME is a entirely free and open
                     desktop environment and application suite brought to you by the GNOME Foundation. GNOME is chosen to 
@@ -362,7 +363,7 @@ include '../../templates/lang.php' ?>
                 </div>
               </div>
               <div class="tab-pane" id="help">
-                <p><h3>How do I use them?</h3></p>
+                <p><h2>How do I use them?</h2></p>
                 <p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be
                 RTFM (no, we mean Read The Fine Manuals). Basic steps to install and use these tarball releases were
                 shown as below:</p>
