@@ -88,8 +88,9 @@ include '../../templates/lang.php' ?>
             <p>These Out Of Box Preview, for now, comes in the form of tarball (for now); a variety
             of editions (spins if you prefer) are released. Versions for download are shown below.</p>
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="#dpkg" data-toggle="tab">DPKG Based</a></li>
-              <li role="presentation"><a href="#rpm" data-toggle="tab">RPM Based</a></li>
+              <li role="presentation" class="active"><a href="#dpkg" data-toggle="tab">DPKG (Debian Packages) Based</a></li>
+              <li role="presentation"><a href="#rpm" data-toggle="tab">RPM (RedHat Package Manager) Based</a></li>
+              <li role="presentation"><a href="#help" data-toggle="tab">Instructions</a></li>
             </ul>
             <div id="my-tab-content" class="tab-content">
               <div class="tab-pane active" id="dpkg">
@@ -360,25 +361,27 @@ include '../../templates/lang.php' ?>
                   </div>
                 </div>
               </div>
+              <div class="tab-pane" id="help">
+                <p><h3>How do I use them?</h3></p>
+                <p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be
+                RTFM (no, we mean Read The Fine Manuals). Basic steps to install and use these tarball releases were
+                shown as below:</p>
+                <ul>
+                  <li> Get a LiveCD or boot up another Linux distribution (must be x86_64);</li>
+                  <li> Download the tarball(s);</li>
+                  <li> Clear a partition (of course you can seperate /home, /boot, etc);</li>
+                  <li> Mount the partition (TFM for "mount" command, <a href="http://linux.die.net/man/8/mount">here</a>);</li>
+                  <li> Untar the tarball(s) (TFM for "tar" command, <a href="http://linux.die.net/man/1/tar">here</a>);</li>
+                  <li> Configure domain name resolver (cp /etc/resolv.conf /path/to/mount/point/etc/);</li>
+                  <li> Mount and bind /dev /proc /sys to OOBP;</li>
+                  <li> "chroot" into OOBP (TFM for "chroot" command, <a href="http://linux.die.net/man/2/chroot">here</a>);</li>
+                  <li> Install GRUB (search it up, man...);</li>
+                  <li> Unmount the partition, and reboot;</li>
+                  <li> Boom (if this happenned, report it on IRC or throw it on the <a href="http://bugs.anthonos.org">bug tracker</a>);</li>
+                </ul><br />
+                <p>Happy hacking...</p>
+              </div>
             </div>
-            <p><h3>How do I use them?</h3></p>
-            <p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be
-            RTFM (no, we mean Read The Fine Manuals). Basic steps to install and use these tarball releases were
-            shown as below:</p>
-            <ul>
-              <li> Get a LiveCD or boot up another Linux distribution (must be x86_64);</li>
-              <li> Download the tarball(s);</li>
-              <li> Clear a partition (of course you can seperate /home, /boot, etc);</li>
-              <li> Mount the partition (TFM for "mount" command, <a href="http://linux.die.net/man/8/mount">here</a>);</li>
-              <li> Untar the tarball(s) (TFM for "tar" command, <a href="http://linux.die.net/man/1/tar">here</a>);</li>
-              <li> Configure domain name resolver (cp /etc/resolv.conf /path/to/mount/point/etc/);</li>
-              <li> Mount and bind /dev /proc /sys to OOBP;</li>
-              <li> "chroot" into OOBP (TFM for "chroot" command, <a href="http://linux.die.net/man/2/chroot">here</a>);</li>
-              <li> Install GRUB (search it up, man...);</li>
-              <li> Unmount the partition, and reboot;</li>
-              <li> Boom (if this happenned, report it on IRC or throw it on the <a href="http://bugs.anthonos.org">bug tracker</a>);</li>
-            </ul><br />
-            <p>Happy hacking...</p>
           </div>
 	</div>
       </div>
