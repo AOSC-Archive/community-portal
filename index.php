@@ -30,7 +30,7 @@ $langs = array(
               <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.',
     'news-text-mark'=>'* LinkC is a standalone Instant Messaging client and server developed
                    by the community',
-    'news-topic-3'=>'AnthonOS \"Doge\" Finally Released',
+    'news-topic-3'=>'AnthonOS "Doge" Finally Released',
     'news-text-3'=>'AnthonOS, based on AOSC OS2 has released as a final product
             of our 2013-2014 development cycle. It will be maintained before AOSC OS3
             comes to its debut. Security updates and several backports from AOSC OS3
@@ -62,7 +62,7 @@ $langs = array(
     'news-text-2'=>'LinkC 开发者告诉我们，LinkC 将会转向使用一个名为 Gurgle（咕噜）的协议实现，该项目的
     源代码可以在 <a href="https://github.com/AOSC-Dev/gurgle">此 GitHub 仓库</a> 阅读或获取。',
     'news-text-mark'=>'* LinkC 是由社区开发的独立即时通信客户端与服务器',
-    'news-topic-3'=>'AnthonOS \"Doge\" 发布',
+    'news-topic-3'=>'AnthonOS "Doge" 发布',
     'news-text-3'=>'基于 AOSC OS2 的 AnthonOS，作为 2013 - 2014 开发周期的最终产品发布了。
     AnthonOS (AOSC OS2) 将被一直维护到 AOSC OS3 正式版发布。届时，一部分安全更新和软件更新将会推送。</p>
     <p>下载方式请前往 <a href="https://portal.antonos.org/aosc-os">AOSC OS 子站</a> 获取。',
@@ -94,7 +94,7 @@ $langs = array(
               <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.',
     'news-text-mark'=>'* LinkC is a standalone Instant Messaging client and server developed
                    by the community',
-    'news-topic-3'=>'AnthonOS \"Doge\" Finally Released',
+    'news-topic-3'=>'AnthonOS "Doge" Finally Released',
     'news-text-3'=>'AnthonOS, based on AOSC OS2 has released as a final product
             of our 2013-2014 development cycle. It will be maintained before AOSC OS3
             comes to its debut. Security updates and several backports from AOSC OS3
