@@ -73,7 +73,7 @@ include '../../templates/lang.php' ?>
     <?php include '../../templates/aosc-os/navbar.php';?>
     <div class="container">
       <div class="blog-header">
-        <img src="/img/os3.svg" height="150" width="150" align=right hspace="40" >
+        <img src="/img/os3.png" height="150" width="150" align=right hspace="40" >
         <h1 class="blog-title"><?=$langs[$lang]['h1']?></h1>
         <p class="lead blog-description"><?=$langs[$lang]['h-desc']?></p>
       </div>
