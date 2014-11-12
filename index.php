@@ -24,6 +24,19 @@ $langs = array(
               released very soon.<p></p>Be sure to check for downloads at the 
               <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP Section</a>
               of AOSC OS sub-site.',
+    'news-topic-2'=>'LinkC to Change Core',
+    'news-text-2'=>'According to our LinkC developers, LinkC will switch to a new
+              protocol implementation called Gurgle, check it out at the
+              <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.',
+    'news-text-mark'=>'* LinkC is a standalone Instant Messaging client and server developed
+                   by the community',
+    'news-topic-3'=>'AnthonOS \"Doge\" Finally Released',
+    'news-text-3'=>'AnthonOS, based on AOSC OS2 has released as a final product
+            of our 2013-2014 development cycle. It will be maintained before AOSC OS3
+            comes to its debut. Security updates and several backports from AOSC OS3
+            will be available.</p>
+            <p>Downloads are available from the 
+            <a href="https://portal.antonos.org/aosc-os">AOSC OS Sub-site</a>.',
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 安同开源社区',
@@ -45,6 +58,14 @@ $langs = array(
     'news-text-1'=>'经过三个月的开发，带有许多富有特色的桌面环境的 AOSC OS3 预览版本将在短期内发布。</p>
               <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 分区</a>
               发布。',
+    'news-topic-2'=>'LinkC 更改核心',
+    'news-text-2'=>'LinkC 开发者告诉我们，LinkC 将会转向使用一个名为 Gurgle（咕噜）的协议实现，该项目的
+    源代码可以在 <a href="https://github.com/AOSC-Dev/gurgle">此 GitHub 仓库</a> 阅读或获取。',
+    'news-text-mark'=>'* LinkC 是由社区开发的独立即时通信客户端与服务器',
+    'news-topic-3'=>'AnthonOS \"Doge\" 发布',
+    'news-text-3'=>'基于 AOSC OS2 的 AnthonOS，作为 2013 - 2014 开发周期的最终产品发布了。
+    AnthonOS (AOSC OS2) 将被一直维护到 AOSC OS3 正式版发布。届时，一部分安全更新和软件更新将会推送。</p>
+    <p>下载方式请前往 <a href="https://portal.antonos.org/aosc-os">AOSC OS 子站</a> 获取。',
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 - 安同開源社區',
@@ -67,6 +88,19 @@ $langs = array(
     'news-text-1'=>'經過三個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 預覽版本將在短期內發布。</p>
               <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 區塊</a>
               發布。',
+    'new-topic-2'=>'LinkC to Change Core',
+    'news-text-2'=>'According to our LinkC developers, LinkC will switch to a new
+              protocol implementation called Gurgle, check it out at the
+              <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.',
+    'news-text-mark'=>'* LinkC is a standalone Instant Messaging client and server developed
+                   by the community',
+    'news-topic-3'=>'AnthonOS \"Doge\" Finally Released',
+    'news-text-3'=>'AnthonOS, based on AOSC OS2 has released as a final product
+            of our 2013-2014 development cycle. It will be maintained before AOSC OS3
+            comes to its debut. Security updates and several backports from AOSC OS3
+            will be available.</p>
+            <p>Downloads are available from the 
+            <a href="https://portal.antonos.org/aosc-os">AOSC OS Sub-site</a>.',
   ),
 );
 include 'templates/lang.php';
@@ -146,22 +180,14 @@ include 'templates/lang.php';
               </p>
           </div>
           <div class="col-sm-4">
-              <h4>LinkC to Change Core</h4>
-              <p>According to our LinkC developers, LinkC will switch to a new
-              protocol implementation called Gurgle, check it out at the
-              <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.
+              <h4><?php echo $langs[$lang]['news-topic-2'];?></h4>
+              <p><?php echo $langs[$lang]['news-text-2'];?>
               </p>
-              <p>* LinkC is a standalone Instant Messaging client and server developed
-                   by the community</p>
+              <p><?php echo $langs[$lang]['news-text-mark'];?></p>
           </div>
           <div class="col-sm-4">
-            <h4>AnthonOS "Doge" Finally Released</h4>
-            <p>AnthonOS, based on AOSC OS2 has released as a final product
-            of our 2013-2014 development cycle. It will be maintained before AOSC OS3
-            comes to its debut. Security updates and several backports from AOSC OS3
-            will be available.</p>
-            <p>Downloads are available from the 
-            <a href="https://portal.antonos.org/aosc-os">AOSC OS Sub-site</a>.</p>
+            <h4><?php echo $langs[$lang]['news-topic-3'];?></h4>
+            <p><?php echo $langs[$lang]['news-text-3'];?></p>
           </div>
         </div>
       </div>
