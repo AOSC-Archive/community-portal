@@ -97,9 +97,9 @@ include '../../templates/lang.php' ?>
                 <p>BarBarBarBar</p>
               </div>
               <div class="tab-pane" id="rpm">
-                <div class="alert alert-success" role="alert">
+                <div class="alert alert-daner" role="alert">
                   <p>RPM based AOSC OS3 is considered as highly experimental, some of the factors considered as known
-                  issue, listed below:</p>
+                  issue, as listed below:</p>
                   <ul>
                     <li>1. RPM builds compared to DPKG, has large number of dependency overhead, which is brought by 
                     false reading of dependencies of a library, ELF executables, even data files;</li>
