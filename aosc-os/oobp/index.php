@@ -97,6 +97,18 @@ include '../../templates/lang.php' ?>
                 <p>BarBarBarBar</p>
               </div>
               <div class="tab-pane" id="rpm">
+                <div class="alert alert-success" role="alert">
+                  <p>RPM based AOSC OS3 is considered as highly experimental, some of the factors considered as known
+                  issue, listed below:</p>
+                  <ul>
+                    <li>1. RPM builds compared to DPKG, has large number of dependency overhead, which is brought by 
+                    false reading of dependencies of a library, ELF executables, even data files;</li>
+                    <li>2. RPM builds are built with some dirty hacks upon initial bootstrap, some packages must be
+                    installed with "--nodeps" switch of the rpm command in order to install and build the ground for other
+                    packages to be installed;</li>
+                    <li>3. RPM builds do not support PackageKit;</li>
+                  </ul>
+                </div>
                 <h1>Barrrrrrrrrrrr</h1>
                 <p>Fooooooooooooo</p>
               </div>
