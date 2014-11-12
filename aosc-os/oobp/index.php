@@ -214,7 +214,7 @@ include '../../templates/lang.php' ?>
                     <p>AOSC OS Out-of-Box Preview with DDE (Deepin Desktop Environment), version 2. Deepin Desktop Environment is a desktop interface
                     developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be suitable for any machine older than
                     the ones on sale before 2010.</p>
-                    <div class="alert alert-daner">
+                    <div class="alert alert-danger">
                       OOBP not ready, the group is still discussing over the methods of porting.
                     </div>
                   </div>
@@ -354,7 +354,7 @@ include '../../templates/lang.php' ?>
                     <p>AOSC OS Out-of-Box Preview with DDE (Deepin Desktop Environment), version 2. Deepin Desktop Environment is a desktop interface
                     developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be suitable for any machine older than
                     the ones on sale before 2010.</p>
-                    <div class="alert alert-daner">
+                    <div class="alert alert-danger">
                       OOBP not ready, the group is still discussing over the methods of porting.
                     </div>
                   </div>
