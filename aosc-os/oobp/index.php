@@ -88,8 +88,8 @@ include '../../templates/lang.php' ?>
             <p>These Out Of Box Preview, for now, comes in the form of tarball (for now); a variety
             of editions (spins if you prefer) are released. Versions for download are shown below.</p>
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="#dpkg" data-toggle="tab">DPKG (Debian Packages) Based</a></li>
-              <li role="presentation"><a href="#rpm" data-toggle="tab">RPM (RedHat Package Manager) Based</a></li>
+              <li role="presentation" class="active"><a href="#dpkg" data-toggle="tab">DPKG Based</a></li>
+              <li role="presentation"><a href="#rpm" data-toggle="tab">RPM Based</a></li>
               <li role="presentation"><a href="#help" data-toggle="tab">Instructions</a></li>
             </ul>
             <div id="my-tab-content" class="tab-content">
