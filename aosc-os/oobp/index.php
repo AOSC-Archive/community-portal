@@ -105,6 +105,7 @@ include '../../templates/lang.php' ?>
                     be the default desktop environment for some major Linux distributions like Fedora.</p>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -117,6 +118,7 @@ include '../../templates/lang.php' ?>
                     cutting edge technologies like systemd-logind.</p>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -128,6 +130,7 @@ include '../../templates/lang.php' ?>
                     mouse and keyboard use than the GNOME shell.</p>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -139,6 +142,7 @@ include '../../templates/lang.php' ?>
                     to bring Wayland support to it!</p>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -153,6 +157,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -167,6 +172,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -181,6 +187,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -194,6 +201,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -208,6 +216,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -245,6 +254,7 @@ include '../../templates/lang.php' ?>
                     be the default desktop environment for some major Linux distributions like Fedora.</p>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -257,6 +267,7 @@ include '../../templates/lang.php' ?>
                     cutting edge technologies like systemd-logind.</p>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -268,6 +279,7 @@ include '../../templates/lang.php' ?>
                     mouse and keyboard use than the GNOME shell.</p>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -279,6 +291,7 @@ include '../../templates/lang.php' ?>
                     to bring Wayland support to it!</p>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -293,6 +306,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -307,6 +321,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -321,6 +336,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -334,6 +350,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
@@ -348,6 +365,7 @@ include '../../templates/lang.php' ?>
                     </div>
                   </div>
                 </div>
+                <hr class="divider"></hr>
                 <div class="row">
                   <div class="col-sm-2">
                   </div>
