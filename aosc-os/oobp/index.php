@@ -88,9 +88,19 @@ include '../../templates/lang.php' ?>
             <p>These Out Of Box Preview, for now, comes in the form of tarball (for now); a variety
             of editions (spins if you prefer) are released. Versions for download are shown below.</p>
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="#">DPKG Based</a></li>
-              <li role="presentation"><a href="#">RPM Based</a></li>
+              <li role="presentation" class="active"><a href="#dpkg" data-toggle="tab">DPKG Based</a></li>
+              <li role="presentation"><a href="#rpm" data-toggle="tab">RPM Based</a></li>
             </ul>
+            <div id="my-tab-content" class="tab-content">
+              <div class="tab-pane active" id="dpkg">
+                <h1>Fooooooooooooooo</h1>
+                <p>BarBarBarBar</p>
+              </div>
+              <div class="tab-pane" id="rpm">
+                <h1>Barrrrrrrrrrrr</h1>
+                <p>Fooooooooooooo</p>
+              </div>
+            </div>
             <p><h3>How do I use them?</h3></p>
             <p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be
             RTFM (no, we mean Read The Fine Manuals). Basic steps to install and use these tarball releases were
@@ -116,5 +126,11 @@ include '../../templates/lang.php' ?>
     <?php include '../../templates/portal/footer.php';?>
     <script src="/js/jquery-min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+      });
+    </script> 
+
   </body>
 </html>
