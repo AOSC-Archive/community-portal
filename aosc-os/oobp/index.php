@@ -87,15 +87,14 @@ include '../../templates/lang.php' ?>
             to show off some of our maintained AOSC OS3 releases.</p>
             <p>These Out Of Box Preview, for now, comes in the form of tarball (for now); a variety
             of editions (spins if you prefer) are released. Versions for download are shown below.</p>
-            <br /><br />
-            <p><h3>How do I use them?</h3></p>
-            <p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be
-            RTFM (no, we mean Read The Fine Manuals). Basic steps to install and use these tarball releases were
-            shown as below:</p>
             <ul class="nav nav-tabs">
               <li role="presentation" class="active"><a href="#">DPKG Based</a></li>
               <li role="presentation"><a href="#">RPM Based</a></li>
             </ul>
+            <p><h3>How do I use them?</h3></p>
+            <p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be
+            RTFM (no, we mean Read The Fine Manuals). Basic steps to install and use these tarball releases were
+            shown as below:</p>
             <ul>
               <li> Get a LiveCD or boot up another Linux distribution (must be x86_64);</li>
               <li> Download the tarball(s);</li>
