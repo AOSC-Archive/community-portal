@@ -54,7 +54,7 @@ to maintain AOSC OS2 with loads of its issues coming, we are ready to show off s
 	),
 );
 
-include 'templates/lang.php' ?>
+include '../../templates/lang.php' ?>
 
 <html lang=<?=$lang?>>
 	<head>
