@@ -381,7 +381,7 @@ include '../../templates/lang.php' ?>
                   </div>
                 </div>
               </div>
-              <div class="tab-pane" id="help">
+              <div class="tab-pane" id="server">
                 <br />
                 <div class="row">
                   <div class="col-sm-2">
