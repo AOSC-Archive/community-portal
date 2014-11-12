@@ -85,11 +85,12 @@ include '../../templates/lang.php' ?>
             <p>It's been some months since the official start of AOSC OS3 project, while we are 
             still struggling to maintain AOSC OS2 with loads of its issues coming, we are ready
             to show off some of our maintained AOSC OS3 releases.</p>
-            <p>These Out Of Box Preview, for now, comes in the form of tarball (for now); a variety
-            of editions (spins if you prefer) are released. Versions for download are shown below.</p>
+            <p>These Out-Of-Box Preview comes in the form of tarball (for now); a variety of releases
+            (spins if you prefer) are available. Downloads and instructions are shown below.</p>
             <ul class="nav nav-tabs">
               <li role="presentation" class="active"><a href="#dpkg" data-toggle="tab">DPKG Based</a></li>
               <li role="presentation"><a href="#rpm" data-toggle="tab">RPM Based</a></li>
+              <li role="presentation"><a href="#server" data-toggle="tab">for Servers</a></li>
               <li role="presentation"><a href="#help" data-toggle="tab">Instructions</a></li>
             </ul>
             <div id="my-tab-content" class="tab-content">
@@ -168,7 +169,7 @@ include '../../templates/lang.php' ?>
                     make Plasma work better. Plasma desktop requires a machine with decent amount of processor and graphics 
                     performance.<p>
                     <div class="alert alert-danger">
-                      OOBP not ready: blocker, waiting for KDE Applications 14.12 to be released.
+                      OOBP not ready: pending, waiting for KDE Applications 14.12 to be released.
                     </div>
                   </div>
                 </div>
@@ -197,7 +198,7 @@ include '../../templates/lang.php' ?>
                     maintained by the ElementaryOS. Pantheon is a lightweight GTK+ 3 based desktop environment. Although being fast, and probably
                     beautiful, it's plagued with stability issues. Be careful when choosing this desktop environment.</p>
                     <div class="alert alert-danger">
-                      OOBP not ready, Pantheon is broken with the update to GTK+ 3.14.
+                      OOBP not ready: blocker, Pantheon is broken with the update to GTK+ 3.14.
                     </div>
                   </div>
                 </div>
@@ -211,7 +212,7 @@ include '../../templates/lang.php' ?>
                     This Unity build is brought to you by the AOSC OS development group, with several fixes and patches to remove all Ubuntu
                     specific features and interface. Unity is often time considered as unstable, but still, very suitable for new users.</p>
                     <div class="alert alert-danger">
-                      OOBP not ready, Unity is broken with the update to GTK+ 3.14, will not release any build until the Beta of Ubuntu 15.04
+                      OOBP not ready: blocker, Unity is broken with the update to GTK+ 3.14, will not release any build until the Beta of Ubuntu 15.04
                       is released.
                     </div>
                   </div>
@@ -226,7 +227,7 @@ include '../../templates/lang.php' ?>
                     developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be suitable for any machine older than
                     the ones on sale before 2010.</p>
                     <div class="alert alert-danger">
-                      OOBP not ready, the group is still discussing over the methods of porting.
+                      OOBP not ready: pending, the group is still discussing over the methods of porting.
                     </div>
                   </div>
                 </div>
@@ -317,7 +318,7 @@ include '../../templates/lang.php' ?>
                     make Plasma work better. Plasma desktop requires a machine with decent amount of processor and graphics 
                     performance.<p>
                     <div class="alert alert-danger">
-                      OOBP not ready: blocker, waiting for KDE Applications 14.12 to be released.
+                      OOBP not ready: pending, waiting for KDE Applications 14.12 to be released.
                     </div>
                   </div>
                 </div>
@@ -346,7 +347,7 @@ include '../../templates/lang.php' ?>
                     maintained by the ElementaryOS. Pantheon is a lightweight GTK+ 3 based desktop environment. Although being fast, and probably
                     beautiful, it's plagued with stability issues. Be careful when choosing this desktop environment.</p>
                     <div class="alert alert-danger">
-                      OOBP not ready, Pantheon is broken with the update to GTK+ 3.14.
+                      OOBP not ready: blocker, Pantheon is broken with the update to GTK+ 3.14.
                     </div>
                   </div>
                 </div>
@@ -360,7 +361,7 @@ include '../../templates/lang.php' ?>
                     This Unity build is brought to you by the AOSC OS development group, with several fixes and patches to remove all Ubuntu
                     specific features and interface. Unity is often time considered as unstable, but still, very suitable for new users.</p>
                     <div class="alert alert-danger">
-                      OOBP not ready, Unity is broken with the update to GTK+ 3.14, will not release any build until the Beta of Ubuntu 15.04
+                      OOBP not ready: blocker, Unity is broken with the update to GTK+ 3.14, will not release any build until the Beta of Ubuntu 15.04
                       is released.
                     </div>
                   </div>
@@ -375,8 +376,20 @@ include '../../templates/lang.php' ?>
                     developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be suitable for any machine older than
                     the ones on sale before 2010.</p>
                     <div class="alert alert-danger">
-                      OOBP not ready, the group is still discussing over the methods of porting.
+                      OOBP not ready: pending, the group is still discussing over the methods of porting.
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="help">
+                <br />
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS for Servers</h2>
+                    <p>AOSC OS for Servers, formerly known as CentralPoint, is a lightweight and compact system release 
+                    for small scaled servers. AOSC OS for Servers comes with RPM based system only.</p>
                   </div>
                 </div>
               </div>
