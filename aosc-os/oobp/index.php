@@ -93,15 +93,57 @@ include '../../templates/lang.php' ?>
             </ul>
             <div id="my-tab-content" class="tab-content">
               <div class="tab-pane active" id="dpkg">
-                <h1>Fooooooooooooooo</h1>
-                <p>BarBarBarBar</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                  </div>
+                  <div class="col-sm-9">
+                    <h2>AOSC OS with GNOME</h2>
+                    <p>AOSC OS Out-of-Box Preview with GNOME desktop, version 3.14. GNOME is a entirely free and open
+                    desktop environment and application suite brought to you by the GNOME Foundation. GNOME is chosen to 
+                    be the default desktop environment for some major Linux distributions like Fedora.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3">
+                  </div>
+                  <div class="col-sm-9">
+                    <h2>AOSC OS with XFCE</h2>
+                    <p>AOSC OS Out-of-Box Preview with XFCE desktop, version 4.11. XFCE is a lightweight, yet elegant and 
+                    easy to use desktop environment. XFCE is built upon GTK+ 2 interface toolkit, the predecessor to GTK+ 3
+                    used by the GNOME desktop environment. XFCE runs releatively fast on older machines dated all the way
+                    back to 2001 (for AOSC OS, you need a machine that runs 64-bit operating system). XFCE is adapted to, 
+                    cutting edge technologies like systemd-logind.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3">
+                  </div>
+                  <div class="col-sm-9">
+                    <h2>AOSC OS with Cinnamon</h2>
+                    <p>AOSC OS Out-of-Box Preview with Cinnamon Desktop, version 2.4. Cinnamon is a fork of GNOME shell. 
+                    It's one of the default desktop environments for Linux Mint with guaranteed ease of use. Cinnamon needs
+                    a machine with decent amount of performance, just like the GNOME desktop. Arguably it is more adapted to
+                    mouse and keyboard use than the GNOME shell.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3">
+                  </div>
+                  <div class="col-sm-9">
+                    <h2>AOSC OS with MATE</h2>
+                    <p>AOSC OS Out-of-Box Preview with MATE desktop, version 1.8.1. MATE is a fork of GNOME 2.x, a perfect
+                    shelter for those who goes strongly against the GNOME 3, and the GNOME shell. Although being a legacy fork
+                    of a desktop, it's well adapted to newer technologies like UDisks-2 and UPower 0.99, they even have a plan
+                    to bring Wayland support to it!</p>
+                  </div>
+                </div>
               </div>
               <div class="tab-pane" id="rpm">
-                <div class="alert alert-daner" role="alert">
-                  <p>RPM based AOSC OS3 is considered as highly experimental, some of the factors considered as known
+                <div class="alert alert-danger" role="alert">
+                  <p>RPM based AOSC OS3 builds are considered highly experimental, some of the factors considered as known
                   issue, as listed below:</p>
                   <ul>
-                    <li>1. RPM builds compared to DPKG, has large number of dependency overhead, which is brought by 
+                    <li>1. RPM builds, compared to DPKG, has large number of dependency overhead, which is brought by 
                     false reading of dependencies of a library, ELF executables, even data files;</li>
                     <li>2. RPM builds are built with some dirty hacks upon initial bootstrap, some packages must be
                     installed with "--nodeps" switch of the rpm command in order to install and build the ground for other
