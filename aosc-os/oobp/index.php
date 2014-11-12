@@ -94,9 +94,9 @@ include '../../templates/lang.php' ?>
             <div id="my-tab-content" class="tab-content">
               <div class="tab-pane active" id="dpkg">
                 <div class="row">
-                  <div class="col-sm-3">
+                  <div class="col-sm-2">
                   </div>
-                  <div class="col-sm-9">
+                  <div class="col-sm-10">
                     <h2>AOSC OS with GNOME</h2>
                     <p>AOSC OS Out-of-Box Preview with GNOME desktop, version 3.14. GNOME is a entirely free and open
                     desktop environment and application suite brought to you by the GNOME Foundation. GNOME is chosen to 
@@ -104,9 +104,9 @@ include '../../templates/lang.php' ?>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-3">
+                  <div class="col-sm-2">
                   </div>
-                  <div class="col-sm-9">
+                  <div class="col-sm-10">
                     <h2>AOSC OS with XFCE</h2>
                     <p>AOSC OS Out-of-Box Preview with XFCE desktop, version 4.11. XFCE is a lightweight, yet elegant and 
                     easy to use desktop environment. XFCE is built upon GTK+ 2 interface toolkit, the predecessor to GTK+ 3
@@ -116,9 +116,9 @@ include '../../templates/lang.php' ?>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-3">
+                  <div class="col-sm-2">
                   </div>
-                  <div class="col-sm-9">
+                  <div class="col-sm-10">
                     <h2>AOSC OS with Cinnamon</h2>
                     <p>AOSC OS Out-of-Box Preview with Cinnamon Desktop, version 2.4. Cinnamon is a fork of GNOME shell. 
                     It's one of the default desktop environments for Linux Mint with guaranteed ease of use. Cinnamon needs
@@ -127,14 +127,96 @@ include '../../templates/lang.php' ?>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-3">
+                  <div class="col-sm-2">
                   </div>
-                  <div class="col-sm-9">
+                  <div class="col-sm-10">
                     <h2>AOSC OS with MATE</h2>
                     <p>AOSC OS Out-of-Box Preview with MATE desktop, version 1.8.1. MATE is a fork of GNOME 2.x, a perfect
                     shelter for those who goes strongly against the GNOME 3, and the GNOME shell. Although being a legacy fork
                     of a desktop, it's well adapted to newer technologies like UDisks-2 and UPower 0.99, they even have a plan
                     to bring Wayland support to it!</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Enlightenment</h2>
+                    <p>AOSC OS Out-of-Box Preview with Enlightenment desktop, version 0.19.1. Enlightenmen is a very radically
+                    designed desktop environment built upon their own EFL library (Enlightenment Foundation Library). This desktop
+                    comes with full Wayland capabilities. This desktop is under heavy construction (as always), unless you are
+                    really a big fan or an experienced user, we do not recommend this for daily usage.</p>
+                    <div class="alert alert-danger">
+                      OOBP not ready: blocker, not fully tested.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Plasma</h2>
+                    <p>AOSC OS Out-of-Box Preview with (KDE) Plasma desktop, version 5. Plasma desktop is formerly known as the 
+                    KDE, or K Desktop Environment. Plasma desktop is built fully upon Qt 5 technologies, with some plugins built to
+                    make Plasma work better. Plasma desktop requires a machine with decent amount of processor and graphics 
+                    performance.<p>
+                    <div class="alert alert-danger">
+                      OOBP not ready: blocker, waiting for KDE Applications 14.12 to be released.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Kodi</h2>
+                    <p>AOSC OS Out-of-Box Preview with Kodi media center, version 14. This version of AOSC OS is built for media center
+                    computers or Linux-based TV boxes. Kodi media center is formerly known as XBMC (XBox Media Center), while maintaining
+                    a small footprint, it's probably the most powerful media center solution you can find in all of the UNIX/Linux computing
+                    world.</p>
+                    <div class="alert alert-danger">
+                      OOBP not ready: blocker, Kodi 14.0 Beta 2 cannot be built successfully.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Pantheon</h2>
+                    <p>AOSC OS Out-of-Box Preview with Pantheon desktop. Pantheon desktop is the default desktop environment used and 
+                    maintained by the ElementaryOS. Pantheon is a lightweight GTK+ 3 based desktop environment. Although being fast, and probably
+                    beautiful, it's plagued with stability issues. Be careful when choosing this desktop environment.</p>
+                    <div class="alert alert-danger">
+                      OOBP not ready, Pantheon is broken with the update to GTK+ 3.14.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Unity</h2>
+                    <p>AOSC OS Out-of-Box Preview with Unity desktop, version 7. Unity desktop is mostly known as the default Ubuntu interface.
+                    This Unity build is brought to you by the AOSC OS development group, with several fixes and patches to remove all Ubuntu
+                    specific features and interface. Unity is often time considered as unstable, but still, very suitable for new users.</p>
+                    <div class="alert alert-danger">
+                      OOBP not ready, Unity is broken with the update to GTK+ 3.14, will not release any build until the Beta of Ubuntu 15.04
+                      is released.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with DDE</h2>
+                    <p>AOSC OS Out-of-Box Preview with DDE (Deepin Desktop Environment), version 2. Deepin Desktop Environment is a desktop interface
+                    developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be suitable for any machine older than
+                    the ones on sale before 2010.</p>
+                    <div class="alert alert-daner">
+                      OOBP not ready, the group is still discussing over the methods of porting.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,8 +233,132 @@ include '../../templates/lang.php' ?>
                     <li>3. RPM builds do not support PackageKit;</li>
                   </ul>
                 </div>
-                <h1>Barrrrrrrrrrrr</h1>
-                <p>Fooooooooooooo</p>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with GNOME</h2>
+                    <p>AOSC OS Out-of-Box Preview with GNOME desktop, version 3.14. GNOME is a entirely free and open
+                    desktop environment and application suite brought to you by the GNOME Foundation. GNOME is chosen to 
+                    be the default desktop environment for some major Linux distributions like Fedora.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with XFCE</h2>
+                    <p>AOSC OS Out-of-Box Preview with XFCE desktop, version 4.11. XFCE is a lightweight, yet elegant and 
+                    easy to use desktop environment. XFCE is built upon GTK+ 2 interface toolkit, the predecessor to GTK+ 3
+                    used by the GNOME desktop environment. XFCE runs releatively fast on older machines dated all the way
+                    back to 2001 (for AOSC OS, you need a machine that runs 64-bit operating system). XFCE is adapted to, 
+                    cutting edge technologies like systemd-logind.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Cinnamon</h2>
+                    <p>AOSC OS Out-of-Box Preview with Cinnamon Desktop, version 2.4. Cinnamon is a fork of GNOME shell. 
+                    It's one of the default desktop environments for Linux Mint with guaranteed ease of use. Cinnamon needs
+                    a machine with decent amount of performance, just like the GNOME desktop. Arguably it is more adapted to
+                    mouse and keyboard use than the GNOME shell.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with MATE</h2>
+                    <p>AOSC OS Out-of-Box Preview with MATE desktop, version 1.8.1. MATE is a fork of GNOME 2.x, a perfect
+                    shelter for those who goes strongly against the GNOME 3, and the GNOME shell. Although being a legacy fork
+                    of a desktop, it's well adapted to newer technologies like UDisks-2 and UPower 0.99, they even have a plan
+                    to bring Wayland support to it!</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Enlightenment</h2>
+                    <p>AOSC OS Out-of-Box Preview with Enlightenment desktop, version 0.19.1. Enlightenmen is a very radically
+                    designed desktop environment built upon their own EFL library (Enlightenment Foundation Library). This desktop
+                    comes with full Wayland capabilities. This desktop is under heavy construction (as always), unless you are
+                    really a big fan or an experienced user, we do not recommend this for daily usage.</p>
+                    <div class="alert alert-danger">
+                      OOBP not ready: blocker, not fully tested.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Plasma</h2>
+                    <p>AOSC OS Out-of-Box Preview with (KDE) Plasma desktop, version 5. Plasma desktop is formerly known as the 
+                    KDE, or K Desktop Environment. Plasma desktop is built fully upon Qt 5 technologies, with some plugins built to
+                    make Plasma work better. Plasma desktop requires a machine with decent amount of processor and graphics 
+                    performance.<p>
+                    <div class="alert alert-danger">
+                      OOBP not ready: blocker, waiting for KDE Applications 14.12 to be released.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Kodi</h2>
+                    <p>AOSC OS Out-of-Box Preview with Kodi media center, version 14. This version of AOSC OS is built for media center
+                    computers or Linux-based TV boxes. Kodi media center is formerly known as XBMC (XBox Media Center), while maintaining
+                    a small footprint, it's probably the most powerful media center solution you can find in all of the UNIX/Linux computing
+                    world.</p>
+                    <div class="alert alert-danger">
+                      OOBP not ready: blocker, Kodi 14.0 Beta 2 cannot be built successfully.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Pantheon</h2>
+                    <p>AOSC OS Out-of-Box Preview with Pantheon desktop. Pantheon desktop is the default desktop environment used and 
+                    maintained by the ElementaryOS. Pantheon is a lightweight GTK+ 3 based desktop environment. Although being fast, and probably
+                    beautiful, it's plagued with stability issues. Be careful when choosing this desktop environment.</p>
+                    <div class="alert alert-danger">
+                      OOBP not ready, Pantheon is broken with the update to GTK+ 3.14.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with Unity</h2>
+                    <p>AOSC OS Out-of-Box Preview with Unity desktop, version 7. Unity desktop is mostly known as the default Ubuntu interface.
+                    This Unity build is brought to you by the AOSC OS development group, with several fixes and patches to remove all Ubuntu
+                    specific features and interface. Unity is often time considered as unstable, but still, very suitable for new users.</p>
+                    <div class="alert alert-danger">
+                      OOBP not ready, Unity is broken with the update to GTK+ 3.14, will not release any build until the Beta of Ubuntu 15.04
+                      is released.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-10">
+                    <h2>AOSC OS with DDE</h2>
+                    <p>AOSC OS Out-of-Box Preview with DDE (Deepin Desktop Environment), version 2. Deepin Desktop Environment is a desktop interface
+                    developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be suitable for any machine older than
+                    the ones on sale before 2010.</p>
+                    <div class="alert alert-daner">
+                      OOBP not ready, the group is still discussing over the methods of porting.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <p><h3>How do I use them?</h3></p>
