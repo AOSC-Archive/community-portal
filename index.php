@@ -106,28 +106,27 @@ $langs = array(
 include 'templates/lang.php';
 ?>
 <!DOCTYPE html>
-<html lang=<?php echo $lang;?>>
+<html lang="<?php echo $lang;?>">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-    <meta name="description" content="Homepage of AOSC OS 安同社区首页">
-    <meta name="keywords" content="AOSC,OS,Anthon,AnthonOS,安同,Linux,GNU/Linux,GNU,开源,社区,Open Source,Community">
-    <link rel="icon" href="/img/favicons/aosc.ico">
-    <title><?php echo $langs[$lang]['title'];?></title>
-
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
+    <meta name="description" content="Homepage of AOSC OS 安同社区首页" />
+    <meta name="keywords" content="AOSC,OS,Anthon,AnthonOS,安同,Linux,GNU/Linux,GNU,开源,社区,Open Source,Community" />
+    <link rel="icon" href="/img/favicons/aosc.ico" />
+    <title>
+      <?php echo $langs[$lang]['title'];?>
+    </title>
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="/css/blog.css" rel="stylesheet">
-    <?php include 'templates/font.php'; ?>
-
+    <link href="/css/blog.css" rel="stylesheet" /><?php include 'templates/font.php'; ?>
   </head>
-
-  <body>
-  <?php include 'templates/portal/navbar.php'; ?>
-
+  
+  <body><?php include 'templates/portal/navbar.php'; ?>
+  
   <div class="alert alert-warning" role="alert">
     <?php echo $langs[$lang]['beta-alert'];?>
   </div>
@@ -138,11 +137,15 @@ include 'templates/lang.php';
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
           <div class="col-sm-8 col-xs-12">
-            <h1><?php echo $langs[$lang]['welcome'];?></h1>
-            <p><?php echo $langs[$lang]['welcome-text'];?></p>
+            <h1>
+              <?php echo $langs[$lang]['welcome'];?>
+            </h1>
+            <p>
+              <?php echo $langs[$lang]['welcome-text'];?>
+            </p>
           </div>
           <div class="col-sm-3 col-sm-offset-1 shortcuts hidden-xs">
-            <img src="/img/aosc.png">
+            <img src="/img/aosc.png" />
           </div>
         </div>
       </div>
@@ -155,51 +158,66 @@ include 'templates/lang.php';
         <div class="row">
           <div class="col-sm-5">
             <div class="hung-icon hidden-xs">
-              <img src="/img/question.png">
+              <img src="/img/question.png" />
             </div>
-            <h2><?php echo $langs[$lang]['ws-aosc?'];?></h2>
-            <p><?php echo $langs[$lang]['ws-aosc?-text'];?></p>
+            <h2>
+              <?php echo $langs[$lang]['ws-aosc?'];?>
+            </h2>
+            <p>
+              <?php echo $langs[$lang]['ws-aosc?-text'];?>
+            </p>
           </div>
-
           <div class="col-sm-5 col-sm-offset-2">
             <div class="hung-icon hidden-xs">
-              <img src="/img/claimation.png">
+              <img src="/img/claimation.png" />
             </div>
-            <h2><?php echo $langs[$lang]['take-action'];?></h2>
-            <p><?php echo $langs[$lang]['take-action-text'];?></p>
+            <h2>
+              <?php echo $langs[$lang]['take-action'];?>
+            </h2>
+            <p>
+              <?php echo $langs[$lang]['take-action-text'];?>
+            </p>
           </div>
         </div>
-        
-        <hr class="divider"></hr>
+        <hr class="divider" />
         <h1>News</h1>
-        
         <div class="row">
           <div class="col-sm-4">
-              <h4><?php echo $langs[$lang]['news-topic-1'];?></h4>
-              <p><?php echo $langs[$lang]['news-text-1'];?>
-              </p>
+            <h4>
+              <?php echo $langs[$lang]['news-topic-1'];?>
+            </h4>
+            <p>
+              <?php echo $langs[$lang]['news-text-1'];?>
+            </p>
           </div>
           <div class="col-sm-4">
-              <h4><?php echo $langs[$lang]['news-topic-2'];?></h4>
-              <p><?php echo $langs[$lang]['news-text-2'];?>
-              </p>
-              <p><?php echo $langs[$lang]['news-text-mark'];?></p>
+            <h4>
+              <?php echo $langs[$lang]['news-topic-2'];?>
+            </h4>
+            <p>
+              <?php echo $langs[$lang]['news-text-2'];?>
+            </p>
+            <p>
+              <?php echo $langs[$lang]['news-text-mark'];?>
+            </p>
           </div>
           <div class="col-sm-4">
-            <h4><?php echo $langs[$lang]['news-topic-3'];?></h4>
-            <p><?php echo $langs[$lang]['news-text-3'];?></p>
+            <h4>
+              <?php echo $langs[$lang]['news-topic-3'];?>
+            </h4>
+            <p>
+              <?php echo $langs[$lang]['news-text-3'];?>
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    
+  </div><?php include 'templates/portal/footer.php';?>
   
-  <?php include 'templates/portal/footer.php';?>
-
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="/js/jquery-min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  </body>
+  <script src="/js/jquery-min.js"></script> 
+  <script src="/js/bootstrap.min.js"></script></body>
 </html>
