@@ -18,6 +18,7 @@ $langs = array(
     'take-action'=>'Take Action!',
     'take-action-text'=>"It's not only about talking, let's take action for improvement! By using, testing, criticizing or even
                 contributing to the projects, they are just going to get better.",
+    'news'=>'News',
     'news-topic-1'=>'AOSC OS3 OOBP Coming Soon',
     'news-text-1'=>'After 3 months of development. AOSC OS3 builds with several
               different desktop environments are almost ready and will be
@@ -54,6 +55,7 @@ $langs = array(
     'take-action'=>'马上行动！',
     'take-action-text'=>'空谈误事，让我们用实际行动来改进开源软件吧！无论是一次体验、一次测试、一句批评，甚至是给项目贡献代码，
                 开源软件的未来将会更美好！',
+    'news'=>'新闻',
     'news-topic-1'=>'AOSC OS3 OOBP 预览版即将发布',
     'news-text-1'=>'经过三个月的开发，带有许多富有特色的桌面环境的 AOSC OS3 预览版本将在短期内发布。</p>
               <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 分区</a>
@@ -84,6 +86,7 @@ $langs = array(
     'take-action'=>'馬上行動！',
     'take-action-text'=>"It's not only about talking, let's take action for improvement! By using, testing, criticizing or even
                 contributing to the projects, they are just going to get better.",
+    'news'=>'News',
     'news-topic-1'=>'AOSC OS3 OOBP 預覽版即將發布',
     'news-text-1'=>'經過三個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 預覽版本將在短期內發布。</p>
               <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 區塊</a>
@@ -180,7 +183,7 @@ include 'templates/lang.php';
           </div>
         </div>
         <hr class="divider" />
-        <h1>News</h1>
+        <h1><?php echo $langs[$lang]['news'];?></h1>
         <div class="row">
           <div class="col-sm-4">
             <h4>
