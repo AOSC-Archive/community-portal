@@ -215,6 +215,7 @@ include 'templates/lang.php';
         </div>
       </div>
     </div>
+    <br />
     
   </div><?php include 'templates/portal/footer.php';?>
   
