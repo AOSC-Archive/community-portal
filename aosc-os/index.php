@@ -32,9 +32,9 @@
     </div>
   </div>
   <div class="container">
-    <div class="col-sm-9 col-sm-offset-1">
+    <div class="col-sm-9 col-sm-offset-1 blog-main">
       <div class="row">
-        <h2>What is AOSC OS?</h2>
+        <h1>What is AOSC OS?</h1>
         <p>AOSC OS is the Linux distribution project of AOSC.</p>
         <p>AOSC OS is built independently, with some reference from some of the greatest Linux distributions from all over the
         world, namely Fedora, Arch Linux and Debian, etc. The system was initially built with bits and parts from the Linux from
@@ -54,9 +54,12 @@
         can be a good choice for your daily Linux usage!</p>
       </div>
     </div>
-    <div class="col-sm-9 col-sm-offset-1">
+  </div>
+  <hr class="divider" />
+  <div class="container">
+    <div class="col-sm-9 col-sm-offset-1 blog-main">
       <div class="row">
-        <h2>How do you develop AOSC OS?</h2>
+        <h1>How do you develop AOSC OS?</h1>
         <p>AOSC OS develops in a year round cycle. For example, 2013 - 2014 our outcome was AOSC OS2, with AnthonOS based on it.</p>
         <p>AOSC OS was built with a toolkit called Autobuild, to help us build software packages. Autobuild is capable of abstracting package managers in a configuration file manner. One package comes with one Autobuild configuration archive.</p>
         <p>Prior to AOSC OS3, AOSC OS will divide into different distributions like the former AnthonOS and CentralPoint in the following spring after the start of the cycle. Starting from AOSC OS3, no division will be made all around the year, and here is a conversion list of the distribution names.</p>
@@ -68,6 +71,7 @@
       </div>
     </div>
   </div>
+  <br />
 
   <!-- /.container -->
   <?php include '../templates/portal/footer.php';?>
