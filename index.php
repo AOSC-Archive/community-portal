@@ -23,7 +23,7 @@ $langs = array(
     'news-text-1'=>'After 3 months of development. AOSC OS3 builds with several
               different desktop environments are almost ready and will be
               released very soon.<p></p>Be sure to check for downloads at the 
-              <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP Section</a>
+              <a href="https://portal.anthonos.org/aosc-os/downloads">Downloads Section</a>
               of AOSC OS sub-site.',
     'news-topic-2'=>'LinkC to Change Core',
     'news-text-2'=>'According to our LinkC developers, LinkC will switch to a new
@@ -58,7 +58,7 @@ $langs = array(
     'news'=>'新闻',
     'news-topic-1'=>'AOSC OS3 OOBP 预览版即将发布',
     'news-text-1'=>'经过三个月的开发，带有许多富有特色的桌面环境的 AOSC OS3 预览版本将在短期内发布。</p>
-              <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 分区</a>
+              <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/downloads">下载分区</a>
               发布。',
     'news-topic-2'=>'LinkC 更改核心',
     'news-text-2'=>'LinkC 开发者告诉我们，LinkC 将会转向使用一个名为 Gurgle（咕噜）的协议实现，该项目的
@@ -88,7 +88,7 @@ $langs = array(
     'news'=>'News',
     'news-topic-1'=>'AOSC OS3 OOBP 預覽版即將發佈',
     'news-text-1'=>'經過三個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 預覽版本將在短期內發佈。</p>
-              <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 區塊</a>
+              <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/downloads">下載區塊</a>
               發佈。',
     'new-topic-2'=>'LinkC 核心變更',
     'news-text-2'=>'According to our LinkC developers, LinkC will switch to a new
