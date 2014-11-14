@@ -130,10 +130,6 @@ include 'templates/lang.php';
   
   <body><?php include 'templates/portal/navbar.php'; ?>
   
-  <div class="alert alert-warning" role="alert">
-    <?php echo $langs[$lang]['beta-alert'];?>
-  </div>
-  
   <!-- Main title -->
   <div class="row jumbotron">
     <div class="container section-welcome">
