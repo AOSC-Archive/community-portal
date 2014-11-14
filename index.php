@@ -37,7 +37,7 @@ $langs = array(
             comes to its debut. Security updates and several backports from AOSC OS3
             will be available.</p>
             <p>Downloads are available from the 
-            <a href="https://portal.antonos.org/aosc-os">AOSC OS Sub-site</a>.',
+            <a href="https://portal.anthonos.org/aosc-os">AOSC OS Sub-site</a>.',
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 安同开源社区',
@@ -67,7 +67,7 @@ $langs = array(
     'news-topic-3'=>'AnthonOS "Doge" 发布',
     'news-text-3'=>'基于 AOSC OS2 的 AnthonOS，作为 2013 - 2014 开发周期的最终产品发布了。
     AnthonOS (AOSC OS2) 将被一直维护到 AOSC OS3 正式版发布。届时，一部分安全更新和软件更新将会推送。</p>
-    <p>下载方式请前往 <a href="https://portal.antonos.org/aosc-os">AOSC OS 子站</a> 获取。',
+    <p>下载方式请前往 <a href="https://portal.anthonos.org/aosc-os">AOSC OS 子站</a> 获取。',
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 - 安同開源社區',
@@ -101,7 +101,7 @@ $langs = array(
             comes to its debut. Security updates and several backports from AOSC OS3
             will be available.</p>
             <p>請前往
-            <a href="https://portal.antonos.org/aosc-os">AOSC OS 子站</a>獲取。',
+            <a href="https://portal.anthonos.org/aosc-os">AOSC OS 子站</a>獲取。',
   ),
 );
 include 'templates/lang.php';
