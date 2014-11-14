@@ -34,7 +34,8 @@
     <div class="row">
       <div class="col-sm-9 col-sm-offset-1 blog-main">
         <div class="blog-post">
-          <p>Here below are the downloads for AOSC OS distributions, including the new, experimental OS3 and legacy OS2 (stable). Check the tabs below for more information.</p>
+          <p>Here below are the downloads for AOSC OS distributions, including the new, experimental OS3 and legacy OS2 (stable).
+          Check the tabs below for more information.</p>
           <hr class="divider" />
           <ul class="nav nav-tabs">
             <li role="presentation" class="active">
@@ -400,7 +401,8 @@
                 </div>
                 <div class="col-sm-10">
                   <h2>AnthonOS (AOSC OS2)</h2>
-                  <p>AnthonOS is a desktop oriented Linux distribution with KDE Plasma 4 as its default desktop environment. AnthonOS has a heavy customized interface called AnthonUI. AnthonOS will be maintained until summer of 2015.</p>
+                  <p>AnthonOS is a desktop oriented Linux distribution with KDE Plasma 4 as its default desktop environment.
+                  AnthonOS has a heavy customized interface called AnthonUI. AnthonOS will be maintained until summer of 2015.</p>
                 </div>
               </div>
               <hr class="divider" />
@@ -410,7 +412,8 @@
                 </div>
                 <div class="col-sm-10">
                   <h2>CentralPoint (AOSC OS2)</h2>
-                  <p>CentralPoint is a server oriented Linux distribution. Development was halted after Beta 2 was released. CentralPoint will continue to be released as AOSC OS for Servers, based on AOSC OS3.</p>
+                  <p>CentralPoint is a server oriented Linux distribution. Development was halted after Beta 2 was released.
+                  CentralPoint will continue to be released as AOSC OS for Servers, based on AOSC OS3.</p>
                   <div class="alert alert-danger">This build is deprecated and not recommended for installing.</div>
                 </div>
               </div>
@@ -424,8 +427,7 @@
   <script src="/js/bootstrap.min.js"></script> 
   <script type="text/javascript">
       jQuery(document).ready(function ($) {
-        $(&#39;#tabs&#39;).tab();
-      });
-    
+        $(&amp;#39;#tabs&amp;#39;).tab();
+      }); 
 </script></body>
 </html>

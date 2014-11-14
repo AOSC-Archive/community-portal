@@ -23,7 +23,7 @@ $langs = array(
     'news-text-1'=>'After 3 months of development. AOSC OS3 builds with several
               different desktop environments are almost ready and will be
               released very soon.<p></p>Be sure to check for downloads at the 
-              <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP Section</a>
+              <a href="https://portal.anthonos.org/aosc-os/downloads">Downloads Section</a>
               of AOSC OS sub-site.',
     'news-topic-2'=>'LinkC to Change Core',
     'news-text-2'=>'According to our LinkC developers, LinkC will switch to a new
@@ -37,7 +37,7 @@ $langs = array(
             comes to its debut. Security updates and several backports from AOSC OS3
             will be available.</p>
             <p>Downloads are available from the 
-            <a href="https://portal.antonos.org/aosc-os">AOSC OS Sub-site</a>.',
+            <a href="https://portal.anthonos.org/aosc-os">AOSC OS Sub-site</a>.',
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 安同开源社区',
@@ -58,7 +58,7 @@ $langs = array(
     'news'=>'新闻',
     'news-topic-1'=>'AOSC OS3 OOBP 预览版即将发布',
     'news-text-1'=>'经过三个月的开发，带有许多富有特色的桌面环境的 AOSC OS3 预览版本将在短期内发布。</p>
-              <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 分区</a>
+              <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/downloads">下载分区</a>
               发布。',
     'news-topic-2'=>'LinkC 更改核心',
     'news-text-2'=>'LinkC 开发者告诉我们，LinkC 将会转向使用一个名为 Gurgle（咕噜）的协议实现，该项目的
@@ -67,7 +67,7 @@ $langs = array(
     'news-topic-3'=>'AnthonOS "Doge" 发布',
     'news-text-3'=>'基于 AOSC OS2 的 AnthonOS，作为 2013 - 2014 开发周期的最终产品发布了。
     AnthonOS (AOSC OS2) 将被一直维护到 AOSC OS3 正式版发布。届时，一部分安全更新和软件更新将会推送。</p>
-    <p>下载方式请前往 <a href="https://portal.antonos.org/aosc-os">AOSC OS 子站</a> 获取。',
+    <p>下载方式请前往 <a href="https://portal.anthonos.org/aosc-os">AOSC OS 子站</a> 获取。',
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 - 安同開源社區',
@@ -80,30 +80,28 @@ $langs = array(
     'welcome'=>'歡迎！',
     'welcome-text'=>'安同開源社區 ( AOSC，Anthon Open Source Community ) 是一個開放的社區，我們歡迎來自全世界的參與者。',
     'ws-aosc?'=>'安同開源社區是？',
-    'ws-aosc?-text'=>'"AOSC" stands for Anthon Open Source Community. Anthon Open Source Community is a community that
-            focuses on improvement of open source software. We are taking action to make open source software
-            more friendly to everyone.',
+    'ws-aosc?-text'=>'"AOSC" 是安同開源社區 "Anthon Open Source Community" 的縮寫。 安同開源社區是一個重視改進開源軟體體驗
+                   的社區。我們用實際行動讓開源軟體變得更友好。',
     'take-action'=>'馬上行動！',
     'take-action-text'=>"It's not only about talking, let's take action for improvement! By using, testing, criticizing or even
                 contributing to the projects, they are just going to get better.",
     'news'=>'News',
-    'news-topic-1'=>'AOSC OS3 OOBP 預覽版即將發布',
-    'news-text-1'=>'經過三個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 預覽版本將在短期內發布。</p>
-              <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/oobp">OOBP 區塊</a>
-              發布。',
-    'new-topic-2'=>'LinkC to Change Core',
+    'news-topic-1'=>'AOSC OS3 OOBP 預覽版即將發佈',
+    'news-text-1'=>'經過三個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 預覽版本將在短期內發佈。</p>
+              <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/downloads">下載區塊</a>
+              發佈。',
+    'new-topic-2'=>'LinkC 核心變更',
     'news-text-2'=>'According to our LinkC developers, LinkC will switch to a new
               protocol implementation called Gurgle, check it out at the
               <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.',
-    'news-text-mark'=>'* LinkC is a standalone Instant Messaging client and server developed
-                   by the community',
-    'news-topic-3'=>'AnthonOS "Doge" Finally Released',
+    'news-text-mark'=>'* LinkC 是由社區開發的獨立即時通信客戶端及伺服器。',
+    'news-topic-3'=>'AnthonOS "Doge" 發佈',
     'news-text-3'=>'AnthonOS, based on AOSC OS2 has released as a final product
             of our 2013-2014 development cycle. It will be maintained before AOSC OS3
             comes to its debut. Security updates and several backports from AOSC OS3
             will be available.</p>
-            <p>Downloads are available from the 
-            <a href="https://portal.antonos.org/aosc-os">AOSC OS Sub-site</a>.',
+            <p>請前往
+            <a href="https://portal.anthonos.org/aosc-os">AOSC OS 子站</a>獲取。',
   ),
 );
 include 'templates/lang.php';
@@ -129,6 +127,10 @@ include 'templates/lang.php';
   </head>
   
   <body><?php include 'templates/portal/navbar.php'; ?>
+  
+  <div class="alert alert-warning" role="alert">
+    <?php echo $langs[$lang]['beta-alert'];?>
+  </div>
   
   <!-- Main title -->
   <div class="row jumbotron">
