@@ -100,11 +100,11 @@ $langs = array(
     'about-text'=>'我們不是大神，我們只是少說廢話。',
     'who-are-we'=>'我們是誰？',
     'who-text'=>'我們是這個開源社區的成員。我們中有一部分是學生，而另一部分，是為生活和家庭打拼的人們。',
-    'what-do'=>'我們幹什麼？',
-    'what-text'=>'As members of this open source (oriented) community, we fight for improvement of open source software and solutions. To achieve our goal:',
+    'what-do'=>'我們做些什麼？',
+    'what-text'=>'作為這個開源（主導的）社區成員，我們為開源軟體與解決方案的改進不懈奮鬥著。為了實現我們的目標：',
     'what-list'=>'
-            <li>We build better Linux distribution for ourselves and Linux lovers;</li>
-            <li>We improve open source software by actually contributes them;</li>
+            <li>我們為自己以及 Linux 愛好者構建更好的 Linux 發行版；</li>
+            <li>我們以實際代碼貢獻改進開源軟體；</li>
             <li>We open participation for more people to build open source software better, together;</li>
             <li>We don&#39;t waste time on propaganda and speeches, when not necessary;</li>',
     'how-participate'=>'如何加入我們？',
