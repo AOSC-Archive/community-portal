@@ -90,33 +90,33 @@ $langs = array(
           </ul>',
   ),
   'zh-tw' => array(
-    'title'=>'Community Portal - About',
+    'title'=>'社區門戶 － 關於',
     'portal'=>'門戶',
     'projects'=>'項目',
     'about'=>'關於',
     'localization'=>'本地化',
     'docs'=>'知識庫',
-    'about-title'=>'About Us',
-    'about-text'=>'We are not mystery, we just talk less.',
-    'who-are-we'=>'Who are we?',
-    'who-text'=>'We are members of this open source community, some of us are students and the others may be people working for their own lives and families.',
-    'what-do'=>'What do we do?',
+    'about-title'=>'關於我們',
+    'about-text'=>'我們不是大神，我們只是少說廢話。',
+    'who-are-we'=>'我們是誰？',
+    'who-text'=>'我們是這個開源社區的成員。我們中有一部分是學生，而另一部分，是為生活和家庭打拼的人們。',
+    'what-do'=>'我們幹什麼？',
     'what-text'=>'As members of this open source (oriented) community, we fight for improvement of open source software and solutions. To achieve our goal:',
     'what-list'=>'
             <li>We build better Linux distribution for ourselves and Linux lovers;</li>
             <li>We improve open source software by actually contributes them;</li>
             <li>We open participation for more people to build open source software better, together;</li>
             <li>We don&#39;t waste time on propaganda and speeches, when not necessary;</li>',
-    'how-participate'=>'How do I participate?',
-    'how-text'=>'For now, the best way to participate is to join the community group.</p>
+    'how-participate'=>'如何加入我們？',
+    'how-text'=>'目前而言，最好的參與方式是加入我們的聊天組。</p>
           <ul>
-            <li>for IRC users go to: #anthon at freenode.net;</li>
-            <li>for QQ users (mainly from Mainland China) go to group: 125016052</li>
+            <li>IRC 用戶請加入 freenode.net 頻道 #anthon；</li>
+            <li>QQ 用戶（主要來自大陸）請加入群 125016052：</li>
           </ul>',
-    'group-info'=>'These 2 groups are binded with each other, so what you&#39;ve said on one end will be passed to another. No log will be made.',
-    'thanks'=>'Thanks!',
-    'thank-list'=>'There are good guys all around the world that provided us with good server and network resources!</p>
-          <p>Here&#39;s some of the most awesome ones we want to mention of:</p>
+    'group-info'=>'這兩個聊天組是互相綁定的，在其中一邊的發言將會被自動傳遞至另一邊。我們不存儲任何聊天日誌。',
+    'thanks'=>'多謝！',
+    'thank-list'=>'世界各地的學校、企業與組織為我們提供了許多的網路及伺服器資源，好人一生平安！</p>
+          <p>以下是我們的特別感謝：</p>
           <ul>
             <li>
             <a href="http://www.ucloud.com/">UCloud</a> - where this website is hosted on.</li>
