@@ -57,22 +57,22 @@
           <li role="presentation">
             <a href="#mate" data-toggle="tab">MATE</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="disabled">
             <a href="#enlightenment" data-toggle="tab">Enlightenment</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="disabled">
             <a href="#plasma" data-toggle="tab">Plasma</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="disabled">
             <a href="#kodi" data-toggle="tab">Kodi</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="disabled">
             <a href="#pantheon" data-toggle="tab">Pantheon</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="disabled">
             <a href="#unity" data-toggle="tab">Unity</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="disabled">
             <a href="#dde" data-toggle="tab">DDE</a>
           </li>
           <li role="presentation">
@@ -138,6 +138,62 @@
         </div>
       </div>
     </div>
+    <div class="tab-pane" id="cinnamon">
+      <div class="row">
+        <br />
+        <div class="col-sm-1 col-sm-offset-2">
+          <img src="/img/oobp-logo/cinnamon-oobp.png" width="96px" height="96px" />
+        </div>
+        <div class="col-sm-6 col-sm-offset-1">
+          <div class="row">
+            <h2>AOSC OS with Cinnamon</h2>
+            <p>AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.</p>
+          </div>
+          <hr class="divider" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="row">
+            <div class="my_gallery">
+              <?php
+                                            for ($a=1;$a<=10;$a++)
+                                              echo '<a target="_blank" href="/img/screenshots/cinnamon-oobp/'.$a.'.jpg"><img src="/img/screenshots/cinnamon-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
+                                          ?>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="xfce">
+      <div class="row">
+        <br />
+        <div class="col-sm-1 col-sm-offset-2">
+          <img src="/img/oobp-logo/xfce-oobp.png" width="96px" height="96px" />
+        </div>
+        <div class="col-sm-6 col-sm-offset-1">
+          <div class="row">
+            <h2>AOSC OS with XFCE</h2>
+            <p>AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.</p>
+          </div>
+          <hr class="divider" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="row">
+            <div class="my_gallery">
+              <?php
+                                            for ($a=1;$a<=10;$a++)
+                                              echo '<a target="_blank" href="/img/screenshots/xfce-oobp/'.$a.'.jpg"><img src="/img/screenshots/xfce-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
+                                          ?>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="tab-pane" id="os2">
       <div class="row">
         <br />
@@ -158,7 +214,7 @@
           <div class="row">
             <div class="my_gallery">
               <?php
-                                            for ($a=1;$a<=11;$a++)
+                                            for ($a=1;$a<=10;$a++)
                                               echo '<a target="_blank" href="/img/anthonos/'.$a.'.png"><img src="/img/anthonos/'.$a.'_small.png" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
                                           ?>
             </div>
