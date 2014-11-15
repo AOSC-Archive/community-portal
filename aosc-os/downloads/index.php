@@ -66,6 +66,8 @@
                   <p>AOSC OS Out-of-Box Preview with GNOME desktop, version 3.14. GNOME is a entirely free and open desktop
                   environment and application suite brought to you by the GNOME Foundation. GNOME is chosen to be the default
                   desktop environment for some major Linux distributions like Fedora.</p>
+                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/gnome/aosc-os3_oobp-gnome_after-class-tea-time_amd64_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -80,6 +82,8 @@
                   desktop environment. XFCE runs releatively fast on older machines dated all the way back to 2001 (for AOSC OS,
                   you need a machine that runs 64-bit operating system). XFCE is adapted to, cutting edge technologies like
                   systemd-logind.</p>
+                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/xfce/aosc-os3_oobp-xfce_after-class-tea-time_rev1_amd64_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -93,6 +97,8 @@
                   of the default desktop environments for Linux Mint with guaranteed ease of use. Cinnamon needs a machine with
                   decent amount of performance, just like the GNOME desktop. Arguably it is more adapted to mouse and keyboard use
                   than the GNOME shell.</p>
+                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/cinnamon/aosc-os3_oobp-cinnamon_after-class-tea-time_amd64_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -106,6 +112,8 @@
                   for those who goes strongly against the GNOME 3, and the GNOME shell. Although being a legacy fork of a desktop,
                   it&#39;s well adapted to newer technologies like UDisks-2 and UPower 0.99, they even have a plan to bring Wayland
                   support to it!</p>
+                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/mate/aosc-os3_oobp-mate_after-class-tea-time_amd64_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -216,6 +224,8 @@
                   <p>AOSC OS Out-of-Box Preview with GNOME desktop, version 3.14. GNOME is a entirely free and open desktop
                   environment and application suite brought to you by the GNOME Foundation. GNOME is chosen to be the default
                   desktop environment for some major Linux distributions like Fedora.</p>
+                  <a href="#" class="btn btn-default disabled">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -230,6 +240,8 @@
                   desktop environment. XFCE runs releatively fast on older machines dated all the way back to 2001 (for AOSC OS,
                   you need a machine that runs 64-bit operating system). XFCE is adapted to, cutting edge technologies like
                   systemd-logind.</p>
+                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/xfce/aosc-os3_oobp-xfce_after-class-tea-time_rev1_amd64_rpm_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -243,6 +255,8 @@
                   of the default desktop environments for Linux Mint with guaranteed ease of use. Cinnamon needs a machine with
                   decent amount of performance, just like the GNOME desktop. Arguably it is more adapted to mouse and keyboard use
                   than the GNOME shell.</p>
+                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/cinnamon/aosc-os3_oobp-cinnamon_after-class-tea-time_amd64_rpm_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -256,6 +270,8 @@
                   for those who goes strongly against the GNOME 3, and the GNOME shell. Although being a legacy fork of a desktop,
                   it&#39;s well adapted to newer technologies like UDisks-2 and UPower 0.99, they even have a plan to bring Wayland
                   support to it!</p>
+                  <a href="#" class="btn btn-default disabled">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -365,6 +381,7 @@
                   <h2>AOSC OS for Servers</h2>
                   <p>AOSC OS for Servers, formerly known as CentralPoint, is a lightweight and compact system release for small
                   scaled servers. AOSC OS for Servers comes with RPM based system only.</p>
+                  <div class="alert alert-danger">Release not ready: pending, AOSC OS3 not yet stable enought for server usage.</div>
                 </div>
               </div>
             </div>
@@ -403,6 +420,10 @@
                   <h2>AnthonOS (AOSC OS2)</h2>
                   <p>AnthonOS is a desktop oriented Linux distribution with KDE Plasma 4 as its default desktop environment.
                   AnthonOS has a heavy customized interface called AnthonUI. AnthonOS will be maintained until summer of 2015.</p>
+                  <a href="http://repo.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_en-US_patch-1.iso" class="btn btn-default">Download English Release</a>
+                  <a href="http://repo.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_zh-CN_patch-1.iso" class="btn btn-default">下载简体中文版本</a>
+                  <a href="http://repo.anthonos.org/os2-releases/anthonos/july-2014/patch-1/anthonos_final-doge_kde_pc%2bmac_zh-TW_patch-1.iso" class="btn btn-default">下載正體中文版本</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />

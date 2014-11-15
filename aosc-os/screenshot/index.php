@@ -23,7 +23,6 @@
   </head>
   <body>
     <?php include '../../templates/aosc-os/navbar.php';?>
-    <div class="alert alert-warning" role="alert">Page under construction, content incomplete.</div>
     <div class="row jumbotron">
       <div class="container section-welcome">
         <div class="row">
