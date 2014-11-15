@@ -53,7 +53,7 @@ $langs = array(
     'localization'=>'本地化',
     'localization-text'=>'我們認為改進開源軟體的最佳方式就是讓更多人理解它們。本地化有助於讓大家更高效、更便捷地使用開源軟體。',
     'other'=>'其他項目',
-    'other-text'=>'Other projects, as simple as AOSC-VersionHelper for displaying system version, as critical as Autobuild for building AOSC OS. They are hosted on GitHub for open participation, PRs are always welcomed.'
+    'other-text'=>'其他項目，例如最簡單的用於顯示作業系統版本的 AOSC-VersionHelper ，又如最關鍵的用於構建 AOSC OS 的 Autobuild 套件。這些項目存放於我們的公開 GitHub 倉庫以方便大家參與。我們時刻歡迎您的 PR。'
   ),
 );
 include '../templates/lang.php';
