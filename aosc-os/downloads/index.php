@@ -10,7 +10,7 @@
     <meta name="keywords" content="AOSC OS OOBP Preview Out Of Box 安同 Linux 开箱即用 预览 OS3 Download AnthonOS OS2" />
     <meta name="author" content="Junde Yi&lt;lmy441900@gmail.com&gt;, Jeff Bai &lt;jeffbaichina@members.fsf.org&gt;" />
     <link rel="icon" href="/img/favicons/aosc-os.ico" />
-    <title>AOSC OS - OOBP</title>
+    <title>AOSC OS - Downloads</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/blog.css" rel="stylesheet" />
   </head>
