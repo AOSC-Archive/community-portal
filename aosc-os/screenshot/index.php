@@ -1,3 +1,5 @@
+<?php define('IN_FRAME', true);
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -23,7 +25,17 @@
     <![endif]-->
   </head>
   <body>
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/aosc-os/navbar.php';?>
+  <?php
+    include $_SERVER['DOCUMENT_ROOT'].'/templates/navgen.php';
+    pushNavBar();
+    addNavItem('/index.php', '/', $lang, array('en' => 'Portal', 'zh-cn' => '门户', 'zh-tw' => '門戶',), 'major');
+    addNavItem('/aosc-os/index.php', '/aosc-os/', $lang, array('en' => 'AOSC_home', 'zh-cn' => 'AOSC 主页', 'zh-tw' => 'AOSC_home',), 'minor');
+    addNavItem('/aosc-os/downloads/index.php', '/aosc-os/downloads/', $lang, array('en' => 'Downloads', 'zh-cn' => '下载', 'zh-tw' => 'Downloads',));
+    addNavItem('/aosc-os/summary/index.php', '/aosc-os/summary/', $lang, array('en' => 'History', 'zh-cn' => '历史', 'zh-tw' => 'History',));
+    addNavItem('/aosc-os/screenshot/index.php', '/aosc-os/screenshot/', $lang, array('en' => 'Screenshot', 'zh-cn' => '截图', 'zh-tw' => 'Screenshot',));
+    addNavItem('/aosc-os/about/index.php', '/aosc-os/about/', $lang, array('en' => 'About', 'zh-cn' => '关于', 'zh-tw' => 'About',));
+    popNavBar();
+  ?>
     <div class="jumbotron">
       <div class="container section-welcome">
         <div class="row">

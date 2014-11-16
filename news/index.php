@@ -1,3 +1,5 @@
+<?php define('IN_FRAME', true);
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -19,8 +21,12 @@
   </head>
 
   <body>
-
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/portal/navbar.php';?>
+  <?php
+    include $_SERVER['DOCUMENT_ROOT'].'/templates/navgen.php';
+    pushNavBar();
+    addNavItem('/index.php', '/', $lang, array('en' => 'Portal', 'zh-cn' => '门户', 'zh-tw' => '門戶',), 'major');
+    popNavBar();
+  ?>
 
   <div class="jumbotron">
   <div class="container section-welcome">

@@ -1,3 +1,5 @@
+<?php define('IN_FRAME', true);
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -25,9 +27,16 @@
   </head>
 
   <body>
-
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/ast/navbar.php'; ?>
-
+  <?php
+    include $_SERVER['DOCUMENT_ROOT'].'/templates/navgen.php';
+    pushNavBar();
+    addNavItem('/index.php', '/', $lang, array('en' => 'Portal', 'zh-cn' => '门户', 'zh-tw' => '門戶',), 'major');
+    addNavItem('/ast/index.php', '/ast/', $lang, array('en' => 'AST_home', 'zh-cn' => 'AST 主页', 'zh-tw' => 'AST_home',), 'minor');
+    addNavItem('/ast/summary/index.php', '/ast/summary/', $lang, array('en' => 'History', 'zh-cn' => '历史', 'zh-tw' => 'History',));
+    addNavItem('/ast/screenshot/index.php', '/ast/screenshot/', $lang, array('en' => 'Screenshot', 'zh-cn' => '截图', 'zh-tw' => 'Screenshot',));
+    addNavItem('/ast/about/index.php', '/ast/about/', $lang, array('en' => 'About', 'zh-cn' => '关于', 'zh-tw' => 'About',));
+    popNavBar();
+  ?>
     <div class="container">
 
       <div class="blog-header">

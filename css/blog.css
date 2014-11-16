@@ -102,7 +102,7 @@ h6, .h6 {
   display: inline-block;
   padding: 15px;
   font-weight: 500;
-  color: #999;
+  color: #aaa;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
@@ -113,6 +113,12 @@ h6, .h6 {
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
   color: #fff;
+}
+.blog-nav .major {
+  background-color: #222;
+}
+.blog-nav .minor {
+  background-color: #333;
 }
 .blog-nav .active:after {
   position: absolute;
