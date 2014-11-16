@@ -153,11 +153,10 @@ include '../templates/lang.php';
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet" />
-    <?php include '../templates/font.php'; ?>
   </head>
   
   <body><?php include '../templates/portal/navbar.php';?>
-  <div class="jumbotron">
+  <div class="row jumbotron">
     <div class="container section-welcome">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">

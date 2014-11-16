@@ -258,3 +258,7 @@ span.glyphicon-decor {
   src: url("/fonts/SourceSansPro-Regular.ttf.woff") format("woff");
   font-weight: regular;
 }
+
+.jumbotron {
+  border-radius: 0 0 6px 6px !important;
+}

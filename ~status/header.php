@@ -76,7 +76,6 @@ include '../modules/langue.php';?>
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/carousel.css" rel="stylesheet" />
     <link href="/css/common.css" rel="stylesheet" />
-    <?php include '../templates/font.php'; ?>
   </head>
 
   <body>
