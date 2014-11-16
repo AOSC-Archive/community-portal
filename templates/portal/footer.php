@@ -1,11 +1,23 @@
-
-
+<?php
+if (!defined('IN_FRAME')) exit();
+$langs_f = array(
+  'en' => array(
+    'main'=>'Main Sites',
+  ),
+  'zh-cn' => array(
+    'main'=>'主要站点',
+  ),
+  'zh-tw' => array(
+    'main'=>'Main Sites',
+  ),
+);
+?>
 <div class="blog-footer">
   <div class="container">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 footer-block">
         <div class="col-sm-4">
-          <h4 align="left">Main Sites</h4>
+          <h4 align="left"><?php echo $langs_f[$lang]['main'];?></h4>
           <p align="left"><a href="/">Community Portal</a></p>
           <p align="left"><a href="/aosc-os/">AOSC OS</a></p>
           <p align="left"><a href="/ast/">Anthon Starter</a></p>

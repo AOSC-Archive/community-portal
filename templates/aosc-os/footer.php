@@ -1,5 +1,17 @@
-
-
+<?php
+if (!defined('IN_FRAME')) exit();
+$langs_f = array(
+  'en' => array(
+    'main'=>'Main Sites',
+  ),
+  'zh-cn' => array(
+    'main'=>'主要站点',
+  ),
+  'zh-tw' => array(
+    'main'=>'Main Sites',
+  ),
+);
+?>
 <div class="blog-footer">
   <div class="container">
     <div class="row">

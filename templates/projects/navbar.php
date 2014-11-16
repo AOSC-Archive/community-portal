@@ -1,3 +1,17 @@
+<?php
+if (!defined('IN_FRAME')) exit();
+$langs_n = array(
+  'en' => array(
+    'foo'=>'bar',
+  ),
+  'zh-cn' => array(
+    'foo'=>'bar',
+  ),
+  'zh-tw' => array(
+    'foo'=>'bar',
+  ),
+);
+?>
 <div class="blog-masthead">
   <div class="container">
     <nav class="blog-nav">
