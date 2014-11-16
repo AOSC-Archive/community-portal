@@ -2,7 +2,6 @@
 if (!defined('IN_FRAME')) exit();
 
 echo '<style type="text/css">body,h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-family:';
-if (!defined('IN_FRAME')) exit();
 if (isset ($lang)){
   switch ($lang){
     case 'zh-cn':
@@ -18,6 +17,8 @@ if (isset ($lang)){
       echo 'source-sans, sans-serif;';
       break;
   }
+}else{
+  
 }
 echo '}</style>';
 ?>

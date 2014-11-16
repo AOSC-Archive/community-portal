@@ -2,7 +2,7 @@
 define('IN_FRAME', true);
 ?>
 <!DOCTYPE html>
-<html lang=zh-CN>
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,12 +18,12 @@ define('IN_FRAME', true);
 
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet">
-    <?php include '../templates/font.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
   </head>
 
   <body>
 
-    <?php include '../templates/ast/navbar.php';?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/ast/navbar.php';?>
 
     <div class="container">
 
@@ -152,7 +152,7 @@ define('IN_FRAME', true);
 
     </div><!-- /.container -->
 
-    <?php include '../templates/portal/footer.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php'; ?>
 
 
     <!-- Bootstrap core JavaScript

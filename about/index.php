@@ -3,11 +3,6 @@ define('IN_FRAME', true);
 $langs = array(
   'en' => array(
     'title'=>'Community Portal - About',
-    'portal'=>'Portal',
-    'projects'=>'Projects',
-    'about'=>'About',
-    'localization'=>'Localization',
-    'docs'=>'TechBase',
     'about-title'=>'About Us',
     'about-text'=>'We are not mystery, we just talk less.',
     'who-are-we'=>'Who are we?',
@@ -47,11 +42,6 @@ $langs = array(
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 关于',
-    'portal'=>'门户',
-    'projects'=>'项目',
-    'about'=>'关于',
-    'localization'=>'本地化',
-    'docs'=>'知识库',
     'about-title'=>'关于我们',
     'about-text'=>'我们不是大神，我们只是少说废话。',
     'who-are-we'=>'我们是谁？',
@@ -91,11 +81,6 @@ $langs = array(
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 － 關於',
-    'portal'=>'門戶',
-    'projects'=>'項目',
-    'about'=>'關於',
-    'localization'=>'本地化',
-    'docs'=>'知識庫',
     'about-title'=>'關於我們',
     'about-text'=>'我們不是大神，我們只是少說廢話。',
     'who-are-we'=>'我們是誰？',
@@ -135,7 +120,7 @@ $langs = array(
           </ul>',
   ),
 );
-include '../templates/lang.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
 ?>
 
 <html lang="<?php echo $lang;?>">
@@ -153,10 +138,10 @@ include '../templates/lang.php';
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet" />
-    <?php include '../templates/font.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
   </head>
   
-  <body><?php include '../templates/portal/navbar.php';?>
+  <body><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/portal/navbar.php';?>
   <div class="jumbotron">
     <div class="container section-welcome">
       <div class="row">
@@ -211,7 +196,7 @@ include '../templates/lang.php';
   </div>
   <br />
 
-  <?php include '../templates/portal/footer.php';?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->

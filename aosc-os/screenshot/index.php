@@ -18,7 +18,7 @@ define('IN_FRAME', true);
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet" />
     <link href="/css/common.css" rel="stylesheet" />
-    <?php include '../../templates/font.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -26,7 +26,7 @@ define('IN_FRAME', true);
     <![endif]-->
   </head>
   <body>
-    <?php include '../../templates/aosc-os/navbar.php';?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/aosc-os/navbar.php';?>
     <div class="jumbotron">
       <div class="container section-welcome">
         <div class="row">
@@ -227,7 +227,7 @@ define('IN_FRAME', true);
       </div>
     </div>
     <!-- /.container -->
-    <?php include '../../templates/portal/footer.php';?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

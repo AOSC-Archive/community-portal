@@ -1,20 +1,21 @@
 <?php
 if (!defined('IN_FRAME')) exit();
 
-define('ALTERNATE_LANGUAGE' , 'zh-cn');
+$langs_allow = array('en', 'zh-cn', 'zh-tw');
+define('ALTERNATE_LANGUAGE', 'zh-cn');
 define('LANGUAGE_IN_URL_ARG', true);
-define('LANGUAGE_IN_COOKIE' , true);
+define('LANGUAGE_IN_COOKIE', true);
 define('LANGUAGE_IN_REQUEST', true);
 
 if (LANGUAGE_IN_URL_ARG && !isset ($lang) && isset ($_GET['lang'])) {
   $lang_tester = htmlspecialchars($_GET['lang'],ENT_QUOTES);
-  if (array_key_exists($lang_tester, $langs)) {
+  if (array_key_exists($lang_tester, $langs_allow)) {
     $lang = $lang_tester;
     setcookie('lang', $lang, time()+3600*24*30, '/', 'anthonos.org');
   }
 }
 if (LANGUAGE_IN_COOKIE && !isset ($lang) && isset ($_COOKIE['lang'])) {
-  if (array_key_exists($_COOKIE['lang'], $langs)) $lang = $_COOKIE['lang'];
+  if (array_key_exists($_COOKIE['lang'], $langs_allow)) $lang = $_COOKIE['lang'];
 }
 function sortByWeight($a, $b) {
   if (strpos ($a,'q=') == false) $_a_w = 1;
@@ -31,7 +32,7 @@ if (LANGUAGE_IN_REQUEST && !isset ($lang) && isset ($_SERVER['HTTP_ACCEPT_LANGUA
     $lang_tester = '';
     if (strpos ($lang_i,';') == false) $lang_tester = trim($lang_i);
     else $lang_tester = trim(substr($lang_i, 0, strpos($lang_i, ';')));
-    if (array_key_exists($lang_tester, $langs)) {
+    if (array_key_exists($lang_tester, $langs_allow)) {
       $lang = $lang_tester;
       break;
     }

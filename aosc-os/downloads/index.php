@@ -16,9 +16,9 @@ define('IN_FRAME', true);
     <title>AOSC OS - Downloads</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/blog.css" rel="stylesheet" />
-    <?php include '../../templates/font.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
   </head>
-  <body><?php include '../../templates/aosc-os/navbar.php';?>
+  <body><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/aosc-os/navbar.php';?>
   <div class="jumbotron">
     <div class="container section-welcome">
       <div class="row">
@@ -447,7 +447,7 @@ define('IN_FRAME', true);
         </div>
       </div>
     </div>
-  </div><?php include '../../templates/portal/footer.php';?>
+  </div><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
   <script src="/js/jquery-min.js"></script> 
   <script src="/js/bootstrap.min.js"></script> 
   <script type="text/javascript">

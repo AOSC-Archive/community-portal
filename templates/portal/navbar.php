@@ -23,6 +23,7 @@ $langs_n = array(
     'docs'=>'知識庫',
   ),
 );
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
 ?>
 <div class="blog-masthead">
   <div class="container">
