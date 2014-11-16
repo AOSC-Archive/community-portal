@@ -1,3 +1,6 @@
+<?php
+define('IN_FRAME', true);
+?>
 <!DOCTYPE html>
 <html lang=zh-CN>
   <head>
@@ -15,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet">
+    <?php include '../../templates/font.php'; ?>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

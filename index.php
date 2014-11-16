@@ -123,13 +123,14 @@ include 'templates/lang.php';
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="/css/blog.css" rel="stylesheet" /><?php include 'templates/font.php'; ?>
+    <link href="/css/blog.css" rel="stylesheet" />
+    <?php include 'templates/font.php'; ?>
   </head>
   
   <body><?php include 'templates/portal/navbar.php'; ?>
   
   <!-- Main title -->
-  <div class="row jumbotron">
+  <div class="jumbotron">
     <div class="container section-welcome">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">

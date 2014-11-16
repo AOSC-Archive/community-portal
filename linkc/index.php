@@ -1,3 +1,6 @@
+<?php
+define('IN_FRAME', true);
+?>
 <!DOCTYPE html>
 <html lang=zh-CN>
   <head>
@@ -15,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet">
+    <?php include '../templates/font.php'; ?>
   </head>
 
   <body>

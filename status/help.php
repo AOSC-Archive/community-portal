@@ -1,7 +1,6 @@
 <?php
 define('IN_FRAME', true);
-
-$langues = array(
+$langs = array(
   'en' => array (
     'title' => 'Mirror::HowTo - AOSC',
     'help' => 'Mirror HOWTOs',
@@ -13,7 +12,7 @@ $langues = array(
 	<p>You need around 100GB of space for mirroring the whole site. Refer to this <code>du -sh</code> result when you choose exclusions.</p>',
 	'howto_mirror_dush' => '<p>If you decide NOT to mirror a folder, please maka a redirection to the nearest mirror for you so users from the MirrorBrain server is not affected.</p>' ,
   ),
-  'zh-CN' => array (
+  'zh-cn' => array (
     'title' => '镜像源指南 - 安同开源社区',
     'help' => '镜像源指南',
     'howto_change' => '更换镜像源',
@@ -24,21 +23,21 @@ $langues = array(
 	<p>若您要做整站镜像，那大概需要 100GB 空间。请参考以下 <code>du -sh</code> 的命令输出以便做决定。</p>',
     'howto_mirror_dush' => '<p>若您决定<strong>不</strong>镜像某些文件/文件夹，请至少确保它被 HTTP 重定向到离您最近的镜像站以防止 MirrorBrain 服务器在自动选择镜像时给用户带来问题。</p>' 
   ), /* TODO
-  'zh-TW' => array (
+  'zh-tw' => array (
     'title' => ' ',
     'help' => ' ',
     'howto_change' => ' ',
     'howto_change_des' => ' ',
     'howto_mirror' => ' ',
     'howto_mirror_des' => ' ',
-    'howto_mirror_dush' => ' ', */
-  ),
+    'howto_mirror_dush' => ' ',
+  ), */
 );
-
-include 'modules/langue.php' ?>
+include '../templates/lang.php';
+ ?>
 
 <!DOCTYPE html>
-<html lang=<?=$langue ?>>
+<html lang="<?php echo $lang;?>">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,28 +45,30 @@ include 'modules/langue.php' ?>
     <meta name="author" content="Jeff Bai <jeffbaichina@gmail.com>, Lion Yang <ionxlion@foxmail.com>, YeXiaoxing <ye@xiaoxing.us>">
     <link rel="shortcut icon" href="/img/favicon.png">
 
-    <title><?=$langues[$langue]['title'] ?></title>
+    <title><?php echo $langs[$lang]['title']; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <!-- <link href="/css/carousel.css" rel="stylesheet"> -->
+    <link href="/css/blog.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
 	
 	<!-- gist data, for offline githubbing :) -->
 	<style type="text/css">
 	.gist{color:#000}.gist .render-container .render-viewer-error,.gist .render-container .render-viewer-fatal,.gist .render-container .octospinner{display:none}.gist .gist-render iframe{width:100%}.gist pre{font:inherit;line-height:inherit;white-space:pre}.gist .gist-file{border:1px solid #ddd;border-bottom:1px solid #ccc;border-radius:3px;font-family:Consolas, "Liberation Mono", Courier, monospace;margin-bottom:1em}.gist .gist-file.gist-render{border:none}.gist .gist-file .gist-meta{font:12px "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;text-shadow:1px 1px rgba(255,255,255,0.8);overflow:hidden;color:#999;padding:10px;background-color:#e8e8e8;background-image:-webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e8e8e8));background-image:-webkit-linear-gradient(#fafafa, #e8e8e8);background-image:linear-gradient(#fafafa, #e8e8e8);background-repeat:repeat-x}.gist .gist-file .gist-meta a{font-weight:bold;color:#666;text-decoration:none}.gist .gist-file .gist-data{overflow:auto;word-wrap:normal;background-color:#f8f8ff;border-bottom:1px solid #ddd;font-size:100%}.gist .gist-file.scroll .gist-data{position:absolute;top:0px;right:0px;bottom:30px;left:0px;overflow:scroll}.gist .gist-file.scroll .gist-meta{position:absolute;bottom:0px;right:0px;left:0px}.gist .gist-file .gist-data .line-data{padding:.5em !important}.gist .gist-file .gist-data .line-pre{font-family:Consolas, "Liberation Mono", Courier, monospace;background:transparent !important;border:none !important;margin:0 !important;padding:0 !important}.gist .gist-file .gist-data .gist-highlight{background:transparent !important}.gist .gist-file .gist-data .line-numbers{background-color:#ececec;color:#aaa;border-right:1px solid #ddd;text-align:right;padding:.5em}.gist .gist-file .gist-data .line-numbers .line-number{clear:right;display:block}.gist-syntax{background:#ffffff}.gist-syntax .c{color:#999988;font-style:italic}.gist-syntax .err{color:#a61717;background-color:#e3d2d2}.gist-syntax .k{color:#000000;font-weight:bold}.gist-syntax .o{color:#000000;font-weight:bold}.gist-syntax .cm{color:#999988;font-style:italic}.gist-syntax .cp{color:#999999;font-weight:bold}.gist-syntax .c1{color:#999988;font-style:italic}.gist-syntax .cs{color:#999999;font-weight:bold;font-style:italic}.gist-syntax .gd{color:#000000;background-color:#fdd}.gist-syntax .gd .x{color:#000000;background-color:#faa}.gist-syntax .ge{color:#000000;font-style:italic}.gist-syntax .gr{color:#a00}.gist-syntax .gh{color:#999}.gist-syntax .gi{color:#000000;background-color:#dfd}.gist-syntax .gi .x{color:#000000;background-color:#afa}.gist-syntax .go{color:#888}.gist-syntax .gp{color:#555}.gist-syntax .gs{font-weight:bold}.gist-syntax .gu{color:#aaa}.gist-syntax .gt{color:#a00}.gist-syntax .kc{color:#000000;font-weight:bold}.gist-syntax .kd{color:#000000;font-weight:bold}.gist-syntax .kp{color:#000000;font-weight:bold}.gist-syntax .kr{color:#000000;font-weight:bold}.gist-syntax .kt{color:#445588;font-weight:bold}.gist-syntax .m{color:#099}.gist-syntax .s{color:#d14}.gist-syntax .na{color:teal}.gist-syntax .nb{color:#0086b3}.gist-syntax .nc{color:#445588;font-weight:bold}.gist-syntax .no{color:teal}.gist-syntax .ni{color:purple}.gist-syntax .ne{color:#990000;font-weight:bold}.gist-syntax .nf{color:#990000;font-weight:bold}.gist-syntax .nn{color:#555}.gist-syntax .nt{color:navy}.gist-syntax .nv{color:teal}.gist-syntax .ow{color:#000000;font-weight:bold}.gist-syntax .w{color:#bbb}.gist-syntax .mf{color:#099}.gist-syntax .mh{color:#099}.gist-syntax .mi{color:#099}.gist-syntax .mo{color:#099}.gist-syntax .sb{color:#d14}.gist-syntax .sc{color:#d14}.gist-syntax .sd{color:#d14}.gist-syntax .s2{color:#d14}.gist-syntax .se{color:#d14}.gist-syntax .sh{color:#d14}.gist-syntax .si{color:#d14}.gist-syntax .sx{color:#d14}.gist-syntax .sr{color:#009926}.gist-syntax .s1{color:#d14}.gist-syntax .ss{color:#990073}.gist-syntax .bp{color:#999}.gist-syntax .vc{color:teal}.gist-syntax .vg{color:teal}.gist-syntax .vi{color:teal}.gist-syntax .il{color:#099}
     </style>
+    <?php include '../templates/font.php'; ?>
   </head>
   <body>
-    <?php include 'templates/navbar.php';?>
+    <?php include '../templates/portal/navbar.php';?>
     <div class="container" style=" margin-top: 50px; ">
-  <h1><?=$langues[$langue]['help'] ?></h1>
+  <h1><?php echo $langs[$lang]['help'] ?></h1>
   <div class="panel  panel-info">
     <div class="panel-heading">
-      <h3 class="panel-title"><?=$langues[$langue]['howto_change'] ?></h3>
+      <h3 class="panel-title"><?php echo $langs[$lang]['howto_change']; ?></h3>
     </div>
     <div class="panel-body">
-      <p><?=$langues[$langue]['howto_change_des'] ?></p>
+      <p><?php echo $langs[$lang]['howto_change_des']; ?></p>
       <!-- <script src="https://gist.github.com/TheNextProject/9677019.js"></script> -->
       <!-- GIST START -->
       <div id="gist9677019" class="gist">
@@ -99,10 +100,10 @@ include 'modules/langue.php' ?>
       <!-- GIST END -->
     </div>
     <div class="panel-heading">
-      <h3 class="panel-title"><?=$langues[$langue]['howto_mirror'] ?></h3>
+      <h3 class="panel-title"><?php echo $langs[$lang]['howto_mirror']; ?></h3>
     </div>
         <div class="panel-body">
-        <?=$langues[$langue]['howto_mirror_des'] ?>
+        <?php echo $langs[$lang]['howto_mirror_des']; ?>
 		    <!-- GIST START -->
         <div id="gist14045057" class="gist">
         <div class="gist-file">
@@ -155,7 +156,7 @@ include 'modules/langue.php' ?>
         </div>
         </div>
         <!-- GIST END -->
-        <?=$langues[$langue]['howto_mirror_dush'] ?>
+        <?php echo $langs[$lang]['howto_mirror_dush']; ?>
         </div>
       </div>
     </div>
