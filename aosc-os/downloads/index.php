@@ -13,9 +13,10 @@
     <title>AOSC OS - Downloads</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/blog.css" rel="stylesheet" />
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
   </head>
-  <body><?php include '../../templates/aosc-os/navbar.php';?>
-  <div class="row jumbotron">
+  <body><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/aosc-os/navbar.php';?>
+  <div class="jumbotron">
     <div class="container section-welcome">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
@@ -443,7 +444,7 @@
         </div>
       </div>
     </div>
-  </div><?php include '../../templates/portal/footer.php';?>
+  </div><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
   <script src="/js/jquery-min.js"></script> 
   <script src="/js/bootstrap.min.js"></script> 
   <script type="text/javascript">

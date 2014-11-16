@@ -3,11 +3,6 @@ define('IN_FRAME', true);
 $langs = array(
   'en' => array(
     'title'=>'Community Portal - AOSC',
-    'portal'=>'Portal',
-    'projects'=>'Projects',
-    'about'=>'About',
-    'localization'=>'Localization',
-    'docs'=>'TechBase',
     'beta-alert'=>'This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.',
     'welcome'=>'Welcome!',
     'welcome-text'=>'AOSC ( Anthon Open Source Community ) is an open community, which welcomes participation from all over the world.',
@@ -41,11 +36,6 @@ $langs = array(
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 安同开源社区',
-    'portal'=>'门户',
-    'projects'=>'项目',
-    'about'=>'关于',
-    'localization'=>'本地化',
-    'docs'=>'知识库',
     'beta-alert'=>'此站点目前依然在建设中，页面质量可能时好时坏。敬请谅解。',
     'welcome'=>'欢迎！',
     'welcome-text'=>'安同开源社区 ( AOSC，Anthon Open Source Community ) 是一个开放的社区，我们欢迎来自全世界的参与者。',
@@ -71,11 +61,6 @@ $langs = array(
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 - 安同開源社區',
-    'portal'=>'門戶',
-    'projects'=>'項目',
-    'about'=>'關於',
-    'localization'=>'本地化',
-    'docs'=>'知識庫',
     'beta-alert'=>'此站點目前依然在建設中，頁面質量可能時好時壞。敬請諒解。',
     'welcome'=>'歡迎！',
     'welcome-text'=>'安同開源社區 ( AOSC，Anthon Open Source Community ) 是一個開放的社區，我們歡迎來自全世界的參與者。',
@@ -104,7 +89,7 @@ $langs = array(
             <a href="https://portal.anthonos.org/aosc-os">AOSC OS 子站</a>獲取。',
   ),
 );
-include 'templates/lang.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang;?>">
@@ -123,10 +108,15 @@ include 'templates/lang.php';
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
+<<<<<<< HEAD
     <link href="/css/blog.css" rel="stylesheet" /><?php include 'templates/font.php'; ?>
+=======
+    <link href="/css/blog.css" rel="stylesheet" />
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
+>>>>>>> cdda8e1
   </head>
   
-  <body><?php include 'templates/portal/navbar.php'; ?>
+  <body><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/portal/navbar.php'; ?>
   
   <!-- Main title -->
   <div class="row jumbotron">
@@ -211,7 +201,7 @@ include 'templates/lang.php';
     </div>
     <br />
     
-  </div><?php include 'templates/portal/footer.php';?>
+  </div><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
   
   <!-- Bootstrap core JavaScript
   ================================================== -->

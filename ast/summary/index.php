@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=zh-CN>
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet">
-
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -25,7 +25,7 @@
 
   <body>
 
-    <?php include '../../templates/ast/navbar.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/ast/navbar.php'; ?>
 
     <div class="container">
 
@@ -112,7 +112,7 @@
 
     </div><!-- /.container -->
 
-    <?php include '../../templates/portal/footer.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php'; ?>
 
 
     <!-- Bootstrap core JavaScript

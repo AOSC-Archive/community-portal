@@ -11,6 +11,7 @@ $langs_f = array(
     'main'=>'Main Sites',
   ),
 );
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
 ?>
 <div class="blog-footer">
   <div class="container">

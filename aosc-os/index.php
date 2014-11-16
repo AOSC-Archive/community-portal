@@ -14,9 +14,10 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet" />
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
   </head>
-  <body><?php include '../templates/aosc-os/navbar.php';?>
-  <div class="row jumbotron">
+  <body><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/aosc-os/navbar.php';?>
+  <div class="jumbotron">
     <div class="container section-welcome">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
@@ -74,7 +75,7 @@
   <br />
 
   <!-- /.container -->
-  <?php include '../templates/portal/footer.php';?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->

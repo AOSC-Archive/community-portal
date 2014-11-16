@@ -11,6 +11,7 @@ $langs_n = array(
     'foo'=>'bar',
   ),
 );
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
 ?>
 <div class="blog-masthead">
   <div class="container">

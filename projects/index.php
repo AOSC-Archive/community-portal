@@ -3,11 +3,6 @@ define('IN_FRAME', true);
 $langs = array(
   'en' => array(
     'title'=>'Community Portal - Projects',
-    'portal'=>'Portal',
-    'projects'=>'Projects',
-    'about'=>'About',
-    'localization'=>'Localization',
-    'docs'=>'TechBase',
     'projects'=>'Projects',
     'projects-text'=>'AOSC hosts a bucketful of projects, from AOSC OS, our Linux distribution, to small tools like Anthon Starter that make life better.',
     'aosc-os'=>'AOSC OS',
@@ -21,11 +16,6 @@ $langs = array(
   ),
   'zh-cn' => array(
     'title'=>'社区门户 - 项目',
-    'portal'=>'门户',
-    'projects'=>'项目',
-    'about'=>'关于',
-    'localization'=>'本地化',
-    'docs'=>'知识库',
     'projects'=>'项目',
     'projects-text'=>'AOSC 维护着满满一箩筐的项目，大到 AOSC OS，我们的 Linux 发行版，小到安同开始程序，让你的生活更美好。',
     'aosc-os'=>'AOSC OS',
@@ -39,11 +29,6 @@ $langs = array(
   ),
   'zh-tw' => array(
     'title'=>'社區門戶 - 項目',
-    'portal'=>'門戶',
-    'projects'=>'項目',
-    'about'=>'關於',
-    'localization'=>'本地化',
-    'docs'=>'知識庫',
     'projects'=>'項目',
     'projects-text'=>'AOSC 維護著滿滿一籮筐的項目，大到 AOSC OS，我們的 Linux 發行版，小到安同開始程式，讓你的生活更美好。',
     'aosc-os'=>'AOSC OS',
@@ -56,7 +41,7 @@ $langs = array(
     'other-text'=>'其他項目，例如最簡單的用於顯示作業系統版本的 AOSC-VersionHelper ，又如最關鍵的用於構建 AOSC OS 的 Autobuild 套件。這些項目存放於我們的公開 GitHub 倉庫以方便大家參與。我們時刻歡迎您的 PR。'
   ),
 );
-include '../templates/lang.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang;?>">
@@ -76,11 +61,12 @@ include '../templates/lang.php';
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet" />
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
   </head>
   
-  <body><?php include '../templates/portal/navbar.php'; ?>
+  <body><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/portal/navbar.php'; ?>
   
-  <div class="row jumbotron">
+  <div class="jumbotron">
     <div class="container section-welcome">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
@@ -166,7 +152,7 @@ include '../templates/lang.php';
       </div>
     </div>
     
-  </div><?php include '../templates/portal/footer.php';?>
+  </div><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
 
   <script src="/js/jquery-min.js"></script> 
   <script src="/js/bootstrap.min.js"></script></body>
