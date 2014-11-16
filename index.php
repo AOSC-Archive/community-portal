@@ -20,7 +20,7 @@ $langs = array(
               released very soon.<p></p>Be sure to check for downloads at the 
               <a href="https://portal.anthonos.org/aosc-os/downloads">Downloads Section</a>
               of AOSC OS sub-site.',
-    'news-topic-2'=>'LinkC to Change Core',
+    'news-topic-2'=>'LinkC<sup>*</sup> to Change Core',
     'news-text-2'=>'According to our LinkC developers, LinkC will switch to a new
               protocol implementation called Gurgle, check it out at the
               <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.',
@@ -50,7 +50,7 @@ $langs = array(
     'news-text-1'=>'经过三个月的开发，带有许多富有特色的桌面环境的 AOSC OS3 预览版本将在短期内发布。</p>
               <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/downloads">下载分区</a>
               发布。',
-    'news-topic-2'=>'LinkC 更改核心',
+    'news-topic-2'=>'LinkC<sup>*</sup> 更改核心',
     'news-text-2'=>'LinkC 开发者告诉我们，LinkC 将会转向使用一个名为 Gurgle（咕噜）的协议实现，该项目的
     源代码可以在 <a href="https://github.com/AOSC-Dev/gurgle">此 GitHub 仓库</a> 阅读或获取。',
     'news-text-mark'=>'* LinkC 是由社区开发的独立即时通信客户端与服务器',
@@ -75,7 +75,7 @@ $langs = array(
     'news-text-1'=>'經過三個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 預覽版本將在短期內發佈。</p>
               <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/downloads">下載區塊</a>
               發佈。',
-    'new-topic-2'=>'LinkC 核心變更',
+    'new-topic-2'=>'LinkC<sup>*</sup> 核心變更',
     'news-text-2'=>'According to our LinkC developers, LinkC will switch to a new
               protocol implementation called Gurgle, check it out at the
               <a href="https://github.com/AOSC-Dev/gurgle">GitHub repository</a>.',
@@ -107,6 +107,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
     </title>
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/carousel.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet" />
     <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
@@ -126,19 +127,21 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
   
   <!-- Main title -->
   <div class="jumbotron">
-    <div class="container section-welcome">
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-          <div class="col-sm-8 col-xs-12">
-            <h1>
-              <?php echo $langs[$lang]['welcome'];?>
-            </h1>
-            <p>
-              <?php echo $langs[$lang]['welcome-text'];?>
-            </p>
-          </div>
-          <div class="col-sm-3 col-sm-offset-1 shortcuts hidden-xs">
-            <img src="/img/aosc.png" />
+    <div class="container">
+      <div class="section-welcome">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-sm-8 col-xs-12">
+              <h1>
+                <?php echo $langs[$lang]['welcome'];?>
+              </h1>
+              <p>
+                <?php echo $langs[$lang]['welcome-text'];?>
+              </p>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1 shortcuts hidden-xs">
+              <img src="/img/aosc.png" />
+            </div>
           </div>
         </div>
       </div>
@@ -190,9 +193,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
             <p>
               <?php echo $langs[$lang]['news-text-2'];?>
             </p>
-            <p>
+            <sub>
               <?php echo $langs[$lang]['news-text-mark'];?>
-            </p>
+            </sub>
           </div>
           <div class="col-sm-4">
             <h4>
@@ -213,5 +216,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="/js/jquery-min.js"></script> 
-  <script src="/js/bootstrap.min.js"></script></body>
+  <script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>

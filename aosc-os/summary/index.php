@@ -49,33 +49,39 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
     <div class="row">
       <div class="col-sm-9 col-sm-offset-1 blog-main">
         <div class="row">
-          <h2 class="blog-post-title">AOSC OS3</h2>
-          <p class="lead blog-description">the Yellow circular badge</p>
-          <p>AOSC OS3 is the distribution building project for the year 2014 - 2015, based on the established base of AOSC OS2. Updates and changes are lined up for the year. AOSC OS started its experiment on supporting RPM. AOSC OS will merge in AnthonOS and CentralPoint, as AOSC OS with $DE (name of Desktop Environment) and AOSC OS for Servers.</p>
+          <div class="col-sm-12">
+            <h2 class="blog-post-title">AOSC OS3</h2>
+            <p class="lead blog-description">the Yellow circular badge</p>
+            <p>AOSC OS3 is the distribution building project for the year 2014 - 2015, based on the established base of AOSC OS2. Updates and changes are lined up for the year. AOSC OS started its experiment on supporting RPM. AOSC OS will merge in AnthonOS and CentralPoint, as AOSC OS with $DE (name of Desktop Environment) and AOSC OS for Servers.</p>
+          </div>
         </div>
         <hr class="divider" />
         <div class="row">
-          <h2 class="blog-post-title">AOSC OS2</h2>
-          <p class="lead blog-description">the Blue circular badge</p>
-          <p>AOSC OS2 is the distribution building project for the year 2013 - 2014, this is the first generation of our
-          community&#39;s independent distribution. Two final products are intended for this generation of project:</p>
-          <ul>
-            <li>AnthonOS, as desktop-oriented Linux distribution</li>
-            <li>CentralPoint, as server-oriented Linux distribution</li>
-          </ul>
+          <div class="col-sm-12">
+            <h2 class="blog-post-title">AOSC OS2</h2>
+            <p class="lead blog-description">the Blue circular badge</p>
+            <p>AOSC OS2 is the distribution building project for the year 2013 - 2014, this is the first generation of our
+            community&#39;s independent distribution. Two final products are intended for this generation of project:</p>
+            <ul>
+              <li>AnthonOS, as desktop-oriented Linux distribution</li>
+              <li>CentralPoint, as server-oriented Linux distribution</li>
+            </ul>
+          </div>
         </div>
         <hr class="divider" />
         <div class="row">
-          <h2 class="blog-post-title">AOSC OS1</h2>
-          <p class="lead blog-description">the Red circular badge</p>
-          <p>AOSC OS1 is the distribution 
-          <b>customization</b> project for the year 2011 - 2013, this is the first generation of our community&#39;s distribution
-          project. Only one final products are intended for this generation of project:</p>
-          <ul>
-            <li>AnthonOS, as desktop-oriented Linux distribution</li>
-          </ul>
-          <p>This version of AnthonOS is only a Debian derivative with customized KDE desktop, and it was never maintained after
-          its final release as a measure to kickstart AOSC OS2 to make CentralPoint and AnthonOS into a unified distribution.</p>
+          <div class="col-sm-12">
+            <h2 class="blog-post-title">AOSC OS1</h2>
+            <p class="lead blog-description">the Red circular badge</p>
+            <p>AOSC OS1 is the distribution 
+            <b>customization</b> project for the year 2011 - 2013, this is the first generation of our community&#39;s distribution
+            project. Only one final products are intended for this generation of project:</p>
+            <ul>
+              <li>AnthonOS, as desktop-oriented Linux distribution</li>
+            </ul>
+            <p>This version of AnthonOS is only a Debian derivative with customized KDE desktop, and it was never maintained after
+            its final release as a measure to kickstart AOSC OS2 to make CentralPoint and AnthonOS into a unified distribution.</p>
+          </div>
         </div>
       </div>
     </div>

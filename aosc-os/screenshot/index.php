@@ -96,14 +96,15 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
     <div id="my-tab-content" class="tab-content">
     <div class="tab-pane active" id="gnome">
       <div class="row">
-        <br />
         <div class="col-sm-1 col-sm-offset-2">
           <img src="/img/oobp-logo/gnome-oobp.png" width="96px" height="96px" />
         </div>
         <div class="col-sm-6 col-sm-offset-1">
           <div class="row">
-            <h2>AOSC OS with GNOME</h2>
-            <p>AOSC OS with the GNOME desktop environment, a completely free and open source desktop and application suite.</p>
+            <div class="col-sm-12">
+              <h2>AOSC OS with GNOME</h2>
+              <p>AOSC OS with the GNOME desktop environment, a completely free and open source desktop and application suite.</p>
+            </div>
           </div>
           <hr class="divider" />
         </div>
@@ -117,21 +118,21 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
     echo '<a target="_blank" href="/img/screenshots/gnome-oobp/'.$a.'.jpg"><img src="/img/screenshots/gnome-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
 ?>
             </div>
-            <br />
           </div>
         </div>
       </div>
     </div>
     <div class="tab-pane" id="mate">
       <div class="row">
-        <br />
         <div class="col-sm-1 col-sm-offset-2">
           <img src="/img/oobp-logo/mate-oobp.png" width="96px" height="96px" />
         </div>
         <div class="col-sm-6 col-sm-offset-1">
           <div class="row">
-            <h2>AOSC OS with MATE</h2>
-            <p>AOSC OS with the MATE desktop, a fork of GNOME 2 desktop, with slight customization and tweaks for good.</p>
+            <div class="col-sm-12">
+              <h2>AOSC OS with MATE</h2>
+              <p>AOSC OS with the MATE desktop, a fork of GNOME 2 desktop, with slight customization and tweaks for good.</p>
+            </div>
           </div>
           <hr class="divider" />
         </div>
@@ -140,26 +141,26 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
         <div class="col-sm-8 col-sm-offset-2">
           <div class="row">
             <div class="my_gallery">
-              <?php
-                                            for ($a=1;$a<=10;$a++)
-                                              echo '<a target="_blank" href="/img/screenshots/mate-oobp/'.$a.'.jpg"><img src="/img/screenshots/mate-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-                                          ?>
+<?php
+  for ($a=1;$a<=10;$a++)
+    echo '<a target="_blank" href="/img/screenshots/mate-oobp/'.$a.'.jpg"><img src="/img/screenshots/mate-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
+?>
             </div>
-            <br />
           </div>
         </div>
       </div>
     </div>
     <div class="tab-pane" id="cinnamon">
       <div class="row">
-        <br />
         <div class="col-sm-1 col-sm-offset-2">
           <img src="/img/oobp-logo/cinnamon-oobp.png" width="96px" height="96px" />
         </div>
         <div class="col-sm-6 col-sm-offset-1">
           <div class="row">
-            <h2>AOSC OS with Cinnamon</h2>
-            <p>AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.</p>
+            <div class="col-sm-12">
+              <h2>AOSC OS with Cinnamon</h2>
+              <p>AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.</p>
+            </div>
           </div>
           <hr class="divider" />
         </div>
@@ -168,26 +169,26 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
         <div class="col-sm-8 col-sm-offset-2">
           <div class="row">
             <div class="my_gallery">
-              <?php
-                                            for ($a=1;$a<=10;$a++)
-                                              echo '<a target="_blank" href="/img/screenshots/cinnamon-oobp/'.$a.'.jpg"><img src="/img/screenshots/cinnamon-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-                                          ?>
+<?php
+  for ($a=1;$a<=10;$a++)
+    echo '<a target="_blank" href="/img/screenshots/cinnamon-oobp/'.$a.'.jpg"><img src="/img/screenshots/cinnamon-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
+?>
             </div>
-            <br />
           </div>
         </div>
       </div>
     </div>
     <div class="tab-pane" id="xfce">
       <div class="row">
-        <br />
         <div class="col-sm-1 col-sm-offset-2">
           <img src="/img/oobp-logo/xfce-oobp.png" width="96px" height="96px" />
         </div>
         <div class="col-sm-6 col-sm-offset-1">
           <div class="row">
-            <h2>AOSC OS with XFCE</h2>
-            <p>AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.</p>
+            <div class="col-sm-12">
+              <h2>AOSC OS with XFCE</h2>
+              <p>AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.</p>
+            </div>
           </div>
           <hr class="divider" />
         </div>
@@ -196,27 +197,27 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
         <div class="col-sm-8 col-sm-offset-2">
           <div class="row">
             <div class="my_gallery">
-              <?php
-                                            for ($a=1;$a<=10;$a++)
-                                              echo '<a target="_blank" href="/img/screenshots/xfce-oobp/'.$a.'.jpg"><img src="/img/screenshots/xfce-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-                                          ?>
+<?php
+  for ($a=1;$a<=10;$a++)
+    echo '<a target="_blank" href="/img/screenshots/xfce-oobp/'.$a.'.jpg"><img src="/img/screenshots/xfce-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
+?>
             </div>
-            <br />
           </div>
         </div>
       </div>
     </div>
     <div class="tab-pane" id="os2">
       <div class="row">
-        <br />
         <div class="col-sm-1 col-sm-offset-2">
           <img src="/img/anos.png" width="96px" height="96px" />
         </div>
         <div class="col-sm-6 col-sm-offset-1">
           <div class="row">
-            <h2>AnthonOS (AOSC OS2)</h2>
-            <p>Final Release &quot;Doge&quot; comes with KDE 4 as its default desktop environment, here showing is the default
-            desktop configuration of AnthonOS (however you can choose for the default Plasma desktop configuration).</p>
+            <div class="col-sm-12">
+              <h2>AnthonOS (AOSC OS2)</h2>
+              <p>Final Release &quot;Doge&quot; comes with KDE 4 as its default desktop environment, here showing is the default
+              desktop configuration of AnthonOS (however you can choose for the default Plasma desktop configuration).</p>
+            </div>
           </div>
           <hr class="divider" />
         </div>
@@ -225,12 +226,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
         <div class="col-sm-8 col-sm-offset-2">
           <div class="row">
             <div class="my_gallery">
-              <?php
-                                            for ($a=1;$a<=10;$a++)
-                                              echo '<a target="_blank" href="/img/anthonos/'.$a.'.png"><img src="/img/anthonos/'.$a.'_small.png" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-                                          ?>
+<?php
+  for ($a=1;$a<=10;$a++)
+    echo '<a target="_blank" href="/img/anthonos/'.$a.'.png"><img src="/img/anthonos/'.$a.'_small.png" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
+?>
             </div>
-            <br />
           </div>
         </div>
       </div>
@@ -241,13 +241,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/js/jquery-min.js"></script> 
-    <script type="text/javascript">
-      jQuery(document).ready(function ($) {
-        $(&amp;amp;amp;amp;amp;#39;#tabs&amp;amp;amp;amp;amp;#39;).tab();
-      }); 
-  
-</script> 
-    <script src="/js/bootstrap.min.js"></script> 
     <script src="/js/bootstrap.min.js"></script></div>
   </body>
 </html>

@@ -170,33 +170,40 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
   
   <div class="container">
     <div class="row">
-      <div class="col-sm-9 col-sm-offset-1">
+      <div class="col-sm-10 col-sm-offset-1">
         <div class="row">
-          <h1><?php echo $langs[$lang]['who-are-we'];?></h1>
-          <br />
-          <p><?php echo $langs[$lang]['who-text'];?></p>
-        </div>
-        <hr class="divider" />
-        <div class="row">
-          <h1><?php echo $langs[$lang]['what-do'];?></h1>
-          <br />
-          <p><?php echo $langs[$lang]['what-text'];?></p>
-          <ul><?php echo $langs[$lang]['what-list'];?>
-          </ul>
-        </div>
-        <hr class="divider" />
-        <div class="row">
-          <h1><?php echo $langs[$lang]['how-participate'];?></h1>
-          <br />
-          <p><?php echo $langs[$lang]['how-text'];?></p>
-          <div class="alert alert-info" role="alert">
-            <p>
-              <b><?php echo $langs[$lang]['group-info'];?></b>
-            </p>
+          <div class="col-sm-12">
+            <h1><?php echo $langs[$lang]['who-are-we'];?></h1>
+            <br />
+            <p><?php echo $langs[$lang]['who-text'];?></p>
           </div>
         </div>
         <hr class="divider" />
         <div class="row">
+          <div class="col-sm-12">
+            <h1><?php echo $langs[$lang]['what-do'];?></h1>
+            <br />
+            <p><?php echo $langs[$lang]['what-text'];?></p>
+            <ul><?php echo $langs[$lang]['what-list'];?>
+            </ul>
+          </div>
+        </div>
+        <hr class="divider" />
+        <div class="row">
+          <div class="col-sm-12">
+            <h1><?php echo $langs[$lang]['how-participate'];?></h1>
+            <br />
+            <p><?php echo $langs[$lang]['how-text'];?></p>
+            <div class="alert alert-info" role="alert">
+              <p>
+                <b><?php echo $langs[$lang]['group-info'];?></b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="divider" />
+        <div class="row">
+          <div class="col-sm-12">
           <h1><?php echo $langs[$lang]['thanks'];?></h1>
           <br />
           <p><?php echo $langs[$lang]['thank-list'];?>

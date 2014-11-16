@@ -93,10 +93,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
   </div>
   
   <div class="container">
-    <br />
     <div class="row">
-      <div class="container">
-        <div class="col-sm-10 col-sm-offset-1">
+      <div class="col-sm-10 col-sm-offset-1">
+      
+        <div class="row">
           <div class="col-sm-2">
             <img src="/img/os3.png" width="96px" height="96px" />
           </div>
@@ -107,13 +107,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
             <p><?php echo $langs[$lang]['aosc-os-desc'];?></p>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <hr class="divider" />
-    <div class="row">
-      <div class="container">
-        <div class="col-sm-10 col-sm-offset-1">
+        
+        <hr class="divider" />
+        <div class="row">
           <div class="col-sm-2">
             <img src="/img/ast.png" width="96px" height="96px" />
           </div>
@@ -124,13 +120,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
             <p><?php echo $langs[$lang]['anthon-starter-text'];?></p>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <hr class="divider" />
-    <div class="row">
-      <div class="container">
-        <div class="col-sm-10 col-sm-offset-1">
+        
+        <hr class="divider" />
+        <div class="row">
           <div class="col-sm-2">
             <img src="/img/localization.png" width="96px" height="96px" />
           </div>
@@ -141,13 +133,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
             <p><?php echo $langs[$lang]['localization-text'];?></p>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <hr class="divider" />
-    <div class="row">
-      <div class="container">
-        <div class="col-sm-10 col-sm-offset-1">
+        
+        <hr class="divider" />
+        <div class="row">
           <div class="col-sm-2">
             <img src="/img/github.png" width="96px" height="96px" />
           </div>
@@ -159,10 +147,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
             <br />
           </div>
         </div>
+        
       </div>
     </div>
-    
-  </div><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
+  </div>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
 
   <script src="/js/jquery-min.js"></script> 
   <script src="/js/bootstrap.min.js"></script></body>
