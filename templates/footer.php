@@ -8,7 +8,7 @@ $langs_f = array(
     'main'=>'主要站点',
   ),
   'zh-tw' => array(
-    'main'=>'Main Sites',
+    'main'=>'主要站點',
   ),
 );
 include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';

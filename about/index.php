@@ -104,19 +104,19 @@ $langs = array(
           <p>以下是我們的特別感謝：</p>
           <ul>
             <li>
-            <a href="http://www.ucloud.com/">UCloud</a> - where this website is hosted on.</li>
+            <a href="http://www.ucloud.com/">UCloud，優刻得</a> - 本站點的託管商</li>
             <li>
-            <a href="http://www.ncnu.edu.tw/">National Chi Nan University</a> - our public compiling server.</li>
+            <a href="http://www.ncnu.edu.tw/">國立暨南大學（台灣）</a> - 我們的公用編譯伺服器</li>
             <li>
-            <a href="http://studio.bluet.org/">BlueT</a> - awesome server for repository.</li>
+            <a href="http://studio.bluet.org/">BlueT</a> - 我們的軟體倉庫託管商</li>
             <li>
-            <a href="http://www.upyun.com/">Upyun</a> - CDN contents.</li>
+            <a href="http://www.upyun.com/">Upyun，又拍雲</a> - CDN 資源託管</li>
             <li>
-            <a href="http://www.qiniutek.com/">Qiniu</a> - CDN contents.</li>
+            <a href="http://www.qiniutek.com/">Qiniu，七牛雲</a> - CDN 資源託管</li>
             <li>
-            <a href="http://www.maxcdn.com/">MaxCDN</a> - awesome CDN resources for repository mirrors.</li>
+            <a href="http://www.maxcdn.com/">MaxCDN</a> - 軟體倉庫 CDN 鏡像</li>
             <li>
-            <a href="http://crowdin.net/">Crowdin</a> - localization hosting.</li>
+            <a href="http://crowdin.net/">Crowdin</a> - 本地化系統託管</li>
           </ul>',
   ),
 );
