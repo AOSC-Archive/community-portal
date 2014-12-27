@@ -63,7 +63,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
             <a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a>
           </p>
           <p align="left">
-            <script type="text/javascript" src="http://www.openhub.net/p/717872/widgets/project_thin_badge.js"></script>
+            <script type="text/javascript" src="https://www.openhub.net/p/717872/widgets/project_thin_badge.js"></script>
           </p>
         </div>
       </div>
