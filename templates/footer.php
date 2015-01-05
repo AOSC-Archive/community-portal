@@ -50,7 +50,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
         </div>
         <div class="col-sm-11">
           <h4 align="left">Anthon Open Source Community</h4>
-          <p align="left">Copyleft 2011 - 2014, for every member of the community.</p>
+          <p align="left">Copyleft 2011 - 2015, for every member of the community.</p>
         </div>
         <div class="col-sm-9" style="margin-top:20px;">
           <p align="left">
