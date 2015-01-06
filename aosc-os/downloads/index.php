@@ -53,6 +53,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
           <hr class="divider" />
           <ul class="nav nav-tabs">
             <li role="presentation" class="active">
+              <a href="#help" data-toggle="tab">Instructions (OS3)</a>
+            </li>
+            <li role="presentation">
               <a href="#dpkg" data-toggle="tab">DPKG Based</a>
             </li>
             <li role="presentation">
@@ -62,13 +65,55 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
               <a href="#server" data-toggle="tab">for Servers</a>
             </li>
             <li role="presentation">
-              <a href="#help" data-toggle="tab">Instructions (OS3)</a>
-            </li>
-            <li role="presentation">
               <a href="#os2" data-toggle="tab">Legacy (OS2)</a>
             </li>
           </ul>
+
           <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane" id="help">
+              <br />
+              <h2>Installation</h2>
+              <p>There are generally two ways to install AOSC OS on your machine.</p>
+              <ul>
+                <li>1. Get AOSC LiveKit and use the installer;</li>
+                <li>2. Get tarballs of AOSC OS and deploy them manually.</li>
+              </ul>
+              <br />
+              <h2>Installation using AOSC LiveKit</h2>
+              <p>To install AOSC OS with LiveKit and the LiveKit Installer, download the LiveKit
+                iso image from the button provided below.</p>
+              <p>This iso image has provided you with some basic tools for installation:</p>
+              <ul>
+                <li>- GParted partition manager for preparing your partitions for installation;</li>
+                <li>- Midori Web Browser for some needs with Internet resources;</li>
+                <li>- Terminal emulator for the sake of God :-);</li>
+                <li>- LiveKit Installer to install AOSC OS of your choice;</li>
+              </ul>
+              <a href="http://repo.anthonos.org/os3-releases/01_Beta/00_LiveKit/LATEST.iso" class="btn btn-default">Download</a>
+              <br />
+              <h2>Manual Deployment Using Tarballs</h2>
+              <p>Apart from using the LiveKit image for Internet based installation, another option
+              is to install directly from the released tarballs. Here's how to do it.</p>
+                <ul>
+                  <li>Get a LiveCD or boot up another Linux distribution (must be x86_64);</li>
+                  <li>Download the tarball(s);</li>
+                  <li>Clear a partition (of course you can seperate /home, /boot, etc);</li>
+                  <li>Mount the partition (TFM for &quot;mount&quot; command,
+                    <a href="http://linux.die.net/man/8/mount">here</a>);</li>
+                  <li>Untar the tarball(s) (TFM for &quot;tar&quot; command,
+                    <a href="http://linux.die.net/man/1/tar">here</a>);</li>
+                  <li>Configure domain name resolver (cp /etc/resolv.conf /path/to/mount/point/etc/);</li>
+                  <li>Mount and bind /dev /proc /sys to target system;</li>
+                  <li>&quot;chroot&quot; into the target system (TFM for &quot;chroot&quot; command,
+                    <a href="http://linux.die.net/man/2/chroot">here</a>);</li>
+                  <li>Install GRUB (search it up, man...);</li>
+                  <li>Unmount the partition, and reboot;</li>
+                  <li>Boom (if this happenned, report it on IRC or throw it on the
+                    <a href="http://bugs.anthonos.org">bug tracker</a>);</li>
+                </ul>
+                <br />
+              <p>Happy hacking...</p>
+            </div>
             <div class="tab-pane active" id="dpkg">
               <br />
               <div class="row">
@@ -399,31 +444,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="help">
-              <br />
-              <h2>How do I use them?</h2>
-              <p>If you would really want to use a distribution in its Alpha stage, the mandatory skill would be RTFM (no, we mean
-              Read The Fine Manuals). Basic steps to install and use these tarball releases were shown as below:</p>
-              <ul>
-                <li>Get a LiveCD or boot up another Linux distribution (must be x86_64);</li>
-                <li>Download the tarball(s);</li>
-                <li>Clear a partition (of course you can seperate /home, /boot, etc);</li>
-                <li>Mount the partition (TFM for &quot;mount&quot; command, 
-                <a href="http://linux.die.net/man/8/mount">here</a>);</li>
-                <li>Untar the tarball(s) (TFM for &quot;tar&quot; command, 
-                <a href="http://linux.die.net/man/1/tar">here</a>);</li>
-                <li>Configure domain name resolver (cp /etc/resolv.conf /path/to/mount/point/etc/);</li>
-                <li>Mount and bind /dev /proc /sys to OOBP;</li>
-                <li>&quot;chroot&quot; into OOBP (TFM for &quot;chroot&quot; command, 
-                <a href="http://linux.die.net/man/2/chroot">here</a>);</li>
-                <li>Install GRUB (search it up, man...);</li>
-                <li>Unmount the partition, and reboot;</li>
-                <li>Boom (if this happenned, report it on IRC or throw it on the 
-                <a href="http://bugs.anthonos.org">bug tracker</a>);</li>
-              </ul>
-              <br />
-              <p>Happy hacking...</p>
-            </div>
             <div class="tab-pane" id="os2">
               <br />
               <div class="row">
@@ -458,11 +478,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
       </div>
     </div>
   </div><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
-  <script src="/js/jquery-min.js"></script> 
-  <script src="/js/bootstrap.min.js"></script> 
+  <script src="/js/jquery-min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
   <script type="text/javascript">
       jQuery(document).ready(function ($) {
         $(&amp;#39;#tabs&amp;#39;).tab();
-      }); 
+      });
 </script></body>
 </html>
