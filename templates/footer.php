@@ -13,8 +13,8 @@ $langs_f = array(
   ),
   'zh-tw' => array(
     'main'=>'主要站點',
-    'community'=>'Community Sites',
-    'contact'=>'Contact Us',
+    'community'=>'社區相關',
+    'contact'=>'聯絡我們',
   ),
 );
 include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
