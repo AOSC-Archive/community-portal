@@ -1,7 +1,7 @@
 <?php define('IN_FRAME', true);
 include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="<?php echo $lang;?>">
   <head>
     <meta name="generator"
     content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />

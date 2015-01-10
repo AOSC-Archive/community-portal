@@ -9,13 +9,13 @@ define('LANGUAGE_IN_REQUEST', true);
 
 if (LANGUAGE_IN_URL_ARG && !isset ($lang) && isset ($_GET['lang'])) {
   $lang_tester = htmlspecialchars($_GET['lang'],ENT_QUOTES);
-  if (in_array($lang_tester, $langs_allow)) {
+  if (in_array(strtolower($lang_tester), $langs_allow)) {
     $lang = $lang_tester;
     setcookie('lang', $lang, time()+3600*24*30, '/', 'anthonos.org');
   }
 }
 if (LANGUAGE_IN_COOKIE && !isset ($lang) && isset ($_COOKIE['lang'])) {
-  if (in_array($_COOKIE['lang'], $langs_allow)) $lang = $_COOKIE['lang'];
+  if (in_array(strtolower($_COOKIE['lang']), $langs_allow)) $lang = strtolower($_COOKIE['lang']);
 }
 function sortByWeight($a, $b) {
   if (strpos ($a,'q=') == false) $_a_w = 1;

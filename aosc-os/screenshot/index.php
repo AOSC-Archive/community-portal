@@ -1,7 +1,7 @@
 <?php define('IN_FRAME', true);
 include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="<?php echo $lang;?>">
   <head>
     <meta name="generator"
     content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
@@ -55,8 +55,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
       <div class="col-sm-10 col-sm-offset-1 blog-main">
         <p>Screenshot of the versions of AOSC OS, feel the difference and pick your choice for a spin! This below shows the
         diversity of desktop environments we provide.</p>
+      </div>
+      <div class="col-sm-12 blog-main">
         <hr class="divider" />
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs" style="margin-bottom:15px;">
           <li role="presentation" class="active">
             <a href="#gnome" data-toggle="tab">GNOME</a>
           </li>
@@ -92,148 +94,54 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
           </li>
         </ul>
       </div>
-    </div>
     <div id="my-tab-content" class="tab-content">
-    <div class="tab-pane active" id="gnome">
-      <div class="row">
-        <div class="col-sm-1 col-sm-offset-2">
-          <img src="/img/oobp-logo/gnome-oobp.png" width="96px" height="96px" />
-        </div>
-        <div class="col-sm-6 col-sm-offset-1">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2>AOSC OS with GNOME</h2>
-              <p>AOSC OS with the GNOME desktop environment, a completely free and open source desktop and application suite.</p>
+    <?php
+    $screenshots = array(
+    'gnome' => array('flag' => 'active', 'icon' => '/img/oobp-logo/gnome-oobp.png', 'title' => 'AOSC OS with GNOME', 'description' => 'AOSC OS with the GNOME desktop environment, a completely free and open source desktop and application suite.', 'path' => '/img/screenshots/gnome-oobp/', 'suffix' => 'jpg'),
+
+    'mate' => array('flag' => '', 'icon' => '/img/oobp-logo/mate-oobp.png', 'title' => 'AOSC OS with MATE', 'description' => 'AOSC OS with the MATE desktop, a fork of GNOME 2 desktop, with slight customization and tweaks for good.', 'path' => '/img/screenshots/mate-oobp/', 'suffix' => 'jpg'),
+
+    'cinnamon' => array('flag' => '', 'icon' => '/img/oobp-logo/cinnamon-oobp.png', 'title' => 'AOSC OS with Cinnamon', 'description' => 'AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.', 'path' => '/img/screenshots/cinnamon-oobp/', 'suffix' => 'jpg'),
+
+    'xfce' => array('flag' => '', 'icon' => '/img/oobp-logo/xfce-oobp.png', 'title' => 'AOSC OS with XFCE', 'description' => 'AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.', 'path' => '/img/screenshots/xfce-oobp/', 'suffix' => 'jpg'),
+
+    'os2' => array('flag' => '', 'icon' => '/img/anos.png', 'title' => 'AnthonOS (AOSC OS2)', 'description' => 'Final Release &quot;Doge&quot; comes with KDE 4 as its default desktop environment, here showing is the default desktop configuration of AnthonOS (however you can choose for the default Plasma desktop configuration).', 'path' => '/img/anthonos/', 'suffix' => 'png'),
+    );
+
+foreach ($screenshots as $id => $ar){
+  echo <<<TABEOD
+      <div class="tab-pane {$ar['flag']}" id="$id">
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-2">
+            <img src="{$ar['icon']}" width="96px" height="96px" />
+          </div>
+          <div class="col-sm-6 col-sm-offset-1">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>{$ar['title']}</h2><p>{$ar['description']}</p>
+              </div>
             </div>
           </div>
-          <hr class="divider" />
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="row">
-            <div class="my_gallery">
-<?php
-  for ($a=1;$a<=10;$a++)
-    echo '<a target="_blank" href="/img/screenshots/gnome-oobp/'.$a.'.jpg"><img src="/img/screenshots/gnome-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane" id="mate">
-      <div class="row">
-        <div class="col-sm-1 col-sm-offset-2">
-          <img src="/img/oobp-logo/mate-oobp.png" width="96px" height="96px" />
-        </div>
-        <div class="col-sm-6 col-sm-offset-1">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2>AOSC OS with MATE</h2>
-              <p>AOSC OS with the MATE desktop, a fork of GNOME 2 desktop, with slight customization and tweaks for good.</p>
-            </div>
-          </div>
-          <hr class="divider" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="row">
-            <div class="my_gallery">
-<?php
-  for ($a=1;$a<=10;$a++)
-    echo '<a target="_blank" href="/img/screenshots/mate-oobp/'.$a.'.jpg"><img src="/img/screenshots/mate-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-?>
+        <div class="row">
+            <hr class="divider" />
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="my_gallery">
+TABEOD;
+
+    for ($a=1;$a<=10;$a++)
+      echo '<a target="_blank" href="'.$ar['path'].$a.'.'.$ar['suffix'].'"><img src="'.$ar['path'].$a.'_small.'.$ar['suffix'].'" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
+      
+  echo <<<TABEOD
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="tab-pane" id="cinnamon">
-      <div class="row">
-        <div class="col-sm-1 col-sm-offset-2">
-          <img src="/img/oobp-logo/cinnamon-oobp.png" width="96px" height="96px" />
-        </div>
-        <div class="col-sm-6 col-sm-offset-1">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2>AOSC OS with Cinnamon</h2>
-              <p>AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.</p>
-            </div>
-          </div>
-          <hr class="divider" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="row">
-            <div class="my_gallery">
-<?php
-  for ($a=1;$a<=10;$a++)
-    echo '<a target="_blank" href="/img/screenshots/cinnamon-oobp/'.$a.'.jpg"><img src="/img/screenshots/cinnamon-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane" id="xfce">
-      <div class="row">
-        <div class="col-sm-1 col-sm-offset-2">
-          <img src="/img/oobp-logo/xfce-oobp.png" width="96px" height="96px" />
-        </div>
-        <div class="col-sm-6 col-sm-offset-1">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2>AOSC OS with XFCE</h2>
-              <p>AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.</p>
-            </div>
-          </div>
-          <hr class="divider" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="row">
-            <div class="my_gallery">
-<?php
-  for ($a=1;$a<=10;$a++)
-    echo '<a target="_blank" href="/img/screenshots/xfce-oobp/'.$a.'.jpg"><img src="/img/screenshots/xfce-oobp/'.$a.'_small.jpg" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane" id="os2">
-      <div class="row">
-        <div class="col-sm-1 col-sm-offset-2">
-          <img src="/img/anos.png" width="96px" height="96px" />
-        </div>
-        <div class="col-sm-6 col-sm-offset-1">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2>AnthonOS (AOSC OS2)</h2>
-              <p>Final Release &quot;Doge&quot; comes with KDE 4 as its default desktop environment, here showing is the default
-              desktop configuration of AnthonOS (however you can choose for the default Plasma desktop configuration).</p>
-            </div>
-          </div>
-          <hr class="divider" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="row">
-            <div class="my_gallery">
-<?php
-  for ($a=1;$a<=10;$a++)
-    echo '<a target="_blank" href="/img/anthonos/'.$a.'.png"><img src="/img/anthonos/'.$a.'_small.png" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
-?>
-            </div>
-          </div>
-        </div>
-      </div>
+TABEOD;
+}
+    ?>
     </div>
     <!-- /.container -->
     <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>

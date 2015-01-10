@@ -1,7 +1,7 @@
 <?php define('IN_FRAME', true);
 include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="<?php echo $lang;?>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

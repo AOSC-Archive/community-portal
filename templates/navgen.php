@@ -1,9 +1,11 @@
 <?php
 if (!defined('IN_FRAME')) exit();
 function pushNavBar(){
-  echo '<div class="blog-masthead">
-  <div class="container">
-    <nav class="blog-nav">';
+  echo <<<EOD
+  <div class="blog-masthead">
+    <div class="container">
+      <nav class="blog-nav">
+EOD;
   return;
 }
 function addNavItem($phpPath, $href, $lang_selector, $langs_array, $level='normal'){
@@ -16,9 +18,12 @@ function addNavItem($phpPath, $href, $lang_selector, $langs_array, $level='norma
   return;
 }
 function popNavBar(){
-  echo '    </nav>
+  echo  <<<EOD
+      </nav>
+      <!-- 我该写点什么好？-->
+    </div>
   </div>
-</div>';
+EOD;
   return;
 }
 ?>
