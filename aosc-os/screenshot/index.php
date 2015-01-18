@@ -72,9 +72,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
             <a href="#mate" data-toggle="tab">MATE</a>
           </li>
           <li role="presentation" class="disabled">
-            <a href="#enlightenment" data-toggle="tab">Enlightenment</a>
-          </li>
-          <li role="presentation" class="disabled">
             <a href="#plasma" data-toggle="tab">Plasma</a>
           </li>
           <li role="presentation" class="disabled">
