@@ -14,10 +14,9 @@ $langs = array(
     'take-action-text'=>"It's not only about talking, let's take action for improvement! By using, testing, criticizing or even
                 contributing to the projects, they are just going to get better.",
     'news'=>'News',
-    'news-topic-1'=>'AOSC OS3 OOBP Coming Soon',
-    'news-text-1'=>'After 3 months of development. AOSC OS3 builds with several
-              different desktop environments are almost ready and will be
-              released very soon.<p></p>Be sure to check for downloads at the 
+    'news-topic-1'=>'AOSC OS3 Beta Now Green',
+    'news-text-1'=>'After months of development. AOSC OS3 Beta builds with several
+              different desktop environments are ready for testing.<p></p>Be sure to check for downloads at the 
               <a href="https://portal.anthonos.org/aosc-os/downloads">Downloads Section</a>
               of AOSC OS sub-site.',
     'news-topic-2'=>'LinkC<sup>*</sup> to Change Core',
@@ -46,8 +45,8 @@ $langs = array(
     'take-action-text'=>'空谈误事，让我们用实际行动来改进开源软件吧！无论是一次体验、一次测试、一句批评，甚至是给项目贡献代码，
                 开源软件的未来将会更美好！',
     'news'=>'新闻',
-    'news-topic-1'=>'AOSC OS3 OOBP 预览版即将发布',
-    'news-text-1'=>'经过三个月的开发，带有许多富有特色的桌面环境的 AOSC OS3 预览版本将在短期内发布。</p>
+    'news-topic-1'=>'AOSC OS3 Beta 发布',
+    'news-text-1'=>'经过数月的开发，带有许多富有特色的桌面环境的 AOSC OS3 Beta 已发布。</p>
               <p>下载方式将在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/downloads">下载分区</a>
               发布。',
     'news-topic-2'=>'LinkC<sup>*</sup> 更改核心',
@@ -71,8 +70,8 @@ $langs = array(
     'take-action-text'=>"It's not only about talking, let's take action for improvement! By using, testing, criticizing or even
                 contributing to the projects, they are just going to get better.",
     'news'=>'News',
-    'news-topic-1'=>'AOSC OS3 OOBP 預覽版即將發佈',
-    'news-text-1'=>'經過三個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 預覽版本將在短期內發佈。</p>
+    'news-topic-1'=>'AOSC OS3 Beta 發佈',
+    'news-text-1'=>'經過數個月的開發，帶有許多富有特色的桌面環境的 AOSC OS3 Beta 已發佈。</p>
               <p>下載方式將在 AOSC OS 子站的 <a href="https://portal.anthonos.org/aosc-os/downloads">下載區塊</a>
               發佈。',
     'new-topic-2'=>'LinkC<sup>*</sup> 核心變更',
