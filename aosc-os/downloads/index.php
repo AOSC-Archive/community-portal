@@ -69,8 +69,8 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
             </li>
           </ul>
 
-          <div id="my-tab-content active" class="tab-content">
-            <div class="tab-pane" id="help">
+          <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane active" id="help">
               <br />
               <h2>Installation</h2>
               <p>There are generally two ways to install AOSC OS on your machine.</p>
@@ -323,8 +323,8 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with Plasma</h2>
-                  <p>AOSC OS Beta with (KDE) Plasma desktop, version 5. Plasma desktop is formerly known as the KDE,
-                  or K Desktop Environment. Plasma desktop is built fully upon Qt 5 technologies, with some plugins built to make
+                  <p>AOSC OS Beta with (KDE) Plasma desktop, version 4. Plasma desktop is formerly known as the KDE,
+                  or K Desktop Environment. Plasma desktop is built fully upon Qt technologies, with some plugins built to make
                   Plasma work better. Plasma desktop requires a machine with decent amount of processor and graphics
                   performance.</p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_kde-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default">Download Release</a>
