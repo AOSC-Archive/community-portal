@@ -233,19 +233,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <div class="alert alert-danger">OOBP not ready: blocker, Pantheon is broken with the update to GTK+ 3.14.</div>
                 </div>
               </div>
-              <hr class="divider" />
-              <div class="row">
-                <div class="col-sm-2">
-                  <img src="/img/oobp-logo/deepin-oobp.png" width="96px" height="96px" />
-                </div>
-                <div class="col-sm-10">
-                  <h2>AOSC OS with DDE</h2>
-                  <p>AOSC OS Beta with DDE (Deepin Desktop Environment), version 2. Deepin Desktop Environment is a
-                  desktop interface developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be
-                  suitable for any machine older than the ones on sale before 2010.</p>
-                  <div class="alert alert-danger">OOBP not ready: Blocker, Deepin 2014.2 breaks with former build.</div>
-                </div>
-              </div>
             </div>
             <div class="tab-pane" id="rpm">
               <div class="alert alert-danger" role="alert">
@@ -372,19 +359,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   and probably beautiful, it&#39;s plagued with stability issues. Be careful when choosing this desktop
                   environment.</p>
                   <div class="alert alert-danger">OOBP not ready: blocker, Pantheon is broken with the update to GTK+ 3.14.</div>
-                </div>
-              </div>
-              <hr class="divider" />
-              <div class="row">
-                <div class="col-sm-2">
-                  <img src="/img/oobp-logo/deepin-oobp.png" width="96px" height="96px" />
-                </div>
-                <div class="col-sm-10">
-                  <h2>AOSC OS with DDE</h2>
-                  <p>AOSC OS Beta with DDE (Deepin Desktop Environment), version 2. Deepin Desktop Environment is a
-                  desktop interface developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be
-                  suitable for any machine older than the ones on sale before 2010.</p>
-                  <div class="alert alert-danger">OOBP not ready: Blocker, Deepin 2014.2 breaks with former build.</div>
                 </div>
               </div>
             </div>

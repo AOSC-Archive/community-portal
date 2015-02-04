@@ -82,10 +82,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
           </li>
           <li role="presentation" class="disabled">
             <a href="#unity" data-toggle="tab">Unity</a>
-          </li>
-          <li role="presentation" class="disabled">
-            <a href="#dde" data-toggle="tab">DDE</a>
-          </li>
+          </li>h
           <li role="presentation">
             <a href="#os2" data-toggle="tab">AnthonOS (OS2)</a>
           </li>
