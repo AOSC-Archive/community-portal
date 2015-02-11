@@ -33,7 +33,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
         <div class="col-sm-4">
           <h4 align="left"><?php echo $langs_f[$lang]['community'];?></h4>
           <p align="left"><a href="https://bugs.anthonos.org/" rel="external nofollow">Bug Tracker</a></p>
-          <p align="left"><a href="http://wiki-dev.anthonos.org/" rel="external nofollow">TechBase</a></p>
+          <p align="left"><a href="http://techbase.anthonos.org/" rel="external nofollow">TechBase</a></p>
           <p align="left"><a href="http://l10n.anthonos.org/" rel="external nofollow">Localization</a></p>
         </div>
         <div class="col-sm-4 ">
