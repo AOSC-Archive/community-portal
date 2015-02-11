@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>解决Linux和Windows时间不一致的问题！ - AnthonOS 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-654-1-1.html" rel="canonical" />
+<meta name="keywords" content="解决Linux和Windows时间不一致的问题！" />
+<meta name="description" content=" 解决Linux和Windows时间不一致的问题！ ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-44.html">AnthonOS 反馈和支持</a> &rsaquo; 解决Linux和Windows时间不一致的问题！</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-7-1 08:57:20	</p>
+			<h3>解决Linux和Windows时间不一致的问题！</h3>
+		不知各位Linux+Windows双启动的孩子们有没有遇到过时间不统一的问题？有的话往下看哈。<br />
+<br />
+What<br />
+之所谓在中国标准时间，Windows和Linux中的时间总是相差8小时的现象。<br />
+<br />
+Why<br />
+Linux和苹果操作系统以当前主板CMOS内时间做为格林威治标准时间，再根据系统设置的时区来最终确定当前系统时间（如时区设置为GMT+08:00北京时间时以及当前CMOS时间为03:00，那么系统会将两个时间相加得出显示在桌面的当前系统时间为11:00）。<br />
+这样的时间理解差异……就造成了这个问题。<br />
+<br />
+How<br />
+这里只介绍Linux（KDE桌面，安同同理）下的解决方法。打开你的终端！<br />
+输入一句神奇的命令：<br />
+sudo hwclock --hctosys<br />
+（这个命令的作用：因为Windows是以你的CMOS时钟为准的，那么我们就让Linux也以这个时钟为准）<br />
+完毕！时间是不是对了？<br />
+但是下次重启后时间又乱了！没问题，我们让系统每次启动的时候运行这个命令就成了。<br />
+在你的主文件夹按下Alt+.组合，然后找到.kde文件夹，然后打开里面的Autostart文件夹。<br />
+右键，新建文本文档，命名为timefix（没有后缀！），然后打开这个新建的文件，输入这些内容：<br />
+<br />
+#!/bin/sh<br />
+#这句话定义了这个文件其实是脚本！<br />
+sudo hwclock --hctosys<br />
+#这句话就是上面用来调整时间的命令！<br />
+<br />
+把上面这四行复制到文件里然后保存！<br />
+<br />
+Finally<br />
+重启你的电脑然后……就这样了。<br />
+<br />
+			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-654-1-1.html" target="_blank"><strong>解决Linux和Windows时间不一致的问题！</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

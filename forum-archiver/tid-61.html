@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>Linux 源码安装软件之 configure 参数解释 - AnthonOS 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-61-1-1.html" rel="canonical" />
+<meta name="keywords" content="Linux 源码安装软件之 configure 参数解释" />
+<meta name="description" content=" Linux 源码安装软件之 configure 参数解释 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-44.html">AnthonOS 反馈和支持</a> &rsaquo; Linux 源码安装软件之 configure 参数解释</div>
+
+<div id="content">
+			<p class="author">
+					<strong>sea</strong>
+				发表于 2013-1-6 16:17:01	</p>
+			<h3>Linux 源码安装软件之 configure 参数解释</h3>
+		转自：http://blog.sina.com.cn/s/blog_55079574010009ho.html<br />
+<br />
+Linux环境下的软件安装，并不是一件容易的事情；如果通过源代码编译后在安装，当然事情就更为复杂一些；现在安装各种软件的教程都非常普遍；但万变不离其中，对基础知识的扎实掌握，安装各种软件的问题就迎刃而解了。Configure脚本配置工具就是基础之一，它是autoconf的工具的基本应用。<br />
+　　<br />
+　　与一些技巧相比，Configure显得基础一些，当然使用和学习起来就显得枯燥乏味一些，当然要成为高手，对基础的熟悉不能超越哦。<br />
+　　<br />
+　　为此我转载了一篇关于Configure选项配置的详细介绍。供大家参考<br />
+<br />
+　　'configure'脚本有大量的命令行选项.对不同的软件包来说,这些选项可能会有变化,但是许多基本的选项是不会改变的.带上'--help'选项执行'configure'脚本可以看到可用的所有选项.尽管许多选项是很少用到的,但是当你为了特殊的需求而configure一个包时,知道他们的存在是很有益处的.下面对每一个选项进行简略的介绍:<br />
+<br />
+--cache-file=FILE<br />
+　　'configure'会在你的系统上测试存在的特性(或者bug!).为了加速随后进行的配置,测试的结果会存储在一个cache file里.当configure一个每个子树里都有'configure'脚本的复杂的源码树时,一个很好的cache file的存在会有很大帮助.<br />
+<br />
+--help<br />
+　　输出帮助信息.即使是有经验的用户也偶尔需要使用使用'--help'选项,因为一个复杂的项目会包含附加的选项.例如,GCC包里的'configure'脚本就包含了允许你控制是否生成和在GCC中使用GNU汇编器的选项.<br />
+<br />
+--no-create<br />
+　　'configure'中的一个主要函数会制作输出文件.此选项阻止'configure'生成这个文件.你可以认为这是一种演习(dry run),尽管缓存(cache)仍然被改写了.<br />
+<br />
+--quiet<br />
+--silent<br />
+　　当'configure'进行他的测试时,会输出简要的信息来告诉用户正在作什么.这样作是因为'configure'可能会比较慢,没有这种输出的话用户将会被扔在一旁疑惑正在发生什么.使用这两个选项中的任何一个都会把你扔到一旁.(译注:这两句话比较有意思,原文是这样的:If there was no such output, the user would be left wondering what is happening. By using this option, you too can be left wondering!)<br />
+<br />
+--version<br />
+　　打印用来产生'configure'脚本的Autoconf的版本号.<br />
+<br />
+--prefix=PREFIX(文件安装的位置,默认为：/usr/local)<br />
+　　'--prefix'是最常用的选项.制作出的'Makefile'会查看随此选项传递的参数,当一个包在安装时可以彻底的重新安置他的结构独立部分. 举一个例子,当安装一个包,例如说Emacs,下面的命令将会使Emacs Lisp file被安装到&quot;/opt/gnu/share&quot;:<br />
+$ ./configure --prefix=/opt/gnu/share<br />
+<br />
+--exec-prefix=EPREFIX<br />
+　　与'--prefix'选项类似,但是他是用来设置结构倚赖的文件的安装位置.编译好的'emacs'二进制文件就是这样一个问件.如果没有设置这个选项的话,默认使用的选项值将被设为和'--prefix'选项值一样.<br />
+<br />
+--bindir=DIR<br />
+　　指定二进制文件的安装位置.这里的二进制文件定义为可以被用户直接执行的程序, 默认为EPREFIX/bin.<br />
+<br />
+--sbindir=DIR<br />
+　　指定超级二进制文件的安装位置.这是一些通常只能由超级用户执行的程序.默认为EPREFIX/sbin<br />
+<br />
+--libexecdir=DIR(包目录,程序调用)<br />
+　　指定可执行支持文件的安装位置.与二进制文件相反,这些文件从来不直接由用户执行,但是可以被上面提到的二进制文件所执行.默认为EPREFIX/libexec.<br />
+<br />
+--datadir=DIR<br />
+　　指定通用数据文件的安装位置.默认为PREFIX/share<br />
+<br />
+--sysconfdir=DIR(/etc配置文件目录, 默认为PREFIX/etc)<br />
+　　指定在单个机器上使用的只读数据的安装位置.<br />
+<br />
+--sharedstatedir=DIR<br />
+　　指定可以在多个机器上共享的可写数据的安装位置. 默认为 PREFIX/com<br />
+<br />
+--localstatedir=DIR<br />
+　　指定只能单机使用的可写数据的安装位置. 默认为PREFIX/var<br />
+<br />
+--libdir=DIR(库文件目录)<br />
+　　指定库文件的安装位置. 默认为PREFIX/lib<br />
+<br />
+--includedir=DIR<br />
+　　指定C头文件的安装位置.其他语言如C++的头文件也可以使用此选项. 默认为PREFIX/include<br />
+<br />
+--oldincludedir=DIR<br />
+　　指定为除GCC外编译器安装的C头文件的安装位置. 默认为/usr/include<br />
+<br />
+--infodir=DIR<br />
+　　指定Info格式文档的安装位置.Info是被GNU工程所使用的文档格式. 默认为PREFIX/info<br />
+<br />
+--mandir=DIR(帮助文档的安装目录)<br />
+　　指定手册页的安装位置.默认为PREFIX/man<br />
+<br />
+--srcdir=DIR<br />
+　　这个选项对安装没有作用.他会告诉'configure'源码的位置.一般来说不用指定此选项,因为'configure'脚本一般和源码文件在同一个目录下.<br />
+<br />
+--program-prefix=PREFIX<br />
+　　指定将被加到所安装程序的名字上的前缀.例如,使用'--program-prefix=g'来configure一个名为'tar'的程序将会使安装的程序被命名为'gtar'.当和其他的安装选项一起使用时,这个选项只有当他被`Makefile.in'文件使用时才会工作.<br />
+<br />
+--program-suffix=SUFFIX<br />
+　　指定将被加到所安装程序的名字上的后缀.<br />
+<br />
+--program-transform-name=PROGRAM<br />
+　　这里的PROGRAM是一个sed脚本.当一个程序被安装时,他的名字将经过`sed -e PROGRAM'来产生安装的名字.<br />
+<br />
+--build=BUILD<br />
+　　指定软件包安装的系统平台.如果没有指定,默认值将是'--host'选项的值.<br />
+<br />
+--host=HOST<br />
+　　指定软件运行的系统平台.如果没有指定,将会运行`config.guess'来检测.<br />
+<br />
+--target=GARGET<br />
+　　指定软件面向(target to)的系统平台.这主要在程序语言工具如编译器和汇编器上下文中起作用.如果没有指定,默认将使用'--host'选项的值.<br />
+<br />
+--disable-FEATURE<br />
+　　一些软件包可以选择这个选项来提供为大型选项的编译时配置,例如使用Kerberos认证系统或者一个实验性的编译器最优配置.如果默认是提供这些特性,可以使用'--disable-FEATURE'来禁用它,这里'FEATURE'是特性的名字.例如:<br />
+$ ./configure --disable-gui<br />
+<br />
+-enable-FEATURE[=ARG](系统参数配置,在编译时完成)<br />
+　　相反的,一些软件包可能提供了一些默认被禁止的特性,可以使用'--enable-FEATURE'来起用它.这里'FEATURE'是特性的名字.一个特性可能会接受一个可选的参数.例如:<br />
+$ ./configure --enable-buffers=128<br />
+`--enable-FEATURE=no'与上面提到的'--disable-FEATURE'是同义的.<br />
+<br />
+--with-PACKAGE[=ARG]<br />
+　　在自由软件社区里,有使用已有软件包和库的优秀传统.当用'configure'来配置一个源码树时,可以提供其他已经安装的软件包的信息.例如,倚赖于Tcl和Tk的BLT器件工具包.要配置BLT,可能需要给'configure'提供一些关于我们把Tcl和Tk装的何处的信息:<br />
+$ ./configure --with-tcl=/usr/local --with-tk=/usr/local<br />
+'--with-PACKAGE=no'与下面将提到的'--without-PACKAGE'是同义的.<br />
+<br />
+--without-PACKAGE<br />
+　　有时候你可能不想让你的软件包与系统已有的软件包交互.例如,你可能不想让你的新编译器使用GNU ld.通过使用这个选项可以做到这一点:<br />
+$ ./configure --without-gnu-ld<br />
+<br />
+--x-includes=DIR<br />
+　　这个选项是'--with-PACKAGE'选项的一个特例.在Autoconf最初被开发出来时,流行使用'configure'来作为Imake的一个变通方法来制作运行于X的软件.'--x-includes'选项提供了向'configure'脚本指明包含X11头文件的目录的方法.<br />
+<br />
+--x-libraries=DIR<br />
+　　类似的,'--x-libraries'选项提供了向'configure'脚本指明包含X11库的目录的方法.<br />
+<br />
+　　在源码树中运行'configure'是不必要的同时也是不好的.一个由'configure'产生的良好的'Makefile'可以构筑源码属于另一棵树的软件包.在一个独立于源码的树中构筑派生的文件的好处是很明显的:派生的文件,如目标文件,会凌乱的散布于源码树.这也使在另一个不同的系统或用不同的配置选项构筑同样的目标文件非常困难.建议使用三棵树:一棵源码树(source tree),一棵构筑树(build tree),一棵安装树(install tree).这里有一个很接近的例子,是使用这种方法来构筑GNU malloc包:<br />
+$ gtar zxf mmalloc-1.0.tar.gz<br />
+$ mkdir build &amp;&amp; cd build<br />
+$ ../mmalloc-1.0/configure<br />
+creating cache ./config.cache<br />
+checking for gcc... gcc<br />
+checking whether the C compiler (gcc ) works... yes<br />
+checking whether the C compiler (gcc ) is a cross-compiler... no<br />
+checking whether we are using GNU C... yes<br />
+checking whether gcc accepts -g... yes<br />
+checking for a BSD compatible install... /usr/bin/install -c<br />
+checking host system type... i586-pc-linux-gnu<br />
+checking build system type... i586-pc-linux-gnu<br />
+checking for ar... ar<br />
+checking for ranlib... ranlib<br />
+checking how to run the C preprocessor... gcc -E<br />
+checking for unistd.h... yes<br />
+checking for getpagesize... yes<br />
+checking for working mmap... yes<br />
+checking for limits.h... yes<br />
+checking for stddef.h... yes<br />
+updating cache ../config.cache<br />
+creating ./config.status<br />
+这样这棵构筑树就被配置了,下面可以继续构筑和安装这个包到默认的位置'/usr/local':<br />
+$ make all &amp;&amp; make install<br />
+<br />
+Trackback: http://tb.blog.csdn.net/TrackBack.aspx?PostId=1440383<br />
+一个软件包通过编译源代码安装后，如何完全的卸载？？<br />
+<br />
+如果原先的source还在的话，很多source的Makefile都有写uninstall规则，直接在Souce里make uninstall就可行，不过碰到无良作者没写的，那一句一句看Makefile里install部分他都干了些什么，然后挨个删除。<br />
+如果source没了.....那就一边郁闷吧<br />
+到目前为止, 我装的都可以make uninstall.......<br />
+(因为总是不小心装错地方, 结果就make uninstall&amp;&amp;make clean,然后重新configure......)<br />
+linux下软件的基本安装和卸载<br />
+ <br />
+Linux软件的安装和卸载一直是困扰许多新用户的难题。在Windows中，我们可以使用软件自带的安装卸载程序或在控制面板中的“添加/删除程序”来实现。与其相类似，在Linux下有一个功能强大的软件安装卸载工具，名为RPM。它可以用来建立、安装、查询、更新、卸载软件。该工具是在命令行下使用的。在Shell的提示符后输入rpm，就可获得该命令的帮助信息。<br />
+<br />
+软件的安装<br />
+<br />
+Linux下软件的安装主要有两种不同的形式。<br />
+第一种安装文件名为xxx.tar.gz；<br />
+另一种安装文件名为xxx.i386.rpm。<br />
+以第一种方式发行的软件多为以源码形式发送的；第二种方式则是直接以二进制形式发送的。<br />
+<br />
+对于第一种，安装方法如下：<br />
+<br />
+1 .首先，将安装文件拷贝至你的目录中。例如，如果你是以root身份登录上的，就将软件拷贝至/root中。<br />
+<br />
+#cp xxx.tar.gz /root<br />
+<br />
+2 .由于该文件是被压缩并打包的,应对其解压缩。命令为：<br />
+<br />
+#tar xvzf filename.tar.gz 如果是filename.tar.bz2格式的，应该是tar jxvf filename.tar.bz2来解压<br />
+<br />
+3. 执行该命令后，安装文件按路径，解压缩在当前目录下。用ls命令可以看到解压缩后的文件。通常在解压缩后产生的文件中，有“Install”的文件。该文件为纯文本文件，详细讲述了该软件包的安装方法。<br />
+<br />
+4.执行解压缩后产生的一个名为configure的可执行脚本程序。它是用于检查系统是否有编译时所需的库，以及库的版本是否满足编译的需要等安装所需要的系统信息。(是否又库文件并且库文件必须符合系统要求)为随后的编译工作做准备。命令为： #./configure<br />
+<br />
+如果您想把软件安装到指定目录，应该用#<br />
+./configure --prefix=/您自己指定的目录，比如我想把一个mlterm安装到/opt/mlterm目录中，应该如下输入<br />
+<br />
+#./configure --prefix=/opt/mlterm<br />
+<br />
+5.检查通过后，将生成用于编译的MakeFile文件。此时，可以开始进行编译了。编译的过程视软件的规模和计算机性能的不同，所耗费的时间也不同。命令为： #make。<br />
+<br />
+6.成功编译后，键入如下的命令开始安装：<br />
+<br />
+#make install<br />
+<br />
+7.安装完毕，应清除编译过程中产生的临时文件和配置过程中产生的文件。键入如下命令：<br />
+<br />
+#make clean<br />
+<br />
+#make distclean<br />
+<br />
+至此，软件的安装结束。<br />
+./configure 配置软件属性,安装目录,检查编译所需的库文件是否存在(符合条件的)等,生成编译所需要的makefile 文件.<br />
+make生成 编译软件<br />
+make install 安装软件<br />
+make clean,make distclean 清除安装过程中生成的临时文件和配置文件<br />
+<br />
+<br />
+对于第二种，其安装方法要简单得多。<br />
+<br />
+同第一种方式一样，将安装文件拷贝至你的目录中。然后使用rpm来安装该文件。命令如下：<br />
+<br />
+#rpm -i filename.i386.rpm<br />
+<br />
+rpm将自动将安装文件解包，并将软件安装到缺省的目录下。并将软件的安装信息注册到rpm的数据库中。<br />
+参数i的作用是使rpm进入安装模式。<br />
+<br />
+软件的卸载<br />
+<br />
+1.软件的卸载主要是使用rpm来进行的。卸载软件首先要知道软件包在系统中注册的名称。键入命令：<br />
+<br />
+#rpm -q -a<br />
+<br />
+即可查询到当前系统中安装的所有的软件包。<br />
+<br />
+2. 确定了要卸载的软件的名称，就可以开始实际卸载该软件了。键入命令：<br />
+<br />
+#rpm -e <br />
+<br />
+即可卸载软件。参数e的作用是使rpm进入卸载模式。对名为的软件包进行卸载。由于系统中各个软件包之间相互有依赖关系。如果因存在依赖关系而不能卸载，rpm将给予提示并停止卸载。你可以使用如下的命令来忽略依赖关系，直接开始卸载：<br />
+<br />
+#rpm -e  -nodeps 忽略了软件包中的依赖关系<br />
+<br />
+忽略依赖关系的卸载可能会导致系统中其它的一些软件无法使用<br />
+<br />
+如果想知道rpm包安装到哪里了呢？<br />
+<br />
+应该用 #rpm -ql  显示软件套件的文件列表<br />
+<br />
+3.如何卸载用源码包安装的软件？<br />
+<br />
+最好是看README和INSTALL ；一般的情况下都有说，但大多软件没有提供源码包的卸载方法；<br />
+我们可以找到软件的安装点删除。主要看你把它安装在哪了。(先删除进程在删除执行文件等,直接删除然后)<br />
+<br />
+比如：<br />
+<br />
+如果安装软件时，指定个目录。这个问题也不会难；<br />
+<br />
+比如用源码包安装gaim 的<br />
+<br />
+#./configure --prefix=/opt/gaim<br />
+<br />
+#make<br />
+<br />
+#make install<br />
+<br />
+如果安装mlterm<br />
+<br />
+#./configure --prefix=/opt/mlterm<br />
+<br />
+#make<br />
+<br />
+#make install<br />
+<br />
+把源码包安装的软件，都指定安装在 /opt目录中，这样不就知道了？？<br />
+<br />
+如果删除，就删除相应的软件目录；<br />
+<br />
+如果删除，就删除相应的软件目录；<br />
+<br />
+有些软件要在解压安装目录中执行 make uninstall ，这样就卸载掉了				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-6-13 17:47:06	</p>
+			<h3></h3>
+		现在可能用cmake的更多了……			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-61-1-1.html" target="_blank"><strong>Linux 源码安装软件之 configure 参数解释</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

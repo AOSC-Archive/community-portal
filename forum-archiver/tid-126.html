@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>安同“神龙”测试版使用初体验 - AnthonOS 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-126-1-1.html" rel="canonical" />
+<meta name="keywords" content="安同“神龙”测试版使用初体验" />
+<meta name="description" content=" 安同“神龙”测试版使用初体验 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-44.html">AnthonOS 反馈和支持</a> &rsaquo; 安同“神龙”测试版使用初体验</div>
+
+<div id="content">
+			<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-9 23:01:07	</p>
+			<h3>安同“神龙”测试版使用初体验</h3>
+		&nbsp; &nbsp;&nbsp; &nbsp; 盼星星盼月亮终于在大年三十盼来了带有GUI安装程序的安同测试版，而且据说这个版本的用户界面有重大改动，我一直很好奇新的“神龙”会带来什么惊喜。 &nbsp; &nbsp;&nbsp; &nbsp; 首先，镜像变大了，1.4G多，其中相当数量是全新的图形安装环境所占的。OK，在安装之前，我先制作了一个Hybrid ISO然后直接cat到我的U盘里面，然后进入了安装程序。进入了安装程序发现，新的EHL无法正确识别位于USB存储设备的tarball，好，那么就把tarball复制到某个本地分区，继续进行安装。安装还算顺利，完成后便直接进入了新安装的“神龙”。第一次启动的时候会有Synaptics触摸板驱动报错，毕竟我这是台式机。按照惯例，先安装grub，修改fstab以使用已有的/home和swap，然后重启。（注意，白大提供的命令可能不工作，这种情况下，请在终端输入&quot;sudo grub-install /dev/sda&quot;和&quot;sudo update-grub&quot;） &nbsp; &nbsp;&nbsp; &nbsp; 新的测试版采用了一种独特的界面，刚进入桌面，只有左上角的一个时钟，不过我可以告诉你，这就是KDE！是的，当你将鼠标移到右侧，一个颇具有风格的面板便显现出来，依次排列着全新的启动器、系统通知区域和重新设计的任务列表。全新的启动器在很多方面类似于Android的应用抽屉，所有的变换翻页都有特效。在使用了一段时间之后你还会发现安同默认就有壁纸自动切换功能。和上一个版本相比，这个版本的KDE已经被安同开发团队给精心打磨过了，在习惯之后会发现新界面是如此的自然，用起来如此舒适。（见截图） <br />
+http://images-fast.digu.com/e8ade8a136145965c170faf4a392a9f2_0009.png<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 如果只是界面华丽，但是系统相应速度很糟糕的话，那什么意义也是没有的。我之前曾经安装过64位的Linux Mint并且得出了一个很无奈的结论：我的电脑的内存对于运行64位操作系统来说是不足的。当时系统响应之慢让我一直对64位保持着敬畏之心。在后来很长一段时间里我都没有敢碰64位系统。不过安同作为64位系统在响应速度方面已经完全出乎我的意料，已经远超我原来使用的32位Debian Stable和Linux Deepin。在应用方面，我通过软件中心安装了我更喜欢的网络应用套件SeaMonkey（包名iceape）和图片编辑器Krita并自行安装了JAVA实现的QQ客户端iQQ，并无问题而且速度超出想象，下面上一张截图。 http://images-fast.digu.com/sp/width/619/99eabf84f1e332fe4bb0a1d0703e457b_0009.png?f=detail<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 这张图是虽然比较老的相机创建的，但是文件并不小，Krita几乎是在瞬间就能够对文件进行渲染，其运行效率可见一斑。遗憾的是Krita暂时无法对RAW图片进行处理，不过别的工具还是有的，而且安同优秀的内核配置将会使此类程序运行更高效。 &nbsp; &nbsp;&nbsp; &nbsp; 对于国内的孩纸们及其担心的QQ，我因为暂时没有收到可用且带有文档的安同WebQQ所以无法评测，不过有iQQ可用且速度飞快，见图： http://images-fast.digu.com/sp/width/619/66239d4ca9ce0f95791aabc03a8b14d8_0009.png?f=detail<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 下面是多媒体方面的测试，为此我专门从我的MP3复制了一堆Apple Lossless音频以考验安同对这种少见的编码的处理能力。在进行这项测试之前，我发现安同在我的电脑上无法正常发声（声卡：HDA Intel），根据Debian用户的经验，通过输入“sudo alsactl init”得以解决。安同的多媒体前端程序包括Amarok和VLC Media Player，多媒体后端是VLC，理论上这个组合可以达到很高的解码兼容性。测试分音频和视频两部分，分别选取了以Apple Lossless格式存储的专辑Speak Now、HE-AAC编码的专辑Unreleased Songs（我百科里说了我们开发团队是有霉粉的）和前几天迅雷才拖下来的720p版《云图》（MKV封装，H.264+Dolby AC3），这两个媒体文件即使是被广泛使用的Windows也无法以默认解码器正确解码，那么没有另外安装解码器的安同在这方面表现如何呢？ <br />
+http://images-fast.digu.com/sp/width/619/cf7791272132512ebfbe70d2f445b81a_0009.png?f=detail<br />
+<br />
+http://images-fast.digu.com/sp/width/619/a10ffad046808ad714f604c23fb3d8fc_0009.png?f=detail<br />
+<br />
+http://images-fast.digu.com/sp/width/619/47f828aa496d243c135bd04ed46c128d_0009.png?f=detail<br />
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 不得不承认，安同所选用的VLC后端真的很强悍，不论是罕见的Apple Lossless、HE-AAC或者是带有AC3音频的720p电影都能轻松搞定，而且视频是通过CPU软解的，速度远快于Win7和Linux Deepin下的播放器，我不得不再次折服于安同内核和VLC的高效。不过我们可以看到，Amarok的翻译有些生硬，不过并不影响使用。 &nbsp; &nbsp;&nbsp; &nbsp; 从以上简单的测试来看，“神龙”的技术已经成熟，现在也可以用于日常使用，有的问题也很好解决，而自身先进的内核则代表了很高的技术水平。如果你还在为红旗、共创、中标的守旧、滞后与无为而对国产发行版感到失望，那么安同这个中国中学生创造的Linux发行版一定会让你眼前一亮。<br />
+<br />
+				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-10 00:10:40	</p>
+			<h3></h3>
+		前排支持。。。只是如何让我赶紧装上呢。哇哈哈。这是我的课题。				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-10 00:13:32	</p>
+			<h3></h3>
+		宝先森 发表于 2013-2-10 00:10 static/image/common/back.gif<br />
+前排支持。。。只是如何让我赶紧装上呢。哇哈哈。这是我的课题。<br />
+<br />
+一个新的安装程序已经开始开发了				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-10 00:18:22	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-10 00:13 static/image/common/back.gif<br />
+一个新的安装程序已经开始开发了<br />
+<br />
+收到。谢谢了。。。				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-10 08:53:52	</p>
+			<h3></h3>
+		楼主。。。iqq 在哪里下载啊。。我也安装好了。没qq上。呵呵<br />
+				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-10 17:15:15	</p>
+			<h3></h3>
+		宝先森 发表于 2013-2-10 08:53 static/image/common/back.gif<br />
+楼主。。。iqq 在哪里下载啊。。我也安装好了。没qq上。呵呵<br />
+<br />
+http://code.google.com/p/iqq/				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-10 23:45:19	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-2-10 17:15 static/image/common/back.gif<br />
+http://code.google.com/p/iqq/<br />
+<br />
+看到了。谢谢。。			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-126-1-1.html" target="_blank"><strong>安同“神龙”测试版使用初体验</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

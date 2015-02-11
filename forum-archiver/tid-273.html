@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>CentralPoint评测挑刺 - CentralPoint 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-273-1-1.html" rel="canonical" />
+<meta name="keywords" content="CentralPoint评测挑刺" />
+<meta name="description" content=" CentralPoint评测挑刺 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-123.html">CentralPoint 反馈和支持</a> &rsaquo; CentralPoint评测挑刺</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-4-5 10:39:12	</p>
+			<h3>CentralPoint评测挑刺</h3>
+		 本帖最后由 jeffbaichina 于 2013-4-5 11:28 编辑 <br />
+<br />
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 我先说说我对这个CentralPoint的看法，作为与安同真正具有同样技术基础的服务器版本，我能看见并亲眼用它，真心是很感动的。为什么呢？这事情从2012年初可以说起了，我们那个时候，实力孱弱，但不乏吹牛的力气（不是么），我们大力鼓吹桌面以及服务器的并行开发——当然，失败了。当时，也是我第一次在微博上遇到了@Tom_Bu，也就是CentralPoint之父卜思劼。我和颜只和他有过几次的短暂交流，当然，我们也看出来他的兴趣不大。那时我记得他在玩Compiz，还有什么保护伞公司。呵呵。<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 但我从来没想到，时隔一年，他出现在了这里，我们共同的社区。表示正在开发一个服务器的Linux发行版，名字叫“Zend Remix”，那时这和安同没有任何关系。但我试探性地回了几个帖，没想到，他很爽快地将他的系统直接贡献给社区，成为了第三个社区项目，和Heartl以及安同一起享受着技术共享原则。我们一年前的梦想终于成真。<br />
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 不叙旧了，回到正题。今天我在我的电脑上真机测试了CentralPoint，下面是测试条件。<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × HP Elitebook 2170p<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × Intel i5-3247U, 2 Cores 4 Threads, 1.80GHz<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × 8GB DDR3 1600MHz<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × 180+120GB Intel 330 Series SSD<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × 1TB 5400rpm<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × 250GB 5400rpm<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 其中，两个SSD在我的笔记本上的SATA III接口上，而两个HDD在外接（eSATA）硬盘托架上。而CentralPoint就安装在那个250GB的HDD上。<br />
+&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 废话不多说，我先整理一下我的感受：<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 从使用角度上说：非常的舒服，顺手而且感觉非常的踏实。不过速度就……呵呵，不过怪不得，可能是硬盘不好，不过确实没有发挥到极致。<br />
+&nbsp; &nbsp;&nbsp; &nbsp; Bug呢，发现两个：<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × systemd-analyze显示缺少python-dbus模块，不要说你不需要DBus，这个是很重要的性能分析工具！<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × root账户startx后发现配置没有了，/etc/skel的配置是否被应用？请检查。<br />
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 然后，几个配置建议：<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × 更改一下/etc/default/grub里面的默认linux命令行参数，麻烦干掉那个quiet参数，否则debug很难，而且只会拖慢开机速度大概2秒（在我的配置上，5400rpm的，07年的硬盘）。<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × systemd必须完整迁移，不要残留任何的init脚本。<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × 任何的服务都可以on-demand，懂我的意思吗？<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × 推送更新。<br />
+&nbsp; &nbsp;&nbsp; &nbsp; × 汉化！！！大不了多少。<br />
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 我还没有具体测试过网络运营功能，正在等待wiki的出现。<br />
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp; CentralPoint的受众面相对较小，但我真心祝愿你能保持好你的信心，然后认真地做下去。我相信你能，能做好，更能感动你心中的那个人。<br />
+<br />
+				<p class="author">
+					<strong>493500016</strong>
+				发表于 2013-4-5 11:27:55	</p>
+			<h3></h3>
+		额。。。。。。			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-273-1-1.html" target="_blank"><strong>CentralPoint评测挑刺</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

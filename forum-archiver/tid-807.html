@@ -1,0 +1,1418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>Community Driven Anthon 初步可用！晒过程如下： - :Next 开发区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-807-1-1.html" rel="canonical" />
+<meta name="keywords" content="Community Driven Anthon 初步可用！晒过程如下：" />
+<meta name="description" content=" Community Driven Anthon 初步可用！晒过程如下： ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-118.html">:Next 开发区</a> &rsaquo; Community Driven Anthon 初步可用！晒过程如下：</div>
+
+<div id="content">
+			<p class="author">
+					<strong>zxd123314</strong>
+				发表于 2014-1-15 08:59:50	</p>
+			<h3>Community Driven Anthon 初步可用！晒过程如下：</h3>
+		Now we are ready to build apps/hello<br />
+mkdir -p build<br />
+touch directory<br />
+cda-downloader http://ftp.gnu.org/gnu/hello/hello-2.9.tar.gz<br />
+--2014-01-15 08:54:48--&nbsp;&nbsp;http://ftp.gnu.org/gnu/hello/hello-2.9.tar.gz<br />
+正在解析主机 ftp.gnu.org... 208.118.235.20, 2001:4830:134:3::b<br />
+正在连接 ftp.gnu.org|208.118.235.20|:80... 已连接。<br />
+已发出 HTTP 请求，正在等待回应... 200 OK<br />
+长度：723645 (707K) <br />
+正在保存至: “hello-2.9.tar.gz”<br />
+<br />
+&nbsp; &nbsp;&nbsp;&nbsp;0K .......... .......... .......... .......... ..........&nbsp;&nbsp;7% 53.0K 12s<br />
+&nbsp; &nbsp; 50K .......... .......... .......... .......... .......... 14% 87.9K 9s<br />
+&nbsp; &nbsp;100K .......... .......... .......... .......... .......... 21%&nbsp;&nbsp;162K 7s<br />
+&nbsp; &nbsp;150K .......... .......... .......... .......... .......... 28%&nbsp;&nbsp;445K 5s<br />
+&nbsp; &nbsp;200K .......... .......... .......... .......... .......... 35%&nbsp;&nbsp;197K 4s<br />
+&nbsp; &nbsp;250K .......... .......... .......... .......... .......... 42%&nbsp;&nbsp;207K 3s<br />
+&nbsp; &nbsp;300K .......... .......... .......... .......... .......... 49%&nbsp;&nbsp;471K 3s<br />
+&nbsp; &nbsp;350K .......... .......... .......... .......... .......... 56%&nbsp;&nbsp;547K 2s<br />
+&nbsp; &nbsp;400K .......... .......... .......... .......... .......... 63%&nbsp;&nbsp;394K 2s<br />
+&nbsp; &nbsp;450K .......... .......... .......... .......... .......... 70%&nbsp;&nbsp;456K 1s<br />
+&nbsp; &nbsp;500K .......... .......... .......... .......... .......... 77%&nbsp;&nbsp;393K 1s<br />
+&nbsp; &nbsp;550K .......... .......... .......... .......... .......... 84%&nbsp;&nbsp;515K 1s<br />
+&nbsp; &nbsp;600K .......... .......... .......... .......... .......... 91%&nbsp;&nbsp;351K 0s<br />
+&nbsp; &nbsp;650K .......... .......... .......... .......... .......... 99%&nbsp;&nbsp;399K 0s<br />
+&nbsp; &nbsp;700K ......&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;100%&nbsp;&nbsp;547K=3.4s<br />
+<br />
+2014-01-15 08:54:52 (210 KB/s) - 已保存 “hello-2.9.tar.gz” )<br />
+<br />
+touch source<br />
+tar xvfz hello-2.9.tar.gz -C build<br />
+hello-2.9/<br />
+hello-2.9/build-aux/<br />
+hello-2.9/build-aux/test-driver<br />
+hello-2.9/build-aux/texinfo.tex<br />
+hello-2.9/build-aux/mdate-sh<br />
+hello-2.9/build-aux/snippet/<br />
+hello-2.9/build-aux/snippet/warn-on-use.h<br />
+hello-2.9/build-aux/snippet/arg-nonnull.h<br />
+hello-2.9/build-aux/snippet/c++defs.h<br />
+hello-2.9/build-aux/snippet/_Noreturn.h<br />
+hello-2.9/build-aux/announce-gen<br />
+hello-2.9/build-aux/useless-if-before-free<br />
+hello-2.9/build-aux/missing<br />
+hello-2.9/build-aux/config.rpath<br />
+hello-2.9/build-aux/vc-list-files<br />
+hello-2.9/build-aux/do-release-commit-and-tag<br />
+hello-2.9/build-aux/depcomp<br />
+hello-2.9/build-aux/gendocs.sh<br />
+hello-2.9/build-aux/config.sub<br />
+hello-2.9/build-aux/install-sh<br />
+hello-2.9/build-aux/gnupload<br />
+hello-2.9/build-aux/config.guess<br />
+hello-2.9/build-aux/gnu-web-doc-update<br />
+hello-2.9/configure<br />
+hello-2.9/src/<br />
+hello-2.9/src/ChangeLog<br />
+hello-2.9/src/Makefile.am<br />
+hello-2.9/src/hello.c<br />
+hello-2.9/src/Makefile.in<br />
+hello-2.9/src/system.h<br />
+hello-2.9/COPYING<br />
+hello-2.9/GNUmakefile<br />
+hello-2.9/ABOUT-NLS<br />
+hello-2.9/README<br />
+hello-2.9/ChangeLog<br />
+hello-2.9/configure.ac<br />
+hello-2.9/m4/<br />
+hello-2.9/m4/sys_types_h.m4<br />
+hello-2.9/m4/stdbool.m4<br />
+hello-2.9/m4/sys_socket_h.m4<br />
+hello-2.9/m4/nocrash.m4<br />
+hello-2.9/m4/strerror.m4<br />
+hello-2.9/m4/include_next.m4<br />
+hello-2.9/m4/locale-zh.m4<br />
+hello-2.9/m4/wchar_t.m4<br />
+hello-2.9/m4/gnulib-cache.m4<br />
+hello-2.9/m4/iconv.m4<br />
+hello-2.9/m4/errno_h.m4<br />
+hello-2.9/m4/getopt.m4<br />
+hello-2.9/m4/00gnulib.m4<br />
+hello-2.9/m4/unistd_h.m4<br />
+hello-2.9/m4/msvc-nothrow.m4<br />
+hello-2.9/m4/mbsinit.m4<br />
+hello-2.9/m4/error.m4<br />
+hello-2.9/m4/fcntl-o.m4<br />
+hello-2.9/m4/msvc-inval.m4<br />
+hello-2.9/m4/codeset.m4<br />
+hello-2.9/m4/ssize_t.m4<br />
+hello-2.9/m4/mmap-anon.m4<br />
+hello-2.9/m4/glibc21.m4<br />
+hello-2.9/m4/lib-link.m4<br />
+hello-2.9/m4/extensions.m4<br />
+hello-2.9/m4/mbsrtowcs.m4<br />
+hello-2.9/m4/progtest.m4<br />
+hello-2.9/m4/gnulib-common.m4<br />
+hello-2.9/m4/close-stream.m4<br />
+hello-2.9/m4/gettext.m4<br />
+hello-2.9/m4/xalloc.m4<br />
+hello-2.9/m4/configmake.m4<br />
+hello-2.9/m4/fpending.m4<br />
+hello-2.9/m4/closeout.m4<br />
+hello-2.9/m4/memchr.m4<br />
+hello-2.9/m4/wint_t.m4<br />
+hello-2.9/m4/intlmacosx.m4<br />
+hello-2.9/m4/locale-fr.m4<br />
+hello-2.9/m4/lib-prefix.m4<br />
+hello-2.9/m4/stddef_h.m4<br />
+hello-2.9/m4/po.m4<br />
+hello-2.9/m4/nls.m4<br />
+hello-2.9/m4/locale-ja.m4<br />
+hello-2.9/m4/string_h.m4<br />
+hello-2.9/m4/warn-on-use.m4<br />
+hello-2.9/m4/off_t.m4<br />
+hello-2.9/m4/quotearg.m4<br />
+hello-2.9/m4/wchar_h.m4<br />
+hello-2.9/m4/stdlib_h.m4<br />
+hello-2.9/m4/mbrtowc.m4<br />
+hello-2.9/m4/mbstate_t.m4<br />
+hello-2.9/m4/wctype_h.m4<br />
+hello-2.9/m4/localcharset.m4<br />
+hello-2.9/m4/lib-ld.m4<br />
+hello-2.9/m4/gnulib-comp.m4<br />
+hello-2.9/m4/extern-inline.m4<br />
+hello-2.9/po/<br />
+hello-2.9/po/sl.gmo<br />
+hello-2.9/po/bg.gmo<br />
+hello-2.9/po/stamp-po<br />
+hello-2.9/po/id.gmo<br />
+hello-2.9/po/pl.po<br />
+hello-2.9/po/hello.pot<br />
+hello-2.9/po/eo.gmo<br />
+hello-2.9/po/he.po<br />
+hello-2.9/po/nb.po<br />
+hello-2.9/po/id.po<br />
+hello-2.9/po/pt.gmo<br />
+hello-2.9/po/sl.po<br />
+hello-2.9/po/ca.po<br />
+hello-2.9/po/pt.po<br />
+hello-2.9/po/ms.po<br />
+hello-2.9/po/es.po<br />
+hello-2.9/po/hu.gmo<br />
+hello-2.9/po/ca.gmo<br />
+hello-2.9/po/ro.gmo<br />
+hello-2.9/po/da.po<br />
+hello-2.9/po/he.gmo<br />
+hello-2.9/po/bg.po<br />
+hello-2.9/po/zh_CN.po<br />
+hello-2.9/po/nn.gmo<br />
+hello-2.9/po/ka.po<br />
+hello-2.9/po/nn.po<br />
+hello-2.9/po/da.gmo<br />
+hello-2.9/po/et.po<br />
+hello-2.9/po/POTFILES.in<br />
+hello-2.9/po/it.gmo<br />
+hello-2.9/po/remove-potcdate.sin<br />
+hello-2.9/po/tr.gmo<br />
+hello-2.9/po/sk.po<br />
+hello-2.9/po/ru.gmo<br />
+hello-2.9/po/et.gmo<br />
+hello-2.9/po/Makefile.in.in<br />
+hello-2.9/po/pt_BR.gmo<br />
+hello-2.9/po/ChangeLog<br />
+hello-2.9/po/nl.gmo<br />
+hello-2.9/po/sk.gmo<br />
+hello-2.9/po/hu.po<br />
+hello-2.9/po/ja.gmo<br />
+hello-2.9/po/en@boldquot.header<br />
+hello-2.9/po/sr.po<br />
+hello-2.9/po/de.po<br />
+hello-2.9/po/Makevars<br />
+hello-2.9/po/eu.gmo<br />
+hello-2.9/po/ru.po<br />
+hello-2.9/po/quot.sed<br />
+hello-2.9/po/ko.po<br />
+hello-2.9/po/ka.gmo<br />
+hello-2.9/po/vi.po<br />
+hello-2.9/po/tr.po<br />
+hello-2.9/po/ga.gmo<br />
+hello-2.9/po/th.po<br />
+hello-2.9/po/LINGUAS<br />
+hello-2.9/po/en@quot.header<br />
+hello-2.9/po/sv.po<br />
+hello-2.9/po/zh_TW.gmo<br />
+hello-2.9/po/zh_TW.po<br />
+hello-2.9/po/fi.po<br />
+hello-2.9/po/pt_BR.po<br />
+hello-2.9/po/el.po<br />
+hello-2.9/po/uk.po<br />
+hello-2.9/po/insert-header.sin<br />
+hello-2.9/po/it.po<br />
+hello-2.9/po/gl.gmo<br />
+hello-2.9/po/de.gmo<br />
+hello-2.9/po/es.gmo<br />
+hello-2.9/po/sv.gmo<br />
+hello-2.9/po/ko.gmo<br />
+hello-2.9/po/vi.gmo<br />
+hello-2.9/po/ja.po<br />
+hello-2.9/po/fa.po<br />
+hello-2.9/po/nl.po<br />
+hello-2.9/po/el.gmo<br />
+hello-2.9/po/ms.gmo<br />
+hello-2.9/po/gl.po<br />
+hello-2.9/po/Rules-quot<br />
+hello-2.9/po/pl.gmo<br />
+hello-2.9/po/ro.po<br />
+hello-2.9/po/lv.po<br />
+hello-2.9/po/hr.po<br />
+hello-2.9/po/th.gmo<br />
+hello-2.9/po/zh_CN.gmo<br />
+hello-2.9/po/nb.gmo<br />
+hello-2.9/po/boldquot.sed<br />
+hello-2.9/po/lv.gmo<br />
+hello-2.9/po/eo.po<br />
+hello-2.9/po/fi.gmo<br />
+hello-2.9/po/sr.gmo<br />
+hello-2.9/po/fa.gmo<br />
+hello-2.9/po/fr.po<br />
+hello-2.9/po/hr.gmo<br />
+hello-2.9/po/eu.po<br />
+hello-2.9/po/fr.gmo<br />
+hello-2.9/po/ga.po<br />
+hello-2.9/po/uk.gmo<br />
+hello-2.9/AUTHORS<br />
+hello-2.9/lib/<br />
+hello-2.9/lib/config.charset<br />
+hello-2.9/lib/memchr.valgrind<br />
+hello-2.9/lib/xalloc-die.c<br />
+hello-2.9/lib/wchar.in.h<br />
+hello-2.9/lib/xalloc-oversized.h<br />
+hello-2.9/lib/close-stream.h<br />
+hello-2.9/lib/quotearg.c<br />
+hello-2.9/lib/c-strcase.h<br />
+hello-2.9/lib/getopt.in.h<br />
+hello-2.9/lib/verify.h<br />
+hello-2.9/lib/xmalloc.c<br />
+hello-2.9/lib/exitfail.c<br />
+hello-2.9/lib/msvc-inval.c<br />
+hello-2.9/lib/localcharset.h<br />
+hello-2.9/lib/xalloc.h<br />
+hello-2.9/lib/mbsinit.c<br />
+hello-2.9/lib/c-strncasecmp.c<br />
+hello-2.9/lib/mbrtowc.c<br />
+hello-2.9/lib/error.c<br />
+hello-2.9/lib/c-ctype.h<br />
+hello-2.9/lib/unistd.c<br />
+hello-2.9/lib/unistd.in.h<br />
+hello-2.9/lib/progname.c<br />
+hello-2.9/lib/strnlen1.c<br />
+hello-2.9/lib/getopt.c<br />
+hello-2.9/lib/closeout.c<br />
+hello-2.9/lib/wctype-h.c<br />
+hello-2.9/lib/fpending.c<br />
+hello-2.9/lib/mbsrtowcs.c<br />
+hello-2.9/lib/strerror-override.c<br />
+hello-2.9/lib/c-ctype.c<br />
+hello-2.9/lib/Makefile.am<br />
+hello-2.9/lib/getopt1.c<br />
+hello-2.9/lib/strnlen1.h<br />
+hello-2.9/lib/quote.h<br />
+hello-2.9/lib/localcharset.c<br />
+hello-2.9/lib/string.in.h<br />
+hello-2.9/lib/Makefile.in<br />
+hello-2.9/lib/strerror.c<br />
+hello-2.9/lib/error.h<br />
+hello-2.9/lib/progname.h<br />
+hello-2.9/lib/exitfail.h<br />
+hello-2.9/lib/msvc-nothrow.c<br />
+hello-2.9/lib/gettext.h<br />
+hello-2.9/lib/memchr.c<br />
+hello-2.9/lib/ref-del.sin<br />
+hello-2.9/lib/streq.h<br />
+hello-2.9/lib/stddef.in.h<br />
+hello-2.9/lib/intprops.h<br />
+hello-2.9/lib/sys_types.in.h<br />
+hello-2.9/lib/stdlib.in.h<br />
+hello-2.9/lib/c-strcaseeq.h<br />
+hello-2.9/lib/wctype.in.h<br />
+hello-2.9/lib/ref-add.sin<br />
+hello-2.9/lib/quotearg.h<br />
+hello-2.9/lib/c-strcasecmp.c<br />
+hello-2.9/lib/strerror-override.h<br />
+hello-2.9/lib/mbsrtowcs-impl.h<br />
+hello-2.9/lib/msvc-nothrow.h<br />
+hello-2.9/lib/mbsrtowcs-state.c<br />
+hello-2.9/lib/close-stream.c<br />
+hello-2.9/lib/fpending.h<br />
+hello-2.9/lib/closeout.h<br />
+hello-2.9/lib/msvc-inval.h<br />
+hello-2.9/lib/errno.in.h<br />
+hello-2.9/lib/stdbool.in.h<br />
+hello-2.9/lib/getopt_int.h<br />
+hello-2.9/maint.mk<br />
+hello-2.9/Makefile.am<br />
+hello-2.9/man/<br />
+hello-2.9/man/ChangeLog<br />
+hello-2.9/man/hello.1<br />
+hello-2.9/man/Makefile.am<br />
+hello-2.9/man/Makefile.in<br />
+hello-2.9/contrib/<br />
+hello-2.9/contrib/de_franconian_po.txt<br />
+hello-2.9/contrib/ChangeLog<br />
+hello-2.9/contrib/Makefile.am<br />
+hello-2.9/contrib/Makefile.in<br />
+hello-2.9/contrib/evolution.txt<br />
+hello-2.9/aclocal.m4<br />
+hello-2.9/Makefile.in<br />
+hello-2.9/tests/<br />
+hello-2.9/tests/greeting-2<br />
+hello-2.9/tests/traditional-1<br />
+hello-2.9/tests/greeting-1<br />
+hello-2.9/tests/ChangeLog<br />
+hello-2.9/tests/Makefile.am<br />
+hello-2.9/tests/last-1<br />
+hello-2.9/tests/Makefile.in<br />
+hello-2.9/tests/hello-1<br />
+hello-2.9/ChangeLog.O<br />
+hello-2.9/README-dev<br />
+hello-2.9/THANKS<br />
+hello-2.9/TODO<br />
+hello-2.9/config.in<br />
+hello-2.9/INSTALL<br />
+hello-2.9/doc/<br />
+hello-2.9/doc/ChangeLog<br />
+hello-2.9/doc/hello.texi<br />
+hello-2.9/doc/Makefile.am<br />
+hello-2.9/doc/stamp-vti<br />
+hello-2.9/doc/Makefile.in<br />
+hello-2.9/doc/version.texi<br />
+hello-2.9/doc/fdl.texi<br />
+hello-2.9/doc/hello.info<br />
+hello-2.9/NEWS<br />
+hello-2.9/README-release<br />
+cp -r autobuild build/hello-2.9/<br />
+touch prepare<br />
+cd build/hello-2.9 &amp;&amp; autobuild<br />
+dpkg-query：警告：parsing file '/var/lib/dpkg/status' near line 4126 package 'deepin-desktop-environment':<br />
+ 找不到 description<br />
+期望状态=未知(u)/安装(i)/删除(r)/清除(p)/保持(h)<br />
+| 状态=未安装(n)/已安装(i)/仅存配置(c)/仅解压缩(U)/配置失败(F)/不完全安装(H)/触发器等待(W)/触发器未决(T)<br />
+|/ 错误?=(无)/须重装(R) (状态，错误：大写=故障)<br />
+||/ 名称&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 版本&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Architecture 描述<br />
++++-===========================-====================================-============-=============================================================================================================================================================================================================<br />
+ii&nbsp;&nbsp;glibc&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;2.17&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;amd64&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;GNU libc<br />
+checking for a BSD-compatible install... /usr/bin/install -c<br />
+checking whether build environment is sane... yes<br />
+checking for a thread-safe mkdir -p... /bin/mkdir -p<br />
+checking for gawk... gawk<br />
+checking whether make sets $(MAKE)... yes<br />
+checking whether make supports nested variables... yes<br />
+checking for gcc... gcc<br />
+checking whether the C compiler works... yes<br />
+checking for C compiler default output file name... a.out<br />
+checking for suffix of executables... <br />
+checking whether we are cross compiling... no<br />
+checking for suffix of object files... o<br />
+checking whether we are using the GNU C compiler... yes<br />
+checking whether gcc accepts -g... yes<br />
+checking for gcc option to accept ISO C89... none needed<br />
+checking for style of include used by make... GNU<br />
+checking dependency style of gcc... gcc3<br />
+checking how to run the C preprocessor... gcc -E<br />
+checking for grep that handles long lines and -e... /bin/grep<br />
+checking for egrep... /bin/grep -E<br />
+checking for Minix Amsterdam compiler... no<br />
+checking for ar... ar<br />
+checking for ranlib... ranlib<br />
+checking build system type... x86_64-unknown-linux-gnu<br />
+checking host system type... x86_64-unknown-linux-gnu<br />
+checking for ANSI C header files... yes<br />
+checking for sys/types.h... yes<br />
+checking for sys/stat.h... yes<br />
+checking for stdlib.h... yes<br />
+checking for string.h... yes<br />
+checking for memory.h... yes<br />
+checking for strings.h... yes<br />
+checking for inttypes.h... yes<br />
+checking for stdint.h... yes<br />
+checking for unistd.h... yes<br />
+checking minix/config.h usability... no<br />
+checking minix/config.h presence... no<br />
+checking for minix/config.h... no<br />
+checking whether it is safe to define __EXTENSIONS__... yes<br />
+checking whether the preprocessor supports include_next... yes<br />
+checking whether system header files limit the line length... no<br />
+checking for complete errno.h... yes<br />
+checking whether strerror_r is declared... yes<br />
+checking for strerror_r... yes<br />
+checking whether strerror_r returns char *... yes<br />
+checking for stdio_ext.h... yes<br />
+checking for getopt.h... yes<br />
+checking for unistd.h... (cached) yes<br />
+checking for sys/mman.h... yes<br />
+checking for sys/socket.h... yes<br />
+checking for wchar.h... yes<br />
+checking for features.h... yes<br />
+checking for wctype.h... yes<br />
+checking for __fpending... yes<br />
+checking for symlink... yes<br />
+checking for mbsinit... yes<br />
+checking for mbrtowc... yes<br />
+checking for mbsrtowcs... yes<br />
+checking for mprotect... yes<br />
+checking for _set_invalid_parameter_handler... no<br />
+checking for iswcntrl... yes<br />
+checking for getopt.h... (cached) yes<br />
+checking for getopt_long_only... yes<br />
+checking whether getopt is POSIX compatible... yes<br />
+checking for working GNU getopt function... yes<br />
+checking for working GNU getopt_long function... yes<br />
+checking whether getenv is declared... yes<br />
+checking for nl_langinfo and CODESET... yes<br />
+checking for working fcntl.h... yes<br />
+checking whether getc_unlocked is declared... yes<br />
+checking whether we are using the GNU C Library &gt;= 2.1 or uClibc... yes<br />
+checking for mbstate_t... yes<br />
+checking for a traditional japanese locale... none<br />
+checking for a transitional chinese locale... none<br />
+checking for a french Unicode locale... none<br />
+checking for a traditional french locale... none<br />
+checking for mmap... yes<br />
+checking for MAP_ANONYMOUS... yes<br />
+checking whether memchr works... yes<br />
+checking for stdbool.h that conforms to C99... yes<br />
+checking for _Bool... yes<br />
+checking for wchar_t... yes<br />
+checking whether strerror(0) succeeds... yes<br />
+checking for C/C++ restrict keyword... __restrict<br />
+checking whether ffsl is declared without a macro... yes<br />
+checking whether ffsll is declared without a macro... yes<br />
+checking whether memmem is declared without a macro... yes<br />
+checking whether mempcpy is declared without a macro... yes<br />
+checking whether memrchr is declared without a macro... yes<br />
+checking whether rawmemchr is declared without a macro... yes<br />
+checking whether stpcpy is declared without a macro... yes<br />
+checking whether stpncpy is declared without a macro... yes<br />
+checking whether strchrnul is declared without a macro... yes<br />
+checking whether strdup is declared without a macro... yes<br />
+checking whether strncat is declared without a macro... yes<br />
+checking whether strndup is declared without a macro... yes<br />
+checking whether strnlen is declared without a macro... yes<br />
+checking whether strpbrk is declared without a macro... yes<br />
+checking whether strsep is declared without a macro... yes<br />
+checking whether strcasestr is declared without a macro... yes<br />
+checking whether strtok_r is declared without a macro... yes<br />
+checking whether strerror_r is declared without a macro... yes<br />
+checking whether strsignal is declared without a macro... yes<br />
+checking whether strverscmp is declared without a macro... yes<br />
+checking for pid_t... yes<br />
+checking for mode_t... yes<br />
+checking whether &lt;wchar.h&gt; uses 'inline' correctly... yes<br />
+checking for wint_t... yes<br />
+checking for error_at_line... yes<br />
+checking whether __fpending is declared... yes<br />
+checking whether mbrtowc handles incomplete characters... guessing yes<br />
+checking whether mbrtowc works as well as mbtowc... guessing yes<br />
+checking whether mbrtowc handles a NULL pwc argument... guessing yes<br />
+checking whether mbrtowc handles a NULL string argument... guessing yes<br />
+checking whether mbrtowc has a correct return value... guessing yes<br />
+checking whether mbrtowc returns 0 when parsing a NUL character... guessing yes<br />
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes<br />
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes<br />
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes<br />
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes<br />
+checking whether mbsrtowcs works... guessing yes<br />
+checking whether program_invocation_name is declared... yes<br />
+checking whether program_invocation_short_name is declared... yes<br />
+checking for ssize_t... yes<br />
+checking whether NULL can be used in arbitrary expressions... yes<br />
+checking whether _Exit is declared without a macro... yes<br />
+checking whether atoll is declared without a macro... yes<br />
+checking whether canonicalize_file_name is declared without a macro... yes<br />
+checking whether getloadavg is declared without a macro... yes<br />
+checking whether getsubopt is declared without a macro... yes<br />
+checking whether grantpt is declared without a macro... yes<br />
+checking whether initstate is declared without a macro... yes<br />
+checking whether initstate_r is declared without a macro... yes<br />
+checking whether mkdtemp is declared without a macro... yes<br />
+checking whether mkostemp is declared without a macro... yes<br />
+checking whether mkostemps is declared without a macro... yes<br />
+checking whether mkstemp is declared without a macro... yes<br />
+checking whether mkstemps is declared without a macro... yes<br />
+checking whether posix_openpt is declared without a macro... yes<br />
+checking whether ptsname is declared without a macro... yes<br />
+checking whether ptsname_r is declared without a macro... yes<br />
+checking whether random is declared without a macro... yes<br />
+checking whether random_r is declared without a macro... yes<br />
+checking whether realpath is declared without a macro... yes<br />
+checking whether rpmatch is declared without a macro... yes<br />
+checking whether setenv is declared without a macro... yes<br />
+checking whether setstate is declared without a macro... yes<br />
+checking whether setstate_r is declared without a macro... yes<br />
+checking whether srandom is declared without a macro... yes<br />
+checking whether srandom_r is declared without a macro... yes<br />
+checking whether strtod is declared without a macro... yes<br />
+checking whether strtoll is declared without a macro... yes<br />
+checking whether strtoull is declared without a macro... yes<br />
+checking whether unlockpt is declared without a macro... yes<br />
+checking whether unsetenv is declared without a macro... yes<br />
+checking for working strerror function... yes<br />
+checking whether chdir is declared without a macro... yes<br />
+checking whether chown is declared without a macro... yes<br />
+checking whether dup is declared without a macro... yes<br />
+checking whether dup2 is declared without a macro... yes<br />
+checking whether dup3 is declared without a macro... yes<br />
+checking whether environ is declared without a macro... yes<br />
+checking whether euidaccess is declared without a macro... yes<br />
+checking whether faccessat is declared without a macro... yes<br />
+checking whether fchdir is declared without a macro... yes<br />
+checking whether fchownat is declared without a macro... yes<br />
+checking whether fdatasync is declared without a macro... yes<br />
+checking whether fsync is declared without a macro... yes<br />
+checking whether ftruncate is declared without a macro... yes<br />
+checking whether getcwd is declared without a macro... yes<br />
+checking whether getdomainname is declared without a macro... yes<br />
+checking whether getdtablesize is declared without a macro... yes<br />
+checking whether getgroups is declared without a macro... yes<br />
+checking whether gethostname is declared without a macro... yes<br />
+checking whether getlogin is declared without a macro... yes<br />
+checking whether getlogin_r is declared without a macro... yes<br />
+checking whether getpagesize is declared without a macro... yes<br />
+checking whether getusershell is declared without a macro... yes<br />
+checking whether setusershell is declared without a macro... yes<br />
+checking whether endusershell is declared without a macro... yes<br />
+checking whether group_member is declared without a macro... yes<br />
+checking whether isatty is declared without a macro... yes<br />
+checking whether lchown is declared without a macro... yes<br />
+checking whether link is declared without a macro... yes<br />
+checking whether linkat is declared without a macro... yes<br />
+checking whether lseek is declared without a macro... yes<br />
+checking whether pipe is declared without a macro... yes<br />
+checking whether pipe2 is declared without a macro... yes<br />
+checking whether pread is declared without a macro... yes<br />
+checking whether pwrite is declared without a macro... yes<br />
+checking whether readlink is declared without a macro... yes<br />
+checking whether readlinkat is declared without a macro... yes<br />
+checking whether rmdir is declared without a macro... yes<br />
+checking whether sethostname is declared without a macro... yes<br />
+checking whether sleep is declared without a macro... yes<br />
+checking whether symlink is declared without a macro... yes<br />
+checking whether symlinkat is declared without a macro... yes<br />
+checking whether ttyname_r is declared without a macro... yes<br />
+checking whether unlink is declared without a macro... yes<br />
+checking whether unlinkat is declared without a macro... yes<br />
+checking whether usleep is declared without a macro... yes<br />
+checking whether btowc is declared without a macro... yes<br />
+checking whether wctob is declared without a macro... yes<br />
+checking whether mbsinit is declared without a macro... yes<br />
+checking whether mbrtowc is declared without a macro... yes<br />
+checking whether mbrlen is declared without a macro... yes<br />
+checking whether mbsrtowcs is declared without a macro... yes<br />
+checking whether mbsnrtowcs is declared without a macro... yes<br />
+checking whether wcrtomb is declared without a macro... yes<br />
+checking whether wcsrtombs is declared without a macro... yes<br />
+checking whether wcsnrtombs is declared without a macro... yes<br />
+checking whether wcwidth is declared without a macro... yes<br />
+checking whether wmemchr is declared without a macro... yes<br />
+checking whether wmemcmp is declared without a macro... yes<br />
+checking whether wmemcpy is declared without a macro... yes<br />
+checking whether wmemmove is declared without a macro... yes<br />
+checking whether wmemset is declared without a macro... yes<br />
+checking whether wcslen is declared without a macro... yes<br />
+checking whether wcsnlen is declared without a macro... yes<br />
+checking whether wcscpy is declared without a macro... yes<br />
+checking whether wcpcpy is declared without a macro... yes<br />
+checking whether wcsncpy is declared without a macro... yes<br />
+checking whether wcpncpy is declared without a macro... yes<br />
+checking whether wcscat is declared without a macro... yes<br />
+checking whether wcsncat is declared without a macro... yes<br />
+checking whether wcscmp is declared without a macro... yes<br />
+checking whether wcsncmp is declared without a macro... yes<br />
+checking whether wcscasecmp is declared without a macro... yes<br />
+checking whether wcsncasecmp is declared without a macro... yes<br />
+checking whether wcscoll is declared without a macro... yes<br />
+checking whether wcsxfrm is declared without a macro... yes<br />
+checking whether wcsdup is declared without a macro... yes<br />
+checking whether wcschr is declared without a macro... yes<br />
+checking whether wcsrchr is declared without a macro... yes<br />
+checking whether wcscspn is declared without a macro... yes<br />
+checking whether wcsspn is declared without a macro... yes<br />
+checking whether wcspbrk is declared without a macro... yes<br />
+checking whether wcsstr is declared without a macro... yes<br />
+checking whether wcstok is declared without a macro... yes<br />
+checking whether wcswidth is declared without a macro... yes<br />
+checking whether iswcntrl works... yes<br />
+checking for towlower... yes<br />
+checking for wctype_t... yes<br />
+checking for wctrans_t... yes<br />
+checking whether wctype is declared without a macro... yes<br />
+checking whether iswctype is declared without a macro... yes<br />
+checking whether wctrans is declared without a macro... yes<br />
+checking whether towctrans is declared without a macro... yes<br />
+checking whether NLS is requested... yes<br />
+checking for msgfmt... /usr/bin/msgfmt<br />
+checking for gmsgfmt... /usr/bin/msgfmt<br />
+checking for xgettext... /usr/bin/xgettext<br />
+checking for msgmerge... /usr/bin/msgmerge<br />
+checking for ld used by gcc... /usr/bin/ld<br />
+checking if the linker (/usr/bin/ld) is GNU ld... yes<br />
+checking for shared library run path origin... done<br />
+checking for CFPreferencesCopyAppValue... no<br />
+checking for CFLocaleCopyCurrent... no<br />
+checking for GNU gettext in libc... yes<br />
+checking whether to use NLS... yes<br />
+checking where the gettext function comes from... libc<br />
+checking that generated files are newer than configure... done<br />
+configure: creating ./config.status<br />
+config.status: creating Makefile<br />
+config.status: creating contrib/Makefile<br />
+config.status: creating doc/Makefile<br />
+config.status: creating lib/Makefile<br />
+config.status: creating man/Makefile<br />
+config.status: creating po/Makefile.in<br />
+config.status: creating src/Makefile<br />
+config.status: creating tests/Makefile<br />
+config.status: creating config.h<br />
+config.status: linking /usr/cda/repo/apps/hello/build/hello-2.9/GNUmakefile to GNUmakefile<br />
+config.status: executing depfiles commands<br />
+config.status: executing po-directories commands<br />
+config.status: creating po/POTFILES<br />
+config.status: creating po/Makefile<br />
+make: 进入目录“/usr/cda/repo/apps/hello/build/hello-2.9/build”<br />
+make&nbsp;&nbsp;all-recursive<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build'<br />
+Making all in contrib<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/contrib'<br />
+make: Nothing to be done for `all'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/contrib'<br />
+Making all in lib<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+rm -f configmake.h-t &amp;&amp; \<br />
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \<br />
+&nbsp;&nbsp;echo '#define PREFIX &quot;/usr&quot;'; \<br />
+&nbsp;&nbsp;echo '#define EXEC_PREFIX &quot;/usr&quot;'; \<br />
+&nbsp;&nbsp;echo '#define BINDIR &quot;/usr/bin&quot;'; \<br />
+&nbsp;&nbsp;echo '#define SBINDIR &quot;/usr/sbin&quot;'; \<br />
+&nbsp;&nbsp;echo '#define LIBEXECDIR &quot;/usr/lib/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define DATAROOTDIR &quot;/usr/share&quot;'; \<br />
+&nbsp;&nbsp;echo '#define DATADIR &quot;/usr/share&quot;'; \<br />
+&nbsp;&nbsp;echo '#define SYSCONFDIR &quot;/etc&quot;'; \<br />
+&nbsp;&nbsp;echo '#define SHAREDSTATEDIR &quot;/usr/com&quot;'; \<br />
+&nbsp;&nbsp;echo '#define LOCALSTATEDIR &quot;/var&quot;'; \<br />
+&nbsp;&nbsp;echo '#define INCLUDEDIR &quot;/usr/include&quot;'; \<br />
+&nbsp;&nbsp;echo '#define OLDINCLUDEDIR &quot;/usr/include&quot;'; \<br />
+&nbsp;&nbsp;echo '#define DOCDIR &quot;/usr/share/doc/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define INFODIR &quot;/usr/share/info&quot;'; \<br />
+&nbsp;&nbsp;echo '#define HTMLDIR &quot;/usr/share/doc/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define DVIDIR &quot;/usr/share/doc/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define PDFDIR &quot;/usr/share/doc/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define PSDIR &quot;/usr/share/doc/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define LIBDIR &quot;/usr/lib&quot;'; \<br />
+&nbsp;&nbsp;echo '#define LISPDIR &quot;/usr/share/emacs/site-lisp&quot;'; \<br />
+&nbsp;&nbsp;echo '#define LOCALEDIR &quot;/usr/share/locale&quot;'; \<br />
+&nbsp;&nbsp;echo '#define MANDIR &quot;/usr/share/man&quot;'; \<br />
+&nbsp;&nbsp;echo '#define MANEXT &quot;&quot;'; \<br />
+&nbsp;&nbsp;echo '#define PKGDATADIR &quot;/usr/share/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define PKGINCLUDEDIR &quot;/usr/include/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define PKGLIBDIR &quot;/usr/lib/hello&quot;'; \<br />
+&nbsp;&nbsp;echo '#define PKGLIBEXECDIR &quot;/usr/lib/hello/hello&quot;'; \<br />
+} | sed '/&quot;&quot;/d' &gt; configmake.h-t &amp;&amp; \<br />
+mv -f configmake.h-t configmake.h<br />
+rm -f arg-nonnull.h-t arg-nonnull.h &amp;&amp; \<br />
+sed -n -e '/GL_ARG_NONNULL/,$p' \<br />
+&nbsp;&nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/build-aux/snippet/arg-nonnull.h \<br />
+&nbsp;&nbsp;&gt; arg-nonnull.h-t &amp;&amp; \<br />
+mv arg-nonnull.h-t arg-nonnull.h<br />
+rm -f c++defs.h-t c++defs.h &amp;&amp; \<br />
+sed -n -e '/_GL_CXXDEFS/,$p' \<br />
+&nbsp;&nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/build-aux/snippet/c++defs.h \<br />
+&nbsp;&nbsp;&gt; c++defs.h-t &amp;&amp; \<br />
+mv c++defs.h-t c++defs.h<br />
+rm -f warn-on-use.h-t warn-on-use.h &amp;&amp; \<br />
+sed -n -e '/^.ifndef/,$p' \<br />
+&nbsp;&nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/build-aux/snippet/warn-on-use.h \<br />
+&nbsp;&nbsp;&gt; warn-on-use.h-t &amp;&amp; \<br />
+mv warn-on-use.h-t warn-on-use.h<br />
+/bin/mkdir -p sys<br />
+rm -f sys/types.h-t sys/types.h &amp;&amp; \<br />
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \<br />
+&nbsp;&nbsp;sed -e 's|@''GUARD_PREFIX''@|GL|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''INCLUDE_NEXT''@|include_next|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_COLUMNS''@||g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''NEXT_SYS_TYPES_H''@|&lt;sys/types.h&gt;|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/lib/sys_types.in.h; \<br />
+} &gt; sys/types.h-t &amp;&amp; \<br />
+mv sys/types.h-t sys/types.h<br />
+rm -f stdlib.h-t stdlib.h &amp;&amp; \<br />
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' &amp;&amp; \<br />
+&nbsp;&nbsp;sed -e 's|@''GUARD_PREFIX''@|GL|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''INCLUDE_NEXT''@|include_next|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_COLUMNS''@||g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''NEXT_STDLIB_H''@|&lt;stdlib.h&gt;|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB__EXIT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_ATOLL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_CALLOC_POSIX''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETLOADAVG''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETSUBOPT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GRANTPT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MALLOC_POSIX''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBTOWC''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MKDTEMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MKOSTEMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MKOSTEMPS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MKSTEMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MKSTEMPS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_PTSNAME''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_PTSNAME_R''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_PUTENV''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_RANDOM''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_RANDOM_R''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_REALLOC_POSIX''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_REALPATH''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_RPMATCH''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_SETENV''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRTOD''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRTOLL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRTOULL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_UNLOCKPT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_UNSETENV''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCTOMB''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/lib/stdlib.in.h | \<br />
+&nbsp;&nbsp;sed -e 's|@''HAVE__EXIT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_ATOLL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_GETSUBOPT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_GRANTPT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MKDTEMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MKOSTEMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MKOSTEMPS''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MKSTEMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MKSTEMPS''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_POSIX_OPENPT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_PTSNAME''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_PTSNAME_R''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_RANDOM''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_RANDOM_H''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_RANDOM_R''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_REALPATH''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_RPMATCH''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_SETENV''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRTOD''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRTOLL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRTOULL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_UNLOCKPT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_UNSETENV''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_CALLOC''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MALLOC''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MBTOWC''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MKSTEMP''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_PTSNAME''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_PTSNAME_R''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_PUTENV''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_RANDOM_R''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_REALLOC''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_REALPATH''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_SETENV''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRTOD''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_UNSETENV''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_WCTOMB''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _Noreturn/r /usr/cda/repo/apps/hello/build/hello-2.9/build-aux/snippet/_Noreturn.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \<br />
+} &gt; stdlib.h-t &amp;&amp; \<br />
+mv stdlib.h-t stdlib.h<br />
+rm -f string.h-t string.h &amp;&amp; \<br />
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' &amp;&amp; \<br />
+&nbsp;&nbsp;sed -e 's|@''GUARD_PREFIX''@|GL|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''INCLUDE_NEXT''@|include_next|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_COLUMNS''@||g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''NEXT_STRING_H''@|&lt;string.h&gt;|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_FFSL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_FFSLL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSLEN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSNLEN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSCHR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSRCHR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSSTR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSCASECMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSNCASECMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSPCASECMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSCASESTR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSCSPN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSPBRK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSSPN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSSEP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSTOK_R''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MEMCHR''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MEMMEM''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MEMPCPY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MEMRCHR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_RAWMEMCHR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STPCPY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STPNCPY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRCHRNUL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRDUP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRNCAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRNDUP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRNLEN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRPBRK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRSEP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRSTR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRCASESTR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRTOK_R''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRERROR''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRERROR_R''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRSIGNAL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_STRVERSCMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/lib/string.in.h | \<br />
+&nbsp;&nbsp;sed -e 's|@''HAVE_FFSL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_FFSLL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MBSLEN''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MEMCHR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_MEMMEM''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MEMPCPY''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_RAWMEMCHR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STPCPY''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STPNCPY''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRCHRNUL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_STRDUP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_STRNDUP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_STRNLEN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRPBRK''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRSEP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRCASESTR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_STRVERSCMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STPNCPY''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MEMCHR''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MEMMEM''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRCASESTR''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRCHRNUL''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRDUP''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRSTR''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRERROR''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRERROR_R''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRNCAT''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRNDUP''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRNLEN''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRSIGNAL''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_STRTOK_R''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''UNDEFINE_STRTOK_R''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/lib/string.in.h; \<br />
+} &gt; string.h-t &amp;&amp; \<br />
+mv string.h-t string.h<br />
+rm -f unistd.h-t unistd.h &amp;&amp; \<br />
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \<br />
+&nbsp;&nbsp;sed -e 's|@''GUARD_PREFIX''@|GL|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_UNISTD_H''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''INCLUDE_NEXT''@|include_next|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_COLUMNS''@||g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''NEXT_UNISTD_H''@|&lt;unistd.h&gt;|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_CHDIR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_CHOWN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_CLOSE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_DUP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_DUP2''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_DUP3''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_ENVIRON''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_EUIDACCESS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_FACCESSAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_FCHDIR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_FCHOWNAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_FDATASYNC''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_FSYNC''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_FTRUNCATE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETCWD''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETDTABLESIZE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETGROUPS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETHOSTNAME''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETLOGIN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETLOGIN_R''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETPAGESIZE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GETUSERSHELL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_ISATTY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_LCHOWN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_LINK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_LINKAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_LSEEK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_PIPE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_PIPE2''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_PREAD''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_PWRITE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_READ''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_READLINK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_READLINKAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_RMDIR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_SETHOSTNAME''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_SLEEP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_SYMLINK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_SYMLINKAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_TTYNAME_R''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_UNISTD_H_GETOPT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_UNLINK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_UNLINKAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_USLEEP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WRITE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/lib/unistd.in.h | \<br />
+&nbsp;&nbsp;sed -e 's|@''HAVE_CHOWN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DUP2''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DUP3''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_EUIDACCESS''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_FACCESSAT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_FCHDIR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_FCHOWNAT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_FDATASYNC''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_FSYNC''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_FTRUNCATE''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_GETDTABLESIZE''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_GETGROUPS''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_GETHOSTNAME''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_GETLOGIN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_GETPAGESIZE''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_GROUP_MEMBER''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_LCHOWN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_LINK''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_LINKAT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_PIPE''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_PIPE2''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_PREAD''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_PWRITE''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_READLINK''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_READLINKAT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_SETHOSTNAME''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_SLEEP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_SYMLINK''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_SYMLINKAT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_UNLINKAT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_USLEEP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_ENVIRON''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_FCHDIR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_OS_H''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_SYS_PARAM_H''@|0|g' \<br />
+&nbsp;&nbsp;| \<br />
+&nbsp;&nbsp;sed -e 's|@''REPLACE_CHOWN''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_CLOSE''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_DUP''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_DUP2''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_FCHOWNAT''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_FTRUNCATE''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_GETCWD''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_GETLOGIN_R''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_GETGROUPS''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_GETPAGESIZE''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_ISATTY''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_LCHOWN''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_LINK''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_LINKAT''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_LSEEK''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_PREAD''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_PWRITE''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_READ''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_READLINK''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_RMDIR''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_SLEEP''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_SYMLINK''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_TTYNAME_R''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_UNLINK''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_UNLINKAT''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_USLEEP''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_WRITE''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \<br />
+} &gt; unistd.h-t &amp;&amp; \<br />
+mv unistd.h-t unistd.h<br />
+rm -f wchar.h-t wchar.h &amp;&amp; \<br />
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \<br />
+&nbsp;&nbsp;sed -e 's|@''GUARD_PREFIX''@|GL|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''INCLUDE_NEXT''@|include_next|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_COLUMNS''@||g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_FEATURES_H''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''NEXT_WCHAR_H''@|&lt;wchar.h&gt;|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCHAR_H''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_BTOWC''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCTOB''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSINIT''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBRTOWC''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBRLEN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSRTOWCS''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_MBSNRTOWCS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCRTOMB''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSRTOMBS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSNRTOMBS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCWIDTH''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WMEMCHR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WMEMCMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WMEMCPY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WMEMMOVE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WMEMSET''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSLEN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSNLEN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSCPY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCPCPY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSNCPY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCPNCPY''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSCAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSNCAT''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSCMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSNCMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSCASECMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSNCASECMP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSCOLL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSXFRM''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSDUP''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSCHR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSRCHR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSCSPN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSSPN''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSPBRK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSSTR''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSTOK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCSWIDTH''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/lib/wchar.in.h | \<br />
+&nbsp;&nbsp;sed -e 's|@''HAVE_WINT_T''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_BTOWC''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MBSINIT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MBRTOWC''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MBRLEN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MBSRTOWCS''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_MBSNRTOWCS''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCRTOMB''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSRTOMBS''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSNRTOMBS''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WMEMCHR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WMEMCMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WMEMCPY''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WMEMMOVE''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WMEMSET''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSLEN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSNLEN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSCPY''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCPCPY''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSNCPY''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCPNCPY''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSCAT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSNCAT''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSCMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSNCMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSCASECMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSNCASECMP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSCOLL''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSXFRM''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSDUP''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSCHR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSRCHR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSCSPN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSSPN''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSPBRK''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSSTR''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSTOK''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_WCSWIDTH''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_WCTOB''@|1|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''HAVE_DECL_WCWIDTH''@|1|g' \<br />
+&nbsp;&nbsp;| \<br />
+&nbsp;&nbsp;sed -e 's|@''REPLACE_MBSTATE_T''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_BTOWC''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_WCTOB''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MBSINIT''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MBRTOWC''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MBRLEN''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MBSRTOWCS''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_MBSNRTOWCS''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_WCRTOMB''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_WCSRTOMBS''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_WCSNRTOMBS''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_WCWIDTH''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''REPLACE_WCSWIDTH''@|0|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \<br />
+} &gt; wchar.h-t &amp;&amp; \<br />
+mv wchar.h-t wchar.h<br />
+rm -f wctype.h-t wctype.h &amp;&amp; \<br />
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \<br />
+&nbsp;&nbsp;sed -e 's|@''GUARD_PREFIX''@|GL|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''HAVE_WCTYPE_H''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''INCLUDE_NEXT''@|include_next|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''PRAGMA_COLUMNS''@||g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's|@''NEXT_WCTYPE_H''@|&lt;wctype.h&gt;|g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_ISWBLANK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCTYPE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_ISWCTYPE''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_WCTRANS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''GNULIB_TOWCTRANS''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''HAVE_ISWBLANK''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''HAVE_ISWCNTRL''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''HAVE_WCTYPE_T''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''HAVE_WCTRANS_T''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''HAVE_WINT_T''@/1/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''REPLACE_ISWBLANK''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''REPLACE_ISWCNTRL''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e 's/@''REPLACE_TOWLOWER''@/0/g' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;-e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&lt; /usr/cda/repo/apps/hello/build/hello-2.9/lib/wctype.in.h; \<br />
+} &gt; wctype.h-t &amp;&amp; \<br />
+mv wctype.h-t wctype.h<br />
+make&nbsp;&nbsp;all-recursive<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT c-ctype.o -MD -MP -MF .deps/c-ctype.Tpo -c -o c-ctype.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/c-ctype.c<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT c-strcasecmp.o -MD -MP -MF .deps/c-strcasecmp.Tpo -c -o c-strcasecmp.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/c-strcasecmp.c<br />
+mv -f .deps/c-strcasecmp.Tpo .deps/c-strcasecmp.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT c-strncasecmp.o -MD -MP -MF .deps/c-strncasecmp.Tpo -c -o c-strncasecmp.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/c-strncasecmp.c<br />
+mv -f .deps/c-ctype.Tpo .deps/c-ctype.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT close-stream.o -MD -MP -MF .deps/close-stream.Tpo -c -o close-stream.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/close-stream.c<br />
+mv -f .deps/c-strncasecmp.Tpo .deps/c-strncasecmp.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT closeout.o -MD -MP -MF .deps/closeout.Tpo -c -o closeout.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/closeout.c<br />
+mv -f .deps/close-stream.Tpo .deps/close-stream.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT exitfail.o -MD -MP -MF .deps/exitfail.Tpo -c -o exitfail.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/exitfail.c<br />
+mv -f .deps/exitfail.Tpo .deps/exitfail.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT localcharset.o -MD -MP -MF .deps/localcharset.Tpo -c -o localcharset.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/localcharset.c<br />
+mv -f .deps/closeout.Tpo .deps/closeout.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT progname.o -MD -MP -MF .deps/progname.Tpo -c -o progname.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/progname.c<br />
+mv -f .deps/progname.Tpo .deps/progname.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT quotearg.o -MD -MP -MF .deps/quotearg.Tpo -c -o quotearg.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/quotearg.c<br />
+mv -f .deps/localcharset.Tpo .deps/localcharset.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT strnlen1.o -MD -MP -MF .deps/strnlen1.Tpo -c -o strnlen1.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/strnlen1.c<br />
+mv -f .deps/strnlen1.Tpo .deps/strnlen1.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT unistd.o -MD -MP -MF .deps/unistd.Tpo -c -o unistd.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/unistd.c<br />
+mv -f .deps/unistd.Tpo .deps/unistd.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT wctype-h.o -MD -MP -MF .deps/wctype-h.Tpo -c -o wctype-h.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/wctype-h.c<br />
+mv -f .deps/wctype-h.Tpo .deps/wctype-h.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT xmalloc.o -MD -MP -MF .deps/xmalloc.Tpo -c -o xmalloc.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/xmalloc.c<br />
+mv -f .deps/xmalloc.Tpo .deps/xmalloc.Po<br />
+gcc -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I..&nbsp;&nbsp;-I../intl&nbsp; &nbsp;-g -O2 -MT xalloc-die.o -MD -MP -MF .deps/xalloc-die.Tpo -c -o xalloc-die.o /usr/cda/repo/apps/hello/build/hello-2.9/lib/xalloc-die.c<br />
+mv -f .deps/xalloc-die.Tpo .deps/xalloc-die.Po<br />
+rm -f t-charset.alias charset.alias &amp;&amp; \<br />
+/bin/sh /usr/cda/repo/apps/hello/build/hello-2.9/lib/config.charset 'x86_64-unknown-linux-gnu' &gt; t-charset.alias &amp;&amp; \<br />
+mv t-charset.alias charset.alias<br />
+rm -f t-ref-add.sed ref-add.sed &amp;&amp; \<br />
+sed -e '/^#/d' -e 's/@''PACKAGE''@/hello/g' /usr/cda/repo/apps/hello/build/hello-2.9/lib/ref-add.sin &gt; t-ref-add.sed &amp;&amp; \<br />
+mv t-ref-add.sed ref-add.sed<br />
+rm -f t-ref-del.sed ref-del.sed &amp;&amp; \<br />
+sed -e '/^#/d' -e 's/@''PACKAGE''@/hello/g' /usr/cda/repo/apps/hello/build/hello-2.9/lib/ref-del.sin &gt; t-ref-del.sed &amp;&amp; \<br />
+mv t-ref-del.sed ref-del.sed<br />
+mv -f .deps/quotearg.Tpo .deps/quotearg.Po<br />
+rm -f libhello.a<br />
+ar cru libhello.a c-ctype.o c-strcasecmp.o c-strncasecmp.o close-stream.o closeout.o exitfail.o localcharset.o progname.o quotearg.o strnlen1.o unistd.o wctype-h.o xmalloc.o xalloc-die.o <br />
+ranlib libhello.a<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+Making all in po<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/po'<br />
+make: Nothing to be done for `all'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/po'<br />
+Making all in src<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/src'<br />
+gcc -DLOCALEDIR=\&quot;/usr/share/locale\&quot; -DHAVE_CONFIG_H -I. -I/usr/cda/repo/apps/hello/build/hello-2.9/src -I..&nbsp;&nbsp;-I/usr/cda/repo/apps/hello/build/hello-2.9/lib -I../lib&nbsp; &nbsp;-g -O2 -MT hello.o -MD -MP -MF .deps/hello.Tpo -c -o hello.o /usr/cda/repo/apps/hello/build/hello-2.9/src/hello.c<br />
+mv -f .deps/hello.Tpo .deps/hello.Po<br />
+gcc&nbsp;&nbsp;-g -O2&nbsp; &nbsp;-o hello hello.o&nbsp;&nbsp;../lib/libhello.a <br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/src'<br />
+Making all in doc<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/doc'<br />
+make: Nothing to be done for `all'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/doc'<br />
+Making all in man<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/man'<br />
+make: Nothing to be done for `all'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/man'<br />
+Making all in tests<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/tests'<br />
+make: Nothing to be done for `all'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/tests'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build'<br />
+make: 离开目录“/usr/cda/repo/apps/hello/build/hello-2.9/build”<br />
+make: 进入目录“/usr/cda/repo/apps/hello/build/hello-2.9/build”<br />
+Making install in contrib<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/contrib'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/contrib'<br />
+make: Nothing to be done for `install-exec-am'.<br />
+make: Nothing to be done for `install-data-am'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/contrib'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/contrib'<br />
+Making install in lib<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make&nbsp;&nbsp;install-recursive<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+if test yes = no; then \<br />
+&nbsp;&nbsp;case 'linux-gnu' in \<br />
+&nbsp; &nbsp; darwin*) \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;need_charset_alias=true ;; \<br />
+&nbsp; &nbsp; darwin* | cygwin* | mingw* | pw32* | cegcc*) \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;need_charset_alias=false ;; \<br />
+&nbsp; &nbsp; *) \<br />
+&nbsp; &nbsp;&nbsp; &nbsp;need_charset_alias=true ;; \<br />
+&nbsp;&nbsp;esac ; \<br />
+else \<br />
+&nbsp;&nbsp;need_charset_alias=false ; \<br />
+fi ; \<br />
+if $need_charset_alias; then \<br />
+&nbsp;&nbsp;/bin/sh /usr/cda/repo/apps/hello/build/hello-2.9/build-aux/install-sh -d /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib ; \<br />
+fi ; \<br />
+if test -f /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.alias; then \<br />
+&nbsp;&nbsp;sed -f ref-add.sed /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.alias &gt; /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.tmp ; \<br />
+&nbsp;&nbsp;/usr/bin/install -c -m 644 /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.tmp /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.alias ; \<br />
+&nbsp;&nbsp;rm -f /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.tmp ; \<br />
+else \<br />
+&nbsp;&nbsp;if $need_charset_alias; then \<br />
+&nbsp; &nbsp; sed -f ref-add.sed charset.alias &gt; /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.tmp ; \<br />
+&nbsp; &nbsp; /usr/bin/install -c -m 644 /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.tmp /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.alias ; \<br />
+&nbsp; &nbsp; rm -f /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/lib/charset.tmp ; \<br />
+&nbsp;&nbsp;fi ; \<br />
+fi<br />
+make: Nothing to be done for `install-data-am'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/lib'<br />
+Making install in po<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/po'<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/bg.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/bg/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/ca.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/ca/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/da.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/da/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/de.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/de/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/el.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/el/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/eo.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/eo/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/es.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/es/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/et.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/et/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/eu.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/eu/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/fa.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/fa/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/fi.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/fi/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/fr.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/fr/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/ga.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/ga/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/gl.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/gl/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/he.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/he/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/hr.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/hr/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/hu.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/hu/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/id.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/id/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/it.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/it/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/ja.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/ja/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/ka.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/ka/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/ko.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/ko/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/lv.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/lv/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/ms.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/ms/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/nb.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/nb/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/nl.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/nl/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/nn.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/nn/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/pl.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/pl/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/pt.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/pt/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/pt_BR.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/pt_BR/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/ro.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/ro/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/ru.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/ru/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/sk.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/sk/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/sl.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/sl/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/sr.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/sr/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/sv.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/sv/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/th.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/th/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/tr.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/tr/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/uk.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/uk/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/vi.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/vi/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/zh_CN.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/zh_CN/LC_MESSAGES/hello.mo<br />
+installing /usr/cda/repo/apps/hello/build/hello-2.9/po/zh_TW.gmo as /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/locale/zh_TW/LC_MESSAGES/hello.mo<br />
+if test &quot;hello&quot; = &quot;gettext-tools&quot;; then \<br />
+&nbsp;&nbsp;/bin/mkdir -p /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/gettext/po; \<br />
+&nbsp;&nbsp;for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot&nbsp; &nbsp;Makevars.template; do \<br />
+&nbsp; &nbsp; /usr/bin/install -c -m 644 /usr/cda/repo/apps/hello/build/hello-2.9/po/$file \<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/gettext/po/$file; \<br />
+&nbsp;&nbsp;done; \<br />
+&nbsp;&nbsp;for file in Makevars; do \<br />
+&nbsp; &nbsp; rm -f /usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/gettext/po/$file; \<br />
+&nbsp;&nbsp;done; \<br />
+else \<br />
+&nbsp;&nbsp;: ; \<br />
+fi<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/po'<br />
+Making install in src<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/src'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/src'<br />
+ /bin/mkdir -p '/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/bin'<br />
+&nbsp;&nbsp;/usr/bin/install -c hello '/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/bin'<br />
+make: Nothing to be done for `install-data-am'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/src'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/src'<br />
+Making install in doc<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/doc'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/doc'<br />
+make: Nothing to be done for `install-exec-am'.<br />
+ /bin/mkdir -p '/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/info'<br />
+ /usr/bin/install -c -m 644 /usr/cda/repo/apps/hello/build/hello-2.9/doc/hello.info '/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/info'<br />
+ install-info --info-dir='/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/info' '/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/info/hello.info'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/doc'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/doc'<br />
+Making install in man<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/man'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/man'<br />
+make: Nothing to be done for `install-exec-am'.<br />
+ /bin/mkdir -p '/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/man/man1'<br />
+ /usr/bin/install -c -m 644 /usr/cda/repo/apps/hello/build/hello-2.9/man/hello.1 '/usr/cda/repo/apps/hello/build/hello-2.9/abdist/usr/share/man/man1'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/man'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/man'<br />
+Making install in tests<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/tests'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/tests'<br />
+make: Nothing to be done for `install-exec-am'.<br />
+make: Nothing to be done for `install-data-am'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/tests'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build/tests'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build'<br />
+make: Entering directory `/usr/cda/repo/apps/hello/build/hello-2.9/build'<br />
+make: Nothing to be done for `install-exec-am'.<br />
+make: Nothing to be done for `install-data-am'.<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build'<br />
+make: Leaving directory `/usr/cda/repo/apps/hello/build/hello-2.9/build'<br />
+make: 离开目录“/usr/cda/repo/apps/hello/build/hello-2.9/build”<br />
+dpkg-query：警告：parsing file '/var/lib/dpkg/status' near line 4126 package 'deepin-desktop-environment':<br />
+ 找不到 description<br />
+dpkg-deb：正在新建软件包 hello，包文件为 abdist.deb。<br />
+dpkg：警告：parsing file '/var/lib/dpkg/status' near line 4126 package 'deepin-desktop-environment':<br />
+ 找不到 description<br />
+dpkg：警告：parsing file '/var/lib/dpkg/available' near line 4178 package 'deepin-desktop-environment':<br />
+ 找不到 description<br />
+(正在读取数据库 ... 系统当前共安装有 440878 个文件和目录。)<br />
+正预备替换 hello 2.9 (使用 abdist.deb) ...<br />
+正在解压缩将用于更替的包文件 hello ...<br />
+正在设置 hello (2.9) ...<br />
+正在处理用于 texinfo 的触发器...<br />
+/usr/share/info /usr/cda/repo/apps/hello/build/hello-2.9<br />
+已删除&quot;dir&quot;<br />
+/usr/cda/repo/apps/hello/build/hello-2.9<br />
+touch make<br />
+rm -rf build				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2014-1-15 11:58:49	</p>
+			<h3></h3>
+		恭喜。目前正在添加翻译，并准备写篇 Wiki ... 不过用起来很简单有木有……			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-807-1-1.html" target="_blank"><strong>Community Driven Anthon 初步可用！晒过程如下：</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

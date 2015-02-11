@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>【安同开始程序】0.1.1 Beta2第二公测版本发布 - 项目发布 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-672-1-1.html" rel="canonical" />
+<meta name="keywords" content="【安同开始程序】0.1.1 Beta2第二公测版本发布" />
+<meta name="description" content=" 【安同开始程序】0.1.1 Beta2第二公测版本发布 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-93.html">项目发布</a> &rsaquo; 【安同开始程序】0.1.1 Beta2第二公测版本发布</div>
+
+<div id="content">
+			<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-7-6 17:20:13	</p>
+			<h3>【安同开始程序】0.1.1 Beta2第二公测版本发布</h3>
+		 本帖最后由 LMY441900 于 2013-7-12 17:49 编辑 <br />
+<br />
+本次安同开始程序0.1.1放出公测版本是为了探测实用性、探测BUG、收集反馈，因为一个人开发，有些问题可能不被发现。<br />
+本次版本较上一版本（Beta1公测）有以下变动：<br />
+ - 没有用的fsutil句（没有管理员）<br />
+ - 一些无用代码<br />
+ - menu.lst里面的 root(hd0,0) 会导致错误<br />
+- 一个巨BUG，强制设定loader参数时会因为多一对引号而卡翔<br />
+<br />
+本次版本较正式版本（计划中的）有以下差异：<br />
+&nbsp;&nbsp;- 多语言支持<br />
+...<br />
+<br />
+本次Beta2仍然存在许多不足，BUG如下：<br />
+1、如果您乱输东西进去，会一塌糊涂（我相信没人这么干）<br />
+2、如果您的引导器不在C盘（比如说像Win7有时候有100MB隐藏分区），程序会探测不到引导器。我们在此加入了安全机制，您将看到如下一屏的警告。关于如何添加参数，您只需把程序拖曳入“运行”，在文件路径后面空一个格，输入loader参数。loader参数有且只有两个，注意，一个字、一个方括号都不能少！否则有你好看！（因为直接用作了变量，这个会在下一版本更正）<br />
+<br />
+Windows 2000/2003/XP操作系统的loader参数：NT5.x<br />
+Windows Vista/7操作系统的loader参数：NT6.x<br />
+<br />
+3、如果您真的有一个隐藏分区，重启之后您可能会发现GRUB找不到自己了（No grldr）。请不要着急。您可以稍等1分钟（秒表实测为1分钟正），然后就会找到自己了。<br />
+4、新增加一个程序：bcde.exe这个程序的作用是暂时提高权限以修改BCD，如果您看到下面对话框，请点击是，否则将出现各种欢乐。<br />
+<br />
+<br />
+5、如果您的计算机预装Windows8，请注意您的计算机可能开启了安全启动，请暂时把它关掉。<br />
+&nbsp; &nbsp;&nbsp;&nbsp;（还有一点，安同开始程序不支持GPT表。请注意。）<br />
+6、CUI和Batch批处理略猥琐，敬请见谅。<br />
+<br />
+运行时注意：不要给主程序附加管理员权限！否则程序将把自己重新定位在C:\Windows\system32中，进而发生找不到7z和引导修改工具、grldr等各种欢乐。<br />
+<br />
+发现BUG请到http://bugs.anthonos.org/报告您的问题，注意选择正确的项目，不要分派。				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-7-7 17:29:54	</p>
+			<h3></h3>
+		帮顶，晚上装叉屁虚拟机测试。				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-7-9 10:11:07	</p>
+			<h3></h3>
+		去研究一下，另外求支持ntfs安装的initrd				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-7-13 17:55:56	</p>
+			<h3></h3>
+		终于意识到bootloader不是systemroot了，，，我来个vhd不是爽翻<br />
+还有，我有gpt，手动安装成功			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-672-1-1.html" target="_blank"><strong>【安同开始程序】0.1.1 Beta2第二公测版本发布</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

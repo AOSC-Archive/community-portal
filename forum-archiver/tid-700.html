@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>老以你要的/boot/initrd.img/bin/setup代码 - 宣传与教学 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-700-1-1.html" rel="canonical" />
+<meta name="keywords" content="老以你要的/boot/initrd.img/bin/setup代码" />
+<meta name="description" content=" 老以你要的/boot/initrd.img/bin/setup代码 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-92.html">宣传与教学</a> &rsaquo; 老以你要的/boot/initrd.img/bin/setup代码</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-7-12 22:22:18	</p>
+			<h3>老以你要的/boot/initrd.img/bin/setup代码</h3>
+		顺便缅怀无法直视的旧安装器……#! /bin/bash<br />
+<br />
+export TARBALL=tarball.tar.xz<br />
+<br />
+export STR_EXITPROMPT=&quot;注意：在任何一个输入框显示时，你都可以通过输入EXIT来退出&quot;<br />
+export STR_INPUTCD=&quot;请输入CD/DVD设备（通常是sr0）&quot;<br />
+export STR_CDERROR=&quot;大佬，你的CD设备错了好不好啊！&quot;<br />
+export STR_CDOK=&quot;恭喜，CD设备对了！&quot;<br />
+export STR_INPUTROOT=&quot;请输入ROOT设备（依你的分区分配而定）&quot;<br />
+export STR_ROOTERROR=&quot;大佬，你的ROOT设备错了好不好啊！&quot;<br />
+export STR_ROOTOK=&quot;恭喜，ROOT设备对了！&quot;<br />
+export STR_NOMULTIPART=&quot;现阶段暂不支持多分区安装，请谅解…&quot;<br />
+export STR_TARDONE=&quot;现在小小的庆祝一下吧！解包已经完成了。&quot;<br />
+export STR_INPUTRTT=&quot;请输入ROOT文件系统格式：&quot;<br />
+export STR_SETUPGRUB=&quot;是否安装GRUB？&quot;<br />
+export STR_INPUTGRUBDEV=&quot;请输入GRUB目标设备&quot;<br />
+export STR_GRUBOK=&quot;GRUB安装完成&quot;<br />
+export STR_BOOTNEWOS=&quot;Do you want to boot the new system?&quot;<br />
+<br />
+<br />
+echo $STR_EXITPROMPT<br />
+read unused<br />
+<br />
+while true<br />
+do<br />
+&nbsp;&nbsp;dialog --inputbox &quot;$STR_INPUTCD&quot; 8 50 2&gt;/tmp/intmp<br />
+&nbsp;&nbsp;export CDDEV=&quot;`cat /tmp/intmp`&quot;<br />
+&nbsp;&nbsp;if [ &quot;$CDDEV&quot; = &quot;EXIT&quot; ]<br />
+&nbsp;&nbsp;then<br />
+&nbsp; &nbsp; exit<br />
+&nbsp;&nbsp;fi<br />
+&nbsp;&nbsp;if [ ! -d /mnt/cd ]<br />
+&nbsp;&nbsp;then<br />
+&nbsp; &nbsp; mkdir -p /mnt/cd<br />
+&nbsp;&nbsp;fi<br />
+&nbsp;&nbsp;if mount /dev/$CDDEV /mnt/cd<br />
+&nbsp;&nbsp;then<br />
+&nbsp; &nbsp; if [ -e /mnt/cd/$TARBALL ]<br />
+&nbsp; &nbsp; then<br />
+&nbsp; &nbsp;&nbsp; &nbsp;dialog --infobox &quot;$STR_CDOK&quot; 3 50<br />
+&nbsp; &nbsp;&nbsp; &nbsp;read unused<br />
+&nbsp; &nbsp;&nbsp; &nbsp;break<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp;&nbsp; &nbsp;umount /mnt/cd<br />
+&nbsp; &nbsp;&nbsp; &nbsp;dialog --infobox &quot;$STR_CDERROR : no tarball&quot; 3 50<br />
+&nbsp; &nbsp;&nbsp; &nbsp;read unused<br />
+&nbsp; &nbsp; fi<br />
+&nbsp;&nbsp;else<br />
+&nbsp;&nbsp;dialog --infobox &quot;$STR_CDERROR : cannot mount&quot; 3 50<br />
+&nbsp;&nbsp;read unused<br />
+&nbsp;&nbsp;fi<br />
+done<br />
+<br />
+while true<br />
+do<br />
+&nbsp;&nbsp;dialog --inputbox &quot;$STR_INPUTROOT&quot; 8 50 2&gt;/tmp/intmp<br />
+&nbsp;&nbsp;export ROOTDEV=&quot;`cat /tmp/intmp`&quot;<br />
+&nbsp;&nbsp;if [ &quot;$ROOTDEV&quot; = &quot;EXIT&quot; ]<br />
+&nbsp;&nbsp;then<br />
+&nbsp; &nbsp; umount /mnt/cd<br />
+&nbsp; &nbsp; exit<br />
+&nbsp;&nbsp;fi<br />
+&nbsp;&nbsp;if [ ! -d /mnt/root ]<br />
+&nbsp;&nbsp;then<br />
+&nbsp; &nbsp; mkdir -p /mnt/root<br />
+&nbsp;&nbsp;fi<br />
+&nbsp;&nbsp;if mount /dev/$ROOTDEV /mnt/root<br />
+&nbsp;&nbsp;then<br />
+&nbsp; &nbsp; ls /mnt/root<br />
+&nbsp; &nbsp; echo &quot;OK? ( y/N ):&quot;<br />
+&nbsp; &nbsp; read choice<br />
+&nbsp; &nbsp; if [ &quot;$choice&quot; = &quot;y&quot; ]<br />
+&nbsp; &nbsp; then<br />
+&nbsp; &nbsp;&nbsp; &nbsp;dialog --infobox &quot;$STR_ROOTOK&quot; 3 50<br />
+&nbsp; &nbsp;&nbsp; &nbsp;read unused<br />
+&nbsp; &nbsp;&nbsp; &nbsp;break<br />
+&nbsp; &nbsp; fi<br />
+&nbsp; &nbsp; if [ &quot;$choice&quot; = &quot;Y&quot; ]<br />
+&nbsp; &nbsp; then<br />
+&nbsp; &nbsp;&nbsp; &nbsp;dialog --infobox &quot;$STR_ROOTOK&quot; 3 50<br />
+&nbsp; &nbsp;&nbsp; &nbsp;read unused<br />
+&nbsp; &nbsp;&nbsp; &nbsp;break<br />
+&nbsp; &nbsp; fi<br />
+&nbsp; &nbsp; umount /mnt/root<br />
+&nbsp; &nbsp; dialog --infobox &quot;$STR_ROOTERROR&quot; 3 50<br />
+&nbsp; &nbsp; read unused<br />
+&nbsp;&nbsp;else<br />
+&nbsp;&nbsp;dialog --infobox &quot;$STR_ROOTERROR&quot; 3 50<br />
+&nbsp;&nbsp;read unused<br />
+&nbsp;&nbsp;fi<br />
+done<br />
+<br />
+echo $STR_NOMULTIPART<br />
+<br />
+pushd /mnt/root<br />
+/lib/progress_bar.sh /tmp/tardone &amp;<br />
+tar xf /mnt/cd/$TARBALL <br />
+touch /tmp/tardone<br />
+popd<br />
+<br />
+echo $STR_TARDONE<br />
+read unused<br />
+<br />
+pushd /mnt/root<br />
+dialog --inputbox &quot;$STR_INPUTRTT&quot; 8 30 2&gt;/tmp/intmp<br />
+export RTT=&quot;`cat /tmp/intmp`&quot;<br />
+echo &quot;/dev/$ROOTDEV / $RTT defaults 1 1&quot; &gt;&gt; etc/fstab<br />
+popd<br />
+<br />
+#if dialog --yesno &quot;$STR_SETUPGRUB&quot; 5 50<br />
+#then<br />
+#pushd /mnt/root<br />
+#mount --bind /dev dev<br />
+#mount -t proc proc proc<br />
+#mount -t sysfs sysfs sys<br />
+#mount -t devpts devpts dev/pts<br />
+#dialog --inputbox &quot;$STR_INPUTGRUBDEV&quot; 8 30 2&gt;/tmp/intmp<br />
+#export GRUBDEV=&quot;`cat /tmp/intmp`&quot;<br />
+#chroot . /usr/sbin/grub-install /dev/$GRUBDEV<br />
+#echo &quot;$STR_GRUBOK&quot;<br />
+#read unused<br />
+#pwd<br />
+#sync<br />
+#sync<br />
+#umount dev/pts<br />
+#umount dev<br />
+#umount proc<br />
+#umount sys<br />
+#popd<br />
+#fi<br />
+<br />
+if dialog --yesno &quot;$STR_SETUPGRUB&quot; 5 50<br />
+then<br />
+if [ -e /mnt/root/boot/initrd* ]<br />
+then<br />
+mkdir -p /mnt/tmp-tmp<br />
+mount -t tmpfs tmptmp /mnt/tmp-tmp<br />
+cp /mnt/root/boot/initrd* /mnt/tmp-tmp/initrd<br />
+kexec -l /mnt/root/boot/vmlinuz* --initrd=&quot;/mnt/tmp-tmp/initrd&quot; --append=&quot;root=/dev/$ROOTDEV&quot;<br />
+else<br />
+kexec -l /mnt/root/boot/vmlinuz* --append=&quot;root=/dev/$ROOTDEV&quot;<br />
+fi<br />
+kexec -e<br />
+#The rest of this script will not bt executed.<br />
+fi<br />
+<br />
+sync<br />
+sync<br />
+<br />
+umount /mnt/cd<br />
+umount /mnt/root<br />
+rm /tmp/tardone<br />
+缩进没了……抱歉。<br />
+			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-700-1-1.html" target="_blank"><strong>老以你要的/boot/initrd.img/bin/setup代码</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

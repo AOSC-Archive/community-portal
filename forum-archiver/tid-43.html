@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>DEBIAN下中文显示 - AnthonOS 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-43-1-1.html" rel="canonical" />
+<meta name="keywords" content="DEBIAN下中文显示" />
+<meta name="description" content=" DEBIAN下中文显示 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-44.html">AnthonOS 反馈和支持</a> &rsaquo; DEBIAN下中文显示</div>
+
+<div id="content">
+			<p class="author">
+					<strong>admin</strong>
+				发表于 2013-1-3 14:46:37	</p>
+			<h3>DEBIAN下中文显示</h3>
+		一.首先检查LOCALE情况<br />
+说明：DEBIAN因为基于GNU所以，对不同地域进行了不同的包支持，以LOCALE形式存在。<br />
+1.挂载ISO文件包，前8个ISO包就可以（这里不在讲述）。<br />
+2.启动终端<br />
+#apt-get install locales<br />
+3.重新配置LOCALE<br />
+#dpkg-reconfigure locales<br />
+在所有的语言包选择en_US.ISO-8859-1和zh_CN.GBK。其他en_US和zh_CN打头的也选上。然后选择zh_CN.GBK为默认的LOCALE，则系统为中文界面（这里也可以选en_US.ISO，使系统为英文界面）。<br />
+3.运行LOCALE命令检查当前的LOCALE环境<br />
+#locale<br />
+正确配置下会显式<br />
+LANG =zh_CN.GBK<br />
+........................以下显示略过<br />
+ <br />
+<br />
+============================================================================<br />
+Debian 6解决中文乱码<br />
+<br />
+解决办法：打开终端，切换至root帐号。 　<br />
+　<br />
+执行以下命令：<br />
+apt-get install ttf-wqy-zenhei（安装字体） 　　<br />
+apt-get install ibus ibus-gtk ibus-pinyin（安装输入法）<br />
+-------------------------<br />
+设置本地化 Locale<br />
+如果我们在安装 Debian <br />
+系统时，语言选择了英语呢？进入系统后看到全是英文，是不是有点郁闷。那么我们怎样设置成简体中文呢？<br />
+#如果你安装系统时选择的就是简体中文，可以跳过这段，只安装中文字体就行了。当然你也可以修改成其他的语言。<br />
+打开终端，执行命令： <br />
+dpkg-reconfigure locales<br />
+把 带 zh_CN 字样的全部选上，然后选择 OK 确定，在弹出的对话框中，选择系统的 locale ，选择zh_CN.UTF-8。<br />
+<br />
+安装时选择的是英语，会缺少中文字体，用以下命令安装字体：<br />
+apt-get install xfonts-intl-chinese wqy* <br />
+下次重起机器，在GNOME登录介面下方的Language，登录语言选择：汉语（中国）<br />
+设置字体<br />
+对着桌面猛击右键 ===&gt; 更改桌面背景 ===&gt; 字体<br />
+# <br />
+选择自己喜欢的字体，比如：文泉驿点阵正黑或文泉驿微米黑<br />
+<br />
+输入法<br />
+选择喜欢的输入法，比如： ibus scim<br />
+# 注：fcitx 输入法在debian unstable <br />
+软件源里才有，如果需要的话，只能自行下载安装了。或者添加 Debian unstable 的软件源。<br />
+apt-get install <br />
+ibus-pinyin ibus-table-wubi #安装IBUS五笔和拼音<br />
+设置输入法<br />
+系统 ===&gt; 首选项 ===&gt; IBus 设置<br />
+#设置快捷键和添加输入法到列表。<br />
+浏览器<br />
+Iceweasel浏览器简体中文组件 # Iceweasel是Debian中Mozilla <br />
+Firefox浏览器的一个再发布版<br />
+#英语很菜，所以浏览器菜单也要是中文的<br />
+apt-get install <br />
+iceweasel-l10n-zh-cn<br />
+运行浏览器，然后点击<br />
+浏览器菜单 ===&gt; 编辑 ===&gt; 首选项 ===&gt; 内容<br />
+# 设置浏览器字体<br />
+<br />
+谷歌开源浏览器Chromium<br />
+# 不喜欢用这个的，也可以安装 Chrome 浏览器<br />
+apt-get install <br />
+chromium-browser chromium-browser-l10n<br />
+<br />
+Flash插件<br />
+执行命令：<br />
+apt-get install flashplugin-nonfree <br />
+#嫌手动安装官方Flash插件麻烦的，直接安装这个吧<br />
+手动安装官方Flash插件<br />
+# 注意如果你已经用上面的命令安装了flashplugin-nonfree，最好先卸载掉。<br />
+# <br />
+可能是为了避免冲突吧，不然浏览器不知道用哪个插件，我不清楚原因。<br />
+源里的flash插件和官方的正式版的flash插件，在我这里播放在线视频时，全屏会卡。我安装的是测试版的flash插件<br />
+先下载两个软件包，不然装好了Flash插件也用不了。装源里的 flashplugin-nonfree 会自动安装这两个文件。<br />
+apt-get <br />
+install ca-certificates libcurl3-gnutls<br />
+<br />
+到下面网址下载 Flash Player 的压缩包<br />
+http://labs.adobe.com/downloads/flashplayer10.html<br />
+Download plug-in for 32-bit Linux (TAR.GZ, 4.7 MB) ← 下载这个<br />
+然后解压下载下来的压缩文件，解压出来 <br />
+libflashplayer.so<br />
+切换到普通用户创建存放 Flash 插件的目录<br />
+mkdir -pv ~/.mozilla/plugins<br />
+进入存放 libflashplayer.so 的目录<br />
+cp -v libflashplayer.so ~/.mozilla/plugins<br />
+Chromium安装Flash插件<br />
+su<br />
+cp -v libflashplayer.so <br />
+/usr/lib/chromium-browser/plugins<br />
+<br />
+影音播放器<br />
+#Mplayer和播放前端SMplayer<br />
+apt-get install mplayer smplayer<br />
+设置QT程序字体<br />
+# 在Debian GNOME桌面中QT程序的字体不清析,所以要设置一下<br />
+先备份 /etc/fonts/conf.d/49-sansserif.conf<br />
+cp -v <br />
+/etc/fonts/conf.d/49-sansserif.conf{,.backup}<br />
+修改 /etc/fonts/conf.d/49-sansserif.conf <br />
+<br />
+把文件倒数第4行中：<br />
+sans-serif<br />
+↓↓<br />
+文泉驿微米黑<br />
+# 把sans-serif替换成文泉驿微米黑，前提你得先安装文泉驿字库<br />
+PDF阅读器<br />
+Foxit # 如果觉得系统自带的不好用，就下载这个吧<br />
+http://www.foxitsoftware.com/downloads/index.php<br />
+#找到 <br />
+Foxit Reader 1.1 Build 20090810 for Desktop Linux(bz2)，下载后解压运行目录下的foxit就可以用。<br />
+<br />
+CHM阅读器<br />
+如果有Windows下的CHM文档资料要看，那么就安装chmsee吧<br />
+apt-get install <br />
+chmsee<br />
+星际译王<br />
+# 星际译王是 GNOME 中的国际化的词典软件<br />
+# 本人英文单词不会几个的，所以是必配的词典软件<br />
+apt-get <br />
+install stardict<br />
+#词典下载，下载地址如下，下载tarball包，解压后，复制到 /usr/share/stardict/dict/ <br />
+目录下，<br />
+#最好在这个目录下新建文件夹来分类存放词典。<br />
+http://stardict.sourceforge.net/Dictionaries_zh_CN.php<br />
+<br />
+截图工具shutter<br />
+#默认情况下，Debian没有安装gnome-screenshot，可以下载功能更强大的shutter<br />
+apt-get <br />
+install shutter<br />
+apt-get install libgoo-canvas-perl # 编辑功能插件<br />
+解压缩软件<br />
+apt-get install unrar<br />
+apt-get install unzip<br />
+apt-get install <br />
+p7zip-full<br />
+<br />
+安装基本编译环境<br />
+# 有时可能自己想编译软件<br />
+apt-get install gcc<br />
+apt-get install <br />
+linux-headers-`uname -r`<br />
+apt-get install make<br />
+apt-get install automake<br />
+虚拟机VirtualBox-OSE<br />
+# 使用 Linux 或多或少都要用虚拟机吧，如果不喜欢OSE版，可以到官方去下载。<br />
+apt-get <br />
+install virtualbox-ose<br />
+VirtualBox 官方主页：<br />
+http://www.virtualbox.org/<br />
+<br />
+FTP上传下载工具<br />
+# gFTP是X Window下的一个用Gtk开发的多线程FTP客户端工具<br />
+apt-get install <br />
+gftp<br />
+<br />
+LINUX下的“电驴”<br />
+# aMule 是基于eMule的“全平台”P2P客户端<br />
+apt-get install amule<br />
+<br />
+BT下载工具<br />
+Transmission是一种BitTorrent客户端<br />
+apt-get install <br />
+transmission			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-43-1-1.html" target="_blank"><strong>DEBIAN下中文显示</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

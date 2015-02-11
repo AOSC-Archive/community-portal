@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>[2013-02-03放出AMD64版本]安同CentralPonit发布帖 - CentralPoint 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-115-1-1.html" rel="canonical" />
+<meta name="keywords" content="[2013-02-03放出AMD64版本]安同CentralPonit发布帖" />
+<meta name="description" content=" [2013-02-03放出AMD64版本]安同CentralPonit发布帖 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-121.html">CentralPoint 发布区</a> &rsaquo; [2013-02-03放出AMD64版本]安同CentralPonit发布帖</div>
+
+<div id="content">
+			<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-2 18:03:47	</p>
+			<h3>[2013-02-03放出AMD64版本]安同CentralPonit发布帖</h3>
+		 本帖最后由 butangmucat 于 2013-2-3 10:27 编辑 <br />
+<br />
+2012-02-03更新：AMD64版本<br />
+增加实验性特征：Dropbox自动备份脚本，fcron（功能更强大，用于代替cron，因而去除cron）<br />
+去除：phpMyAdmin（安装脚本稍后放出，没有包括在系统中）<br />
+<br />
+Dropbox自动备份脚本为/usr/local/bin/dropboxd，请参照http://shuyz.com/auto-backup-openshift-to-dropbox-1.html对该文件进行修改<br />
+<br />
+增加Typecho和Drupal的脚本，为<br />
+autoinstaller typecho和autoinstaller drupal<br />
+<br />
+Zend Server没有进行初始化，请参照一楼访问的Zend Server后台进行初始化，否则无法享受Zend Server（PHP正常）<br />
+<br />
+其他用户名密码不变<br />
+<br />
+CloneZilla镜像改名zend-linux-remix-amd64<br />
+<br />
+下一次更新将改名Anthon-CentralPoint（有中文会有一些问题的），并且有会停止i386分支<br />
+<br />
+地址：http://pan.baidu.com/share/link?shareid=253660&amp;uk=1596170030记得大概在半年以前，安同团队曾经有开发服务器版本的想法，不过貌似自从从SUSE Studio发行版换到Debian以后服务器分支貌似就没有消息了。说实话我当时还在想等安同服务器版本成熟然后我们学生会就有中学生自己开发的服务器可以用了，现在感觉好失望。<br />
+<br />
+今天下午研究了一下安同，发现我是没可能为开发团队做出核心贡献了，所以花了一些时间做了一个符合我的口味的服务器系统，暂时命名为&quot;Zend Linux Remix&quot;，已废弃，改名为&quot;CentralPoint&quot;<br />
+<br />
+基于Debian Squeeze（没有用testing/unstable是因为与我的核心之一Zend Server Community Edition有依赖冲突）<br />
+默认安装Apache2, MySQL, Zend Server Communtiy Edition以及打过Zend补丁的PHP（我自己是学PHP和研究相关运维的，这是我优化性能的法宝）<br />
+安装了Sun JRE, Zend Java Bridge, Zend Guard Loader<br />
+支持通过我手工编写的bash脚本一键安装常用Web应用<br />
+（我自己是学PHP得，对这一块比较清楚）<br />
+<br />
+内置的账户和密码：<br />
+root：已禁用<br />
+默认用户：tux，密码：linux<br />
+MySQL默认root密码：toor<br />
+Zend Server后台密码：admin<br />
+<br />
+登陆技巧：<br />
+SSH监听TCP端口22<br />
+Zend Server采用Web面板，端口为10081（HTTP）或者10082（HTTPS）<br />
+<br />
+安装Web应用：<br />
+执行&quot;autoinstaller [应用名]&quot;以将应用自动下载并安装到/var/www（默认站点的目录），只能安装一个，否则会有冲突<br />
+支持的应用<br />
+dedecms-full：织梦CMS完整版<br />
+discuzx：Discuz! X<br />
+dokuwiki：DokuWiki<br />
+emlog：EMlog<br />
+hdwiki：HDWiki<br />
+mediawiki：MediaWiki<br />
+phpbb：phpBB<br />
+phpwind：PHPWind<br />
+wordpress：WordPress<br />
+<br />
+其他技巧：<br />
+输入形如&quot;IP/tz.php&quot;来查看服务器信息<br />
+使用HTTPS登陆Zend Server后台会提示证书无效，无视即可，不过这意味着你无法在访问远端运行的操作系统时受到防中间人攻击的保护，这种情况建议使用受SSH端口映射保护HTTP连接访问后台<br />
+在虚拟机中请自行设置端口映射<br />
+虚拟机中运行时，通过SSH连接会比直接在窗口中敲要爽，因为可以复制粘贴（强烈推荐Bitvise SSH Client，还自带基于SSH的远程/本地双向文件管理器，连客户机文件共享插件都省了）<br />
+<br />
+CloneZilla安装（会完全擦除硬盘数据）：首先下载包含磁盘镜像的CloneZilla ISO，用它引导计算机，进入CloneZilla后在&quot;挂载再生龙镜像文件的目录&quot;那一屏（前提是你之前选择语言那一屏选的是简体中文，其他语言意会即可）选择&quot;enter_shell 进入命令列，自行手动调整&quot;选项，在进入shell后输入&quot;ln -s /live/image/zend-linux-remix/ /home/partimag&quot;（可以tab自动补齐），成功后输入&quot;exit&quot;然后再按照标准再生龙的克隆方式进行克隆（注意 本镜像一共有3个分区，如果打算手动调整分区，则要注意：第一个分区为/boot，不得小于200M，第二个分区为/，不得小于13G，第三个分区为swap。不得小于770M）<br />
+<br />
+下载地址（有OVF Applet和CloneZilla ISO，不过前者较大）：http://pan.baidu.com/share/link?shareid=253659&amp;uk=1596170030<br />
+<br />
+上三张图：<br />
+<br />
+图一：CloneZilla设置：<br />
+http://ww1.sinaimg.cn/large/a74ecc4cjw1e1d58v0s6xj.jpg<br />
+<br />
+图二：Zend Server（注意无效的证书）：<br />
+http://ww4.sinaimg.cn/large/a74e55b4jw1e1d5i3akv5j.jpg<br />
+<br />
+图三：Bitvise SSH Client访问虚拟机中的系统：<br />
+http://ww3.sinaimg.cn/large/a74eed94jw1e1d5h9tqm5j.jpg<br />
+<br />
+<br />
+				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-2 18:14:16	</p>
+			<h3></h3>
+		问几个问题：<br />
+1、这是你一个人做的还是？<br />
+2、是否有兴趣作为合作项目？<br />
+				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-2 18:16:08	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-2 18:14 static/image/common/back.gif<br />
+问几个问题：<br />
+1、这是你一个人做的还是？<br />
+2、是否有兴趣作为合作项目？<br />
+<br />
+<br />
+如果决定合作，我们可以提供给你一个完整的安装解决方案，当然，还有更多支持。这是一个好的想法，应当更好地实施。				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-2 18:17:59	</p>
+			<h3></h3>
+		服务器的版本计划原本是在正式版之后开始的啊。。。我们目前已经进入0.9序列。				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-2 18:41:40	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-2 18:14 static/image/common/back.gif<br />
+问几个问题：<br />
+1、这是你一个人做的还是？<br />
+2、是否有兴趣作为合作项目？<br />
+<br />
+<br />
+暂时是我一个人，而且愿意合作或者成为安同的服务器分支<br />
+思前想后我只有服务器维护和服务器软件比较在行<br />
+我有一些有兴趣的同学可以协助我				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-2 19:34:26	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-2-2 18:41 static/image/common/back.gif<br />
+暂时是我一个人，而且愿意合作或者成为安同的服务器分支<br />
+思前想后我只有服务器维护和服务器软件比较在行<br />
+ ...<br />
+<br />
+请加我Q:478553605，我们详细交流一下。				<p class="author">
+					<strong>朱宇辉</strong>
+				发表于 2013-2-2 19:36:14	</p>
+			<h3></h3>
+		后排膜拜sro大神orz				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-2 23:50:39	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-2 19:34 static/image/common/back.gif<br />
+请加我Q:478553605，我们详细交流一下。<br />
+<br />
+已经加了，我的号896754284，昵称Long_Live				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-3 09:40:55	</p>
+			<h3></h3>
+		应白大要求，先放出AMD64版本下载链接，待会再写更新说明<br />
+http://pan.baidu.com/share/link?shareid=253608&amp;uk=1596170030			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-115-1-1.html" target="_blank"><strong>[2013-02-03放出AMD64版本]安同CentralPonit发布帖</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>安同新安装体验正在开发（发扬直播精神~） - AnthonOS 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-129-1-1.html" rel="canonical" />
+<meta name="keywords" content="安同新安装体验正在开发（发扬直播精神~）" />
+<meta name="description" content=" 安同新安装体验正在开发（发扬直播精神~） ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-37.html">AnthonOS 发布区</a> &rsaquo; 安同新安装体验正在开发（发扬直播精神~）</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-10 18:14:04	</p>
+			<h3>安同新安装体验正在开发（发扬直播精神~）</h3>
+		 本帖最后由 jeffbaichina 于 2013-2-10 22:40 编辑 <br />
+<br />
+我正在和butangmucat同学一起合作制作安同的新安装体验，基本构思如下：<br />
+· 基本的Debian Wheezy一枚——基础<br />
+&nbsp;&nbsp;疑似FAIL：库不兼容，可能采用LMDE作为基础<br />
+· openbox+tint2经典组合——界面<br />
+&nbsp;&nbsp;疑似FAIL：可能采用XFCE<br />
+· LinuxMint安装器——安装程序<br />
+<br />
+关于安装器方面，我们对程序进行了大幅度修改，也改动了外观，仅此而已（用词似乎不合适啊）。<br />
+<br />
+直播<br />
++ Debian基本系统<br />
++ Python库（python+python-gtk2+python-glade2+python-gparted+python-geoip）<br />
++ 依赖：inxi<br />
+我们通过fork一个mint的源做到的。<br />
++ X图形环境<br />
++ openbox and tint2<br />
+-&gt;正在准备集成安装程序				<p class="author">
+					<strong>moling2088</strong>
+				发表于 2013-2-10 19:21:51	</p>
+			<h3></h3>
+		good，支持				<p class="author">
+					<strong>freddy4212</strong>
+				发表于 2013-2-14 16:04:30	</p>
+			<h3></h3>
+		現在對話框方式還不錯！但要更客製化:)				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-14 17:11:54	</p>
+			<h3></h3>
+		freddy4212 发表于 2013-2-14 16:04 static/image/common/back.gif<br />
+現在對話框方式還不錯！但要更客製化<br />
+<br />
+客制化是人性化的意思么？（台湾的朋友？）				<p class="author">
+					<strong>HY-wyl</strong>
+				发表于 2013-2-14 20:06:05	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-14 17:11 static/image/common/back.gif<br />
+客制化是人性化的意思么？（台湾的朋友？）<br />
+<br />
+是个性化的意思				<p class="author">
+					<strong>freddy4212</strong>
+				发表于 2013-2-15 14:38:53	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-14 17:11 static/image/common/back.gif<br />
+客制化是人性化的意思么？（台湾的朋友？）<br />
+<br />
+自訂使用者名,密碼......這是目前很缺的東西:D				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-15 15:18:23	</p>
+			<h3></h3>
+		freddy4212 发表于 2013-2-15 14:38 static/image/common/back.gif<br />
+自訂使用者名,密碼......這是目前很缺的東西<br />
+<br />
+这个正在开发了，元宵节可以出来。				<p class="author">
+					<strong>mint</strong>
+				发表于 2013-2-16 02:55:32	</p>
+			<h3></h3>
+		没有类似Ubuntu的wubi安装方式不幸福啊……				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-16 07:57:09	</p>
+			<h3></h3>
+		mint 发表于 2013-2-16 02:55<br />
+没有类似Ubuntu的wubi安装方式不幸福啊……<br />
+<br />
+抱歉，还真有。只不过我们觉得虚拟分区不科学于是我们弄了个真分区的。。。<br />
+安同硬盘安装器：http://forum.anthonos.org/forum.php?mod=viewthread&amp;tid=123&amp;mobile=yes				<p class="author">
+					<strong>mint</strong>
+				发表于 2013-2-16 10:33:16	</p>
+			<h3></h3>
+		 本帖最后由 mint 于 2013-2-16 10:34 编辑 <br />
+<br />
+jeffbaichina 发表于 2013-2-16 07:57 static/image/common/back.gif<br />
+抱歉，还真有。只不过我们觉得虚拟分区不科学于是我们弄了个真分区的。。。<br />
+安同硬盘安装器：http://foru ...<br />
+这个是什么意思？是能啊还是不能啊？我是超级菜鸟的……话说你们的这个系统用virtualbox安装会有问题，又不能wubi，你让我一个菜鸟怎么体验啊……另外就是，我很奇怪为什么互联网企业是怎么判断认为智能手机很普及了，什么都是智能手机客户端……我还在用功能机就成二等公民了？<br />
+抱歉，不是针对你们，只是有感而发……<br />
+				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-16 10:56:02	</p>
+			<h3></h3>
+		mint 发表于 2013-2-16 10:33 static/image/common/back.gif<br />
+这个是什么意思？是能啊还是不能啊？我是超级菜鸟的……话说你们的这个系统用virtualbox安装会有问题，又 ...<br />
+<br />
+这个呢我们得和你道歉。<br />
+我们最近在系统上花时间太长，没有太专注做安装程序。硬盘安装器是可用的，不过需要一个空的分区（这个你懂吗？）。VirtualBox可能在安装的时候崩溃，所以推荐使用VMware（不知道的话继续跟帖问哦）。<br />
+至于客户端的问题，你可以直接用手机上……有手机版的论坛也很省流量的。别的不好评论啥。<br />
+<br />
+我们一定会尽力改进的，你的质疑和意见都是我们的动力。				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-16 10:56:34	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-16 10:56 static/image/common/back.gif<br />
+这个呢我们得和你道歉。<br />
+我们最近在系统上花时间太长，没有太专注做安装程序。硬盘安装器是可用的，不过 ...<br />
+<br />
+而且不要忘了谁都是从菜鸟开始的				<p class="author">
+					<strong>mint</strong>
+				发表于 2013-2-16 17:19:44	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-16 10:56 static/image/common/back.gif<br />
+这个呢我们得和你道歉。<br />
+我们最近在系统上花时间太长，没有太专注做安装程序。硬盘安装器是可用的，不过 ...<br />
+<br />
+我选择关注你们主要就是我觉得和一个新兴的版本一起可以学习一些基础的东西，因为老的发行版本的用户现在关注的方面太高端了。<br />
+空的分区的话，大概是明白吧，应该就是指我的电脑上应该保证F盘或者类似的一个分区可以被各式化为Linux的格式，这个没错吧……<br />
+我的电脑上安装的就是virtualbox，至于VMware因为我分不清楚是不是会侵犯其版权，而且他的版本过多我也搞不清楚……所以选择了vb，既然已经有vb了也就不会再装其他类似的软件了。因为我使用的电脑是家里人共用的电脑，如果搞趴下了，那……所以我比较喜欢相对安全的体验方式，如果硬盘安装，我还是怕出问题的……<br />
+<br />
+另外，给你们提个意见，建议你们开一些开源软件的学习版，毕竟很多人可能在意的是哪个软件怎么用，然后才考虑操作系统，这样也算是对开源的贡献吧……我最近在学习GIMP，可是中文资料比较缺乏，或者比较老。现在百度 GIMP吧虽然热心者众多，但是在贴吧中的限制太多，并不是十分方便……你们的关于GIMP的资料也是十分贫乏啊…………<br />
+<br />
+哦，对了，你们什么时候会出手册啊？我不是一个技术流的用户，所以现有的资料对我来说口味稍重了一些，也太零散了一些……			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-129-1-1.html" target="_blank"><strong>安同新安装体验正在开发（发扬直播精神~）</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

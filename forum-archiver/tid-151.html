@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>【公测】安同周末公测版本“满月” - AnthonOS 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-151-1-1.html" rel="canonical" />
+<meta name="keywords" content="【公测】安同周末公测版本“满月”" />
+<meta name="description" content=" 【公测】安同周末公测版本“满月” ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-37.html">AnthonOS 发布区</a> &rsaquo; 【公测】安同周末公测版本“满月”</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-17 21:01:20	</p>
+			<h3>【公测】安同周末公测版本“满月”</h3>
+		 本帖最后由 jeffbaichina 于 2013-3-18 01:10 编辑 <br />
+<br />
+本周代号：“满月”<br />
+“所谓人满月满，幸福满堂”<br />
+<br />
+从发布安同的里程碑基准版本以来，我们收到了不少的评测、建议以及Bug报告，我代表开发组表示诚挚的谢意。我们也将尽量改进收集意见的方式和态度，并努力完善安同，迎接正式版的到来。<br />
+<br />
+发布列表<br />
+· 首发，VBox虚拟机硬盘镜像，已预配置 <br />
+&nbsp;&nbsp;下载：http://pan.baidu.com/share/link?shareid=258997&amp;uk=2653255019<br />
+&nbsp;&nbsp;直接在VirtualBox虚拟机挂载即可，有问题请跟帖提出或到“安同社区交流群”讨论<br />
+<br />
+· 二发，文本安装版本，手动&nbsp; &nbsp; ————&nbsp; &nbsp; http://pan.baidu.com/share/link?shareid=308341&amp;uk=2653255019<br />
+· 延迟发布，修正后安装版本，chroot自动配置&nbsp; &nbsp; ————&nbsp; &nbsp; 开发中<br />
+<br />
+据说截图应该放在前面？<br />
+<br />
+矢量的天空！真的是矢量图……<br />
+<br />
+嗯……顺便送本杂志给你看看（下次记着买！记住啦！）<br />
+<br />
+全屏据说大家喜欢些<br />
+<br />
+够新鲜，唔……<br />
+<br />
+听说老林还是喜欢这个？<br />
+<br />
+WPS更新了，别担心……<br />
+<br />
+我谢你八辈祖宗张理德小盆友！<br />
+<br />
+Bug修复列表<br />
+· 无法自动探测USB或其他的可移动介质&nbsp; &nbsp; ————&nbsp; &nbsp; 已解决<br />
+· kexec在虚拟机造成卡死&nbsp; &nbsp; ————&nbsp; &nbsp; 新的安装程序（环境）正在紧张开发<br />
+· 声卡的残留信息来自开发机器&nbsp; &nbsp; ————&nbsp; &nbsp; 已通知开发组人员注意开发程序<br />
+· 有许多的残留文件&nbsp; &nbsp; ————&nbsp;&nbsp;已通知开发组人员注意开发程序<br />
+· Chrome存在内存泄漏（？）&nbsp; &nbsp; ————&nbsp; &nbsp; 已更换为Firefox火狐浏览器，投票帖&nbsp;&nbsp;<br />
+· VMware无法分区&nbsp; &nbsp; ————&nbsp; &nbsp;准备组织检查，可能是SCSI驱动不被HeartL安装环境内核支持，下版本将采用安同内核<br />
+· systemd-analyze报错，可能和python-dbus有关&nbsp; &nbsp; ————&nbsp; &nbsp; 证实为突发错误<br />
+· Chrome地址栏空时继续按下退格键会收到PC Speaker蜂鸣&nbsp; &nbsp; ————&nbsp; &nbsp; 已解决<br />
+· 桌面面板改变大小时可能出现贴图错误&nbsp; &nbsp; ————&nbsp; &nbsp; Bug，需要修改代码，延迟更改<br />
+· Flash乱码&nbsp; &nbsp; ————&nbsp; &nbsp; 已解决<br />
+· 无法解压带有中文名称文件夹或文件的rar压缩包&nbsp; &nbsp; ————&nbsp;&nbsp;&nbsp;&nbsp;已解决<br />
+· LMDE源似乎无法找到GPG公钥&nbsp; &nbsp; ————&nbsp;&nbsp;&nbsp;&nbsp;已解决<br />
+· 文件管理器中的图标过大，影响使用&nbsp; &nbsp; ————&nbsp; &nbsp; 已解决<br />
+<br />
+主要改进<br />
+· 不再使用initrd初始内存盘，内核启动速度提高40-60%<br />
+· 设置右侧面板为总是可用，防止误触<br />
+· 加入Linux Mint Debian Edition源，提供了正宗火狐浏览器等*<br />
+· 将右面板设为总是可见以防止误触<br />
+· 干掉了很多没用的东西<br />
+· 细微调整了命令行应用的外观<br />
+· 完善了ACPI支持<br />
+· 加入WPS for Linux Beta 1 Patch 1以修复一个严重的数据漏洞<br />
+<br />
+*似乎使用LMDE源时会报出找不到GPG公钥的错误，正在尝试寻找。&nbsp; &nbsp; ————&nbsp; &nbsp; 已解决<br />
+<br />
+特性预告<br />
+· 基于安同内核的HeartL安装器，将提供chroot以简化安装过程，并自动安装GRUB引导&nbsp; &nbsp; ————&nbsp; &nbsp; 因作者学业原因跳票<br />
+· 安同更新源&nbsp; &nbsp; ————&nbsp; &nbsp; 正在筹划<br />
+· 安同-Gamux软件源，提供更多好玩的游戏&nbsp; &nbsp; ————&nbsp; &nbsp; 已加入但服务器正在维护<br />
+· 安同-WebQQ的Alpha版本&nbsp; &nbsp; ————&nbsp; &nbsp; 已加入<br />
+· 自动更新脚本&nbsp; &nbsp; ————&nbsp; &nbsp; 测试可用<br />
+· 新的一套壁纸&nbsp; &nbsp; ————&nbsp; &nbsp; 略少但不错<br />
+· 专供虚拟机的版本，一个虚拟硬盘镜像&nbsp; &nbsp; ————&nbsp; &nbsp; 方便多了<br />
+· 小幅度修改的界面&nbsp; &nbsp; ————&nbsp; &nbsp; 有问题继续吐槽哈<br />
+· 火狐19！&nbsp; &nbsp; ———— &nbsp; &nbsp;这个别家可没有<br />
+<br />
+参与人员/贡献者（提前整理）<br />
+安同内核：Linux Kernel开发组、白铭骢（安同开发组）、郑兴达（HeartL开发组）<br />
+系统基础框架：Debian开发组有关成员<br />
+安同实时调度器：白铭骢（安同开发组）<br />
+安同全时安全模型：白铭骢（安同开发组）<br />
+桌面设计：黎民雍（安同开发组）、卜思劼（安同-CentralPoint开发组）、白铭骢（安同开发组）、朱宇辉（安同开源社区）、俞腾飞（安同开源社区）、张俊峰（安同开源社区）、杨童童（安同开源社区）<br />
+安同开始程序（安同硬盘安装器）：黎民雍（安同开发组）、白铭骢（安同开发组）、ljq050511（安同开源社区）<br />
+安同&amp;HeartL安装器：郑兴达（HeartL开发组）、白铭骢（安同开发组）<br />
+安同备用安装器（基于LMDE安装器）：卜思劼（安同-CentralPoint开发组）、白铭骢（安同开发组）、朱宇辉（安同开源社区）、殇碟（安同开源社区）、LinuxMint开发组有关成员<br />
+安同软件中心（基于Ubuntu软件中心）：张俊峰（安同开源社区）、白铭骢（安同开发组）、Canonical公司Ubuntu开发组有关成员<br />
+安同起飞启动器（takeoff-launcher）：Jose Exposito（原作者，来自西班牙）、白铭骢（安同开发组）<br />
+安同-WebQQ：张理德（安同开源社区）<br />
+软件源维护者：俞腾飞（安同开源社区）、叶晓星（安同运营组）、赵振（安同运营组）、信哥（安同开源社区）<br />
+其他桌面应用：详见各应用项目主页<br />
+WeCase新浪微博客户端：@加菲猫550（WeCase开发组）、@比尔盖子（WeCase开发组）、@小骞爱开源（WeCase开发组）、@雨宫汐（WeCase开发组）<br />
+评测提供者：原安同开发团队成员根据规定提供、卜思劼（安同-CentralPoint开发组）、九十钩圈凯_（百度Linux吧）<br />
+原安同开发组：白铭骢（现安同开发组）、颜逸韬（现安同开源社区宣传组）、林之珉（现安同开源社区）、朱宇辉（安同开源社区）、张理德（现安同开发组）、俞腾飞（现安同开源社区）、王强（现云彩开发组）、王文浩（现安同开源社区）、叶晓星（现安同运营组）、赵振（现安同运营组）、李坤（现安同开源社区）、杨童童（现安同开源社区）、杨勋强（现安同开源社区）、吴彦颖（现安同开源社区宣传组）、王成义（现安同开源社区）、黎民雍（现安同开发组）、文浩丞（现安同开源社区）、褚鹏（现安同开源社区）、刘梓轩（现安同开源社区）、夏海峰（现安同开源社区）、张成（已退出）、丁亮（因故退出）<br />
+				<p class="author">
+					<strong>HY-wyl</strong>
+				发表于 2013-2-17 21:04:29	</p>
+			<h3></h3>
+		强势围观				<p class="author">
+					<strong>ytf4425</strong>
+				发表于 2013-2-17 21:08:30	</p>
+			<h3></h3>
+		您孩子满月了？恭喜恭喜！！http://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gifhttp://forum.anthonos.org/static/image/smiley/default/lol.gif				<p class="author">
+					<strong>HY-wyl</strong>
+				发表于 2013-2-17 21:38:52	</p>
+			<h3></h3>
+		给个奇葩的彩蛋：点击chrome的地址栏或其它输入框 然后长按退格键<br />
+发现了神马？嘿嘿嘿嘿……				<p class="author">
+					<strong>朱宇辉</strong>
+				发表于 2013-2-17 22:09:27	</p>
+			<h3></h3>
+		把注销放到右面板上吧				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-18 09:44:44	</p>
+			<h3></h3>
+		自顶，求检查制作人名单				<p class="author">
+					<strong>moling2088</strong>
+				发表于 2013-2-19 09:16:42	</p>
+			<h3></h3>
+		支持，另外，验证码很蛋疼，能改改不？				<p class="author">
+					<strong>ljq050511</strong>
+				发表于 2013-2-22 14:49:07	</p>
+			<h3></h3>
+		支持一下			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-151-1-1.html" target="_blank"><strong>【公测】安同周末公测版本“满月”</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

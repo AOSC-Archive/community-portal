@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>安同开始程序（安同硬盘安装器）发布啦！ - AnthonOS 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-123-1-1.html" rel="canonical" />
+<meta name="keywords" content="安同开始程序（安同硬盘安装器）发布啦！" />
+<meta name="description" content=" 安同开始程序（安同硬盘安装器）发布啦！ ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-37.html">AnthonOS 发布区</a> &rsaquo; 安同开始程序（安同硬盘安装器）发布啦！</div>
+
+<div id="content">
+			<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-2-9 16:13:45	</p>
+			<h3>安同开始程序（安同硬盘安装器）发布啦！</h3>
+		 本帖最后由 LMY441900 于 2013-10-2 00:29 编辑 <br />
+<br />
+严重警告：本版本开始程序已经停止技术支持，继续使用可能导致严重问题！<br />
+请移步俊德工作室查看最新版本！<br />
+本次版本是安同开始程序0.1的第一个正式版本，可以实现从硬盘安装安同OS的方法。<br />
+实现原理：根据传入的路径信息自动写入menu.lst，随grldr复制到C盘，通过集成的BOOTICE程序实现grub4dos的主引导扇区写入。<br />
+<br />
+操作步骤（带星号的是需要注意的）：<br />
+1*、打开程序，从左上到右下完成各项设置<br />
+&nbsp; &nbsp;！！注意！！在iso文件路径框内的“浏览”键是无效的，因为技术问题这个按键被停用了。您需要手动输入路径。<br />
+2、按下“开始部署启动”按钮，将打开一个CUI批处理进行部署处理；<br />
+3*、中途会问您有安装关键文件（tarball.tar.xz），要放到哪个地方？您需输入一个盘符（如D:\）。如果直接回车，会自动为您设置为C:\（也就是安装程序中的sda1）。<br />
+4、部署过程中请注意各个提示信息有没有错误的提示（类似Error或“错误”的就是错误了），如果有请马上关掉窗口！<br />
+5、重启后会看到一行10秒的倒计时，请按下除了空格以外的键（比如说，回车）；<br />
+6、“Install AnthonOS”是启动安装程序，可以回车（其他功能很明白，如果您不懂英语，请先备一本词典）；<br />
+7*、将顺利引导进入iso映像的安装程序。<br />
+<br />
+*注意！注意！<br />
+1*、文件必须在磁盘根目录并且磁盘文件格式不能为NTFS（因为不能挂载）！如果条件不符合，可以使用您FAT32或其它非NTFS文件格式的U盘（再一次提醒！必须放在根目录下！否则会严重错误！后果不堪设想！）<br />
+3*、tarball文件同上面限制<br />
+&nbsp; &nbsp; ——不同的是，grldr和menu.lst虽然只能放在C盘却不影响引导。<br />
+7*、进入映像后，<br />
+①如果是文本安装，在命令行停止以后按一下回车，就可以输入命令了（没有帮助？）<br />
+&nbsp; &nbsp; ——键入uvesafb 800x600-32 来启动显卡驱动（否则全是框框）；<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;先使用cfdisk命令分好区，记住分区设备名；<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;然后用mkfs.extX /dev/sdxx（X表示234的任意一个，是文件系统，最好是4；xx表示你的分区号，在cfdisk中可以看到）<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;然后键入SETUP开始按提示安装（CD/DVD设备是指：你的tarball放在哪里——就是那个关键文件！ROOT设备是指：要安装的分区设备名）<br />
+②如果是图形安装，没什么要注意的。<br />
+&nbsp; &nbsp; ——还是文本安装稳定些，推荐文本安装吧。<br />
+③如果是Live？<br />
+&nbsp; &nbsp; ——怄，这不行哦~<br />
+<br />
+★如果我在安装的过程中遇到了什么问题或者BUG？<br />
+&nbsp; &nbsp; ——提交你的报告吧！您可以发送邮件到我们的邮件列表anthonos-dev@freelists.org（请注明：硬盘安装）<br />
+<br />
+安同开发团队预祝您安装安同顺利，并且在使用安同OS的过程愉快！<br />
+<br />
+安同开发团队 黎民雍（以俊德）<br />
+2013年2月9日<br />
+				<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-2-18 11:17:17	</p>
+			<h3></h3>
+		开始程序已经升级，版本号0.1.0.3，请移步到另一发布帖下载。				<p class="author">
+					<strong>haulm</strong>
+				发表于 2013-6-28 08:19:17	</p>
+			<h3></h3>
+		现在 Delphi 还有人用么，早前一本砖头厚的书，结果没怎么研读，就听说波兰公司倒闭了。			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-123-1-1.html" target="_blank"><strong>安同开始程序（安同硬盘安装器）发布啦！</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

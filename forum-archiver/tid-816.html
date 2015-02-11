@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>论void指针和强制转换 - 宣传与教学 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-816-1-1.html" rel="canonical" />
+<meta name="keywords" content="论void指针和强制转换" />
+<meta name="description" content=" 论void指针和强制转换 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-92.html">宣传与教学</a> &rsaquo; 论void指针和强制转换</div>
+
+<div id="content">
+			<p class="author">
+					<strong>张峻锋</strong>
+				发表于 2014-2-11 10:05:09	</p>
+			<h3>论void指针和强制转换</h3>
+		#include &lt;stdio.h&gt;<br />
+#include &lt;string.h&gt;&nbsp; &nbsp; &nbsp; &nbsp; // For Bzero()<br />
+<br />
+struct SA{&nbsp; &nbsp; &nbsp; &nbsp; // Struct A<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int C;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 4字节<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int D;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 4字节<br />
+&nbsp; &nbsp; &nbsp; &nbsp; char ch;&nbsp; &nbsp; &nbsp; &nbsp; // 32字节<br />
+};&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 合计40字节<br />
+<br />
+struct SB{&nbsp; &nbsp; &nbsp; &nbsp; // Struct B --!<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int H;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 4字节<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int I;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 4字节<br />
+&nbsp; &nbsp; &nbsp; &nbsp; char CA;&nbsp; &nbsp; &nbsp; &nbsp; // 16字节<br />
+&nbsp; &nbsp; &nbsp; &nbsp; char CB;&nbsp; &nbsp; &nbsp; &nbsp; // 16字节<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int K;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 4字节<br />
+};&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 合计44字节<br />
+&nbsp; &nbsp; &nbsp; &nbsp; /* 用Void指针实现结构体转换 */<br />
+int main()<br />
+{<br />
+&nbsp; &nbsp; &nbsp; &nbsp; struct SA A;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; bzero((void *)&amp;A,sizeof(A));&nbsp; &nbsp; &nbsp; &nbsp; // 将结构体的内存空间的数据设置为0<br />
+&nbsp; &nbsp; &nbsp; &nbsp; void *p = &amp;A;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 指向A的地址<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;指针p指向的地址为\t\n&quot;,p);<br />
+<br />
+// 补充知识 强制转换 [ (将要转换成的类型)变量 ] 这种方式转换<br />
+//--------------------------------------------------<br />
+&nbsp; &nbsp; &nbsp; &nbsp; A.C = 32;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 非指针取成员 [ 将A [ 结构体SA ] 的成员C [ 第一个四字节 ] 赋值为32 ]<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ((struct SA*)p)-&gt;D = 64;&nbsp; &nbsp; &nbsp; &nbsp; // [难点]把指针P指向的空间起始位置及以后的40字节强制看成struct SA的数据结构<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;向结构体成员D [ 此时计算机将第二个四字节看作int类型 ] 赋int值64<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;也就是把p指向的地址看作结构体SA的开头<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // [特点]非指针取成员使用 [结构体变量.成员] 的方式取成员<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;如果是结构体指针，则要使用 [结构体指针-&gt;成员] 的方式取成员<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;SA成员C目前值为\t\t[%d]\n&quot;,A.C);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;SA成员D目前值为\t\t[%d]\n&quot;,A.D);<br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; strcpy(A.ch,&quot;Hello This is a string for test&quot;);// 字符串长度为31,字符串尾添加'\0'终止符，我太厉害了！<br />
+&nbsp; &nbsp; &nbsp; &nbsp; A.ch = '\0';&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 不懂这里为什么是31而不是32就自己看书去<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;SA成员ch目前值为\t[%s]\n&quot;,A.ch);&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 1.<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;如果看作SB的成员CA则\t[%s]\n&quot;,((struct SB*)p)-&gt;CA);&nbsp; &nbsp; &nbsp; &nbsp; // 2.<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;这个时候SB的成员CB则\t[%s]\n&quot;,((struct SB*)p)-&gt;CB);&nbsp; &nbsp; &nbsp; &nbsp; // 3.<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // [重点]在1中，我们直接输出的A的成员ch，理所当然地得到了ch现在的值<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;在2中，我们即使把p看作了struct SB的结构，这里应该是<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 输出到第16个字符就结束，可是不是这样。自己想为什么<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [提示：我们用的char ch其实ch是一个指针，指针分配了xx个字节的内存空间而已]<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;在3中，这个时候字符串的开始位置为CB[第24字节]，输出到'\0'结束<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ((struct SB*)p)-&gt;K=128;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 会溢出，因为我们的指针p指向的空间只有40个字节，这里的操作是将地40-43位置的内存空间看作int<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 显然这段空间不是你的，但是操作正常[这就是缓冲区溢出攻击]<br />
+//&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;这个时候SB的成员K的值\t[%d]\n&quot;,((struct SB*)p)-&gt;K);&nbsp; &nbsp; &nbsp; &nbsp; // 当然，你想访问就会出问题[别人攻击时只需要让程序继续运行到溢出的代码就OK了]<br />
+&nbsp; &nbsp; &nbsp; &nbsp; <br />
+//-------------------------------------------------<br />
+&nbsp; &nbsp; &nbsp; &nbsp; return 0;<br />
+}<br />
+难度略大，教学用<br />
+			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-816-1-1.html" target="_blank"><strong>论void指针和强制转换</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>Linux系统性能调优需了解的策略 - CentralPoint 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-234-1-1.html" rel="canonical" />
+<meta name="keywords" content="Linux系统性能调优需了解的策略" />
+<meta name="description" content=" Linux系统性能调优需了解的策略 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-123.html">CentralPoint 反馈和支持</a> &rsaquo; Linux系统性能调优需了解的策略</div>
+
+<div id="content">
+			<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-3-26 09:14:33	</p>
+			<h3>Linux系统性能调优需了解的策略</h3>
+		<br />
+<br />
+1. 引言<br />
+实践证明Linux是高性能、稳定可靠而又相当灵活的操作系统，近年来，世界上许多大软件公司纷纷推出各种Linux服务器系统及Linux下的应用软件。目前，Linux已可以与各种传统的商业操作系统分庭抗礼，在服务器市场，占据了相当大的份额。Linux的服务器系统多种多样，可用作web服务器，邮件服务器，ftp服务器，文件服务器以及数据库服务器等等。针对不同的系统以及具体的应用环境，可以对Linux的性能进行相应的调优。下面分别从磁盘调优，文件系统，内存管理以及编译优化等方面来论述Linux系统的优化调优策略。<br />
+2．磁盘调优<br />
+2.1 优化的分区<br />
+在安装Linux系统之初，就应该考虑怎样使Linux系统得到最好的性能。在Linux系统中，我们可以自由地组织磁盘分区。一个优化的分区策略，可以很好地改进Linux系统的性能，减少磁盘碎片，提高磁盘I/O能力。<br />
+根据磁盘的特点，我们知道越是靠磁盘外部的柱面，旋转越快，而且每次旋转时，磁盘读写头可以覆盖较多的区域，也就意味着靠外部的柱面可以得到较好的性能。所以在分区时，我们应该考虑将访问频率高的，对系统性能影响相对较大的分区置于磁盘的靠外部分。同时，为了减少磁盘碎片，应将内容经常改变的目录放在单独的分区。从方便备份数据的角度考虑，因为很多备份工具对整个分区进行备份的效率要高，所以我们应将Linux系统的几个主要的目录作为单独的文件系统，为它们各自分配一个区。推荐的分区策略如图一： <br />
+http://images.51cto.com/files/uploadimg/20130318/1528530.jpg在上图中,磁盘还有一部分未分区的空间,为什么不在安装系统时,将整个磁盘分区呢?现在的硬盘空间比较大,而在安装系统时,也许你所安装的文件加上以后增长所需要的空间用不到整个磁盘存储空间。保留一部分未分区空间，当以后有新的需要时，就可以用fdisk重新将之分区。在分区时，需要注意的是，根据系统将来运行的需要或过去的经验来估计各个分区的大小，以免将来空间不够。<br />
+如果你的系统有多块硬盘，可以考虑使用多个交换分区。每个磁盘上划分一个交换分区。通过在/etc/fstab文件中设置pri 选项，可使多个交换分区具有同样的优先级。Linux系统即可并行地使用它们。这样即可提高交换分区的性能。<br />
+/dev/hda5 swap swap defaults,pri=5 0 0/dev/hdc5 swap swap defaults,pri=5 0 0 当然，如果你的系统内存足够大，而你的系统又远远用不了那么多的内存，那也就用不到什么虚存了。分区时你就可以考虑去掉交换分区。不过作为一个Linux服务器，即使你的内存足够大，还是应该设置交换分区。<br />
+2.2 使用hdparm改善Linux系统性能<br />
+如果你的Linux系统运行于IDE硬盘，可以使用hdparm工具来提高磁盘I/O的性能。不过使用hdparm要小心，因为可能破坏硬盘上的数据。所以在使用hdparm之前，仔细阅读你的硬盘手册。根据你具体的硬盘规格来使用相应的hdparm开关参数。对一块UltraATA/66 EIDE 硬盘，其控制芯片支持多 PIO 模式和DMA，我们使用以下命令来调优磁盘性能：<br />
+# /sbin/hdparm -x66 -d1 -u1 -m16 -c3 /dev/hda选项说明：<br />
+<br />
+[*]c3 ：就是把硬盘的16位格式转换为32位模式（32-bit mode w/sync）。控制数据如何从pci总线传递到控制器。<br />
+[*]m16 ：改变硬盘的多路扇区的读功能，-m16可以使得硬盘在一次i/o中断中读入16个扇区的数据（据具体硬盘而定）。<br />
+[*]d1：打开DMA模式。<br />
+[*]x66 ：在支持UDMA-capable的硬盘中，这个参数可以支持双DMA通道的数据传输模式。<br />
+[*]u1 ：Linux在处理磁盘中断时，可以unmask其他的中断或者响应其他中断相关的任务。<br />
+查看以上的更改情况可以使用命令：<br />
+# /sbin/hdparm /dev/hda测试磁盘I/O性能可以使用命令：<br />
+# /sbin/hdparm -tT /dev/hda如果磁盘的性能有改进的话，可以使用以下命令来保存设置：<br />
+# /sbin/hdparm -k1 /dev/hda2.3 Linux下使用软RAID<br />
+RAID（磁盘冗余阵列）是通过将数据分布在多个磁盘上来增强磁盘性能和可靠性的技术。如果你的系统没有硬件RAID控制器的话，在Linux下可以通过软件来实现RAID。RAID的有很多的级别，不同的级别对硬件有不同的要求，相应也会得到不同的性能和可靠性。RAID0为数据分割，数据块被交替写到磁盘，可以得到最好的读写性能，但是不提供数据冗余。RAID1为磁盘镜像，写到磁盘1中的一切也写到磁盘2中，从任何一个磁盘都可以读取。RAID3除了数据分割之外，还指定一个磁盘驱动器来存储奇偶信息。<br />
+在Linux下通过软件来实现RAID， 需要Linux的内核支持，可以通过编译新内核来添加对RAID的支持。然后还需编译并安装 raidtools 软件包。raidtools 是可以初始化、启动、停止及控制 RAID 阵列的用户级工具。下面是我们用两块IDE硬盘在Linux内核2.4上实现RAID0的方法。<br />
+设置分区 使用RAID0至少需要两个分区，它们位于不同的磁盘。最好做RAID0的两个分区有相同的大小。创建分区时，将分区类型指定为 &quot;FD&quot;。以使 Linux 内核能将它们识别为 RAID 分区，这样，这些分区就可在每次引导时自动被检测并启动。如果您没有以这种方式标记 RAID 分区，则在每次引导之后，必须首先输入 &quot;raidstart --all&quot; 才能挂载 RAID 阵列。我们做成RAID0的两个分区为hda5和hdc5。<br />
+编辑/etc/raidtab文件 创建/etc/raidtab文件以描述RAID阵列的配置信息。Linux 内核使用这些信息在引导时自动检测并启动 RAID 阵列，因此必须对创建的每个 RAID 阵列进行这种配置。将分区hda5和hdc5组成md0 RAID0阵列的配置文件如下：<br />
+ raiddev /dev/md0&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;raid-level0&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;nr-raid-disks2&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;persistent-superblock&nbsp; &nbsp;1&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;chunk-size32&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;device/dev/hda5&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;raid-disk0&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;device/dev/hdc5&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;raid-disk1在raidtab文件中，&quot;raiddev&quot; 条目指明要创建的 RAID 阵列；&quot;nr-raid-disks&quot; 指定阵列中的磁盘数目；&quot;persistent-superblock&quot; 设置为 1，告诉 raid 工具何时创建该卷；&quot;chunk-size&quot; 以K字节指定 RAID0 使用的块大小；最后，要指定的是组成该阵列的设备即分区。<br />
+mkraid 和创建文件系统 使用命令&quot;# mkraid /dev/md0&quot; 命令初始化/dev/md0分区，同时将启动md0 RAID0阵列。接下来，即可在md0上创建你想要得文件系统。我们在Linux服务器上使用的是Reiserfs日志文件系统，创建的命令为&quot;# mkreiserfs /dev/md0&quot;。<br />
+这样，就可以像其它文件系统那样来加载新创建的基于RAID0的文件系统了。<br />
+2.4 使用elvtune调谐磁盘I/O<br />
+在Linux内核2.4以后的版本中，可以通过磁盘I/O的调度操作，来控制磁盘I/O的响应时间和吞吐量。通过调整I/O请求在队列中的最大等待时间，可以在响应时间和吞吐量之间调优。如果要求较少的响应时间，那么吞吐量将降低，反之，较长的响应时间则可以得到较大的吞吐量。可以使用工具&quot;/sbin/elvtune&quot;来改变最大的响应时间值。使用方法如下：<br />
+查看当前的设置<br />
+# /sbin/elvtune /dev/hda1修改当前的配置<br />
+# /sbin/elvtune -r 2000 -w 4000 /dev/hda其中-r参数针对读操作，-w参数针对写操作.<br />
+可以通过命令&quot;iostat -d -x /dev/hda1&quot;得到的平均信息（包括平均请求大小和平均队列长度）来监视以上I/O配置的效果，并调整配置，以得到最佳的性能。一般来讲，对于读写频繁，但操作的数据量较少的Linux服务器，且对实时性要求较高，那么可以将参数调小。反之如果对于读写不频繁，但要求具有较大的吞吐量的Linux服务器，可以将参数调大，以获得较大的吞吐量。 <br />
+<br />
+<br />
+<br />
+				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-3-26 09:15:58	</p>
+			<h3></h3>
+		 本帖最后由 ruojiner 于 2013-3-26 09:18 编辑 <br />
+<br />
+<br />
+<br />
+3． 文件及文件系统调优<br />
+<br />
+3.1 块大小<br />
+<br />
+创建文件系统时，可以指定块的大小。如果将来在你的文件系统中是一些比较大的文件的话，使用较大的块大小将得到较好的性能。将ext2文件系统的块大小调整为4096byte而不是缺省的1024byte，可以减少文件碎片，加快fsck扫描的速度和文件删除以及读操作的速度。另外，在ext2的文件系统中，为根目录保留了5%的空间，对一个大的文件系统，除非用作日志文件，5%的比例有些过多。可以使用命令&quot;# mke2fs -b 4096 -m 1 /dev/hda6&quot;将它改为1%并以块大小4096byte创建文件系统。<br />
+<br />
+使用多大的块大小，需要根据你的系统综合考虑，如果系统用作邮件或者新闻服务器，使用较大的块大小，虽然性能有所提高，但会造成磁盘空间较大的浪费。比如文件系统中的文件平均大小为2145byte，如果使用4096byte的块大小，平均每一个文件就会浪费1951byte空间。如果使用1024byte的块大小，平均每一个文件会浪费927byte空间。在性能和磁盘的代价上如何平衡，要看具体应用的需要。<br />
+<br />
+3.2 不使用atime属性<br />
+<br />
+当文件被创建，修改和访问时，Linux系统会记录这些时间信息。记录文件最近一次被读取的时间信息，当系统的读文件操作频繁时，将是一笔不少的开销。所以，为了提高系统的性能，我们可以在读取文件时不修改文件的atime属性。可以通过在加载文件系统时使用notime选项来做到这一点。当以noatime选项加载（mount）文件系统时，对文件的读取不会更新文件属性中的atime信息。设置noatime的重要性是消除了文件系统对文件的写操作，文件只是简单地被系统读取。由于写操作相对读来说要更消耗系统资源，所以这样设置可以明显提高服务器的性能。注意wtime信息仍然有效，任何时候文件被写，该信息仍被更新。<br />
+<br />
+比如在你的系统中，要为/home文件系统设置notime选项，可以修改/etc/fstab文件相应的行如下：<br />
+<br />
+LABEL=/home /home ext2 noatime 1 2<br />
+要使该设置立即生效，可运行命令&quot;#mount -oremount /home&quot;。这样以后系统读取/home下的文件时将不会再修改atime属性。<br />
+<br />
+3.3 调整缓冲区刷新参数<br />
+<br />
+Linux内核中，包含了一些对于系统运行态的可设置参数。缓冲刷新的参数可以通过调整 /proc/sys/vm/bdflush文件来完成，这个文件的格式是这样的：<br />
+<br />
+# cat /proc/sys/vm/bdflush<br />
+30 64 64 256 500 3000 60 0 0<br />
+每一栏是一个参数，其中最重要的是前面几个参数。第一个数字是在&quot;dirty&quot;缓冲区达到多少的时候强制唤醒bdflush进程刷新硬盘，第二个数字是每次让bdflush进程刷新多少个dirty块。所谓dirty块是必须写到磁盘中的缓存块。接下来的参数是每次允许bd flush将多少个内存块排入空闲的缓冲块列表。 以上值为RedHat Linux 7.1中的缺省值。如何修改它们呢？对不同的系统有以下两种方法<br />
+<br />
+（1）# echo &quot;100 128 128 512 5000 3000 60 0 0&quot;&gt;/proc/sys/vm/bdflush 并将这条命令加到/etc/rc.d/rc.local文件中去。<br />
+（2）在/etc/sysctl.conf 文件中加入如下行: vm.bdflush = 100 128 128 512 5000 3000 60 0 0<br />
+以上的设置加大了缓冲区大小，降低了bdflush被启动的频度，同时也增加了万一系统崩溃丢失数据的危险性。VFS的缓冲刷新是Linux文件系统高效的重要原因之一，如果性能对你真的很重要，应该考虑调整这个参数。<br />
+<br />
+3.4 调整文件句柄数和i-节点数<br />
+<br />
+在一个大型的网站服务器其中，可能Linux默认的同时可打开最大文件数不能满足系统需要，我们可以通过调整文件句柄数和i-节点数来增加系统的缺省的限制。不同的Linux内核版本有不同的调整方法。<br />
+<br />
+在Linux内核2.2.x中可以用如下命令修改：<br />
+<br />
+# echo '8192' &gt; /proc/sys/fs/file-max<br />
+# echo '32768' &gt; /proc/sys/fs/inode-max<br />
+并将以上命令加到/etc/rc.c/rc.local文件中，以使系统每次重新启动时配置以上值。<br />
+<br />
+在Linux内核2.4.x中需要修改源代码，然后重新编译内核才生效。编辑Linux内核源代码中的 include/Linux/fs.h文件，将 NR_FILE 由8192改为 65536，将NR_RESERVED_FILES 由10 改为 128。编辑fs/inode.c 文件将 MAX_INODE 由16384改为262144。<br />
+<br />
+一般情况下，最大打开文件数比较合理的设置为每4M物理内存256，比如256M内存可以设为16384，而最大的使用的i节点的数目应该是最大打开文件数目的3倍到4倍。<br />
+<br />
+3.5 使用内存文件系统<br />
+<br />
+在Linux中可以将一部分内存当作分区来使用，我们称之为RamDisk。对于一些经常被访问的文件，而它们又不会被更改，可以将它们通过RamDisk放在内存中，即可明显地提高系统的性能。当然你的内存可要足够大了。RamDisk有两种，一种可以格式化，加载，在Linux内核2.0/2.2就已经支持，其不足之处是大小固定。另一种是内核2.4才支持的，通过Ramfs或者tmpfs来实现，它们不能被格式化，但是用起来灵活，其大小随所需要的空间而增加或减少。这里主要介绍一下Ramfs和Tmpfs。<br />
+<br />
+Ramfs顾名思义是内存文件系统，它工作于虚拟文件系统（VFS）层。不能格式化，可以创建多个，在创建时可以指定其最大能使用的内存大小。如果你的Linux已经将Ramfs编译进内核，你就可以很容易地使用Ramfs了。创建一个目录，加载Ramfs到该目录即可。<br />
+<br />
+# mkdir -p /RAM1<br />
+# mount -t ramfs none /RAM1<br />
+缺省情况下，Ramfs被限制最多可使用内存大小的一半。可以通过maxsize（以kbyte为单位）选项来改变。<br />
+<br />
+# mkdir -p /RAM1<br />
+# mount -t ramfs none /RAM1 -o maxsize=10000<br />
+以上即创建了一个限定了最大使用内存大小为10M的ramdisk。<br />
+<br />
+Tmpfs是一个虚拟内存文件系统，它不同于传统的用块设备形式来实现的ramdisk，也不同于针对物理内存的Ramfs。Tmpfs可以使用物理内存，也可以使用交换分区。在Linux内核中，虚拟内存资源由物理内存（RAM）和交换分区组成，这些资源是由内核中的虚拟内存子系统来负责分配和管理。Tmpfs就是和虚拟内存子系统来&quot;打交道&quot;的，它向虚拟内存子系统请求页来存储文件，它同Linux的其它请求页的部分一样，不知道分配给自己的页是在内存中还是在交换分区中。Tmpfs同Ramfs一样，其大小也不是固定的，而是随着所需要的空间而动态的增减。使用tmpfs，首先你编译内核时得选择&quot;虚拟内存文件系统支持（Virtual memory filesystem support）&quot; ，然后就可以加载tmpfs文件系统了。<br />
+<br />
+# mkdir -p /mnt/tmpfs<br />
+# mount tmpfs /mnt/tmpfs -t tmpfs<br />
+为了防止tmpfs使用过多的内存资源而造成系统的性能下降或死机，可以在加载时指定tmpfs文件系统大小的最大限制。<br />
+<br />
+# mount tmpfs /mnt/tmpfs -t tmpfs -o size=32m<br />
+以上创建的tmpfs文件系统就规定了其最大的大小为32M。不管是使用ramfs还是tmpfs，必须明白的是，一旦系统重启，它们中的内容将会丢失。所以那些东西可以放在内存文件系统中得根据系统的具体情况而定。<br />
+<br />
+3.6 使用日志文件系统<br />
+<br />
+如果Linux系统由于意外情况而没有正常关机，则可能引起文件系统中某些文件的元数据（meta-data即和文件有关的信息，例如：权限、所有者以及创建和访问时间）遭到破坏。文件系统需要维护文件的元数据来保证文件的可组织和可存取，如果元数据处于不合理或不一致的状态，那么就不能访问和存取文件。当系统重新启动时，fsck将扫描/etc/fstab文件中所列出的所有文件系统，确保它们的元数据处于可用的状态。如果发现元数据不一致，fsck将扫描和检测元数据，并纠正错误。如果文件系统很大，这个过程将需要很长的时间。为解决这个问题，可以使用日志文件系统。日志文件系统用独立的日志文件跟踪磁盘内容的变化，在写入文件内容的同时写入文件的元数据。每次修改文件的元数据时，都要先向称为&quot;日志&quot;的数据结构登记相应的条目。这样，日志文件系统就维护了最近更改的元数据的记录。当加载日志文件系统时，如果发现了错误，不会扫描整个文件系统的元数据，而是根据日志检查最近被更改的元数据。所以相对于传统的文件系统（如ext2），日志文件系统大大地加快了扫描和检测的时间。<br />
+<br />
+Linux下可用的日志文件系统很多，如XFS，JFS，Reiserfs，ext3等等。日志文件系统主要被设计为服务器环境提供出色性能和高可用性。当然， Linux 工作站和家用机器也可从具有高性能的可靠日志文件系统中获益。安装日志文件系统，一般需要下载相应的压缩包、为内核打补丁、重新配置和重新编译内核。 详细的安装过程可访问相应文件系统的官方网站。 <br />
+<br />
+<br />
+				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-3-26 09:17:48	</p>
+			<h3></h3>
+		<br />
+4．其它方面的调优<br />
+<br />
+4.1 调优buffermem<br />
+<br />
+文件buffermen和内核虚拟内存子系统密切相关。文件/proc/sys/vm/buffermem控制多大内存被用于缓冲区（百分数表示）。内核2.4的缺省值为：: &quot;2 10 60&quot;。可以按如下方法修改：<br />
+<br />
+# echo &quot;70 10 60&quot; &gt;/proc/sys/vm/buffermem<br />
+并将之加到脚本文件/etc/rc.d/rc.local 中。或者在/etc/sysctl.conf文件中加入<br />
+<br />
+vm.buffermem = 70 10 60<br />
+第一个参数 70意味着至少分配70%的内存用作缓冲区。后两个参数保持系统的默认值。第一个参数设置为多大合适，依赖于系统的内存大小和系统高负载时内存的使用情况（可用free监视）。<br />
+<br />
+4.2 进程限制<br />
+<br />
+Linux对于每个用户，系统限制其最大进程数。为提高性能，可以设置超级用户root的最大进程数为无限。编辑.bashrc文件（vi /root/.bashrc）增加行&quot;ulimit -u unlimited&quot;即可消除超级用户的进程限制。<br />
+<br />
+核心和系统对用户进程其它的一些限制也可以通过ulimit命令来查看和更改。&quot;ulimit -a&quot; 用来显示当前的各种用户进程限制。一些更改用户限制的例子如下：<br />
+<br />
+ulimit -n 4096 将每个进程可以打开的文件数目加大到4096，缺省为1024 <br />
+ulimit -m 4096 限制每个进程使用的内存数。 <br />
+4.3 优化gcc编译<br />
+<br />
+将优化标志放在/etc/profile文件中。在pentium III级的处理器上使用以下优化标志将得到最优的应用程序：<br />
+<br />
+CFLAGS=-O9 -funroll-loops -ffast-math -malign-double -mcpu=pentiumpro<br />
+-march=pentiumpro -fomit-frame-pointer -fno-exceptions<br />
+再将如下行加到/etc/profile 更靠后的位置：<br />
+<br />
+export PATH PS1 HOSTNAME HISTSIZE HISTFILESIZE USER LOGNAME MAIL<br />
+INPUTRC CFLAGS LANG LESSCHARSET<br />
+使用以上的优化，gcc或者egcs编译的程序将得到最佳的性能。<br />
+<br />
+4.4 编译内核优化<br />
+<br />
+编辑/usr/src/Linux/Makefile文件，可以根据具体的cpu优化内核编译。以下的参数设置将得到优化的内核性能。<br />
+<br />
+① vi +18 /usr/src/Linux/Makefile ，将HOSTCC =gcc改为 HOSTCC =egcs.<br />
+<br />
+② vi +25 /usr/src/Linux/Makefile <br />
+将CC =$(CROSS_COMPILE)gcc D__KERNEL__ -I$(HPATH) <br />
+改为 CC =$(CROSS_COMPILE)egcs D__KERNEL__ -I$(HPATH).<br />
+<br />
+③ vi +90 /usr/src/Linux/Makefile <br />
+将CFLAGS = -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer <br />
+改为CFLAGS = -Wall -Wstrict-prototypes -O9 -funroll-loops -ffast-math -malign-double -mcpu=pentiumpro -march=pentiumpro -fomit-frame-pointer -fno-exceptions<br />
+<br />
+④ vi +19 /usr/src/Linux/Makefile <br />
+将HOSTCFLAGS =-Wall -Wstrict-prototypes -O2 -fomit-frame-pointer <br />
+改为HOSTCFLAGS =-Wall -Wstrict-prototypes -O9 -funroll-loops -ffast-math -malign-double -mcpu=pentiumpro -march=pentiumpro -fomit-frame-pointer -fno-exceptions<br />
+<br />
+根据以上修改后的makefile文件重新编译内核将得到较优的性能。<br />
+<br />
+5． 结束语<br />
+<br />
+Linux是一个灵活而又开放的系统。用户可以针对具体的应用环境，从系统的外围到系统的 内核进行调优。系统的外围的调优包括系统硬件的配置到系统安装和系统服务的优化等。系统内核的调优包括参数的修改和改进系统的源代码。我们在针对用作db2数据库服务器的Linux系统的调优中，针对db2数据库的特点，按照本文的各个调优方面，另外还包括网络的调优，对系统性能进行了综合调优。在对调优后的系统的综合测试来看，系统的性能有很大的改进。<br />
+<br />
+				<p class="author">
+					<strong>张峻锋</strong>
+				发表于 2013-3-28 00:16:05	</p>
+			<h3></h3>
+		表示受教了			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-234-1-1.html" target="_blank"><strong>Linux系统性能调优需了解的策略</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>FAQ：关于电脑的基本构造 - 安同-开源盛世社刊 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-203-1-1.html" rel="canonical" />
+<meta name="keywords" content="FAQ：关于电脑的基本构造" />
+<meta name="description" content=" FAQ：关于电脑的基本构造 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-110.html">安同-开源盛世社刊</a> &rsaquo; FAQ：关于电脑的基本构造</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-3-11 03:12:11	</p>
+			<h3>FAQ：关于电脑的基本构造</h3>
+		FAQ：电脑基本构造以及启动原理关于电脑的基本构造，就是各个部件的结构与功能；&nbsp; &nbsp;&nbsp; &nbsp; 电脑是一个很庞大的概念。所谓电脑，包括个人电脑（PC）、智能移动设备（智能手机、平板电脑……），甚至是你手上的计算器、家里的电视机顶盒等。那么，在这里你的意思应该是一般的，基于x86或x86_64甚至是ARM架构的IBM PC兼容机。&nbsp; &nbsp;&nbsp; &nbsp; 但是！IBM PC兼容机仍然是一个庞大的概念。那么，我们抛开一些细小的区别，来统筹介绍一下我们日常使用的所谓普通“电脑”。&nbsp; &nbsp;&nbsp; &nbsp; 一般的“电脑”包含如下几个关键的部分：&nbsp; &nbsp;&nbsp; &nbsp; 电源&nbsp;&nbsp;主板&nbsp;&nbsp;中央处理器&nbsp;&nbsp;存储器 &nbsp; &nbsp;&nbsp; &nbsp; 你一定觉得我在开玩笑。不过一台“电脑”的基本结构，统筹地说，就是如此。从电源开始——谁说处理器是一台电脑的心脏？没有电源，处理器也就是一个破芯片而已。其实电源和大家想的、学的一样，其实这个电源的全称叫“AC Adapter”，也就是“交流电适配器”，同学，你可学过初中物理的电学？交流电是不能用来直接驱动一个电路系统的，我们要先把交流电转换为直流电，然后适当调整电压、电流的大小，从而保证整个“电脑”电路系统的正常运作。那么，这就是一个基本“电脑”电源的作用和原理。&nbsp; &nbsp;&nbsp; &nbsp; 但是，在计算机领域，还有一个关键的名词——“行为”。即使是一台“电脑”的电源，也是有许多区别的，下面这个表格也许能帮助你了解这些“行为”的区别。<br />
+电源类型AT电源*ATX电源**便携式***<br />
+作用把交流电转换为直流电，然后适当调整电压、电流的大小，从而保证整个“电脑”电路系统的正常运作<br />
+电源行为全手动****半手动*****<br />
+电源管理机制APM******或无APM/ACPI*******&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 嗯，有些词语还是过于“技术化”，那么我给点解释吧。&nbsp; &nbsp;&nbsp; &nbsp; * 所谓AT电源，是IBM（国际商用机器）公司在1984年发布的IBM PC AT上提出的规范，而这个规范被沿用了15-22年之久，后被ATX替代成为主流。&nbsp; &nbsp;&nbsp; &nbsp; ** ATX规范是1995年由英特尔公司提出的，全称为Advanced Technology Extended，即AT扩展版本（当然，也包括ATX电源规范）。虽然2004年英特尔发布&nbsp; &nbsp;&nbsp; &nbsp; 了BTX规范，但由于兼容性不足而未能成为主流。&nbsp; &nbsp;&nbsp; &nbsp; *** 便携式计算机电源是大范围应用于便携式的笔记本电脑上的电源，规范上并不非常统一，早期的（1985-1993）年的笔记本（便携式）电脑采用的却是AT电源，而后一律采用ATX-like（类ATX规范）。&nbsp; &nbsp;&nbsp; &nbsp; **** 早期的电脑电源都有一个特征：标准的0/1电源开关，而非如今的按键式甚至是触摸式开关。而有一点同如今的“电脑”很不同，那就是在关机（操作系统系统退出）的过程结束后，计算机收到的是APM（高级电源管理）的HALT信号指令，也就是挂起，这时，系统不再处于运行状态，一般在屏幕上都会告知用户“现在可以关闭电源，或者按下Ctrl+Alt+Del重启计算机”。这时，用户必须手动关闭电源，才能“帮助”你的“电脑”完成关机过程。&nbsp; &nbsp;&nbsp; &nbsp; ***** 半手动电源的特征在于：模拟的开关信号，也就是可以通过按键或触摸等“高级”方式完成电源控制。而与主要采用APM或者甚至无软件管理的AT电源不同，ATX或非采用AT规范的便携式电脑电源在退出操作系统的过程中，你会先收到APM/ACPI电源管理器发出的HALT指令，这时，电脑的处理器已经停止工作，内存也已经清空，最后一条指令由电源发出，POWEROFF，这时电源自动切断电源。&nbsp; &nbsp;&nbsp; &nbsp; ****** APM（高级电源管理）是随着英特尔80386个人电脑处理器发布的电源管理规范，在运行高级的非DOS操作系统（如Linux等类UNIX操作系统）或运行于DOS系统之上的扩充系统（如Windows 3.x或Windows 95/98/Me），得益于APM，用户可以得到自动化的电源管理以在特殊或必要的情况下降低能耗，而MS-DOS等实模式（无特殊软件介入的，完全由处理器硬件汇编、指令组成的模式）系统则无法由APM直接管理，高级的电源行为也无法得以实现。&nbsp; &nbsp;&nbsp; &nbsp; ******* ACPI，即高级配置与电源接口，提供了比APM电源管理强大得多的管理功能，包括你们所谓的“睡眠”、“休眠”功能，在大型计算机工程如服务器集群、机组的运行中，ACPI似乎更为关键，在一台电脑发生故障并发出报告的情况下，管理者的电脑甚至可以被直接唤醒，以提供更及时的管理信息！&nbsp; &nbsp;&nbsp; &nbsp; 主板，是另一个关键的“电脑”组件，是处理器等核心组件的家。在一块现代的，ATX规范的主板上，我们一般可以看到一些接口，下面我将通过另一个表格对它们进行一些介绍。<br />
+接口作用<br />
+电源接口这个应该不用多说，大家都知道，将电源适配器转换后的电能通过线缆传输到主板上。<br />
+处理器插槽顾名思义，处理器将被直接插在这个插槽上，而基本每个代系的处理器都有不同的插槽。一般在这个插槽旁有一个电源接口，提供电能给处理器的散热风扇（非！常！重！要！）<br />
+拓展插槽拓展插槽可以有许多的类型，比如现在应用最广阔的PCI-Express、Mini-PCI，分别是在台式机和笔记本电脑上应用最多的拓展接口，从这个接口可以拓展独立显卡（游戏党看过来！）、无线网卡（所有Wi-Fi上网的看过来！）、调制解调器（还在可怜电话线上网的看过来！），当然，还有视频采集卡等等。<br />
+存储接口IDE/PATA/SATA/SCSI/SAS等等，都是基本的存储接口类型，我们目前主流的个人电脑用的都是SATA接口，相对IDE/PATA接口有着巨大的性能提升（问问咱可怜的安同开发者以俊德，他体会最深切——安同开机50秒和10秒的区别啊！），SCSI在苹果的Macintosh电脑上应用广泛，而SAS似乎在服务器上才有自己的舞台。<br />
+CMOS电池接口这里插着一块神奇的电池，关机后怎么时间不会停呢？就是它的功劳了。<br />
+其他高级接口USB/VGA/DVI/HDMI...太多了，而且未必是主板的一部分哦！<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 接下来，主角才登场，处理器！你没听说过Linus Torvalds没问题，但你不能不认识处理器。没它你的微博别想用了。处理器是一台电脑上真实价值最高的一块芯片，也是最复杂的一块芯片（别怪我解释得太复杂，我已经尽力了）。处理器和电源一样，有着不同的规范，一般来说，你在一台“电脑”上看到的只有两种处理器规范：x86/x86_64，分别是所谓32位和64位处理器。而在服务器等大型计算机上，你会看见MIPS/ ALPHA/ SPARC/ SPARC64/ POWERPC，不胜枚举。而手机上则是清一色的ARM或x86。好吧，再来一个小小的对比表格。<br />
+处理器类型x86x86_64<br />
+内部技术规范IA32*EMT64/AMD64*<br />
+发布年份1980(?)2002-2004<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 跟我说说这啥玩艺？IA32/EMT64分别是英特尔公司的32位和64位处理器内部的技术架构，而AMD64是AMD（超微半导体）公司的64位处理器规范。我们看看两个规范的日期，你大概应该就明白其技术先进程度的区别了。安同只有运行于x86_64处理器的版本，因为，x86大概也该淘汰了。说完了架构，我们来说说原理，中央处理器有许多组成部分，也可以作为衡量其性能的指标，如时钟频率、缓存、核心数量等等。首先来说说时钟频率，再来一个表格。<br />
+中央处理器型号Intel 80286Intel 80386<br />
+年份19821987<br />
+时钟频率6MHz16MHz<br />
+性能选择更高<br />
+表一<br />
+中央处理器型号Intel Pentium 4 EEAMD Athlon 64 4000+<br />
+年份20032003<br />
+时钟频率3700MHz2400MHz<br />
+性能选择更高<br />
+表二<br />
+中央处理器型号Intel Core i7 3770KAMD FX-8350<br />
+年份20032003<br />
+时钟频率3900MHz4200MHz<br />
+性能选择更高<br />
+表三&nbsp; &nbsp;&nbsp; &nbsp; 这是三个一样的表格，内容来自不同的年代，不难看出，似乎在表二开始，中央处理器的性能似乎不再由时钟频率直接决定，那么，还有什么决定了中央处理器的性能高低呢？&nbsp; &nbsp;&nbsp; &nbsp; 关键词：核心数量&nbsp;&nbsp;缓存机制&nbsp; &nbsp;&nbsp; &nbsp; 1、核心数量，其实，在表二，两个处理器都是有两个核心的，只不过，AMD提供的是两个真正的处理器核心芯片，而英特尔提供的是单个核心，通过内部指令模拟的双核心。硬实力在中央处理器的范畴内永远强于软实力。&nbsp; &nbsp;&nbsp; &nbsp; 2、缓存机制，看看表三，英特尔的处理器有6个实核心，而由指令模拟出12个核心；AMD的处理器有8个真实核心。也许在核心上AMD的劣势可以从时钟频率上弥补，但是，英特尔的制胜法宝在于缓存，i7 3770k有8MB的第三线缓存，第一、二线以阶梯线填实；同样地，FX-8350有8MB三线缓存，但第二线缓存却同为8MB，第一线如何填实？实际上，没有填实。性能的区别就在于了二者缓存机制哪个更智能，显然，是英特尔。&nbsp; &nbsp;&nbsp; &nbsp; 其实处理器的结构部分、性能指标还有很多，这里介绍的是最常见的芯片、缓存、核心以及时钟频率，其他的部分因为可能造成阅读和理解的困难，希望有兴趣的读者自行查阅有关资料。&nbsp; &nbsp;&nbsp; &nbsp; 最后，则是存储器了，存储器包括许多种基本的类型：电子存储器、磁性存储器以及光学存储器、磁光存储器、闪存存储器等等。而电子存储器是最基本的存储器，有两种基本类型，分别是ROM（只读存储器）以及RAM（随即读写存储器）。&nbsp; &nbsp;&nbsp; &nbsp; 下面这个表格旨在让你更好的分辨它们。<br />
+电子存储器类型ROMRAM<br />
+读写机制只读可读写<br />
+主要用途BIOS芯片*内存条<br />
+&nbsp; &nbsp;&nbsp; &nbsp; * BIOS芯片的功能在于存储一台“电脑”的最基本控制系统，一般来说，是绝对不可以随便被修改的，因此，在最初的设计中便确定，BIOS芯片必须是一个ROM存储器。&nbsp; &nbsp;&nbsp; &nbsp; RAM一般被作为临时的存储器，在一台运行着操作系统的“电脑”上，RAM，是必不可少的，在程序运行的过程中，RAM就是程序临时的运行空间，而在“电脑”关机后，RAM会被自动清空，因此，RAM不能作为永久存储器——即使它的读写速度是最新的机械硬盘的20倍以上。&nbsp; &nbsp;&nbsp; &nbsp; 磁性存储器主要表现为所谓“磁盘驱动器”，如软盘、磁带和硬盘。我们用下面这个表格来大概比较一下三者。<br />
+磁性存储器软盘磁带硬盘（机械）<br />
+容量（均为家用级别的容量）160KB-2.88MB80KB-320GB+0-2TB+<br />
+速度比较最慢较慢最快<br />
+读写机制只读或可读写可读写可读写<br />
+安全性非常差较好较好<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 一目了然。你也就不必奇怪为什么硬盘在如今被作为主要存储器的唯一选择了。&nbsp; &nbsp;&nbsp; &nbsp; 光学存储器，一般表现为光盘，通常，光盘是只读或一次性写入的；磁光存储器在家用领域是非常不常见的，性能也不高；闪存存储器，一般常见为U盘或者最新的固态硬盘。&nbsp; &nbsp;&nbsp; &nbsp; 闪存芯片作为存储介质，速度比磁性存储器高出许多，原因希望大家自行查阅并理解，但是，闪存芯片的不稳定性以及较高的成本让它们无法成为大容量存储如机械硬盘的理想替代品，至今，虽然闪存芯片的成本已经下降了许多，却仍然让人望而却步。那么，这大概就是一台“电脑”的基本结构了，希望大家读此文后能对“电脑”有更深的了解，如果有什么不明白的，可以找我，当然，也可以是整个安同社区。<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 联系方式如下：&nbsp; &nbsp;&nbsp; &nbsp; 微博：@小白在安同（作者）、@Anthon点儿Soc（社区官方）&nbsp; &nbsp;&nbsp; &nbsp; 社区论坛：forum.anthonos.org&nbsp; &nbsp;&nbsp; &nbsp; 作者QQ：478553605（请于早上10点、晚上10点后联系）&nbsp; &nbsp;&nbsp; &nbsp; 作者邮箱：jeffbaichina@gmail.colm<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 白铭骢<br />
+&nbsp; &nbsp;&nbsp; &nbsp; 2013年3月10日<br />
+<br />
+				<p class="author">
+					<strong>老林</strong>
+				发表于 2013-3-16 16:17:48	</p>
+			<h3></h3>
+		如果要给一点基础都没有的人看我觉得还是有点太深了……				<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-3-16 18:16:02	</p>
+			<h3></h3>
+		 本帖最后由 LMY441900 于 2013-3-16 18:18 编辑 <br />
+<br />
+SO MESSY DONT YOU THINK JEFF<br />
+看来这种东西还是我干好，不过唉爱莫能助。				<p class="author">
+					<strong>Das</strong>
+				发表于 2013-3-16 21:13:55	</p>
+			<h3></h3>
+		LMY441900 发表于 2013-3-16 18:16<br />
+SO MESSY DONT YOU THINK JEFF<br />
+看来这种东西还是我干好，不过唉爱莫能助。<br />
+<br />
+等待你的强势归来！			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-203-1-1.html" target="_blank"><strong>FAQ：关于电脑的基本构造</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>[问题] 编译LibXSLT出错 - :Next 开发区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-680-1-1.html" rel="canonical" />
+<meta name="keywords" content="[问题] 编译LibXSLT出错" />
+<meta name="description" content=" [问题] 编译LibXSLT出错 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-118.html">:Next 开发区</a> &rsaquo; [问题] 编译LibXSLT出错</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-7-8 14:05:43	</p>
+			<h3>[问题] 编译LibXSLT出错</h3>
+		如题，<br />
+./configure --prefix=/usr<br />
+(CFLAGS=-O2 -g, CXXFLAGS=-O2 -g)<br />
+make -j4 <br />
+输出如下：<br />
+......<br />
+libtool: link: warning: `/usr/lib64/libxml2.la' seems to be moved<br />
+libtool: link: warning: `/usr/lib64/libxml2.la' seems to be moved<br />
+libtool: link: warning: `/usr/lib64/libxml2.la' seems to be moved<br />
+/usr/bin/ld: /usr/lib64/libpython2.7.a(abstract.o): relocation R_X86_64_32S against `_Py_NotImplementedStruct' can not be used when making a shared object; recompile with -fPIC<br />
+/usr/lib64/libpython2.7.a: could not read symbols: Bad value<br />
+collect2: error: ld returned 1 exit status<br />
+make: ***  Error 1<br />
+make: Leaving directory `/libxslt-1.1.28/python'<br />
+make: ***  Error 1<br />
+make: Leaving directory `/libxslt-1.1.28/python'<br />
+make: ***  Error 1<br />
+make: Leaving directory `/libxslt-1.1.28'<br />
+make: ***  Error 2<br />
+<br />
+求解。按照网上在CFLAGS和CXXFLAGS中加-fPIC或在configure后加--enable-shared均为同样结果。			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-680-1-1.html" target="_blank"><strong>[问题] 编译LibXSLT出错</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>
