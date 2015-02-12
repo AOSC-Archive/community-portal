@@ -46,8 +46,8 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
     </div>
   </div>
   <div class="container">
-    <div class="col-sm-9 col-sm-offset-1 blog-main">
-      <div class="row">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 blog-main">
         <h1>What is AOSC OS?</h1>
         <p>AOSC OS is the Linux distribution project of AOSC.</p>
         <p>AOSC OS is built independently, with some reference from some of the greatest Linux distributions from all over the
@@ -68,11 +68,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
         can be a good choice for your daily Linux usage!</p>
       </div>
     </div>
-  </div>
-  <hr class="divider" />
-  <div class="container">
-    <div class="col-sm-9 col-sm-offset-1 blog-main">
-      <div class="row">
+      <hr class="divider" />
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 blog-main">
         <h1>How do you develop AOSC OS?</h1>
         <p>AOSC OS develops in a year round cycle. For example, 2013 - 2014 our outcome was AOSC OS2, with AnthonOS based on it.</p>
         <p>AOSC OS was built with a toolkit called Autobuild, to help us build software packages. Autobuild is capable of abstracting package managers in a configuration file manner. One package comes with one Autobuild configuration archive.</p>

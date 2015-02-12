@@ -29,3 +29,6 @@
 .my-col-fr{
   float: right;
 }
+.nav-tabs {
+  margin-bottom:15px;
+}

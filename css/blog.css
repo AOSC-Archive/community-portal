@@ -5,6 +5,7 @@
 body {
   font-family: source-sans, sans;
   color: #555;
+  background-color: #fffcf2;
 }
 
 .hung-icon{
@@ -267,4 +268,5 @@ span.glyphicon-decor {
 
 .jumbotron {
   overflow: hidden;
+  background-color: #d5d5d5;
 }

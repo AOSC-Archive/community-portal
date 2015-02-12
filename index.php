@@ -17,7 +17,7 @@ $langs = array(
     'news-topic-1'=>'AOSC OS3 OOBP Coming Soon',
     'news-text-1'=>'After 3 months of development. AOSC OS3 builds with several
               different desktop environments are almost ready and will be
-              released very soon.<p></p>Be sure to check for downloads at the 
+              released very soon.<p></p>Be sure to check for downloads at the
               <a href="https://portal.anthonos.org/aosc-os/downloads">Downloads Section</a>
               of AOSC OS sub-site.',
     'news-topic-2'=>'LinkC<sup>*</sup> to Change Core',
@@ -31,7 +31,7 @@ $langs = array(
             of our 2013-2014 development cycle. It will be maintained before AOSC OS3
             comes to its debut. Security updates and several backports from AOSC OS3
             will be available.</p>
-            <p>Downloads are available from the 
+            <p>Downloads are available from the
             <a href="https://portal.anthonos.org/aosc-os">AOSC OS Sub-site</a>.',
   ),
   'zh-cn' => array(
@@ -107,12 +107,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
     </title>
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/css/carousel.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="/css/blog.css" rel="stylesheet" />
     <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
   </head>
-  
+
   <body>
   <?php
     include $_SERVER['DOCUMENT_ROOT'].'/templates/navgen.php';
@@ -124,7 +123,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
     addNavItem('/about/index.php', '/about/', $lang, array('en' => 'About', 'zh-cn' => '关于', 'zh-tw' => '關於',));
     popNavBar();
   ?>
-  
+
   <!-- Main title -->
   <div class="jumbotron">
     <div class="container">
@@ -147,7 +146,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
       </div>
     </div>
   </div>
-  
   <div class="container">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
@@ -209,13 +207,13 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
       </div>
     </div>
     <br />
-    
+
   </div><?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
-  
+
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="/js/jquery-min.js"></script> 
+  <script src="/js/jquery-min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

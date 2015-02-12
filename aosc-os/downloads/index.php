@@ -15,6 +15,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
     <title>AOSC OS - Downloads</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/blog.css" rel="stylesheet" />
+    <link href="/css/common.css" rel="stylesheet" />
     <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/font.php'; ?>
   </head>
   <body>
@@ -46,7 +47,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-9 col-sm-offset-1 blog-main">
+      <div class="col-sm-10 col-sm-offset-1 blog-main">
         <div class="blog-post">
           <p>Here below are the downloads for AOSC OS distributions, including the new, experimental OS3 and legacy OS2 (stable).
           Check the tabs below for more information.</p>
@@ -70,30 +71,29 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
           </ul>
 
           <div id="my-tab-content" class="tab-content">
-            <div class="tab-pane" id="help">
-              <br />
+            <div class="tab-pane active" id="help">
               <h2>Installation</h2>
-              <p>There are generally two ways to install AOSC OS on your machine.</p>
-              <ul>
-                <li>1. Get AOSC LiveKit and use the installer;</li>
-                <li>2. Get tarballs of AOSC OS and deploy them manually.</li>
-              </ul>
-              <br />
+              <p>There are generally two ways to install AOSC OS on your machine.
+                <ul>
+                  <li>1. Get AOSC LiveKit and use the installer;</li>
+                  <li>2. Get tarballs of AOSC OS and deploy them manually.</li>
+                </ul>
+              </p>
               <h2>Installation using AOSC LiveKit</h2>
               <p>To install AOSC OS with LiveKit and the LiveKit Installer, download the LiveKit
                 iso image from the button provided below.</p>
-              <p>This iso image has provided you with some basic tools for installation:</p>
-              <ul>
-                <li>- GParted partition manager for preparing your partitions for installation;</li>
-                <li>- Midori Web Browser for some needs with Internet resources;</li>
-                <li>- Terminal emulator for the sake of God :-);</li>
-                <li>- LiveKit Installer to install AOSC OS of your choice;</li>
-              </ul>
-              <a href="http://repo.anthonos.org/os3-releases/01_Beta/00_LiveKit/LATEST.iso" class="btn btn-default">Download</a>
-              <br />
+              <p>This iso image has provided you with some basic tools for installation:
+                <ul>
+                  <li>- GParted partition manager for preparing your partitions for installation;</li>
+                  <li>- Midori Web Browser for some needs with Internet resources;</li>
+                  <li>- Terminal emulator for the sake of God :-);</li>
+                  <li>- LiveKit Installer to install AOSC OS of your choice;</li>
+                </ul>
+                <a href="http://repo.anthonos.org/os3-releases/01_Beta/00_LiveKit/LATEST.iso" class="btn btn-default">Download</a>
+              </p>
               <h2>Manual Deployment Using Tarballs</h2>
               <p>Apart from using the LiveKit image for Internet based installation, another option
-              is to install directly from the released tarballs. Here's how to do it.</p>
+              is to install directly from the released tarballs. Here's how to do it.
                 <ul>
                   <li>Get a LiveCD or boot up another Linux distribution (must be x86_64);</li>
                   <li>Download the tarball(s);</li>
@@ -111,11 +111,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <li>Boom (if this happenned, report it on IRC or throw it on the
                     <a href="http://bugs.anthonos.org">bug tracker</a>);</li>
                 </ul>
-                <br />
+              </p>
               <p>Happy hacking...</p>
             </div>
-            <div class="tab-pane active" id="dpkg">
-              <br />
+            <div class="tab-pane" id="dpkg">
               <div class="row">
                 <div class="col-sm-2">
                   <img src="/img/oobp-logo/gnome-oobp.png" width="96px" height="96px" />
@@ -445,7 +444,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
               </div>
             </div>
             <div class="tab-pane" id="os2">
-              <br />
               <div class="row">
                 <div class="col-sm-2">
                   <img src="/img/anos.png" width="96px" height="96px" />

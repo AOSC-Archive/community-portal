@@ -56,9 +56,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
         <p>Screenshot of the versions of AOSC OS, feel the difference and pick your choice for a spin! This below shows the
         diversity of desktop environments we provide.</p>
       </div>
-      <div class="col-sm-12 blog-main">
+      <div class="col-sm-12">
         <hr class="divider" />
-        <ul class="nav nav-tabs" style="margin-bottom:15px;">
+        <ul class="nav nav-tabs">
           <li role="presentation" class="active">
             <a href="#gnome" data-toggle="tab">GNOME</a>
           </li>
@@ -72,22 +72,22 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
             <a href="#mate" data-toggle="tab">MATE</a>
           </li>
           <li role="presentation" class="disabled">
-            <a href="#enlightenment" data-toggle="tab">Enlightenment</a>
+            <a href="#enlightenment" data-toggle="">Enlightenment</a>
           </li>
           <li role="presentation" class="disabled">
-            <a href="#plasma" data-toggle="tab">Plasma</a>
+            <a href="#plasma" data-toggle="">Plasma</a>
           </li>
           <li role="presentation" class="disabled">
-            <a href="#kodi" data-toggle="tab">Kodi</a>
+            <a href="#kodi" data-toggle="">Kodi</a>
           </li>
           <li role="presentation" class="disabled">
-            <a href="#pantheon" data-toggle="tab">Pantheon</a>
+            <a href="#pantheon" data-toggle="">Pantheon</a>
           </li>
           <li role="presentation" class="disabled">
-            <a href="#unity" data-toggle="tab">Unity</a>
+            <a href="#unity" data-toggle="">Unity</a>
           </li>
           <li role="presentation" class="disabled">
-            <a href="#dde" data-toggle="tab">DDE</a>
+            <a href="#dde" data-toggle="">DDE</a>
           </li>
           <li role="presentation">
             <a href="#os2" data-toggle="tab">AnthonOS (OS2)</a>
@@ -131,7 +131,7 @@ foreach ($screenshots as $id => $ar){
 TABEOD;
 
     for ($a=1;$a<=10;$a++)
-      echo '<a target="_blank" href="'.$ar['path'].$a.'.'.$ar['suffix'].'"><img src="'.$ar['path'].$a.'_small.'.$ar['suffix'].'" id="img'.$a.'" alt="img'.$a.'" width="200"></a>';
+      echo '<a target="_blank" href="'.$ar['path'].$a.'.'.$ar['suffix'].'"><img src="'.$ar['path'].$a.'_small.'.$ar['suffix'].'" id="img'.$a.'" alt="img'.$a.'" width="300"></a>';
       
   echo <<<TABEOD
               </div>
