@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>【下载】Anthon:Next 构建工具链及第一开发快照 - :Next 开发区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-316-1-1.html" rel="canonical" />
+<meta name="keywords" content="【下载】Anthon:Next 构建工具链及第一开发快照" />
+<meta name="description" content=" 【下载】Anthon:Next 构建工具链及第一开发快照 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-118.html">:Next 开发区</a> &rsaquo; 【下载】Anthon:Next 构建工具链及第一开发快照</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-4-16 02:41:46	</p>
+			<h3>【下载】Anthon:Next 构建工具链及第一开发快照</h3>
+		请注意，这是Anthon:Next的第一次实验性构建，非常不稳定且可能带来无法预料的意外，除非你是开发者或你热爱折腾，请绕行至安同的“发布前线”分区下载主线系统。我们不会提供任何的技术支持。<br />
+<br />
+截图，一张<br />
+<br />
+<br />
+<br />
+工具链使用方法不作解释，请自行翻阅Linux From Scratch手册<br />
+下载<br />
+这是一个tar.xz格式的压缩文件，你可以直接使用tar命令解压。<br />
+<br />
+<br />
+开发快照<br />
+LSB Version:&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 4.1<br />
+Distributor ID:&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Anthon GNU/Linux<br />
+Description:&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Anthon GNU/Linux from :Next Branch<br />
+Release:&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Next-1.2.1a<br />
+Codename:&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Yan'An<br />
+<br />
+What is inside?<br />
+× Linux 3.9-rc6，带有安同安全模型、安同实时调度器以及部分的驱动补充<br />
+× GCC 4.8.0<br />
+× Vim 7.3<br />
+× GNU Nano 2.3.2<br />
+× Glibc 2.17<br />
+× Preload<br />
+× Bash 4.2<br />
+× Systemd 201 <br />
+× GRUB 2.00<br />
+× e2fsprogs, btrfs-tools, reiserfsprogs<br />
+× IProute 2<br />
+……<br />
+<br />
+其中，Preload可能存在Bug或无法使用，btrfs分区依然无法正确识别，GRUB缺少一些必要的命令。<br />
+<br />
+下载<br />
+<br />
+安装方法：<br />
+× 将下载后的systempak文件放到一个空分区；<br />
+× tar xf *.systempak解压系统；<br />
+× nano etc/fstab，添加一行关于系统分区的信息；<br />
+× 重启到别的发行版，也可以是Live系统，用标准方法安装并更新GRUB；<br />
+× 找到安装后的grub.cfg，在安装后系统的Linux行后加上quiet init=/bin/systemd；<br />
+× 重启并进入系统。<br />
+<br />
+下一周的计划：<br />
+× 添加基本的X图形环境<br />
+× 更新内核到3.9 rc7<br />
+× 将systemd作为init的软链接<br />
+× 修复一些基本的命令错误<br />
+<br />
+				<p class="author">
+					<strong>zxd123314</strong>
+				发表于 2013-4-16 11:08:08	</p>
+			<h3></h3>
+		我不可耻！！！！			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-316-1-1.html" target="_blank"><strong>【下载】Anthon:Next 构建工具链及第一开发快照</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

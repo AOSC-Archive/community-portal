@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>Linux 3.9 内核的预告！ - 安同-开源盛世社刊 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-171-1-1.html" rel="canonical" />
+<meta name="keywords" content="Linux 3.9 内核的预告！" />
+<meta name="description" content=" Linux 3.9 内核的预告！ ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-110.html">安同-开源盛世社刊</a> &rsaquo; Linux 3.9 内核的预告！</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-21 15:51:57	</p>
+			<h3>Linux 3.9 内核的预告！</h3>
+		 本帖最后由 jeffbaichina 于 2013-2-21 20:20 编辑 <br />
+<br />
+Features Coming In For The Linux 3.9 Kernel<br />
+即将随Linux 3.9内核到来的新特性<br />
+<br />
+Posted by Michael Larabel on February 08, 2013<br />
+由Michael Larabel于2013年2月8日发出<br />
+<br />
+While the Linux 3.8 kernel hasn't even been released yet, several of the noteworthy features slated to be merged for the Linux 3.9 kernel are already known.<br />
+当Linux 3.8内核还没有发布的时候，有些值得注意的且已经确定将合并到（就是将加入的改进）Linux 3.9内核的新特性已经为大家所知。<br />
+<br />
+More of the features of the Linux 3.9 kernel will be known as soon as its merge window opens in the coming weeks following the 3.8 availability, and as the &quot;-next&quot; branches for the different subsystems are finalized, but here's some of the work that's already queued up:<br />
+当Linux 3.8内核开放下载后几周，合并窗口（就是新特性的提交通道）大开之时，更多Linux3.9内核的新特性将在第一时间被公开，而当“-next”分支（就是Linux内核的最新开发进程分支）的差分子系统（就是用来比对更动的自动化系统）正在被完善的时候，这些工作已经被推上日程：<br />
+<br />
+- Kernel mode-setting locking has come courtesy of Intel. This work is to move in the direction of &quot;perfect page-flipping&quot;, but it's not there quite yet even after the invasive changes caused by this locking work. The changes are to avoid blocking KMS background functions when ioctls being frequently hit by the compositor are called, in order to reduce dropped frames. So while this isn't some sexy end-user feature, it's an important improvement to the KMS/DRM infrastructure.<br />
+- 提供给英特尔（显示处理器）的内核模式设置（提供显示处理器支持）锁定已经到来。这项工作将致力于“完美的翻页”（译者不清楚这确切的意思，直译的），而甚至在锁定工作带来巨大改变的情况下，这项工作也没能有太大进展，离目标也甚远。这项工作旨在让IO控制器（控制输入/输出设备，包括鼠标、硬盘等等）被合成器（提供桌面特效的机制）频繁命中（或者说是占用）的时候，阻止内核模式设置的后台函数，以减少掉帧（所谓卡顿）现象发生。因此，虽然这不是什么重要的（其实是”性感的“好不……）最终用户特性（就是一般用户能看见的），但这仍然是对于内核模式设置/直接渲染管理器（同内核模式设置）架构的重要改进。<br />
+<br />
+- The Intel no-reloc optimization will provide for a possible few percent performance improvement for certain tasks.<br />
+- 英特尔的”no-reloc“优化方案将在一些特定的任务下提供可能的少量（几个百分点）的性能优化。<br />
+<br />
+- Open-source Radeon driver support for the AMD HD 8000 series GPUs. The Radeon HD 8000 hardware hasn't launched yet, but the required driver changes for the open-source Linux GPU driver aren't too massive over the HD 7000 series, so AMD recently released the code.<br />
+- 开源的Radeon（镭）驱动提供给AMD HD8000系列显示处理器的支持。（AMD）Radeon HD8000系列硬件还没有正式启动（发布？），但对于提供给HD 7000系列的开源显示处理器驱动，需要作出的修改并不太大，因此AMD最近放出了代码（信号？）。<br />
+<br />
+- Various other Radeon DRM improvements including a rework to how GPU hardware resetting is dealt with, re-factoring the command submission ioctl, and using an indirect buffer for pumping in the VM PT updates. This next kernel also<br />
+deprecates Radeon user-space mode-setting support.<br />
+- 一些其他对于Radeon（镭）直接渲染管理器的改进，包括一次关于如何让显示处理器重置的返工已经完成，”返修“（重写或者改写）命令提交时调用的的输入输出控制器函数，并且采用非直接缓冲区来抽取VM PT更新（抱歉译者也不清楚这是什么）。下一代的内核也将不赞成（不推荐使用）Radeon的用户空间模式设置支持。<br />
+<br />
+- Page-flipping and planes support for the open-source NVIDIA Tegra driver.<br />
+- 提供给NVIDIA Tegra（移动处理核心）驱动的页面翻转和平面支持。<br />
+<br />
+- Better support for Intel Haswell processors that are due to launch in the near future. Plus other i965 DRM driver changes.<br />
+- 对于即将在不久后发布的英特尔Haswell处理器（下一代的处理器，Ivy Bridge更新）更好的支持+其他i965直接渲染管理器驱动的更改。<br />
+<br />
+- The EnhanceIO SSD caching driver for using solid-state drives as caches for rotating media should enter the kernel's staging area.<br />
+- 将固态硬盘作为旋转介质（机械硬盘、光盘等）缓存EnhanceIO固态硬盘缓存驱动应当进入内核的分阶段驱动（内核中一个特殊的驱动类别，提供给未完整驱动的硬件，可在部分解决问题的情况下提高驱动程序的识别能力）类别。<br />
+<br />
+- Greater support for Google Chromebooks, including the Samsung Series 5 Chromebook with its Exynos 5 Dual (Cortex-A15) ARM SoC.<br />
+- 提供给谷歌Chromebook（带有谷歌独具创意的Chrome OS操作系统的上网本，相对廉价）更好的支持，包括带有Exynos 5 Dual（Cortex-A15）ARM SoC（System on Chip，芯片上系统，提供给类移动设备的特殊硬件架构）处理器的三星5系列Chromebook。<br />
+<br />
+- It doesn't look like it's been merged into any -next trees yet, but it's possible to see LZ4 kernel compression support.<br />
+- 虽然似乎还没有被合并到”-next“树（分支），但很有可能我们将会得到LZ4方式（无损压缩方式，效率相当高）的内核压缩支持。<br />
+<br />
+- The Meta Linux Kernel Port for their processors from the company notorious for their PowerVR graphics drivers, Imagination Technologies.<br />
+- 来自因PowerVR图形驱动而臭名昭著的创想技术公司的，提供给他们自家处理器的Linux内核元接口（难解释）。<br />
+<br />
+- Synopsys ARC CPU support for these embedded processors.<br />
+- 提供给那些嵌入式系统的Synopsys ARC中央处理器支持。<br />
+<br />
+- Initial support for Intel Avoton.<br />
+- 提供给英特尔Avoton（微服务器处理器）的初步支持。<br />
+<br />
+- Early support for NVIDIA's Tegra 4 (Wayne) Cortex-A15 SoC.<br />
+- 对于NVIDIA（英伟达）Tegra 4（Wayne）Cortex-A15 SoC的早期支持。<br />
+<br />
+- ACPI support improvements for bettering Linux power management.<br />
+- 对于ACPI更好的支持以在Linux提供更好的电源管理。<br />
+<br />
+- Intel HDA Audio is massively overhauled to vastly improve the Linux audio support.<br />
+- 英特尔的高清音频驱动被大幅度改进以提高Linux音频性能。<br />
+<br />
+- Linux Zswap for compressed swap caching.<br />
+- Linux Zswap提供压缩的交换空间（一个特殊的文件系统以提高内存性能以及利用率）缓存。<br />
+<br />
+Stay tuned for more feature details of the Linux 3.9 kernel in the coming weeks as we get a better idea what else will be merged (especially in the non-graphics areas). What we will still not see with Linux 3.9 is definitely VIA kernel mode-setting or the Reiser4 file-system; I'm beginning to wonder if either of these long-developed features will ever reach a mainline state even though they continue to be toyed with to this day.<br />
+请在未来几周持续关注以获知更多Linux 3.9内核的特性细节，那么我们就能知道接下来什么会被包含在内核之中（特别是那些非图形领域）。而VIA内核模块设置和Reiser4文件系统是我们肯定不会看见的了；而我已经开始想，那些已经开发很长时间的特性是否会达到主线水平，即使他们目前位置还只是玩具级别的。<br />
+<br />
+哎……累死了 <br />
+<br />
+				<p class="author">
+					<strong>lss</strong>
+				发表于 2013-2-22 13:50:18	</p>
+			<h3></h3>
+		辛苦了...&nbsp;&nbsp;话说 linux kernel 也开始飙版本了... 一眨眼, 3都快过去了....<br />
+2.x 表示 ...........			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-171-1-1.html" target="_blank"><strong>Linux 3.9 内核的预告！</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

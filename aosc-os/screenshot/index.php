@@ -72,9 +72,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
             <a href="#mate" data-toggle="tab">MATE</a>
           </li>
           <li role="presentation" class="disabled">
-            <a href="#enlightenment" data-toggle="">Enlightenment</a>
-          </li>
-          <li role="presentation" class="disabled">
             <a href="#plasma" data-toggle="">Plasma</a>
           </li>
           <li role="presentation" class="disabled">
@@ -86,62 +83,60 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
           <li role="presentation" class="disabled">
             <a href="#unity" data-toggle="">Unity</a>
           </li>
-          <li role="presentation" class="disabled">
-            <a href="#dde" data-toggle="">DDE</a>
-          </li>
           <li role="presentation">
             <a href="#os2" data-toggle="tab">AnthonOS (OS2)</a>
           </li>
         </ul>
       </div>
-    <div id="my-tab-content" class="tab-content">
-    <?php
-    $screenshots = array(
-    'gnome' => array('flag' => 'active', 'icon' => '/img/oobp-logo/gnome-oobp.png', 'title' => 'AOSC OS with GNOME', 'description' => 'AOSC OS with the GNOME desktop environment, a completely free and open source desktop and application suite.', 'path' => '/img/screenshots/gnome-oobp/', 'suffix' => 'jpg'),
+      <div id="my-tab-content" class="tab-content">
+      <?php
+      $screenshots = array(
+      'gnome' => array('flag' => 'active', 'icon' => '/img/oobp-logo/gnome-oobp.png', 'title' => 'AOSC OS with GNOME', 'description' => 'AOSC OS with the GNOME desktop environment, a completely free and open source desktop and application suite.', 'path' => '/img/screenshots/gnome-oobp/', 'suffix' => 'jpg'),
 
-    'mate' => array('flag' => '', 'icon' => '/img/oobp-logo/mate-oobp.png', 'title' => 'AOSC OS with MATE', 'description' => 'AOSC OS with the MATE desktop, a fork of GNOME 2 desktop, with slight customization and tweaks for good.', 'path' => '/img/screenshots/mate-oobp/', 'suffix' => 'jpg'),
+      'mate' => array('flag' => '', 'icon' => '/img/oobp-logo/mate-oobp.png', 'title' => 'AOSC OS with MATE', 'description' => 'AOSC OS with the MATE desktop, a fork of GNOME 2 desktop, with slight customization and tweaks for good.', 'path' => '/img/screenshots/mate-oobp/', 'suffix' => 'jpg'),
 
-    'cinnamon' => array('flag' => '', 'icon' => '/img/oobp-logo/cinnamon-oobp.png', 'title' => 'AOSC OS with Cinnamon', 'description' => 'AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.', 'path' => '/img/screenshots/cinnamon-oobp/', 'suffix' => 'jpg'),
+      'cinnamon' => array('flag' => '', 'icon' => '/img/oobp-logo/cinnamon-oobp.png', 'title' => 'AOSC OS with Cinnamon', 'description' => 'AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.', 'path' => '/img/screenshots/cinnamon-oobp/', 'suffix' => 'jpg'),
 
-    'xfce' => array('flag' => '', 'icon' => '/img/oobp-logo/xfce-oobp.png', 'title' => 'AOSC OS with XFCE', 'description' => 'AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.', 'path' => '/img/screenshots/xfce-oobp/', 'suffix' => 'jpg'),
+      'xfce' => array('flag' => '', 'icon' => '/img/oobp-logo/xfce-oobp.png', 'title' => 'AOSC OS with XFCE', 'description' => 'AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.', 'path' => '/img/screenshots/xfce-oobp/', 'suffix' => 'jpg'),
 
-    'os2' => array('flag' => '', 'icon' => '/img/anos.png', 'title' => 'AnthonOS (AOSC OS2)', 'description' => 'Final Release &quot;Doge&quot; comes with KDE 4 as its default desktop environment, here showing is the default desktop configuration of AnthonOS (however you can choose for the default Plasma desktop configuration).', 'path' => '/img/anthonos/', 'suffix' => 'png'),
-    );
+      'os2' => array('flag' => '', 'icon' => '/img/anos.png', 'title' => 'AnthonOS (AOSC OS2)', 'description' => 'Final Release &quot;Doge&quot; comes with KDE 4 as its default desktop environment, here showing is the default desktop configuration of AnthonOS (however you can choose for the default Plasma desktop configuration).', 'path' => '/img/anthonos/', 'suffix' => 'png'),
+      );
 
 foreach ($screenshots as $id => $ar){
   echo <<<TABEOD
-      <div class="tab-pane {$ar['flag']}" id="$id">
-        <div class="row">
-          <div class="col-sm-1 col-sm-offset-2">
-            <img src="{$ar['icon']}" width="96px" height="96px" />
-          </div>
-          <div class="col-sm-6 col-sm-offset-1">
-            <div class="row">
-              <div class="col-sm-12">
-                <h2>{$ar['title']}</h2><p>{$ar['description']}</p>
+        <div class="tab-pane {$ar['flag']}" id="$id">
+          <div class="row">
+            <div class="col-sm-1 col-sm-offset-2">
+              <img src="{$ar['icon']}" width="96px" height="96px" />
+            </div>
+            <div class="col-sm-6 col-sm-offset-1">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2>{$ar['title']}</h2><p>{$ar['description']}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-            <hr class="divider" />
-          <div class="col-sm-12">
-            <div class="row">
-              <div class="my_gallery">
+          <div class="row">
+              <hr class="divider" />
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="my_gallery">
 TABEOD;
 
     for ($a=1;$a<=10;$a++)
       echo '<a target="_blank" href="'.$ar['path'].$a.'.'.$ar['suffix'].'"><img src="'.$ar['path'].$a.'_small.'.$ar['suffix'].'" id="img'.$a.'" alt="img'.$a.'" width="300"></a>';
       
   echo <<<TABEOD
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 TABEOD;
 }
     ?>
+      </div>
     </div>
     <!-- /.container -->
     <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php';?>
@@ -149,6 +144,6 @@ TABEOD;
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/js/jquery-min.js"></script> 
-    <script src="/js/bootstrap.min.js"></script></div>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>OS2 最终架构预览发布！ - :Next 开发区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-811-1-1.html" rel="canonical" />
+<meta name="keywords" content="OS2 最终架构预览发布！" />
+<meta name="description" content=" OS2 最终架构预览发布！ ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-118.html">:Next 开发区</a> &rsaquo; OS2 最终架构预览发布！</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2014-1-24 02:49:35	</p>
+			<h3>OS2 最终架构预览发布！</h3>
+		 本帖最后由 jeffbaichina 于 2014-1-25 07:43 编辑 <br />
+<br />
+OS2 在经过 6 个月的开发后终于走到了旅程的终点，系统结构和技术已经基本定型。但 OS2 只是我们社区第二代发行版的技术基础，接下来我们要做什么呢？<br />
+<br />
+- 分线，AnthonOS / IcenowyLinux / CentralPoint 将以此基础开始构建，制作出三种不同用途的发行版：<br />
+&nbsp;&nbsp;AnthonOS - 一个激进的滚动更新桌面发行版<br />
+&nbsp;&nbsp;IcenowyLinux - 一个稳定的桌面发行版<br />
+&nbsp;&nbsp;CentralPoint - 一个轻量化的，易于部署的小型 / 家庭服务器发行版<br />
+&nbsp;&nbsp;我们开发组将和社区成员一齐努力，在 OS2 的技术基础上实现三种用途的发行版，并提供尽可能好的体验和实用性。<br />
+- 准备 OS3，OS3 是安同开源社区的第三代发行计划，将在 OS2 的基础上进行改进。AnthonOS 在暑假后将成为 OS3 的基础。<br />
+<br />
+OS2 即将在开发组内部测试完成后发布，在下载放出之前，我先在这里介绍下 OS2 的基本技术特征（抱歉，暂时用户体验还不是我们要研究的话题）。<br />
+<br />
+- OS2 是一个以 Linux From Scratch 项目和相关书籍作为参考实现的又一个独立发行版，而不再是 OS1 时期的 Debian 衍生版本。<br />
+- OS2 采用 Debian 包管理，但是分包以 “套件” 作为单位，而不再细分任何软件包，减少安装软件的迷惑性。<br />
+- OS2 采用完全的 systemd 启动 / 初始化模式，以 Linux 的方式实现 Linux 的启动。<br />
+- OS2 提供了多种桌面环境的完整支持，KDE / XFCE / MATE / LXDE / Cinnamon / GNOME / Trinity / Awesome / GNUStep 等，甚至还支持 Deepin 桌面环境。<br />
+- OS2 实现了类似 Arch 社区的 AUR 非官方仓库，给有兴趣的用户更多提供个性化软件包的可能性。<br />
+- OS2 采用 32subsystem (32 位子系统) 实现 32 位软件包的兼容，安装 Kingsoft Office / Skype 只需轻按鼠标就能解决。<br />
+- OS2 的 Autobuild 包构建工具集实现了和包管理的隔离，写好配置，然后输入命令 autobuild 然后系统将自动完成依赖补齐、构建和打包，现已支持 DPKG 和 RPM 包管理。<br />
+- OS2, Steam, yeah! What?<br />
+- OS2 使用一个基础实现了三个发行版的发行，让 AnthonOS / IcenowyLinux / CentralPoint 之间实现了完整的二进制兼容，同时还减少了我们这个小型开发组同时构建并维护三个发行版的压力。<br />
+<br />
+不过对于用户来说，这些事情暂时还没能体现出其优势…… (这和我有关系么？) 那么我在这里解释一下这些 “特性” 能给在不久后发布的三个发行版提供的便利，大概如下：<br />
+- 你现在可以在 15 秒内完成系统启动！<br />
+- 你现在可以玩到最新的正版游戏，还随时有限免！<br />
+- 有些软件我找不到诶，也许有人提供了呢 (开发组真没出息啊 23333333)！<br />
+- 现在妈妈终于不用担心我把一个下午都耗在安装 Skype 了！<br />
+- 我的笔记本退役了，当服务器用吧…… 哇，我都不用重装系统啦！<br />
+所以各位小白们请好好期待吧！我们一定努力不让你们失望。<br />
+<br />
+经过多次脑洞大开的测试之后我们终于可以放出下载了。这里提供两个版本的下载：<br />
+- Live, 又称 OOBP (开箱即用预览版本)，提供了一个标准的 KDE 桌面环境并预装了一些桌面软件，软件包列表请看 传送门 ，建议愿意尝试的小白在虚拟机试用。<br />
+- Core，一个基本系统，只提供了基本的联网和启动设施，建议由经验的用户和开发者使用。这个版本一般用于系统快速部署而非日常使用。<br />
+<br />
+下载如下<br />
+Live 版本http://mirror.anthonos.org/os2-releases/os2-final/os2-final_slippery_tangentline_patch+5.iso<br />
+Core 版本 http://mirror.anthonos.org/os2-r ... l/final-core.tar.xz<br />
+<br />
+已知问题<br />
+GRUB 配置脚本疑似不完整，导致 GRUB 配置不正确 - 已解决<br />
+fstab 疑似存在生成问题 - 已解决<br />
+<br />
+Live 系统信息<br />
+用户名: live<br />
+密码: live<br />
+安装方法: 登录后按下 Alt+F2 然后输入 ulinst 开始安装<br />
+<br />
+遇到了问题？<br />
+不要紧张，首先，这是一个开发版本，甚至属于 Alpha 版本的范畴，一定存在问题；其次，我们的开发者有快速的响应和解决问题的能力，遇到问题，请走如下路线：<br />
+- 首先，前往 bugs.anthonos.org 提交一个问题报告<br />
+- 如果长达六小时没有回应，请前往 QQ 群号 125016052，并呼救，或寻找任意一个管理员<br />
+<br />
+<br />
+<br />
+				<p class="author">
+					<strong>绿地球</strong>
+				发表于 2014-1-24 13:27:53	</p>
+			<h3></h3>
+		“开发者娱乐版”				<p class="author">
+					<strong>绿地球</strong>
+				发表于 2014-1-24 13:31:31	</p>
+			<h3></h3>
+		<br />
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;.. .vr&nbsp; &nbsp;&nbsp; &nbsp; <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;qBMBBBMBMY&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;8BBBBBOBMBMv&nbsp; &nbsp; <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;iMBMM5vOY:BMBBv&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;.r,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; OBM;&nbsp; &nbsp;.: rBBBBBY&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;vUL&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 7BB&nbsp; &nbsp;.;7. LBMMBBM.&nbsp; &nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; .@Wwz.&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;:uvir .i:.iLMOMOBM..&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;vv::r;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; iY. ...rv,@arqiao. <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Li. i:&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; v:.::::7vOBBMBL.. <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;,i7: vSUi,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;:M7.:.,:u08OP. .&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;.N2k5u1ju7,..&nbsp; &nbsp;&nbsp;&nbsp;BMGiiL7&nbsp; &nbsp;,i,i.&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;:rLjFYjvjLY7r::.&nbsp;&nbsp;;v&nbsp;&nbsp;vr... rE8q;.:,, <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;751jSLXPFu5uU@guohezou.,1vjY2E8@Yizero.&nbsp; &nbsp; <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;BB:FMu rkM8Eq0PFjF15FZ0Xu15F25uuLuu25Gi.&nbsp; &nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;ivSvvXL&nbsp; &nbsp; :v58ZOGZXF2UUkFSFkU1u125uUJUUZ,&nbsp; &nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; :@kevensun.&nbsp; &nbsp;&nbsp; &nbsp;,iY20GOXSUXkSuS2F5XXkUX5SEv.&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;.:i0BMBMBBOOBMUi;,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;,;8PkFP5NkPXkFqPEqqkZu.&nbsp;&nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp; .rqMqBBMOMMBMBBBM .&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;@kexianli.S11kFSU5q5&nbsp; &nbsp;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;.7BBOi1L1MM8BBBOMBB..,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 8kqS52XkkU1Uqkk1kUEJ&nbsp; &nbsp;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;.;MBZ;iiMBMBMMOBBBu ,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;1OkS1F1X5kPP112F51kU&nbsp; &nbsp;<br />
+&nbsp; &nbsp;&nbsp; &nbsp; .rPY&nbsp;&nbsp;OMBMBBBMBB2 ,.&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; rME5SSSFk1XPqFNkSUPZ,.<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;;;JuBML::r:.:.,,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;SZPX0SXSP5kXGNP15UBr.<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;L,&nbsp; &nbsp; :@huhao.&nbsp; &nbsp;&nbsp; &nbsp;:MNZqNXqSqXk2E0PSXPE .<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;viLBX.,,v8Bj. i:r7:,&nbsp; &nbsp;&nbsp;&nbsp;2Zkqq0XXSNN0NOXXSXOU <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;:r2. rMBGBMGi .7Y, 1i::i&nbsp; &nbsp;vO0PMNNSXXEqP@Secbone.<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;.i1r. .jkY,&nbsp; &nbsp; vE. iY....&nbsp;&nbsp;20Fq0q5X5F1S2F22uuv1M; <br />
+<br />
+<br />
+				<p class="author">
+					<strong>startmenu</strong>
+				发表于 2014-1-24 13:31:51	</p>
+			<h3></h3>
+		虚拟机走起……<br />
+（验证码作死）				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2014-1-24 13:32:05	</p>
+			<h3></h3>
+		绿地球 发表于 2014-1-24 13:31 static/image/common/back.gif<br />
+.. .vr&nbsp; &nbsp;&nbsp; &nbsp; <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;...<br />
+<br />
+有些字符被转码了……				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2014-1-24 20:09:58	</p>
+			<h3></h3>
+		绿地球 发表于 2014-1-24 13:31<br />
+.. .vr&nbsp; &nbsp;&nbsp; &nbsp; <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;...<br />
+<br />
+好乱				<p class="author">
+					<strong>freddy4212</strong>
+				发表于 2014-1-28 09:49:14	</p>
+			<h3></h3>
+		LFS???我之前好想玩玩看的,自己創造發行版,不過現在沒時間了,有機會能研究請小白務必指導<br />
+我非常覺得你們可以和Deepin合作,他們非常專注體驗以及程式的開發,而你們則擁有底層架構創建的人力,時間及技術,我蠻不希望Deepin這樣體驗極佳的系統繼續基於Ubuntu的說				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2014-1-29 07:22:27	</p>
+			<h3></h3>
+		freddy4212 发表于 2014-1-28 09:49 static/image/common/back.gif<br />
+LFS???我之前好想玩玩看的,自己創造發行版,不過現在沒時間了,有機會能研究請小白務必指導<br />
+我非常覺得你們可 ...<br />
+<br />
+&gt; LFS???我之前好想玩玩看的,自己創造發行版,不過現在沒時間了,有機會能研究請小白務必指導<br />
+哈哈，一定！<br />
+<br />
+&gt; 我非常覺得你們可以和Deepin合作,他們非常專注體驗以及程式的開發,而你們則擁有底層架構創建的人力,時間&gt; 及技術,我蠻不希望Deepin這樣體驗極佳的系統繼續基於Ubuntu的說<br />
+就我个人来说，我更希望我们两个社区能走得更近，而且希望社区之间可以更为的公开透明！				<p class="author">
+					<strong>freddy4212</strong>
+				发表于 2014-1-29 09:44:16	</p>
+			<h3></h3>
+		我在虛擬機中執行,發現速度蠻快的<br />
+那個core版要如何使用,如何訂製?我想訂製core版<br />
+請求支援				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2014-1-30 04:10:10	</p>
+			<h3></h3>
+		freddy4212 发表于 2014-1-29 09:44 static/image/common/back.gif<br />
+我在虛擬機中執行,發現速度蠻快的<br />
+那個core版要如何使用,如何訂製?我想訂製core版<br />
+請求支援 ...<br />
+<br />
+Core 的话，麻烦前往 wiki.anthonos.org 的 tarball 系统发行部署条目。<br />
+<br />
+没有繁中...... 真是对不起！如果你愿意提供繁中译文，那就更好了 ;-)				<p class="author">
+					<strong>freddy4212</strong>
+				发表于 2014-1-31 00:31:05	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2014-1-30 04:10 static/image/common/back.gif<br />
+Core 的话，麻烦前往 wiki.anthonos.org 的 tarball 系统发行部署条目。<br />
+<br />
+没有繁中...... 真是对不起！如 ...<br />
+<br />
+有空我可以去翻翻				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2014-1-31 04:37:41	</p>
+			<h3></h3>
+		freddy4212 发表于 2014-1-31 00:31 static/image/common/back.gif<br />
+有空我可以去翻翻<br />
+<br />
+谢谢！你可以直接注册一个账号就开始工作，一切自由。			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-811-1-1.html" target="_blank"><strong>OS2 最终架构预览发布！</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

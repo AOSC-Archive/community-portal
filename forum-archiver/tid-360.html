@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>一个新的安装脚本，使用PHP - AnthonOS 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-360-1-1.html" rel="canonical" />
+<meta name="keywords" content="一个新的安装脚本，使用PHP" />
+<meta name="description" content=" 一个新的安装脚本，使用PHP ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-44.html">AnthonOS 反馈和支持</a> &rsaquo; 一个新的安装脚本，使用PHP</div>
+
+<div id="content">
+			<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-5-9 17:20:45	</p>
+			<h3>一个新的安装脚本，使用PHP</h3>
+		 本帖最后由 butangmucat 于 2013-5-10 16:22 编辑 <br />
+<br />
+2013.5.10: 剩余：fstab<br />
+<br />
+参考了JBC先前发的haulm的安装脚本，使用的是命令行向导，类似make config<br />
+使用php作为编程语言，依赖于php-cli<br />
+主要在手机上写的，由于这个原因，语言为英语，后期汉化<br />
+其他信息见代码注释<br />
+<br />
+***既然乱码，既然无缩进，删了。 ——白<br />
+<br />
+貌似一粘贴代码缩进、高亮全没了，想看原版点这里：https://seacloud.cc/f/caf9f08144/				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-5-10 11:11:27	</p>
+			<h3></h3>
+		不懂php，但是基本看完了。<br />
+问题不大，命令也基本正确。但是有一个问题：<br />
+1、echo后内容中有的有两个或者三个&quot;\n&quot;是否意味着多换几行？<br />
+2、敢不敢不用“=”来分隔内容？<br />
+3、$filesystem确实没有发现哪里定义了；<br />
+看不懂的没敢确定所以没有提出来……<br />
+<br />
+望继续。				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-5-10 16:04:17	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-5-10 11:11<br />
+不懂php，但是基本看完了。<br />
+问题不大，命令也基本正确。但是有一个问题：<br />
+1、echo后内容中有的有两个或者三 ...<br />
+<br />
+是／喜欢这样的分割线／已修正				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-5-10 16:13:57	</p>
+			<h3></h3>
+		 本帖最后由 butangmucat 于 2013-5-10 16:18 编辑 <br />
+<br />
+关于haulm在群里面提到的选择PHP是个错误的决定，我想说的是<br />
+1 PHP是我掌握的最熟悉的编程语言<br />
+2 PHP本质上只是一种脚本语言，真正决定安全性的是代码的内容，解释器的实现，我会重新用最简功能配置重新编译PHP，而且用我最熟悉的语言编写程序出纰漏的可能性小于我不熟悉的语言<br />
+3 PHP主要用于网页编程并不代表只适用于网页编程，相反PHP社区的目标之一就是把它打造成一种通用的高级脚本语言，这就是为什么会有带ncurses的php-cli，php-gtk，php-qt，wxphp，一个例子就是我在oschina上看到过一个完全用PHP写成的Desktop Environment<br />
+4 wxphp项目的一个目的是快速开发桌面应用，我个人认为PHP本身的框架结构和强大的可扩充性使得用PHP快速开发中小型桌面应用毫无问题				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-5-10 20:49:54	</p>
+			<h3></h3>
+		为！什！么！这！么！多！CHROOT！				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-5-10 22:55:02	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-5-10 20:49<br />
+为！什！么！这！么！多！CHROOT！<br />
+<br />
+挂载虚拟文件系统，安装grub，错误处理，重启倒数，两处幽默				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-5-10 23:00:03	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-5-10 22:55 static/image/common/back.gif<br />
+挂载虚拟文件系统，安装grub，错误处理，重启倒数，两处幽默<br />
+<br />
+一次足够。。。				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-5-10 23:49:15	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-5-10 23:00<br />
+一次足够。。。<br />
+<br />
+mount 3次<br />
+chroot 2次<br />
+Let's rock'n'roll一次<br />
+Buy me a cup of coffee一次<br />
+真心不算多				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-5-11 00:49:42	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-5-10 23:49 static/image/common/back.gif<br />
+mount 3次<br />
+chroot 2次<br />
+Let's rock'n'roll一次<br />
+<br />
+<br />
+我是说。。。<br />
+Chroot只用一次。。。				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-5-11 17:29:38	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-5-11 00:49<br />
+我是说。。。<br />
+Chroot只用一次。。。<br />
+<br />
+必须两次<br />
+grub-install和update-grub得分开执行，分开chroot<br />
+haulm也是这样实现的			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-360-1-1.html" target="_blank"><strong>一个新的安装脚本，使用PHP</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

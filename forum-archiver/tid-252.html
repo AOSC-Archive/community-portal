@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>用EasyBCD安装安同 - AnthonOS 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-252-1-1.html" rel="canonical" />
+<meta name="keywords" content="用EasyBCD安装安同" />
+<meta name="description" content=" 用EasyBCD安装安同 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-37.html">AnthonOS 发布区</a> &rsaquo; 用EasyBCD安装安同</div>
+
+<div id="content">
+			<p class="author">
+					<strong>HY-wyl</strong>
+				发表于 2013-3-31 08:51:24	</p>
+			<h3>用EasyBCD安装安同</h3>
+		 本帖最后由 HY-wyl 于 2013-3-31 08:52 编辑 <br />
+<br />
+大家都明白，EasyBCD这软件……硬盘安装Linux的神器。<br />
+应JBC（你们都明白是谁）要求，发下具体过程。（Windows Vista及以上适用，XP党可用grub4dos代替EasyBCD）<br />
+1.把安同安装镜像的tarball.tar.xz和/boot下的vmlinuz和initrd.img解压到一个fat32分区；<br />
+2.安装EasyBCD（下载地址自己度娘/Google）；<br />
+3.按照截图1的方法安装Neogrub。<br />
+（如果使用的是grub4dos，把grldr.mbr、grldr、menu.lst解压到硬盘的C盘，然后右键“我的电脑”-属性-“启动和故障恢复”下的“设置”-“编辑”，在最后面加一行C:\grldr.mbr=&quot;Grub4DOS&quot;<br />
+，保存退出）<br />
+(带引号哦)<br />
+4.安装完成后，旁边的Configure（配置）按钮会亮起，点击它。(grub4dos直接编辑刚才复制到C盘的menu.lst)<br />
+然后会弹出一个我们很熟悉的东西——记事本。<br />
+5.在最下面输入这些内容：<br />
+title install Anthon OS<br />
+root (hd0,1) <br />
+kernel (hd0,1)/vmlinuz <br />
+initrd (hd0,1)/initrd.img<br />
+其中(hd0,1)具体取决于你将刚才那三个文件解压到了哪个分区。<br />
+6.重启，选择Neogrub Bootloader，然后你懂的。<br />
+（如果表示“Can not found file”，在grub选择启动项的界面按c进命令行然后用find /vmlinuz命令找到正确的分区编号，然后按Esc回到选择启动项界面，找到“Install Anthon OS”项后按e键编辑，将其中的(hdx,x)替换为刚才find /vmlinuz命令输出的结果）				<p class="author">
+					<strong>493500016</strong>
+				发表于 2013-3-31 09:00:11	</p>
+			<h3></h3>
+		Good，看不懂。。。<br />
+				<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-3-31 11:21:55	</p>
+			<h3></h3>
+		find --set-root /vmlinuz			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-252-1-1.html" target="_blank"><strong>用EasyBCD安装安同</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

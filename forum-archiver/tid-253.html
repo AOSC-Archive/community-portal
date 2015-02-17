@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>安同最终公测版意见以及Bug反馈帖 - AnthonOS 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-253-1-1.html" rel="canonical" />
+<meta name="keywords" content="安同最终公测版意见以及Bug反馈帖" />
+<meta name="description" content=" 安同最终公测版意见以及Bug反馈帖 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-44.html">AnthonOS 反馈和支持</a> &rsaquo; 安同最终公测版意见以及Bug反馈帖</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-3-31 10:25:20	</p>
+			<h3>安同最终公测版意见以及Bug反馈帖</h3>
+		 本帖最后由 jeffbaichina 于 2013-4-1 11:18 编辑 <br />
+<br />
+从这里开始，不定期整理更新。请规范发帖，方便开发者。<br />
+<br />
+我们可能需要你的帮助，谢谢：<br />
+请帮助我们测试两个特性：打开文件管理器（无问题）、收起应用菜单（无问题）、打开默认桌面设置（桌面上右键，无问题）<br />
+已证实这些特性没有问题，感谢@宝先森<br />
+<br />
+整理：<br />
+× BUG：系统设置-多媒体，卡死，用kdesudo systemsettings命令启动时不会<br />
+&nbsp; &nbsp;已解决：下一个更新包将解决问题。PS: 同样修复没有声音的问题<br />
+&nbsp; &nbsp;技术细节：anthon-updated: + sudo gpasswd -a &quot;$(whoami)&quot; lpadmin <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ sudo gpasswd -a &quot;$(whoami)&quot; audio<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ sudo gpasswd -a &quot;$(whoami)&quot; users <br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ sudo gpasswd -a &quot;$(whoami)&quot; bluetooth<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ sudo alsactl init<br />
+× 建议：开机后设置数字键盘自动开启（每一次输密码都要摁一下很烦人）<br />
+&nbsp; &nbsp;已解决：下一个更新包将自动更改配置<br />
+&nbsp; &nbsp;技术细节：anthon-updated: + cat &gt; /home/&quot;$(whoami)&quot;/.kde/Autostart/numlockx &lt;&lt; EOF<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ #!/bin/sh<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ numlockx on<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ EOF<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ sudo chmod 755 /home/&quot;$(whoami)&quot;/.kde/Autostart/numlockx<br />
+× BUG: 总是会有烦人的PC Speaker蜂鸣<br />
+&nbsp;&nbsp; 已解决：下一个更新包中将屏蔽该设备<br />
+&nbsp; &nbsp;技术细节：anthon-updated: + sudo echo &quot;blacklist pcspkr&quot; &gt; /etc/modprobe.d/nobeep.conf<br />
+× BUG: 蓝牙似乎没有正常工作<br />
+&nbsp; &nbsp;已解决：下一个更新包中将解决该问题<br />
+&nbsp; &nbsp;技术细节：anthon-updated: + sudo apt-get install bluetooth<br />
+× BUG:用户新建之后似乎将使用/bin/sh而非/bin/bash，而且用户没有存在于应该存在的组<br />
+&nbsp; &nbsp;已解决：下一个更新包中将解决（但用户需要新建用户）<br />
+&nbsp; &nbsp;技术细节：/etc/default/useradd: + GROUP=100, 111, 109, 29<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ SHELL=/bin/bash<br />
+× 建议：设置一个随时可以看时间的东西<br />
+&nbsp; &nbsp;用户操作：请自行更改，在桌面上右键，选择新建空面板即可自行定制。<br />
+× BUG: 登录后黑屏。<br />
+&nbsp; &nbsp;已解决，操作失误<br />
+× BUG: 登录画面似乎不如上次流畅<br />
+&nbsp; &nbsp;正常现象：我们添加了新的服务<br />
+× BUG: 文件管理器需要30秒才能打开<br />
+&nbsp; &nbsp;无法解决：未能重现<br />
+× BUG: 无法收起应用菜单<br />
+&nbsp; &nbsp;无法解决：未能重现<br />
+× 建议：正式版去掉prelink吧，对速度影响不大，技术陈旧可能与multiarch冲突，而且难以维护，不适合新手。<br />
+&nbsp;&nbsp; 已应用于下个更新包<br />
+&nbsp; &nbsp;技术细节：anthon-update: - sudo prelink -amvR<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;+ sudo prelink -ua<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;anthon-updated: - sudo prelink -amvR<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;+ sudo prelink -ua<br />
+				<p class="author">
+					<strong>HY-wyl</strong>
+				发表于 2013-3-31 10:30:03	</p>
+			<h3></h3>
+		系统设置-多媒体，卡死，用kdesudo systemsettings命令启动时不会<br />
+还有我电脑变哑巴了，唯一能让它发声的程序是系统设置里的多媒体设置				<p class="author">
+					<strong>juam</strong>
+				发表于 2013-3-31 18:09:23	</p>
+			<h3></h3>
+		建议：设置一个随时可以看时间的东西				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-3-31 18:10:03	</p>
+			<h3></h3>
+		登录后黑屏。目前无解				<p class="author">
+					<strong>juam</strong>
+				发表于 2013-3-31 18:12:28	</p>
+			<h3></h3>
+		建议：开机后设置数字键盘自动开启（每一次输密码都要摁一下很烦人）				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-4-1 06:47:29	</p>
+			<h3></h3>
+		郑兴达：正式版去掉prelink吧，对速度影响不大，技术陈旧可能与multiarch冲突，而且难以维护，不适合新手。				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-4-1 11:13:20	</p>
+			<h3></h3>
+		更新！！！<br />
+宝先森登录黑屏的问题不攻自破。			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-253-1-1.html" target="_blank"><strong>安同最终公测版意见以及Bug反馈帖</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

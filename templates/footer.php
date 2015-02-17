@@ -13,8 +13,8 @@ $langs_f = array(
   ),
   'zh-tw' => array(
     'main'=>'主要站點',
-    'community'=>'Community Sites',
-    'contact'=>'Contact Us',
+    'community'=>'社區相關',
+    'contact'=>'聯絡我們',
   ),
 );
 include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
@@ -33,7 +33,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
         <div class="col-sm-4">
           <h4 align="left"><?php echo $langs_f[$lang]['community'];?></h4>
           <p align="left"><a href="https://bugs.anthonos.org/" rel="external nofollow">Bug Tracker</a></p>
-          <p align="left"><a href="http://wiki-dev.anthonos.org/" rel="external nofollow">TechBase</a></p>
+          <p align="left"><a href="http://techbase.anthonos.org/" rel="external nofollow">TechBase</a></p>
           <p align="left"><a href="http://l10n.anthonos.org/" rel="external nofollow">Localization</a></p>
         </div>
         <div class="col-sm-4 ">
@@ -70,3 +70,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
     </div>
   </div>
 </div>
+
+<script> 
+(function(a,b,c,d,e){function f(){var a=b.createElement("script");a.async=!0;
+a.src="//radar.cedexis.com/1/15314/radar.js";b.body.appendChild(a)}/\bMSIE 6/i
+.test(a.navigator.userAgent)||(a[c]?a[c](e,f,!1):a[d]&&a[d]("on"+e,f))})
+(window,document,"addEventListener","attachEvent","load");
+</script>

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>AnthonOS 二月公测版本 - 雷丘 - AnthonOS 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-817-1-1.html" rel="canonical" />
+<meta name="keywords" content="AnthonOS 二月公测版本 - 雷丘" />
+<meta name="description" content=" AnthonOS 二月公测版本 - 雷丘 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-37.html">AnthonOS 发布区</a> &rsaquo; AnthonOS 二月公测版本 - 雷丘</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2014-2-11 13:44:27	</p>
+			<h3>AnthonOS 二月公测版本 - 雷丘</h3>
+		 本帖最后由 jeffbaichina 于 2014-2-11 23:08 编辑 <br />
+<br />
+啥都先不说...... 雷丘大人镇楼<br />
+http://fc01.deviantart.net/fs70/i/2012/232/3/3/raichu_lineart_by_neonwavedcon-d5bs1gd.png<br />
+<br />
+<br />
+<br />
+AnthonOS 终于完成了...... 由于种种原因推迟了大约三天，那么来讲讲故事......<br />
+<br />
+大约在一个月前 AOSC (安同开源社区缩写) OS2 发布了最终的技术预览，这意味着各个支线的发行版都可以开始分线开发了。于是这个版本效果如何？不提了，发布了五个 patch 版本才算是把基本功能的可用性给保证了，后来开发组总结了下问题的症结:<br />
+<br />
+* 我们根本没有进行充分的测试，当时我们还沉浸在 BuildBot 带来的速度，但是由于构建位于云端，导致测试成本特别高，当时又为了按时发布，因此导致了一系列质量问题。<br />
+* 这个版本的根本目的就是技术的实现和展示，对于用户是不友好的，但是我们似乎没能很好地说明这个问题...... <br />
+<br />
+我个人基本就整理出这两点。接下来的一个月开发组就在处理各种在 OS2 最终技术预览中存在的问题，其中卜同学简直就是 QA 大神，一举消灭了几十个 Bug，虽然着重点基本不在于桌面而是在系统底层或服务器管理和可维护性方面，而我和郑则在处理一些桌面方面的小问题，修修补补。我可以说在现在我发出的这个 Beta 公测版本基本在运行质量和稳定性上是有一定提升的，再加上我和张峻锋在安装程序上下的功夫:<br />
+<br />
+* Qt 重写的界面，更统一<br />
+* 完整的 GRUB 配置以及用户信息定制<br />
+* 漂亮！<br />
+<br />
+我充分相信这个安装器才能给用户一个好的体验和第一印象。另外，这次发行和 OS2 最终技术预览的差别和改进我在这里整理下:<br />
+<br />
+1. 安装程序<br />
+2. Linux Kernel 3.13 作为 AnthonOS 支线的主要内核版本 (Icenowy Linux + CentralPoint 会持续保持在 3.10 以保证长久支持)<br />
+3. KDE 的界面定制，不再是毫无特色的 KDE 默认桌面 (并非针对 KDE 本身)<br />
+4. 对于软件的选择更精，对于基本应用无用的都移除了<br />
+<br />
+简单整理的话，基本就这些了。不过我认为效果还是有很大不同的...... 请看下面两张图<br />
+<br />
+<br />
+<br />
+上为 KDE 原味桌面 (Kubuntu)，而下边是配合 Homerun 启动器的 AnthonOS，区别确实不小，这个 UI 设计我个人觉得也是相当的激进，我也可以分享下这个设计的来由:<br />
+<br />
+It all starts with a dream... a dream to make everybody works as active as they will and make the best use out of a single monitor. 这句广告词后面，其实就是我对这个设计的全部考量，从 OS1 &quot;蒙德里安&quot; 开始，AnthonOS 的 UI 设计就走上了边沿利用的道路:<br />
+<br />
+http://anthonforum.b0.upaiyun.com/forum/201306/17/170511cab84u8isswa858m.png<br />
+<br />
+横版设计，配合全屏启动器 Takeoff (此项目已经死亡，不过社区内有继续维护的愿望)，然后一个系统控制区域，包括通知、托盘和电源控制一律藏在了左边缘，你也许会问为何不放在“开始菜单”内，我的解释就是: 为何需要多按几下鼠标？你只需要把鼠标贴到屏幕左边缘，然后点一下关机即可。虽然这个想法后来被证明存在碎片化操作的可能，而且因为时钟作为一个桌面上的挂件，因此会给用户的使用带来很多的不便，因此在 AnthonOS OS2 的开发过程中，我在设计时走了“中枢路线”: 桌面就是所谓的开始菜单 (应用菜单这个称呼更合适)，然后作为传统，我把通知和系统控制区域放在了屏幕左边...... 这样还是继续保持了一个基本横版的操作方式，左拉，右拉。如图:<br />
+<br />
+<br />
+<br />
+这个通知区域我在设计的时候也是很忐忑的 (确实也有不少表示不能接收的声音)，不过这就是我个人的想法，然后我发布到了微博和论坛上。目前我还是希望能听到更多建设性的改进意见，而不是去废除它。<br />
+<br />
+那么这就是 Beta 1 诞生的一点小介绍。接下来进入正式的发布信息。<br />
+<br />
+代号<br />
+AnthonOS 二月公测的代号为“雷丘”/&quot;Raichu&quot;，寓意为迅猛和进化，来自微博 @Micromacer 的介绍，我们对 Beta 1 的代号进行了一次公投，具体信息可以前往 传送门 了解。<br />
+<br />
+技术基础<br />
+AnthonOS 二月公测基于 AOSC 的 OS2 发行计划，这是一个从源码构建，以 Linux From Scratch 为基本指导并采用 DPKG (Debian 包管理系统) 的一个发行基础。AnthonOS 完全针对 AMD64 架构和 2007 年后的个人电脑进行优化。<br />
+<br />
+特色<br />
+AnthonOS – 它主打 KDE 以及 Xfce 桌面环境，而对于桌面环境的界面有比较大的修改<br />
+- 它的软件更新相当激进，维护者闲下来的时候用户可能忙坏<br />
+- 它努力保持系统大小的轻量以及快速的响应，同时保证使用的简易<br />
+- 它的主要维护者是一个半疯<br />
+来自安同社区百科词条<br />
+<br />
+系统硬件需求<br />
+* 这来自开发组有限的硬件测试资源，仅作为参考。<br />
+<br />
+处理器: 双核心的并带有 AMD64/EM64T 支持的处理器，如果在虚拟机测试则需要相对应的虚拟化技术支持<br />
+内存: 1.5GB 是流畅运行的基本需求，对于完美的体验建议 3GB 或以上的 DDR2 内存<br />
+硬盘: 系统大小为 8.8GB，附加系统运行需要的动态信息一共约 9.4GB<br />
+网络: 必须有可用的网络连接才能完成基本的软件包安装和更新操作<br />
+屏幕: 1024x768, 32 位真彩色或更高以保证基本的运行和任务切换便利性<br />
+<br />
+下载<br />
+anthonos_beta1-raichu.iso , MD5SUM: 3d29d978c2d6d68d6f295355630cd88e<br />
+http://mirror.anthonos.org/os2-releases/anthonos/february-2014/anthonos_beta1-raichu.iso<br />
+<br />
+已知问题<br />
+1. 安装在最后一个阶段会暂停响应大约 15-30 秒; <br />
+2. 安装后第一次启动会遇到 KDM 严重错误，但只需重新填入用户名即可;<br />
+<br />
+问题和基本支持<br />
+反馈问题请前往 http://bug.anthonos.org<br />
+你也可以发送邮件给我 (主要维护者) mailto:jeffbaichina@members.fsf.org<br />
+<br />
+				<p class="author">
+					<strong>daming_z</strong>
+				发表于 2014-2-11 16:42:53	</p>
+			<h3></h3>
+		顶一下。。在线等待下载				<p class="author">
+					<strong>sea</strong>
+				发表于 2014-2-11 17:20:15	</p>
+			<h3></h3>
+		:victory:				<p class="author">
+					<strong>daming_z</strong>
+				发表于 2014-2-11 21:49:15	</p>
+			<h3></h3>
+		http://mirror.anthonos.org/os2-releases/anthonos/february-2014/anthonos_beta1-raichu.iso				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2014-2-11 22:43:51	</p>
+			<h3></h3>
+		daming_z 发表于 2014-2-11 21:49 static/image/common/back.gif<br />
+http://mirror.anthonos.org/os2-releases/anthonos/february-2014/anthonos_beta1-raichu.iso<br />
+<br />
+我不确定是否上传完毕，请稍等				<p class="author">
+					<strong>朱宇辉</strong>
+				发表于 2014-2-15 10:34:13	</p>
+			<h3></h3>
+		http://pan.baidu.com/s/1dD5mamH				<p class="author">
+					<strong>freddy4212</strong>
+				发表于 2014-2-16 21:50:03	</p>
+			<h3></h3>
+		來試試,順便加裝DDE			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-817-1-1.html" target="_blank"><strong>AnthonOS 二月公测版本 - 雷丘</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

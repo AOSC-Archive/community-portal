@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>【里程碑】安同里程碑基准版本“神龙” - AnthonOS 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-120-1-1.html" rel="canonical" />
+<meta name="keywords" content="【里程碑】安同里程碑基准版本“神龙”" />
+<meta name="description" content=" 【里程碑】安同里程碑基准版本“神龙” ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-37.html">AnthonOS 发布区</a> &rsaquo; 【里程碑】安同里程碑基准版本“神龙”</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-4 18:31:48	</p>
+			<h3>【里程碑】安同里程碑基准版本“神龙”</h3>
+		 本帖最后由 jeffbaichina 于 2013-2-9 23:10 编辑 <br />
+<br />
+里程碑：“神龙”<br />
+“所谓神龙腾空，春节快乐（Nonsense……）”<br />
+<br />
+这是安同的第一个1.0阶段版本，也就是说，安同已经进入了准正式版阶段！安同的技术实施已经停止，目前已经进入消灭Bug并且微调的阶段了。在这个阶段中，群众参与相当关键，越多参与，越多反馈，那么安同就能越完善，正式版到来的那一天也能不断提前！我们需要你的参与！<br />
+<br />
+先给大家个底，这是butangmucat的评测：<br />
+传送门 <br />
+<br />
+送点截图，找butangmucat借的：<br />
+<br />
+<br />
+<br />
+<br />
+最终，你将得到的安同包括这些：<br />
+· 永远都是最新的Linux Kernel主线版本<br />
+· KDE桌面环境<br />
+· WPS for Linux办公套件<br />
+· 一个精心设计的桌面<br />
+· 不断更新的壁纸<br />
+· VLC媒体播放器<br />
+· 谷歌浏览器<br />
+· 一个坚实的技术基础<br />
+· 绝对是你用过最快的操作系统<br />
+<br />
+特殊说明：安同的安装版本，不包括直接启动的Live版本一律遵从LGPL（放松的GPL协议），包括一定数量的闭源应用、驱动、以及系统库。请一定理解我们的用意，我们唯一的目的是为了给用户提供更多的便利，让我们的目标用户群——家庭以及非专业用户能用的舒服。那么，请狂热的开源主义者自行绕开，这里不是争论的地方。<br />
+<br />
+发布“神龙”的下载，（本应）包括三个玩意：<br />
+· 带有文本安装界面的安同，下载&nbsp; &nbsp;<br />
+&nbsp;&nbsp;安装说明：<br />
+&nbsp;&nbsp;1、请将该光盘刻录到DVD或使用安同硬盘安装器进行启动准备；<br />
+&nbsp;&nbsp;2、从光盘启动，看到boot&gt;之后请按下回车开始启动安装环境；<br />
+&nbsp;&nbsp;3、请运行uvesafb 800x600-32以获得中文显示（800x600可以替换为自己的屏幕分辨率）；<br />
+&nbsp;&nbsp;4、请运行cfdisk命令进行分区；<br />
+&nbsp;&nbsp;5、分区结束后请输入命令mkfs.ext4 /dev/sdxx （/dev/sdxx是你的具体硬盘分区）；<br />
+&nbsp;&nbsp;6、运行setup开始安装；<br />
+&nbsp;&nbsp;7、请根据指示进行安装；<br />
+&nbsp;&nbsp;8、安装的解包环节结束之后，安装程序将询问是否安装GRUB，请选择是；<br />
+&nbsp;&nbsp;9、安装程序将引导安同（请注意，VirtualBox可能在这个环节崩溃）；<br />
+&nbsp;&nbsp;10、进入安同桌面后，请按下Alt+F2，输入kdesudo konsole，然后按下回车；<br />
+&nbsp;&nbsp;11、在弹出的密码框中输入anthon.beta然后选择确定，anthon.beta是安同的管理密码；<br />
+&nbsp;&nbsp;12、在弹出的命令行窗口运行dpkg-reconfigure grub-pc命令以安装引导器；<br />
+&nbsp;&nbsp;13、根据指示进行配置；<br />
+&nbsp;&nbsp;14、请重启你的电脑，这时，安同已经被安装到你的电脑上。&nbsp; &nbsp;<br />
+· 安同的图形安装环境，可能带有一定的Bug，下载&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;安装说明：<br />
+&nbsp;&nbsp;1、请将该光盘刻录到DVD或使用安同硬盘安装器进行启动准备；<br />
+&nbsp;&nbsp;2、从光盘启动，耐心等待；<br />
+&nbsp;&nbsp;3、当你见到图形界面之后将会看见一个对话框提示欢迎来到安装程序；<br />
+&nbsp;&nbsp;4、按照指示进行操作即可；<br />
+&nbsp;&nbsp;5、安装程序将引导安同（请注意，VirtualBox可能在这个环节崩溃）；<br />
+&nbsp;&nbsp;6、进入安同桌面后，请按下Alt+F2，输入kdesudo konsole，然后按下回车；<br />
+&nbsp;&nbsp;7、在弹出的密码框中输入anthon.beta然后选择确定，anthon.beta是安同的管理密码；<br />
+&nbsp;&nbsp;8、在弹出的命令行窗口运行dpkg-reconfigure grub-pc命令以安装引导器；<br />
+&nbsp;&nbsp;9、根据指示进行配置；<br />
+&nbsp;&nbsp;10、请重启你的电脑，这时，安同已经被安装到你的电脑上。&nbsp; &nbsp;<br />
+· 安同Live版本，可以直接从光盘或者U盘启动<br />
+&nbsp;&nbsp;FAIL：我无法将live-config脚本应用于systemd！<br />
+<br />
+我没有光盘可供刻录，也没有U盘，怎么办（泪目）？<br />
+没有关系，安同硬盘安装器一定能解决你的问题。下载帖&nbsp; &nbsp;<br />
+<br />
+我发现问题了！<br />
+请发送邮件至anthonos-dev@freelists.org，这是我们开发人员的邮件列表，我们将在第一时间讨论解决方案并在最短时间内给出更新或补丁。<br />
+				<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-2-5 12:28:36	</p>
+			<h3></h3>
+		+ 安同开始程序0.1 无须刻录，也不需键入命令，只需轻轻一点，轻松实现硬盘安装。				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-8 17:37:37	</p>
+			<h3></h3>
+		LMY441900 发表于 2013-2-5 12:28 static/image/common/back.gif<br />
++ 安同开始程序0.1 无须刻录，也不需键入命令，只需轻轻一点，轻松实现硬盘安装。 ...<br />
+<br />
+今晚放出的版本就是0.1吗？				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-8 18:02:35	</p>
+			<h3></h3>
+		求围观				<p class="author">
+					<strong>tangziqi</strong>
+				发表于 2013-2-8 21:12:28	</p>
+			<h3></h3>
+		{:2_25:}{:2_27:}{:2_29:}				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-8 21:34:41	</p>
+			<h3></h3>
+		望眼欲穿				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-8 21:39:25	</p>
+			<h3></h3>
+		自觉下载了。。。。				<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-2-8 21:53:53	</p>
+			<h3></h3>
+		安同硬盘安装工具（安同开始程序）0.1.0.0正式版本，明天发布！大家可以硬盘安装！				<p class="author">
+					<strong>朱宇辉</strong>
+				发表于 2013-2-8 21:59:41	</p>
+			<h3></h3>
+		{:3_52:}我来啦！！！！！！！！！真机安装进行中！！！				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-9 10:40:46	</p>
+			<h3></h3>
+		泪奔～～～！等硬盘安装神器中				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-9 12:15:26	</p>
+			<h3></h3>
+		gui installer很给力				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-9 12:34:08	</p>
+			<h3></h3>
+		注意：dpkg-reconfigure grub-pc可能无效<br />
+解决方案：<br />
+启动器——系统——命令行<br />
+sudo grub-install /dev/sda<br />
+sudo update-grub				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-9 13:47:39	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-2-9 12:34 static/image/common/back.gif<br />
+注意：dpkg-reconfigure grub-pc可能无效<br />
+解决方案：<br />
+启动器——系统——命令行<br />
+<br />
+<br />
+貌似好了。谢谢。。。				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-9 19:06:30	</p>
+			<h3></h3>
+		部分用户可能遇到声卡不工作的情况，请打开终端运行“sudo alsactl init”（不包含外侧引号）来激活声卡				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-9 20:04:55	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-2-9 19:06 static/image/common/back.gif<br />
+部分用户可能遇到声卡不工作的情况，请打开终端运行“sudo alsactl init”（不包含外侧引号）来激活声卡 ...<br />
+<br />
+考虑添加到初始配置脚本中				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-9 20:25:01	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-9 20:04 static/image/common/back.gif<br />
+考虑添加到初始配置脚本中<br />
+<br />
+其实只需要运行一次就可以了				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-9 20:38:21	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-2-9 20:25 static/image/common/back.gif<br />
+其实只需要运行一次就可以了<br />
+<br />
+你的意思是，我从来没有运行过？在封装前？				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-9 21:00:39	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-2-9 20:38 static/image/common/back.gif<br />
+你的意思是，我从来没有运行过？在封装前？<br />
+<br />
+是遇到新的硬件如果没工作就运行一次<br />
+并不是所有的时候都需要，封装之前也不需要<br />
+这个有人品问题在里面				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-9 21:02:14	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-2-9 21:00 static/image/common/back.gif<br />
+是遇到新的硬件如果没工作就运行一次<br />
+并不是所有的时候都需要，封装之前也不需要<br />
+这个有人品问题在里面 ...<br />
+<br />
+那干脆就都运行呗，直接免了这个可能性……				<p class="author">
+					<strong>宝先森</strong>
+				发表于 2013-2-10 01:39:06	</p>
+			<h3></h3>
+		一切正常，只是觉得用着累。。。可能是还不习惯这样的操作方式吧。。慢慢熟悉下。。。			<div class="page">
+		页: 
+<strong>[1]</strong> 
+<a href="tid-120.html?page=2">2</a> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-120-1-1.html" target="_blank"><strong>【里程碑】安同里程碑基准版本“神龙”</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

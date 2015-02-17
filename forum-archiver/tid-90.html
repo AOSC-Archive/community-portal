@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>【放弃发布版本】安同每周测试版本代号“红移” - AnthonOS 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-90-1-1.html" rel="canonical" />
+<meta name="keywords" content="【放弃发布版本】安同每周测试版本代号“红移”" />
+<meta name="description" content=" 【放弃发布版本】安同每周测试版本代号“红移” ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-37.html">AnthonOS 发布区</a> &rsaquo; 【放弃发布版本】安同每周测试版本代号“红移”</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-1-20 16:10:58	</p>
+			<h3>【放弃发布版本】安同每周测试版本代号“红移”</h3>
+		 本帖最后由 jeffbaichina 于 2013-1-23 16:19 编辑 <br />
+<br />
+本周代号：“红移”<br />
+“所谓快得让你撕心裂肺、瞬间吓尿的速度！”<br />
+<br />
+本周展望和主要目标：<br />
+· 实现clonezilla安装系统的自动化和简易化（暂时不要求图形化）<br />
+· 解决大部分的配置文件错误<br />
+· 加入完整可用的驱动软件<br />
+· 解决KDE特效导致的温度异常升高问题<br />
+· 提高内核的稳定性<br />
+· 将精简系统作为长期目标<br />
+<br />
+本周修改清单：<br />
+· 加入了非自由的网络驱动<br />
+· 修改默认协议为LGPL以适应添加的非自由（闭源）软件或驱动程序<br />
+· 一个新的桌面背景<br />
+· 移除了上周的桌面背景<br />
+· 完全删除了sysvinit初始系统<br />
+· 默认将内核、屏幕输出重定向至null，减少不必要的迷惑<br />
+· 完整替换debian-desktop-base包含的文件为安同<br />
+· 移除了默认的本地邮件客户端KMail<br />
+· 移除了Opera-Next浏览器而用稳定的Opera代替<br />
+· 更改Opera主题为“Blue Opera”，配色方案为“蓝调情怀”<br />
+· 更新/etc/skel目录中的默认用户配置模型<br />
+· 版本被定义为0.7.4a，锁定并存档<br />
+· 小幅度调整了Dolphin的外观<br />
+· 更新了update-grub脚本<br />
+· 修复了locales的错误设置，解决了部分乱码的问题<br />
+· 更新/etc/skel目录中的默认用户配置模型<br />
+· 版本被定义为0.7.5a，锁定并存档<br />
+· 小幅度调整了默认plymouth开机画面主题<br />
+· 调整fcitx小企鹅候选词的数量为10个<br />
+· 调整DPI设置为110<br />
+· 小幅度调整LibreOffice界面<br />
+· 调整了内核启动的压缩策略<br />
+· 移除了KOrganizer以及KAddressboook<br />
+· 移除了Kontact<br />
+· 启用了fcitx小企鹅输入法的cloudpinyin模块<br />
+· 移除了大量关于网络以及开发的包<br />
+· 移除了大量的python包<br />
+· 更新/etc/skel目录中的默认用户配置模型<br />
+· 版本被定义为0.7.14a，锁定并存档<br />
+· 移除了libreoffice-base<br />
+· 破坏了kamerka的入口<br />
+· 清理了/var/log<br />
+· 进一步优化了系统启动，启动速度缩短20-30%<br />
+· 注释了Debian Sid更新源，以免在系统改动过程中破坏进程<br />
+· 清理了GTK的库<br />
+· 更新了Grub默认外观设置<br />
+· 小幅度修改了plymouth默认主题外观<br />
+· 移除了MIDI驱动<br />
+· 新增了firmware-linux等等许多的补充固件<br />
+· 优化了Opera的网页渲染性能<br />
+· 解决了Opera的拖动偏离的问题<br />
+· 重写了微软蓝影无线键鼠信号适配器的驱动，修正了Arc Touch等鼠标的错位问题<br />
+· 更新了update-grub的脚本<br />
+· 更新了/etc/skel目录中的默认用户模型<br />
+· 版本被定义为0.7.26b，准备明日公测！<br />
+· 将系统打包为tarball<br />
+· 版本被定义为0.7.26c，明日提供给开发者（需要特殊资格）<br />
+（版本于2013年1月22日19时55分锁定，进入下一周期的开发）<br />
+<br />
+已知问题：<br />
+Kamerka提示无法连接到V4L（Video For Linux）设备<br />
+分析：可能存在于缺失的内核模块或者错误的显示设备呼叫配置<br />
+<br />
+历史残留问题：<br />
+暂无<br />
+<br />
+开发组意见收集：<br />
+1、是否将opera-next更改为opera？<br />
+&nbsp; &nbsp;&nbsp;&nbsp;已经替换为Opera稳定版本。<br />
+2、是否移除amarok而完全采用vlc？<br />
+&nbsp; &nbsp;&nbsp;&nbsp;正在考虑移除。<br />
+3、是否提供本地的微博客户端？<br />
+&nbsp; &nbsp;&nbsp;&nbsp;否。<br />
+4、是否保留本地的邮件客户端？<br />
+&nbsp; &nbsp;&nbsp;&nbsp;否。<br />
+5、是否提供桌面小工具？<br />
+&nbsp; &nbsp;  是，正在寻找合适的应用。<br />
+6、是否提供更多的系统级应用？<br />
+&nbsp; &nbsp;  同上。<br />
+<br />
+截图：<br />
+还早哦……<br />
+<br />
+				<p class="author">
+					<strong>绿地球</strong>
+				发表于 2013-1-20 17:39:17	</p>
+			<h3></h3>
+		关于“老赫”版本的建议和使用报告<br />
+1安装界面繁琐？分区方案？<br />
+2速度改善很大&nbsp; &nbsp;但空闲剩余内存有些少&nbsp;&nbsp;（768内存19可用？）<br />
+3关机无法找到，（命令行见4）。壁纸有些花<br />
+4用户名？密码&nbsp;&nbsp;root密码&nbsp;&nbsp;全不能设置（导致关机不可）<br />
+5主屏幕用户自己的地方太少，比较死板，建议考虑像安卓，一个主屏幕（放链接/小工具？）+一个应用列表（自己分组）<br />
+6以上				<p class="author">
+					<strong>绿地球</strong>
+				发表于 2013-1-20 17:43:37	</p>
+			<h3></h3>
+		<br />
+1、是否将opera-next更改为opera？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 答：&nbsp; &nbsp;&nbsp;&nbsp;稳定第一&nbsp; &nbsp;是<br />
+2、是否移除amarok而完全采用vlc？3、是否提供本地的微博客户端？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 答： vlc 是&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;本地微博感觉用处不大，加进软件源即可<br />
+4、是否保留本地的邮件客户端？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;答&nbsp; &nbsp;邮件客户端很少用了（邮件也是）<br />
+5、是否提供桌面小工具？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;答&nbsp;&nbsp;必须<br />
+<br />
+6、是否提供更多的系统级应用？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;答&nbsp;&nbsp;必须<br />
+&nbsp;&nbsp;<br />
+<br />
+<br />
+以上&nbsp; &nbsp;个人看法<br />
+				<p class="author">
+					<strong>绿地球</strong>
+				发表于 2013-1-20 17:48:24	</p>
+			<h3></h3>
+		个人 觉得&nbsp; &nbsp;安同壁纸有点太花哨				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-1-20 17:49:26	</p>
+			<h3></h3>
+		绿地球 发表于 2013-1-20 17:43 static/image/common/back.gif<br />
+1、是否将opera-next更改为opera？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 答：&nbsp; &nbsp;&nbsp;&nbsp;稳定第一&nbsp; &nbsp;是<br />
+2、是否移除amarok而完全采 ...<br />
+<br />
+你好！<br />
+我现在按点回复：<br />
+1、没问题，我们马上整改<br />
+2、鉴于社区对amarok的评价我们暂时保留它<br />
+3、计入一票<br />
+4、计入一票<br />
+5、计入一票<br />
+6、计入一票				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-1-20 17:50:19	</p>
+			<h3></h3>
+		绿地球 发表于 2013-1-20 17:48 static/image/common/back.gif<br />
+个人 觉得&nbsp; &nbsp;安同壁纸有点太花哨<br />
+<br />
+这个每周都改，你们说喜欢的，就是最后将会包括的。				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-1-20 17:53:40	</p>
+			<h3></h3>
+		绿地球 发表于 2013-1-20 17:39 static/image/common/back.gif<br />
+关于“老赫”版本的建议和使用报告<br />
+1安装界面繁琐？分区方案？<br />
+2速度改善很大&nbsp; &nbsp;但空闲剩余内存有些少&nbsp;&nbsp;（7 ...<br />
+<br />
+同样地，按点回答：<br />
+1、这个clonezilla安装的方式是暂时的折中方案，以后将会更改<br />
+2、将进一步调整缓存策略（根据讨论中你发的截图）<br />
+3、关机的方法在截图中有所描述（不够清晰？），我完整做一次解释：将鼠标移动到右侧边缘，上下滑动你的鼠标，你将会看到关闭按钮，单击并进行下一步操作<br />
+4、用户设置的问题，将在下一版本解决。关机不能？貌似没有发现这个问题，定义为无法重现。<br />
+5、这个作为低优先级的问题，搁置<br />
+<br />
+感谢你的建议				<p class="author">
+					<strong>ljq050511</strong>
+				发表于 2013-1-20 21:15:57	</p>
+			<h3></h3>
+		1、是否将opera-next更改为opera？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 答：是<br />
+2、是否移除amarok而完全采用vlc？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;答：是<br />
+3、是否提供本地的微博客户端？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;答：否<br />
+4、是否保留本地的邮件客户端？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;答：否<br />
+5、是否提供桌面小工具？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;答：是<br />
+6、是否提供更多的系统级应用？&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;答：是				<p class="author">
+					<strong>moling2088</strong>
+				发表于 2013-1-23 10:22:18	</p>
+			<h3></h3>
+		精简系统，镜像太大了				<p class="author">
+					<strong>moling2088</strong>
+				发表于 2013-1-23 10:22:39	</p>
+			<h3></h3>
+		精简系统，镜像太大了			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-90-1-1.html" target="_blank"><strong>【放弃发布版本】安同每周测试版本代号“红移”</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

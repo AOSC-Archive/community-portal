@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>【Patch】关于安同开始程序的两个改进补丁 - 项目发布 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-686-1-1.html" rel="canonical" />
+<meta name="keywords" content="【Patch】关于安同开始程序的两个改进补丁" />
+<meta name="description" content=" 【Patch】关于安同开始程序的两个改进补丁 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-93.html">项目发布</a> &rsaquo; 【Patch】关于安同开始程序的两个改进补丁</div>
+
+<div id="content">
+			<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-7-10 11:23:34	</p>
+			<h3>【Patch】关于安同开始程序的两个改进补丁</h3>
+		1.探测引导器阶段<br />
+请使用以下代码<br />
+<br />
+if exist %systemdrive%\boot.ini (<br />
+set loader=''nt5''(变量名精简,下文中同)<br />
+ goto schn_inst<br />
+)<br />
+if exist %systemroot%\Boot\ (<br />
+ set loader=''nt6''<br />
+ goto schn_inst<br />
+)<br />
+<br />
+代码完毕。<br />
+接下来请删除强制设定loader参数部分。<br />
+<br />
+可解决隐藏分区, 非C盘安装问题				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-7-10 11:37:03	</p>
+			<h3></h3>
+		 本帖最后由 ruojiner 于 2013-7-10 12:46 编辑 <br />
+<br />
+2.nt5内核引导修改段<br />
+<br />
+代码:<br />
+<br />
+attrib -s -h -r C:\Boot.ini<br />
+mkdir C:\atosbkup<br />
+copy c:\boot.ini c:\atosbkup<br />
+echo C:\grldr=''启动安装程序''&gt;&gt;c:\boot.ini<br />
+goto schn_finish<br />
+<br />
+代码完毕<br />
+<br />
+注: timeout=*的问题正在考虑中, 目前可让用户手动修改				<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-7-10 11:40:01	</p>
+			<h3></h3>
+		回复楼主：<br />
+1、%systemdrive%采用；<br />
+2、变量名精简属于计划内变化，（采用）；<br />
+3、不能解决隐藏分区问题：请楼主注意100MB的隐藏分区并没有被分配盘符，必须获取其UID然后通过mountvol挂载其到文件夹中实现读写。既然能够启动，也不需纠结如此问题。（再说无法判断到底是否真的有这样一个隐藏分区，扔给用户判断是不理智的。）				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-7-10 11:41:44	</p>
+			<h3></h3>
+		另外, Patch1中。 里面的''nt5'' ''nt6''变量名需要在后面需要提取%loader%变量的代码中对应修改				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-7-10 11:47:39	</p>
+			<h3></h3>
+		LMY441900 发表于 2013-7-10 11:40<br />
+回复楼主：<br />
+1、%systemdrive%采用；<br />
+2、变量名精简属于计划内变化，（采用）；<br />
+<br />
+<br />
+实测用%systemroot%\Boot\完全可以在存在隐藏分区情况下正确识别出系统类型。隐藏分区的问题, 只是把bootmgr文件放在这个隐藏分区中, 原代码无法读到。<br />
+而grldr不需要放在隐藏分区内吧。。				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-7-10 16:39:45	</p>
+			<h3></h3>
+		 本帖最后由 ruojiner 于 2013-7-10 16:41 编辑 <br />
+<br />
+这个其实可以使用别的方法实现修改<br />
+<br />
+<br />
+@ECHO OFF<br />
+ECHO &gt;&gt;c:\boot.ini.bak<br />
+ECHO timeout=10&gt;&gt;c:\boot.ini.bak<br />
+FOR /f &quot;tokens=* delims=&quot; %%i in ( findstr /i /v &quot;timeout loader]&quot; C:\boot.ini ) <br />
+&nbsp;&nbsp;do (ECHO %%i&gt;&gt;c:\boot.ini.bak)<br />
+DEL /q /s /a /f c:\boot.ini&amp;&amp;<br />
+REN c:\boot.ini.bak boot.ini&amp;&amp;attrib +h +s +r c:\boot.inipause<br />
+<br />
+以上代码可以自动把当前的timeout 设置为10,			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-686-1-1.html" target="_blank"><strong>【Patch】关于安同开始程序的两个改进补丁</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

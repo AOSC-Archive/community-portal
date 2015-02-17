@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>实战：CentralPoint部署Typecho博客程序 - CentralPoint 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-281-1-1.html" rel="canonical" />
+<meta name="keywords" content="实战：CentralPoint部署Typecho博客程序" />
+<meta name="description" content=" 实战：CentralPoint部署Typecho博客程序 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-123.html">CentralPoint 反馈和支持</a> &rsaquo; 实战：CentralPoint部署Typecho博客程序</div>
+
+<div id="content">
+			<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-4-6 00:53:44	</p>
+			<h3>实战：CentralPoint部署Typecho博客程序</h3>
+		 本帖最后由 butangmucat 于 2013-4-6 01:12 编辑 <br />
+<br />
+原文：http://wiki.anthonos.org/?p=172<br />
+<br />
+本指南假定你已经安装好了新发布的0.99pre系统和cp-update_1.0.0~vanessa-1，否则请参照安同安装指南安装0.99pre并到这里下载安装cp-update_1.0.0~vanessa-1<br />
+本例中服务器为端口映射后的虚拟机，地址为127.0.0.1:22，用户为tux<br />
+http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B7-298x300.png<br />
+<br />
+在提示输入密码“linux”之后，系统会自动打开一个shell窗口和一个sftp commander。<br />
+http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B71-300x179.png<br />
+<br />
+执行命令<br />
+CentralPoint使用的是MariaDB数据库来提供MySQL相关功能，目前除CP以外OpenSUSE Slackware Arch Magiea也已经使用MariaDB代替了MySQL<br />
+连接到MariaDB执行命令<br />
+# mysql -u root -p<br />
+<br />
+接着会提示输入密码，输入”toor”<br />
+添加新用户和对应的数据库INSERT INTO mysql.user(Host,User,Password) values(“localhost”,”typecho”,password(“password”));<br />
+<br />
+<br />
+CREATE DATABASE typecho;<br />
+<br />
+FLUSH PRIVILEGES;<br />
+<br />
+这样就建立了typecho用户，密码password，并授予该用户typecho数据库的全部权限<br />
+输入“exit”来离开MySQL客户端<br />
+<br />
+安装Typecho获取并安装Typecho源程序# axel http://typecho.googlecode.com/files/0.8\(10.8.15\)-release.tar.gz<br />
+<br />
+cp -r build/* /var/www<br />
+<br />
+配置目录权限执行命令<br />
+# chmod -R 777 /var/www<br />
+<br />
+初始化Typecho注意：本例中虚拟机的80端口被映射为主机的10080端口，实际操作时请根据情况自行修改相关URL信息等主机浏览器访问http://127.0.0.1:10080，如果出现下面的界面，你离成功就不远了！http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B76-300x240.png <br />
+<br />
+*在这一页，按照下面的截图配置“数据库配置”部分<br />
+http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B77-300x240.png<br />
+在下面的“创建您的管理员帐号”部分，“网站地址”不要动，用户名可以修改成你喜欢的，比如我喜欢修改成“root”，邮件地址就填你的邮箱当你看到这个界面的时候，恭喜你，安装完成，你可以点击“点击这里访问您的控制面板”来访问后台，并且记得修改自动生成的默认密码！！！<br />
+http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B78-300x240.png <br />
+还有一个欢迎界面，不错啊，连作者都建议更改密码了，你还敢不改！！<br />
+http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B79-300x240.png <br />
+个人信息控制台，头像来自Gravatar<br />
+http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B710-300x240.png <br />
+简单的后台<br />
+http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B711-300x240.png <br />
+符合最简原则的前台<br />
+http://wiki.anthonos.org/wp-content/uploads/2013/04/%E6%8D%95%E8%8E%B712-300x240.png <br />
+不错，内存占用不算多<br />
+结语<br />
+Have fun!<br />
+			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-281-1-1.html" target="_blank"><strong>实战：CentralPoint部署Typecho博客程序</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

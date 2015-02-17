@@ -79,6 +79,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <li>2. Get tarballs of AOSC OS and deploy them manually.</li>
                 </ul>
               </p>
+              <hr class="divider" />
               <h2>Installation using AOSC LiveKit</h2>
               <p>To install AOSC OS with LiveKit and the LiveKit Installer, download the LiveKit
                 iso image from the button provided below.</p>
@@ -91,6 +92,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </ul>
                 <a href="http://repo.anthonos.org/os3-releases/01_Beta/00_LiveKit/LATEST.iso" class="btn btn-default">Download</a>
               </p>
+              <hr class="divider" />
               <h2>Manual Deployment Using Tarballs</h2>
               <p>Apart from using the LiveKit image for Internet based installation, another option
               is to install directly from the released tarballs. Here's how to do it.
@@ -112,6 +114,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                     <a href="http://bugs.anthonos.org">bug tracker</a>);</li>
                 </ul>
               </p>
+              <hr class="divider" />
               <p>Happy hacking...</p>
             </div>
             <div class="tab-pane" id="dpkg">
@@ -121,10 +124,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with GNOME</h2>
-                  <p>AOSC OS Out-of-Box Preview with GNOME desktop, version 3.14. GNOME is a entirely free and open desktop
+                  <p>AOSC OS Beta with GNOME desktop, version 3.14. GNOME is a entirely free and open desktop
                   environment and application suite brought to you by the GNOME Foundation. GNOME is chosen to be the default
                   desktop environment for some major Linux distributions like Fedora.</p>
-                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/gnome/aosc-os3_oobp-gnome_after-class-tea-time_amd64_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_gnome-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
                   <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
@@ -135,12 +138,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with XFCE</h2>
-                  <p>AOSC OS Out-of-Box Preview with XFCE desktop, version 4.11. XFCE is a lightweight, yet elegant and easy to use
+                  <p>AOSC OS Beta with XFCE desktop, version 4.11. XFCE is a lightweight, yet elegant and easy to use
                   desktop environment. XFCE is built upon GTK+ 2 interface toolkit, the predecessor to GTK+ 3 used by the GNOME
                   desktop environment. XFCE runs releatively fast on older machines dated all the way back to 2001 (for AOSC OS,
                   you need a machine that runs 64-bit operating system). XFCE is adapted to, cutting edge technologies like
                   systemd-logind.</p>
-                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/xfce/aosc-os3_oobp-xfce_after-class-tea-time_rev1_amd64_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_xfce-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
                   <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
@@ -151,11 +154,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with Cinnamon</h2>
-                  <p>AOSC OS Out-of-Box Preview with Cinnamon Desktop, version 2.4. Cinnamon is a fork of GNOME shell. It&#39;s one
+                  <p>AOSC OS Beta with Cinnamon Desktop, version 2.4. Cinnamon is a fork of GNOME shell. It&#39;s one
                   of the default desktop environments for Linux Mint with guaranteed ease of use. Cinnamon needs a machine with
                   decent amount of performance, just like the GNOME desktop. Arguably it is more adapted to mouse and keyboard use
                   than the GNOME shell.</p>
-                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/cinnamon/aosc-os3_oobp-cinnamon_after-class-tea-time_amd64_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_cinnamon-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
                   <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
@@ -166,26 +169,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with MATE</h2>
-                  <p>AOSC OS Out-of-Box Preview with MATE desktop, version 1.8.1. MATE is a fork of GNOME 2.x, a perfect shelter
+                  <p>AOSC OS Beta with MATE desktop, version 1.8.1. MATE is a fork of GNOME 2.x, a perfect shelter
                   for those who goes strongly against the GNOME 3, and the GNOME shell. Although being a legacy fork of a desktop,
                   it&#39;s well adapted to newer technologies like UDisks-2 and UPower 0.99, they even have a plan to bring Wayland
                   support to it!</p>
-                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/mate/aosc-os3_oobp-mate_after-class-tea-time_amd64_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_mate-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
                   <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
-                </div>
-              </div>
-              <hr class="divider" />
-              <div class="row">
-                <div class="col-sm-2">
-                  <img src="/img/oobp-logo/enlightenment-oobp.png" width="96px" height="96px" />
-                </div>
-                <div class="col-sm-10">
-                  <h2>AOSC OS with Enlightenment</h2>
-                  <p>AOSC OS Out-of-Box Preview with Enlightenment desktop, version 0.19.1. Enlightenmen is a very radically
-                  designed desktop environment built upon their own EFL library (Enlightenment Foundation Library). This desktop
-                  comes with full Wayland capabilities. This desktop is under heavy construction (as always), unless you are really
-                  a big fan or an experienced user, we do not recommend this for daily usage.</p>
-                  <div class="alert alert-danger">OOBP not ready: blocker, not fully tested.</div>
                 </div>
               </div>
               <hr class="divider" />
@@ -195,39 +184,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with Plasma</h2>
-                  <p>AOSC OS Out-of-Box Preview with (KDE) Plasma desktop, version 5. Plasma desktop is formerly known as the KDE,
-                  or K Desktop Environment. Plasma desktop is built fully upon Qt 5 technologies, with some plugins built to make
+                  <p>AOSC OS Beta with (KDE) Plasma desktop, version 4. Plasma desktop is formerly known as the KDE,
+                  or K Desktop Environment. Plasma desktop is built fully upon Qt technologies, with some plugins built to make
                   Plasma work better. Plasma desktop requires a machine with decent amount of processor and graphics
                   performance.</p>
-                  <div class="alert alert-danger">OOBP not ready: pending, waiting for KDE Applications 14.12 to be released.</div>
-                </div>
-              </div>
-              <hr class="divider" />
-              <div class="row">
-                <div class="col-sm-2">
-                  <img src="/img/oobp-logo/kodi-oobp.png" width="96px" height="96px" />
-                </div>
-                <div class="col-sm-10">
-                  <h2>AOSC OS with Kodi</h2>
-                  <p>AOSC OS Out-of-Box Preview with Kodi media center, version 14. This version of AOSC OS is built for media
-                  center computers or Linux-based TV boxes. Kodi media center is formerly known as XBMC (XBox Media Center), while
-                  maintaining a small footprint, it&#39;s probably the most powerful media center solution you can find in all of
-                  the UNIX/Linux computing world.</p>
-                  <div class="alert alert-danger">OOBP not ready: blocker, Kodi 14.0 Beta 2 cannot be built successfully.</div>
-                </div>
-              </div>
-              <hr class="divider" />
-              <div class="row">
-                <div class="col-sm-2">
-                  <img src="/img/oobp-logo/pantheon-oobp.png" width="96px" height="96px" />
-                </div>
-                <div class="col-sm-10">
-                  <h2>AOSC OS with Pantheon</h2>
-                  <p>AOSC OS Out-of-Box Preview with Pantheon desktop. Pantheon desktop is the default desktop environment used and
-                  maintained by the ElementaryOS. Pantheon is a lightweight GTK+ 3 based desktop environment. Although being fast,
-                  and probably beautiful, it&#39;s plagued with stability issues. Be careful when choosing this desktop
-                  environment.</p>
-                  <div class="alert alert-danger">OOBP not ready: blocker, Pantheon is broken with the update to GTK+ 3.14.</div>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_kde-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -237,26 +199,40 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with Unity</h2>
-                  <p>AOSC OS Out-of-Box Preview with Unity desktop, version 7. Unity desktop is mostly known as the default Ubuntu
+                  <p>AOSC OS Beta with Unity desktop, version 7. Unity desktop is mostly known as the default Ubuntu
                   interface. This Unity build is brought to you by the AOSC OS development group, with several fixes and patches to
                   remove all Ubuntu specific features and interface. Unity is often time considered as unstable, but still, very
                   suitable for new users.</p>
-                  <div class="alert alert-danger">OOBP not ready: blocker, Unity is broken with the update to GTK+ 3.14, will not
-                  release any build until the Beta of Ubuntu 15.04 is released.</div>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_unity-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
               <div class="row">
                 <div class="col-sm-2">
-                  <img src="/img/oobp-logo/deepin-oobp.png" width="96px" height="96px" />
+                  <img src="/img/oobp-logo/kodi-oobp.png" width="96px" height="96px" />
                 </div>
                 <div class="col-sm-10">
-                  <h2>AOSC OS with DDE</h2>
-                  <p>AOSC OS Out-of-Box Preview with DDE (Deepin Desktop Environment), version 2. Deepin Desktop Environment is a
-                  desktop interface developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be
-                  suitable for any machine older than the ones on sale before 2010.</p>
-                  <div class="alert alert-danger">OOBP not ready: pending, the group is still discussing over the methods of
-                  porting.</div>
+                  <h2>AOSC OS with Kodi</h2>
+                  <p>AOSC OS Beta with Kodi media center, version 14. This version of AOSC OS is built for media
+                  center computers or Linux-based TV boxes. Kodi media center is formerly known as XBMC (XBox Media Center), while
+                  maintaining a small footprint, it&#39;s probably the most powerful media center solution you can find in all of
+                  the UNIX/Linux computing world.</p>
+                  <div class="alert alert-danger">OOBP not ready: Pending, will be released with Beta 2.</div>
+                </div>
+              </div>
+              <hr class="divider" />
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="/img/oobp-logo/pantheon-oobp.png" width="96px" height="96px" />
+                </div>
+                <div class="col-sm-10">
+                  <h2>AOSC OS with Pantheon</h2>
+                  <p>AOSC OS Beta with Pantheon desktop. Pantheon desktop is the default desktop environment used and
+                  maintained by the ElementaryOS. Pantheon is a lightweight GTK+ 3 based desktop environment. Although being fast,
+                  and probably beautiful, it&#39;s plagued with stability issues. Be careful when choosing this desktop
+                  environment.</p>
+                  <div class="alert alert-danger">OOBP not ready: blocker, Pantheon is broken with the update to GTK+ 3.14.</div>
                 </div>
               </div>
             </div>
@@ -267,10 +243,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 <ul>
                   <li>1. RPM builds, compared to DPKG, has large number of dependency overhead, which is brought by false reading
                   of dependencies of a library, ELF executables, even data files;</li>
-                  <li>2. RPM builds are built with some dirty hacks upon initial bootstrap, some packages must be installed with
-                  &quot;--nodeps&quot; switch of the rpm command in order to install and build the ground for other packages to be
-                  installed;</li>
-                  <li>3. RPM builds do not support PackageKit;</li>
+                  <li>2. RPM builds do not support PackageKit;</li>
                 </ul>
               </div>
               <div class="row">
@@ -279,10 +252,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with GNOME</h2>
-                  <p>AOSC OS Out-of-Box Preview with GNOME desktop, version 3.14. GNOME is a entirely free and open desktop
+                  <p>AOSC OS Beta with GNOME desktop, version 3.14. GNOME is a entirely free and open desktop
                   environment and application suite brought to you by the GNOME Foundation. GNOME is chosen to be the default
                   desktop environment for some major Linux distributions like Fedora.</p>
-                  <a href="#" class="btn btn-default disabled">Download Release</a>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_gnome-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default">Download Release</a>
                   <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
@@ -293,12 +266,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with XFCE</h2>
-                  <p>AOSC OS Out-of-Box Preview with XFCE desktop, version 4.11. XFCE is a lightweight, yet elegant and easy to use
+                  <p>AOSC OS Beta with XFCE desktop, version 4.11. XFCE is a lightweight, yet elegant and easy to use
                   desktop environment. XFCE is built upon GTK+ 2 interface toolkit, the predecessor to GTK+ 3 used by the GNOME
                   desktop environment. XFCE runs releatively fast on older machines dated all the way back to 2001 (for AOSC OS,
                   you need a machine that runs 64-bit operating system). XFCE is adapted to, cutting edge technologies like
                   systemd-logind.</p>
-                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/xfce/aosc-os3_oobp-xfce_after-class-tea-time_rev1_amd64_rpm_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_xfce-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default">Download Release</a>
                   <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
@@ -309,11 +282,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with Cinnamon</h2>
-                  <p>AOSC OS Out-of-Box Preview with Cinnamon Desktop, version 2.4. Cinnamon is a fork of GNOME shell. It&#39;s one
+                  <p>AOSC OS Beta with Cinnamon Desktop, version 2.4. Cinnamon is a fork of GNOME shell. It&#39;s one
                   of the default desktop environments for Linux Mint with guaranteed ease of use. Cinnamon needs a machine with
                   decent amount of performance, just like the GNOME desktop. Arguably it is more adapted to mouse and keyboard use
                   than the GNOME shell.</p>
-                  <a href="http://repo.anthonos.org/os3-releases/00_OOBP/201411/cinnamon/aosc-os3_oobp-cinnamon_after-class-tea-time_amd64_rpm_en-US.tar.xz" class="btn btn-default">Download Release</a>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_cinnamon-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default">Download Release</a>
                   <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
@@ -324,26 +297,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with MATE</h2>
-                  <p>AOSC OS Out-of-Box Preview with MATE desktop, version 1.8.1. MATE is a fork of GNOME 2.x, a perfect shelter
+                  <p>AOSC OS Beta with MATE desktop, version 1.8.1. MATE is a fork of GNOME 2.x, a perfect shelter
                   for those who goes strongly against the GNOME 3, and the GNOME shell. Although being a legacy fork of a desktop,
                   it&#39;s well adapted to newer technologies like UDisks-2 and UPower 0.99, they even have a plan to bring Wayland
                   support to it!</p>
-                  <a href="#" class="btn btn-default disabled">Download Release</a>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_mate-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default">Download Release</a>
                   <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
-                </div>
-              </div>
-              <hr class="divider" />
-              <div class="row">
-                <div class="col-sm-2">
-                  <img src="/img/oobp-logo/enlightenment-oobp.png" width="96px" height="96px" />
-                </div>
-                <div class="col-sm-10">
-                  <h2>AOSC OS with Enlightenment</h2>
-                  <p>AOSC OS Out-of-Box Preview with Enlightenment desktop, version 0.19.1. Enlightenmen is a very radically
-                  designed desktop environment built upon their own EFL library (Enlightenment Foundation Library). This desktop
-                  comes with full Wayland capabilities. This desktop is under heavy construction (as always), unless you are really
-                  a big fan or an experienced user, we do not recommend this for daily usage.</p>
-                  <div class="alert alert-danger">OOBP not ready: blocker, not fully tested.</div>
                 </div>
               </div>
               <hr class="divider" />
@@ -353,39 +312,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with Plasma</h2>
-                  <p>AOSC OS Out-of-Box Preview with (KDE) Plasma desktop, version 5. Plasma desktop is formerly known as the KDE,
-                  or K Desktop Environment. Plasma desktop is built fully upon Qt 5 technologies, with some plugins built to make
+                  <p>AOSC OS Beta with (KDE) Plasma desktop, version 4. Plasma desktop is formerly known as the KDE,
+                  or K Desktop Environment. Plasma desktop is built fully upon Qt technologies, with some plugins built to make
                   Plasma work better. Plasma desktop requires a machine with decent amount of processor and graphics
                   performance.</p>
-                  <div class="alert alert-danger">OOBP not ready: pending, waiting for KDE Applications 14.12 to be released.</div>
-                </div>
-              </div>
-              <hr class="divider" />
-              <div class="row">
-                <div class="col-sm-2">
-                  <img src="/img/oobp-logo/kodi-oobp.png" width="96px" height="96px" />
-                </div>
-                <div class="col-sm-10">
-                  <h2>AOSC OS with Kodi</h2>
-                  <p>AOSC OS Out-of-Box Preview with Kodi media center, version 14. This version of AOSC OS is built for media
-                  center computers or Linux-based TV boxes. Kodi media center is formerly known as XBMC (XBox Media Center), while
-                  maintaining a small footprint, it&#39;s probably the most powerful media center solution you can find in all of
-                  the UNIX/Linux computing world.</p>
-                  <div class="alert alert-danger">OOBP not ready: blocker, Kodi 14.0 Beta 2 cannot be built successfully.</div>
-                </div>
-              </div>
-              <hr class="divider" />
-              <div class="row">
-                <div class="col-sm-2">
-                  <img src="/img/oobp-logo/pantheon-oobp.png" width="96px" height="96px" />
-                </div>
-                <div class="col-sm-10">
-                  <h2>AOSC OS with Pantheon</h2>
-                  <p>AOSC OS Out-of-Box Preview with Pantheon desktop. Pantheon desktop is the default desktop environment used and
-                  maintained by the ElementaryOS. Pantheon is a lightweight GTK+ 3 based desktop environment. Although being fast,
-                  and probably beautiful, it&#39;s plagued with stability issues. Be careful when choosing this desktop
-                  environment.</p>
-                  <div class="alert alert-danger">OOBP not ready: blocker, Pantheon is broken with the update to GTK+ 3.14.</div>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_kde-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
@@ -395,26 +327,40 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 </div>
                 <div class="col-sm-10">
                   <h2>AOSC OS with Unity</h2>
-                  <p>AOSC OS Out-of-Box Preview with Unity desktop, version 7. Unity desktop is mostly known as the default Ubuntu
+                  <p>AOSC OS Beta with Unity desktop, version 7. Unity desktop is mostly known as the default Ubuntu
                   interface. This Unity build is brought to you by the AOSC OS development group, with several fixes and patches to
                   remove all Ubuntu specific features and interface. Unity is often time considered as unstable, but still, very
                   suitable for new users.</p>
-                  <div class="alert alert-danger">OOBP not ready: blocker, Unity is broken with the update to GTK+ 3.14, will not
-                  release any build until the Beta of Ubuntu 15.04 is released.</div>
+                  <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_unity-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default">Download Release</a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default">Screenshot</a>
                 </div>
               </div>
               <hr class="divider" />
               <div class="row">
                 <div class="col-sm-2">
-                  <img src="/img/oobp-logo/deepin-oobp.png" width="96px" height="96px" />
+                  <img src="/img/oobp-logo/kodi-oobp.png" width="96px" height="96px" />
                 </div>
                 <div class="col-sm-10">
-                  <h2>AOSC OS with DDE</h2>
-                  <p>AOSC OS Out-of-Box Preview with DDE (Deepin Desktop Environment), version 2. Deepin Desktop Environment is a
-                  desktop interface developed by Deepin Inc, Wuhan. DDE relies heavily on WebKit and NodeJs, therefore, may not be
-                  suitable for any machine older than the ones on sale before 2010.</p>
-                  <div class="alert alert-danger">OOBP not ready: pending, the group is still discussing over the methods of
-                  porting.</div>
+                  <h2>AOSC OS with Kodi</h2>
+                  <p>AOSC OS Beta with Kodi media center, version 14. This version of AOSC OS is built for media
+                  center computers or Linux-based TV boxes. Kodi media center is formerly known as XBMC (XBox Media Center), while
+                  maintaining a small footprint, it&#39;s probably the most powerful media center solution you can find in all of
+                  the UNIX/Linux computing world.</p>
+                  <div class="alert alert-danger">OOBP not ready: Pending, will be released with Beta 2.</div>
+                </div>
+              </div>
+              <hr class="divider" />
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="/img/oobp-logo/pantheon-oobp.png" width="96px" height="96px" />
+                </div>
+                <div class="col-sm-10">
+                  <h2>AOSC OS with Pantheon</h2>
+                  <p>AOSC OS Beta with Pantheon desktop. Pantheon desktop is the default desktop environment used and
+                  maintained by the ElementaryOS. Pantheon is a lightweight GTK+ 3 based desktop environment. Although being fast,
+                  and probably beautiful, it&#39;s plagued with stability issues. Be careful when choosing this desktop
+                  environment.</p>
+                  <div class="alert alert-danger">OOBP not ready: blocker, Pantheon is broken with the update to GTK+ 3.14.</div>
                 </div>
               </div>
             </div>
@@ -425,10 +371,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 <ul>
                   <li>1. RPM builds, compared to DPKG, has large number of dependency overhead, which is brought by false reading
                   of dependencies of a library, ELF executables, even data files;</li>
-                  <li>2. RPM builds are built with some dirty hacks upon initial bootstrap, some packages must be installed with
-                  &quot;--nodeps&quot; switch of the rpm command in order to install and build the ground for other packages to be
-                  installed;</li>
-                  <li>3. RPM builds do not support PackageKit;</li>
+                  <li>2. RPM builds do not support PackageKit;</li>
                 </ul>
               </div>
               <div class="row">

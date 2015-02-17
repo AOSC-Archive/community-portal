@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>CntralPoint &quot;Vanessa&quot;补丁包1.0.5暨Tengine 1.4.4 for CentralPoint发布贴 - CentralPoint 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-278-1-1.html" rel="canonical" />
+<meta name="keywords" content="CntralPoint &amp;quot;Vanessa&amp;quot;补丁包1.0.5暨Tengine 1.4.4 for CentralPoint发布贴" />
+<meta name="description" content=" CntralPoint &amp;quot;Vanessa&amp;quot;补丁包1.0.5暨Tengine 1.4.4 for CentralPoint发布贴 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-121.html">CentralPoint 发布区</a> &rsaquo; CntralPoint &quot;Vanessa&quot;补丁包1.0.5暨Tengine 1.4.4 for CentralPoint发布贴</div>
+
+<div id="content">
+			<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-4-5 21:57:13	</p>
+			<h3>CntralPoint &quot;Vanessa&quot;补丁包1.0.5暨Tengine 1.4.4 for CentralPoint发布贴</h3>
+		 本帖最后由 butangmucat 于 2013-4-6 11:23 编辑 <br />
+<br />
+补丁包1.0.5<br />
+包名: cp-update<br />
+版本: 1.0.5<br />
+特性：<br />
+增加白大在http://forum.anthonos.org/thread-284-1-1.html发现的文件系统工具的缺失，增加了reiserfsprogs reiser4progs xfsprogs ntfsprogs jfsutils zfs-fuse<br />
+（是的，你没看错，ZFS）使用参照：http://www.ibm.com/developerworks/cn/linux/l-zfs/和https://wiki.archlinux.org/index.php/ZFS<br />
+为方便网络配置，增加Wicd以及相应的curses和gtk客户端<br />
+wicd-curses使用方法$ wicd-curseswicd-gtk须在图形界面使用，startx之后鼠标右键，参照图示<br />
+<br />
+<br />
+1.0.0版特性<br />
+这是根据白大在http://forum.anthonos.org/thread-273-1-1.html提的建议和发现的bug构建的修正包<br />
+修正root的桌面配置文件和python-dbus缺失的问题（一个很无奈的方法）<br />
+去除/etc/default/grub的quiet参数<br />
+增加桌面菜单和浏览器的汉化（同样无奈的方法）<br />
+在桌面菜单增加完整的Debian应用程序菜单（无奈的方法）<br />
+增加一个“运行”对话框（同上）<br />
+<br />
+使用说明$ sudo -s<br />
+# axel http://anthonmirror.b0.upaiyun.com/centralpoint/aurora/cp-update_1.0.5~vanessa-1_all.deb<br />
+# dpkg -i cp-update_1.0.0~vanessa-1_all.deb<br />
+# apt-get -f install无奈的方法就是把新增的包写进cp-update的依赖里面<br />
+基本上只要是CP安装好dpkg都会报依赖缺失，所以用apt-get -f install来解决<br />
+安装时会提示是否将用户tux加入netdev组，请勾选，否则无法正常使用wicd<br />
+注意：当开机输出不再滚动时请按下回车键，登录提示符就会出现<br />
+<br />
+Tengine 1.4.4 for CentralPoint<br />
+简介<br />
+Tengine是由淘宝网发起的Web服务器项目。它在Nginx的基础上，针对大访问量网站的需求，添加了很多高级功能和特性。Tengine的性能和稳定性已经在大型的网站如淘宝网，天猫商城等得到了很好的检验。它的最终目标是打造一个高效、稳定、安全、易用的Web平台。<br />
+<br />
+从2011年12月开始，Tengine成为一个开源项目，Tengine团队在积极地开发和维护着它。Tengine团队的核心成员来自于淘宝、搜狗等互联网企业。Tengine是社区合作的成果，我们欢迎大家参与其中，贡献自己的力量。<br />
+<br />
+<br />
+特性<br />
+继承Nginx-1.2.7的所有特性，100%兼容Nginx的配置；<br />
+动态模块加载（DSO）支持。加入一个模块不再需要重新编译整个Tengine；<br />
+输入过滤器机制支持。通过使用这种机制Web应用防火墙的编写更为方便；<br />
+动态脚本语言Lua支持。扩展功能非常高效简单；<br />
+支持管道（pipe）和syslog（本地和远端）形式的日志以及日志抽样；<br />
+组合多个CSS、JavaScript文件的访问请求变成一个请求；<br />
+可以对后端的服务器进行主动健康检查，根据服务器状态自动上线下线；<br />
+自动根据CPU数目设置进程个数和绑定CPU亲缘性；<br />
+监控系统的负载和资源占用从而对系统进行保护；<br />
+显示对运维人员更友好的出错信息，便于定位出错机器；<br />
+更强大的防攻击（访问速度限制）模块；<br />
+更方便的命令行参数，如列出编译的模块列表、支持的指令等；<br />
+可以根据访问文件类型设置过期时间；<br />
+...<br />
+——摘录自http://tengine.taobao.org/<br />
+<br />
+使用方法：$ sudo -s<br />
+# axel http://anthonmirror.b0.upaiyun.com/centralpoint/aurora/tengine_1.4.4~vanessa-1_amd64.deb<br />
+# dpkg -i tengine_1.4.4~vanessa-1_amd64.deb<br />
+# apt-get -f install注意：<br />
+该包的包名为nginx，使用前请卸载已安装的nginx<br />
+如果有Apache在运行，请注意不Tengine服务器会启动失败因为80端口被占用，请自行修改其中一个的端口<br />
+apt-get -f install为补齐依赖，必须<br />
+由于有端口占用的问题，请手动开启tengine的服务以及在需要时手工设置开机启动（服务: nginx）<br />
+				<p class="author">
+					<strong>yexiaoxing</strong>
+				发表于 2013-4-5 22:26:41	</p>
+			<h3></h3>
+		安同服务器要不要换nginx呢			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-278-1-1.html" target="_blank"><strong>CntralPoint &quot;Vanessa&quot;补丁包1.0.5暨Tengine 1.4.4 for CentralPoint发布贴</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

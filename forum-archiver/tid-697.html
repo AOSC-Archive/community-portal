@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>Linux中sysrq的使用 - AnthonOS 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-697-1-1.html" rel="canonical" />
+<meta name="keywords" content="Linux中sysrq的使用" />
+<meta name="description" content=" Linux中sysrq的使用 ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-44.html">AnthonOS 反馈和支持</a> &rsaquo; Linux中sysrq的使用</div>
+
+<div id="content">
+			<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-7-12 11:07:43	</p>
+			<h3>Linux中sysrq的使用</h3>
+		在终端上同时按Alt, SysRq和命令键则会执行SysRq命令, SysRq键就是&quot;Prent Screen&quot;健. 比如Alt+SysRq+b则重启机器.ALT+SysRQ+X（此处X代表命令参数）<br />
+<br />
+这是一组“魔术组合键”，只要内核没有被完全锁住，不管内核在做什么事情，使用这些组合键能即时打印出内核的信息。<br />
+使用sysrq组合键是了解系统目前运行情况的最佳方式。如果系统出现挂起（例如：死机等）的情况或在诊断一些和内核相关比较难解决的问题的时候，使用sysrq键是个比较好的方式。<br />
+为了安全起见，在红帽企业版Linux里面，默认SysRq组合键是关闭的。 打开这个功能，运行:<br />
+# echo 1 &gt; /proc/sys/kernel/sysrq<br />
+关闭这个功能:<br />
+# echo 0 &gt; /proc/sys/kernel/sysrq<br />
+如果想让此功能一直生效，在/etc/sysctl.conf里面设置kernel.sysrq的值为1. 重新启动以后，此功能将会自动<br />
+打开。<br />
+kernel.sysrq = 1<br />
+因为打开sysrq键的功能以后，有终端访问权限的用户将会拥有一些特别的功能。因此，除非是要调试，解决问题，一般情况下，不要打开此功能。如果一定要打开，请确保你的终端访问的安全性。<br />
+有几种方式能触发sysrq事件。在带有AT键盘的一般系统上，在终端上输入一下组合键:<br />
+Alt+PrintScreen+<br />
+例如，要让内核导出内存信息(CommandKey &quot;m&quot;)，你应该同时按下Alt 和 Print Screen 键，然后按下 m 键.<br />
+提示: 此组合键在Xwindows上是无法使用的。所以，你先要转换到文本虚拟终端下。如果你目前是在图像界面，<br />
+能按Ctrl+Alt+F1转换到虚拟终端。<br />
+在串口终端上，要想获得同样的效果，需要先在终端上发送Break信号，然后在5秒内输入sysrq组合键。<br />
+如果你在机器上有root权限，你能把commandkey字符写入到/proc/sysrq-trigger文件。这能帮助你通过脚本或你不在系统终端上的时候触发sysrq事件。<br />
+# echo 'm' &gt; /proc/sysrq-trigger<br />
+当我触发一个sysrq事件的时候，结果保存在什么地方？<br />
+当一个sysrq命令被触发，内核将会打印信息到内核的环形缓冲并输出到系统控制台。此信息一般也会通过syslog输出到/var/log/messages.<br />
+有时候，可能系统已无法响应，syslogd可能无法记录此信息。在这种情况下，建议你设置一个串口终端来收集这个信息。<br />
+那些类型的sysrq事件能被触发？<br />
+sysrq功能被打开后，有几种sysrq事件能被触发。不同的内核版本可能会有些不同。但有一些是共用的:<br />
+* m - 导出关于内存分配的信息<br />
+* t - 导出线程状态信息<br />
+* p - 到处当前CPU寄存器信息和标志位的信息<br />
+* c - 故意让系统崩溃(在使用netdump或diskdump的时候有用)<br />
+* s - 即时同步所有挂载的文件系统<br />
+* u - 即时重新挂载所有的文件系统为只读<br />
+* b - 即时重新启动系统<br />
+* o - 即时关机(如果机器设置并支持此项功能)				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-7-12 16:58:09	</p>
+			<h3></h3>
+		好帖！但需要指出如果是Linux，那么需要在内核配置的时候打开Magic Key的支持，不知道正不正确？				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-7-12 20:24:00	</p>
+			<h3></h3>
+		jeffbaichina 发表于 2013-7-12 16:58<br />
+好帖！但需要指出如果是Linux，那么需要在内核配置的时候打开Magic Key的支持，不知道正不正确？ ...<br />
+<br />
+当然需要……但是打包发行版Live镜像的话只写那个配置文件也可以			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-697-1-1.html" target="_blank"><strong>Linux中sysrq的使用</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

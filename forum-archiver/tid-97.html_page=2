@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>【公测！】安同本周末公测版本代号”深红“ - 第2页 - AnthonOS 发布区 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-97-1-1.html" rel="canonical" />
+<meta name="keywords" content="【公测！】安同本周末公测版本代号”深红“" />
+<meta name="description" content=" 【公测！】安同本周末公测版本代号”深红“ ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-37.html">AnthonOS 发布区</a> &rsaquo; 【公测！】安同本周末公测版本代号”深红“</div>
+
+<div id="content">
+			<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-1 16:28:08	</p>
+			<h3></h3>
+		对了，如何root？<br />
+密码是？				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-1 16:58:31	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-2-1 16:28 static/image/common/back.gif<br />
+对了，如何root？<br />
+密码是？<br />
+<br />
+sudo su。密码是anthon.beta				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-3 08:41:52	</p>
+			<h3></h3>
+		汇报一下：运行于Oracle VM VirtualBox 4.2.0 r80737<br />
+安装完毕后提示安装grub，选“是”会直接使用kexec切换内核进入桌面，但是grub并没有被安装<br />
+之前喜欢休眠虚拟机所以没发现<br />
+使用的是替换了initrd.img的镜像				<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-2-3 09:12:48	</p>
+			<h3></h3>
+		butangmucat 发表于 2013-2-3 08:41 static/image/common/back.gif<br />
+汇报一下：运行于Oracle VM VirtualBox 4.2.0 r80737<br />
+安装完毕后提示安装grub，选“是”会直接使用kexec切 ...<br />
+<br />
+Hi, grub的安装脚本还在抓紧开发。				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-3 10:07:08	</p>
+			<h3></h3>
+		看到了这个，点ok就后什么都没有了，只有一片灰色<br />
+http://ww1.sinaimg.cn/large/a74ecc4cjw1e1fzo3lmqkj.jpg<br />
+				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-6 22:12:57	</p>
+			<h3></h3>
+		VMware Tools啊<br />
+看图，装到一半去装build-essential还是不够<br />
+http://ww3.sinaimg.cn/large/a74ecc4cjw1e1k1ihiqlcj.jpg				<p class="author">
+					<strong>butangmucat</strong>
+				发表于 2013-2-7 20:21:03	</p>
+			<h3></h3>
+		原镜像没有Linux Kernel Haders，安装VMware Tools等可能会出错<br />
+我编译了一套用来救急的3.8.0-rc5内核的deb包，下载后直接安装<br />
+linux-image:https://www.box.com/s/a8hpnj57p8f4g8jxxbjp<br />
+linux-headers:https://www.box.com/s/3qrdoof3l0tecs9il56b				<p class="author">
+					<strong>HY-wyl</strong>
+				发表于 2013-2-15 08:06:30	</p>
+			<h3></h3>
+		哇嘎嘎 拿钱钱			<div class="page">
+		页: 
+<a href="tid-97.html?page=1">1</a> 
+<strong>[2]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-97-2-1.html" target="_blank"><strong>【公测！】安同本周末公测版本代号”深红“</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

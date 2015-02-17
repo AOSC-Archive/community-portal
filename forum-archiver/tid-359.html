@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>一个Live安装脚本，来自haulm - AnthonOS 反馈和支持 - 安同开源社区 -  Powered by Discuz! Archiver</title>
+<link href="http://forum.anthonos.org/thread-359-1-1.html" rel="canonical" />
+<meta name="keywords" content="一个Live安装脚本，来自haulm" />
+<meta name="description" content=" 一个Live安装脚本，来自haulm ,安同开源社区" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	body {font-family: Verdana;FONT-SIZE: 12px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>安同开源社区's Archiver </h2>
+</center><div id="nav">
+	<a href="index.html">论坛</a> &rsaquo; <a href="fid-44.html">AnthonOS 反馈和支持</a> &rsaquo; 一个Live安装脚本，来自haulm</div>
+
+<div id="content">
+			<p class="author">
+					<strong>jeffbaichina</strong>
+				发表于 2013-5-7 23:51:38	</p>
+			<h3>一个Live安装脚本，来自haulm</h3>
+		 本帖最后由 jeffbaichina 于 2013-5-7 23:56 编辑 <br />
+<br />
+<br />
+<br />
+<br />
+转发一下，郑和卜都来看看吧。<br />
+-----------------------------------------------------------------------------------------------------------------------------------------------------------<br />
+#!/bin/sh<br />
+kernel=`uname -r`<br />
+mkdir -p /tmp/newsystem /media<br />
+echo &quot;Live 安装程序 0.1&quot;<br />
+echo &quot;请输入需要安装的分区设备名称，注意您的操作将会格式化分区并开始系统安装。&quot;<br />
+echo '例如 Winxp 认知第一硬盘的主分区对应 &quot;/dev/sda1&quot;，D 盘对应&quot;/dev/sda5&quot;。'<br />
+echo &quot;您可以运行桌面上为你准备的分区管理器进行分区管理，请对重要文件进行备份。&quot;<br />
+echo &quot;注意安装程序不受理未分区的硬盘，虚拟机安装更需要应用分区管理器进行分区。&quot;<br />
+fdisk -l|grep dev<br />
+_area=`fdisk -l |grep /dev|awk '{print $1}'|sed /Disk/d`<br />
+echo &quot;please input your installation of computer device name&quot;<br />
+echo &quot;请输入安装分区的设备名：/dev/__&quot;<br />
+read dev_get<br />
+extd=`fdisk -l|grep &quot;$dev_get&quot; |awk '{print $7}'`<br />
+if [ &quot;$extd&quot; == &quot;Ext'd&quot; ]<br />
+then<br />
+echo &quot;该设备名表示扩展分区，安装被中止操作&quot;<br />
+sleep 3;exit<br />
+fi<br />
+if [ &quot;$extd&quot; == &quot;Extended&quot; ]<br />
+then<br />
+echo &quot;该设备名表示扩展分区，安装被中止操作&quot;<br />
+sleep 3;exit<br />
+fi<br />
+_true=0<br />
+echo &quot;您输入安装分区的设备名为&quot;$dev_get<br />
+for item in ${_area[@]}<br />
+do&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp; if [ &quot;$item&quot; == &quot;$dev_get&quot; ]<br />
+&nbsp; &nbsp; then&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp; let _true=_true+1<br />
+&nbsp; &nbsp; fi<br />
+done<br />
+if [ &quot;$_true&quot; -eq 0 ]<br />
+then<br />
+echo &quot;分区设备名不正确，只允许对真实硬件进行安装&quot;<br />
+sleep 3;exit<br />
+fi<br />
+echo &quot;please input your installation of computer device name again&quot;<br />
+echo &quot;请再次输入安装分区的设备名：&quot;<br />
+read dev_name<br />
+if [ &quot;$dev_get&quot; != &quot;$dev_name&quot; ]<br />
+then<br />
+echo &quot;分区设备没有被确认&quot;<br />
+sleep 3;exit<br />
+fi<br />
+i=${#dev_name}<br />
+_top=${dev_name:0:7}<br />
+_top=&quot;$_top&quot;a<br />
+s1=${dev_name:5:4}<br />
+s2=${dev_name:8}<br />
+s3=${s1:1:2}<br />
+case $s3 in<br />
+&nbsp;&nbsp;da)<br />
+&nbsp; &nbsp;&nbsp; &nbsp;t_s1=0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;;;<br />
+&nbsp;&nbsp;db)<br />
+&nbsp; &nbsp;&nbsp; &nbsp;t_s1=1<br />
+&nbsp; &nbsp;&nbsp; &nbsp;;;<br />
+&nbsp;&nbsp;dc)<br />
+&nbsp; &nbsp;&nbsp; &nbsp;t_s1=2<br />
+&nbsp; &nbsp;&nbsp; &nbsp;;;<br />
+&nbsp;&nbsp;dd)<br />
+&nbsp; &nbsp;&nbsp; &nbsp;t_s1=3<br />
+&nbsp; &nbsp;&nbsp; &nbsp;;;<br />
+&nbsp; &nbsp;*)<br />
+echo &quot;分区设备名不正确&quot;<br />
+sleep 3;exit<br />
+&nbsp; &nbsp;&nbsp; &nbsp;;;<br />
+esac<br />
+let t_s2=s2;<br />
+echo &quot;开始格式化分区&quot;$dev_name<br />
+umount $dev_name<br />
+mkfs.ext4 $dev_name<br />
+mount $dev_name /tmp/newsystem<br />
+cd /tmp/newsystem<br />
+data_dir=`find /mnt -name &quot;MagicLinux*Live&quot;`<br />
+for item2 in ${data_dir[@]}<br />
+do<br />
+_data_dir=$item2<br />
+done<br />
+for i in bin home opt sbin usr etc lib root srv var;do<br />
+unsquashfs $_data_dir/base/$i.lzm<br />
+mv squashfs-root/* ./<br />
+rmdir squashfs-root<br />
+done<br />
+rm root/Desktop/Live*.desktop<br />
+mkdir -p boot/grub2 media proc sys/block dev dev/shm dev/pts tmp <br />
+cd boot<br />
+cp /boot/vmlinuz vmlinuz-$kernel<br />
+cp /boot/{System.map-$kernel,config-$kernel} ./<br />
+cd /tmp/newsystem<br />
+cp /boot/{fstab,mtab} etc/<br />
+sed -i 's@/dev/LIVE@'&quot;$dev_name&quot;'@g' etc/fstab<br />
+sed -i 's@/dev/LIVE@'&quot;$dev_name&quot;'@g' etc/mtab<br />
+chmod 777 proc/ dev/ dev/* sys/ sys/block tmp<br />
+cp /boot/grub etc/default<br />
+tar xvf /boot/grub2.tar.bz2 -C boot/<br />
+dd if=/dev/zero of=tmp/swapfile bs=1k count=512000<br />
+mkswap tmp/swapfile<br />
+_Afstab=`fdisk -l|grep Linux|grep 83|awk '{print $1}'`<br />
+for A_item in ${_Afstab[@]}<br />
+do&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp; if [ &quot;$A_item&quot; != &quot;$dev_name&quot; ]<br />
+&nbsp; &nbsp; then&nbsp; &nbsp;<br />
+&nbsp; &nbsp; A_name=${A_item:5}<br />
+&nbsp; &nbsp; mkdir -p mnt/&quot;$A_name&quot;<br />
+&nbsp; &nbsp; echo &quot;$A_item&quot;'&nbsp; &nbsp;&nbsp; &nbsp; /mnt/'&quot;$A_name&quot;'&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;ext4&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;defaults&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 1&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 1'&gt;&gt;etc/fstab<br />
+&nbsp; &nbsp; fi<br />
+done<br />
+_Bfstab=`fdisk -l|grep Linux|grep 82|awk '{print $1}'`<br />
+for B_item in ${_Bfstab[@]}<br />
+do&nbsp; &nbsp;&nbsp;&nbsp;<br />
+&nbsp; &nbsp; if [ &quot;$B_item&quot; != &quot;$dev_name&quot; ]<br />
+&nbsp; &nbsp; then&nbsp; &nbsp;<br />
+&nbsp; &nbsp; echo &quot;$B_item&nbsp; &nbsp;&nbsp; &nbsp; swap&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;swap&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;defaults&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 0&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 0&quot;&gt;&gt;etc/fstab<br />
+&nbsp; &nbsp; fi<br />
+done<br />
+mount --bind /dev /tmp/newsystem/dev<br />
+mount --bind /proc /tmp/newsystem/proc<br />
+mount --bind /sys /tmp/newsystem/sys<br />
+rm -rf boot/initrd-$kernel.img<br />
+chroot . mkinitrd /boot/initrd-$kernel.img $kernel --builtin=ahci --builtin=ata_piix --builtin=ehci-hcd --builtin=uhci-hcd<br />
+echo &quot;/tmp/swapfile&nbsp; &nbsp;swap&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;swap&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;defaults&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 0&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 0&quot;&gt;&gt;etc/fstab<br />
+chmod 777 `find ./etc/skel/ -type f`<br />
+chroot . grub2-install $_top --force<br />
+chroot . grub2-mkconfig -o /boot/grub2/grub.cfg<br />
+sed -i 's@set gfxmode=auto@set gfxmode=1024x768@g' boot/grub2/grub.cfg<br />
+echo 'please input &quot;enter&quot; into setup'<br />
+echo &quot;进入配置请回车&quot;<br />
+while read super_user<br />
+do<br />
+echo &quot;please input the super username&quot;<br />
+echo &quot;请输入超极用户名，请用英文字符：&quot;<br />
+if [ &quot;$super_user&quot; != &quot;&quot; ]<br />
+then<br />
+&nbsp;&nbsp;if [ &quot;$super_user&quot; != &quot;root&quot; ]<br />
+&nbsp;&nbsp;then<br />
+&nbsp;&nbsp;break;<br />
+&nbsp;&nbsp;fi<br />
+fi<br />
+done<br />
+chroot . /usr/sbin/useradd $super_user<br />
+chroot . passwd $super_user<br />
+sed -i '/root.*ALL=(ALL)/a'&quot;$super_user&quot;'&nbsp; &nbsp; ALL=(ALL)&nbsp; &nbsp;&nbsp; &nbsp; ALL' etc/sudoers <br />
+chroot . passwd root<br />
+#sed -i '/root:/s/bin\/bash/sbin\/nologin/g' etc/passwd<br />
+cp /boot/kdmrc opt/kde4/share/config/kdm/<br />
+sed -i 's/AllowRootLogin=true/AllowRootLogin=false/g' opt/kde4/share/config/kdm/kdmrc<br />
+sed -i 's/HiddenUsers=/HiddenUsers=root/g' opt/kde4/share/config/kdm/kdmrc<br />
+echo &quot;please input the hostname&quot;<br />
+echo &quot;请输入主机名称，请勿用中文：&quot;<br />
+read host_name<br />
+sed -i 's/MagicLinux/'&quot;$host_name&quot;'/g' etc/hosts<br />
+sed -i 's/MagicLinux/'&quot;$host_name&quot;'/g' etc/HOSTNAME<br />
+sed -i 's/MagicLinux/'&quot;$host_name&quot;'/g' etc/sysconfig/network<br />
+chroot . hostname $host_name<br />
+chroot . ifconfig lo up<br />
+chroot . ifconfig eth0 up<br />
+cd /tmp<br />
+killall dolphin<br />
+umount ./newsystem<br />
+echo &quot;安装已经顺利完成并在5秒后强制重启，请注意关闭和备份重要的信息&quot;<br />
+echo &quot;&quot;<br />
+sleep 1s<br />
+echo &quot;5&quot;<br />
+sleep 1<br />
+echo &quot;4&quot;<br />
+sleep 1<br />
+echo &quot;3&quot;<br />
+sleep 1<br />
+echo &quot;2&quot;<br />
+sleep 1<br />
+echo &quot;1&quot;<br />
+sleep 1<br />
+reboot -d -f <br />
+-----------------------------------------------------------------------------------------------------------------------------------------------------------<br />
+抱歉哈，在上课。稍后上色并加一点注释。<br />
+<br />
+<br />
+<br />
+				<p class="author">
+					<strong>LMY441900</strong>
+				发表于 2013-5-11 13:37:29	</p>
+			<h3></h3>
+		熟悉的回忆。				<p class="author">
+					<strong>ruojiner</strong>
+				发表于 2013-6-22 17:35:45	</p>
+			<h3></h3>
+		我喜欢，就这样，靠在你胸膛			<div class="page">
+		页: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	查看完整版本:
+	<a href="http://forum.anthonos.org/thread-359-1-1.html" target="_blank"><strong>一个Live安装脚本，来自haulm</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="http://www.discuz.net">Discuz! X2.5 Archiver</a></strong> &nbsp; &copy 2001-2012 <a target="_blank" href="http://www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>
