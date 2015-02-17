@@ -80,8 +80,8 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
           <li role="presentation" class="disabled">
             <a href="#pantheon" data-toggle="">Pantheon</a>
           </li>
-          <li role="presentation" class="disabled">
-            <a href="#unity" data-toggle="">Unity</a>
+          <li role="presentation" class="">
+            <a href="#unity" data-toggle="tab">Unity</a>
           </li>
           <li role="presentation">
             <a href="#os2" data-toggle="tab">AnthonOS (OS2)</a>
@@ -91,15 +91,17 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
       <div id="my-tab-content" class="tab-content">
       <?php
       $screenshots = array(
-      'gnome' => array('flag' => 'active', 'icon' => '/img/oobp-logo/gnome-oobp.png', 'title' => 'AOSC OS with GNOME', 'description' => 'AOSC OS with the GNOME desktop environment, a completely free and open source desktop and application suite.', 'path' => '/img/screenshots/gnome-oobp/', 'suffix' => 'jpg'),
+      'unity' => array('flag' => '', 'icon' => '/img/oobp-logo/unity-oobp.png', 'title' => 'AOSC OS with Unity', 'description' => '<-----------------TODO------------------->', 'path' => '/img/screenshots/unity-beta/', 'suffix' => 'jpg', 'count'=>6),
 
-      'mate' => array('flag' => '', 'icon' => '/img/oobp-logo/mate-oobp.png', 'title' => 'AOSC OS with MATE', 'description' => 'AOSC OS with the MATE desktop, a fork of GNOME 2 desktop, with slight customization and tweaks for good.', 'path' => '/img/screenshots/mate-oobp/', 'suffix' => 'jpg'),
+      'gnome' => array('flag' => 'active', 'icon' => '/img/oobp-logo/gnome-oobp.png', 'title' => 'AOSC OS with GNOME', 'description' => 'AOSC OS with the GNOME desktop environment, a completely free and open source desktop and application suite.', 'path' => '/img/screenshots/gnome-oobp/', 'suffix' => 'jpg', 'count'=>10),
 
-      'cinnamon' => array('flag' => '', 'icon' => '/img/oobp-logo/cinnamon-oobp.png', 'title' => 'AOSC OS with Cinnamon', 'description' => 'AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.', 'path' => '/img/screenshots/cinnamon-oobp/', 'suffix' => 'jpg'),
+      'mate' => array('flag' => '', 'icon' => '/img/oobp-logo/mate-oobp.png', 'title' => 'AOSC OS with MATE', 'description' => 'AOSC OS with the MATE desktop, a fork of GNOME 2 desktop, with slight customization and tweaks for good.', 'path' => '/img/screenshots/mate-oobp/', 'suffix' => 'jpg', 'count'=>10),
 
-      'xfce' => array('flag' => '', 'icon' => '/img/oobp-logo/xfce-oobp.png', 'title' => 'AOSC OS with XFCE', 'description' => 'AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.', 'path' => '/img/screenshots/xfce-oobp/', 'suffix' => 'jpg'),
+      'cinnamon' => array('flag' => '', 'icon' => '/img/oobp-logo/cinnamon-oobp.png', 'title' => 'AOSC OS with Cinnamon', 'description' => 'AOSC OS with Cinnamon desktop, a fork of GNOME 3.x desktop environment with equivalent power in software package. This desktop environment from the Linux Mint community arguably is more suitable for mouse and keyboard setup.', 'path' => '/img/screenshots/cinnamon-oobp/', 'suffix' => 'jpg', 'count'=>10),
 
-      'os2' => array('flag' => '', 'icon' => '/img/anos.png', 'title' => 'AnthonOS (AOSC OS2)', 'description' => 'Final Release &quot;Doge&quot; comes with KDE 4 as its default desktop environment, here showing is the default desktop configuration of AnthonOS (however you can choose for the default Plasma desktop configuration).', 'path' => '/img/anthonos/', 'suffix' => 'png'),
+      'xfce' => array('flag' => '', 'icon' => '/img/oobp-logo/xfce-oobp.png', 'title' => 'AOSC OS with XFCE', 'description' => 'AOSC OS with XFCE desktop, slight changes in interface and lightweight software choice is where this version is at. This is probably the best version to be run on an older machine.', 'path' => '/img/screenshots/xfce-oobp/', 'suffix' => 'jpg', 'count'=>10),
+
+      'os2' => array('flag' => '', 'icon' => '/img/anos.png', 'title' => 'AnthonOS (AOSC OS2)', 'description' => 'Final Release &quot;Doge&quot; comes with KDE 4 as its default desktop environment, here showing is the default desktop configuration of AnthonOS (however you can choose for the default Plasma desktop configuration).', 'path' => '/img/anthonos/', 'suffix' => 'png', 'count'=>10),
       );
 
 foreach ($screenshots as $id => $ar){
@@ -124,7 +126,7 @@ foreach ($screenshots as $id => $ar){
                 <div class="my_gallery">
 TABEOD;
 
-    for ($a=1;$a<=10;$a++)
+    for ($a=1;$a<=$ar['count'];$a++)
       echo '<a target="_blank" href="'.$ar['path'].$a.'.'.$ar['suffix'].'"><img src="'.$ar['path'].$a.'_small.'.$ar['suffix'].'" id="img'.$a.'" alt="img'.$a.'" width="300"></a>';
       
   echo <<<TABEOD
