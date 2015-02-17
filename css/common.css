@@ -32,3 +32,4 @@
 .nav-tabs {
   margin-bottom:15px;
 }
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {background-color: #fffcf2 !important;}

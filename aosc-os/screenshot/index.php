@@ -48,6 +48,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
         <p>Screenshot of the versions of AOSC OS, feel the difference and pick your choice for a spin! This below shows the
         diversity of desktop environments we provide.</p>
       </div>
+      <div class="blog-post">
       <div class="col-sm-12">
         <hr class="divider" />
         <ul class="nav nav-tabs">
@@ -130,6 +131,7 @@ TABEOD;
 TABEOD;
 }
     ?>
+      </div>
       </div>
     </div>
     <!-- /.container -->
