@@ -8,7 +8,7 @@ if (isset ($lang)){
     case 'zh-tw':
     case 'zh-hk':
     case 'zh':
-      echo "source-sans, 'Segoe UI', 'Lantinghei SC', 'Lantinghei TC', 'Xin Gothic', 'Microsoft YaHei UI', 'Heiti SC', sans-serif;";
+      echo "source-sans, 'Segoe UI', 'Lantinghei SC', 'Lantinghei TC', 'Xin Gothic', 'Microsoft YaHei UI Light', 'Microsoft YaHei UI', 'Heiti SC', sans-serif;";
       break;
     
     case 'en-us':
