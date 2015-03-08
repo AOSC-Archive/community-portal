@@ -25,8 +25,6 @@ $langs = array(
           <p>Here&#39;s some of the most awesome ones we want to mention of:</p>
           <ul>
             <li>
-            <a href="http://www.ucloud.com/">UCloud</a> - where this website is hosted on.</li>
-            <li>
             <a href="http://www.ncnu.edu.tw/">National Chi Nan University</a> - our public compiling server.</li>
             <li>
             <a href="http://studio.bluet.org/">BlueT</a> - awesome server for repository.</li>
@@ -38,6 +36,8 @@ $langs = array(
             <a href="http://www.maxcdn.com/">MaxCDN</a> - awesome CDN resources for repository mirrors.</li>
             <li>
             <a href="http://crowdin.net/">Crowdin</a> - localization hosting.</li>
+            <li>
+            <a href="http://ustack.com/">United Stack</a> - site host.</li>
           </ul>',
   ),
   'zh-cn' => array(
@@ -64,8 +64,6 @@ $langs = array(
           <p>如下是我们的特别感谢：</p>
           <ul>
             <li>
-            <a href="http://www.ucloud.com/">UCloud，优刻得</a> - 该站点的托管商</li>
-            <li>
             <a href="http://www.ncnu.edu.tw/">国立暨南大学（台湾）</a> - 我们的公用编译服务器</li>
             <li>
             <a href="http://studio.bluet.org/">BlueT</a> - 我们的软件仓库托管商</li>
@@ -77,6 +75,8 @@ $langs = array(
             <a href="http://www.maxcdn.com/">MaxCDN</a> - 软件仓库 CDN 镜像</li>
             <li>
             <a href="http://crowdin.net/">Crowdin</a> - 本地化系统托管</li>
+            <li>
+            <a href="http://ustack.com/">United Stack</a> - 该站点服务器提供商</li>
           </ul>',
   ),
   'zh-tw' => array(
@@ -104,8 +104,6 @@ $langs = array(
           <p>以下是我們的特別感謝：</p>
           <ul>
             <li>
-            <a href="http://www.ucloud.com/">UCloud，優刻得</a> - 本站點的託管商</li>
-            <li>
             <a href="http://www.ncnu.edu.tw/">國立暨南大學（台灣）</a> - 我們的公用編譯伺服器</li>
             <li>
             <a href="http://studio.bluet.org/">BlueT</a> - 我們的軟體倉庫託管商</li>
@@ -117,6 +115,8 @@ $langs = array(
             <a href="http://www.maxcdn.com/">MaxCDN</a> - 軟體倉庫 CDN 鏡像</li>
             <li>
             <a href="http://crowdin.net/">Crowdin</a> - 本地化系統託管</li>
+            <li>
+            <a href="http://ustack.com/">United Stack</a> - 伺服器提供者</li>
           </ul>',
   ),
 );
