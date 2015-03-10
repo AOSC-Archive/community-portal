@@ -5,7 +5,7 @@
 body {
   font-family: source-sans, sans;
   color: #555;
-  background-color: #fffcf2;
+  background-color: #fffefa;
 }
 
 .hung-icon{
@@ -235,19 +235,19 @@ h6, .h6 {
  * Footer
  */
 
- /* Ê¹ÓÃem×÷Îªµ¥Î»£¬´úÌæpx£¬±ãÓÚÔÚ²»Í¬ÆÁÄ»ÉÏÏÔÊ¾ */
+ /* ä½¿ç”¨emä½œä¸ºå•ä½ï¼Œä»£æ›¿pxï¼Œä¾¿äºåœ¨ä¸åŒå±å¹•ä¸Šæ˜¾ç¤º */
 .blog-footer {
   padding: 3em 0;
   color: #999;
   text-align: center;
-  background-color: #fffef2;
+  background-color: #d6d6d6;
   border-top: 1px solid #e5e5e5;
 }
 
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
-/* Ìí¼ÓFooterÑùÊ½£¬ÉèÖÃblockµÄ¼ä¾à*/
+/* æ·»åŠ Footeræ ·å¼ï¼Œè®¾ç½®blockçš„é—´è·*/
 .footer-block {
   margin-bottom: 2em;
 }
