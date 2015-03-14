@@ -77,10 +77,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                 iso image from the button provided below.</p>
               <p>This iso image has provided you with some basic tools for installation:
                 <ul>
-                  <li>- GParted partition manager for preparing your partitions for installation;</li>
-                  <li>- Midori Web Browser for some needs with Internet resources;</li>
-                  <li>- Terminal emulator for the sake of God :-);</li>
-                  <li>- LiveKit Installer to install AOSC OS of your choice;</li>
+                  <li>GParted partition manager for preparing your partitions for installation;</li>
+                  <li>Midori Web Browser for some needs with Internet resources;</li>
+                  <li>Terminal emulator for the sake of God :-);</li>
+                  <li>LiveKit Installer to install AOSC OS of your choice;</li>
                 </ul>
                 <a href="http://repo.anthonos.org/os3-releases/01_Beta/00_LiveKit/LATEST.iso" class="btn btn-default">Download</a>
               </p>
