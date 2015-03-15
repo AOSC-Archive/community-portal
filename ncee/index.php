@@ -173,7 +173,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
               <li>Minhui Du &lt;<a href="mailto:duminhui@126.com">duminhui@126.com</a>&gt;</li>
               <li>hot123tea123 &lt;<a href="mailto:hot123tea123@gmail.com">hot123tea123@gmail.com</a>&gt;</li>
               <li>Joy Neop &lt;<a href="mailto:i@joyneop.com">i@joyneop.com</a>&gt;</li>
-              <li>Laurence Liu &lt;<a href="mailto:liuxy6@gmail.com">liushuyu@gmail.com</a>&gt;</li>
+              <li>Laurence Liu &lt;<a href="mailto:liuxy6@gmail.com">liuxy6@gmail.com</a>&gt;</li>
               <li>Liushuyu &lt;<a href="mailto:liushuyu@gmail.com">liushuyu@gmail.com</a>&gt;</li>
               <li>Star Brilliant &lt;<a href="mailto:m13253@hotmail.com">m13253@hotmail.com</a>&gt;</li>
               <li>张峻锋 (Trickness) &lt;<a href="mailto:SternWZhang@outlook.com">SternWZhang@outlook.com</a>&gt;</li>
