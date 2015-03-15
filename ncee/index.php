@@ -168,7 +168,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
             <b>社区周边开发者</b>
             社区周边开发者负责社区众多开源项目的开发，是社区活力的强心针。
             <ul>
-              <li>黎民雍 (Junde Yhi) &lt;<a href="mailto:lmy441900@gmail.com">lmy441900@gmail.com</a>&gt;</li>
+              <li>黎民雍 (Junde Yi) &lt;<a href="mailto:lmy441900@gmail.com">lmy441900@gmail.com</a>&gt;</li>
               <li>Tom Li &lt;<a href="mailto:biergaizi@members.fsf.org">biergaizi@members.fsf.org</a>&gt;</li>
               <li>Minhui Du &lt;<a href="mailto:duminhui@126.com">duminhui@126.com</a>&gt;</li>
               <li>hot123tea123 &lt;<a href="mailto:hot123tea123@gmail.com">hot123tea123@gmail.com</a>&gt;</li>
