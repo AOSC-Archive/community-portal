@@ -62,9 +62,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
           <p align="left">
             <a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a>
           </p>
-          <p align="left">
-            <script type="text/javascript" src="https://www.openhub.net/p/717872/widgets/project_thin_badge.js"></script>
-          </p>
           <div align="left">
             <img src="/img/ustack.png" class="img-responsive" width=142px height=30px>
           </div>
