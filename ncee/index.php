@@ -199,8 +199,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
       <div class="col-sm-9 col-sm-offset-1 blog-main">
           <div class="row">
               <div class="col-sm-12">
-                  <h2 class="blog-post-title">上述信息注解</h2>
-                  <ul>
+                  <ul class="h5">
                       <li>[0] AOSC OS 项目主页 <a href="https://portal.anthonos.org/aosc-os">转至</a></li>
                       <li>[1] Linux 内核是 Linus Torvalds 先生研究并组织开发的自由且开源的操作系统内核项目 <a href="http://kernel.org">转至</a></li>
                       <li>[2.a] GNU (GNU is Not Unix) 项目是由 Richard M. Stallman 先生发起的自由软件运动，此运动旨在让全世界计算机用户获得对自己使用或开发的软件的分发、使用自由以及相关的法律保护 <a href="http://gnu.org">转至</a></li>
