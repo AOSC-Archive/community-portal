@@ -179,6 +179,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
               <li>张峻锋 (Trickness) &lt;<a href="mailto:SternWZhang@outlook.com">SternWZhang@outlook.com</a>&gt;</li>
               <li>Yuchen Gu &lt;<a href="mailto:1121476816@qq.com">1121476816@qq.com</a>&gt;</li>
               <li>翟翔 (Leslie Zhai) &lt;<a href="mailto:xiangzhai83@gmail.com">xiangzhai83@gmail.com</a>&gt;</li>
+              <li>刘邵枫 (Sophgn Liu) &lt;<a href="mailto:sophgn@outlook.com">sophgn@outlook.com</a>&gt;</li>
             </ul>
             </p>
             <p>
