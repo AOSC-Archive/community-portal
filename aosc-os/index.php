@@ -46,7 +46,7 @@ $langs = array(
     'aosc-plan'=>'AOSC OS 除了面向桌面使用者，我们也推出了小型服务器版的 CentralPoint。目前，CentralPoint 已作为 AOSC OS3 的一个版本发行。',
     'aosc-position'=>'AOSC OS 尽可能探索一切可能，现在它已经有了生产上的标准系统架构和众多的软件。AOSC OS
         对于日常使用来说，是一个不错的选择！',
-    'htd-aosc?'=>'那我该如何参与到 AOSC OS 完善当中？',
+    'htd-aosc?'=>'我该如何参与到 AOSC OS 完善当中？',
     'aosc-cycle'=>'AOSC OS 以年为周期进行开发。举个例子, 2013 - 2014 年我们全年的计划是 AOSC OS2, 它为 AnthonOS 奠定了基础。',
     'aosc-toolkit'=>'AOSC OS 有自己的 Autobuild 工具链, 这加快了软件打包工作. 只要填写简单的配置文件，Autobuild 就能从中抽象出可用的软件包。
         所有工作只需让一个软件包对应一个 Autobuild 配置文档即可。',
