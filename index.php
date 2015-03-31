@@ -5,7 +5,7 @@ $langs = array(
     'title'=>'Community Portal - AOSC',
     'beta-alert'=>'This site is currently under heavy construction, it breaks and fixes several times a day. Expect it.',
     'welcome'=>'Welcome!',
-    'welcome-text'=>'AOSC ( Anthon Open Source Community ) is an open community, we welcome participation from all over the world.<br /><br />* Happy Chinese New Year!',
+    'welcome-text'=>'AOSC ( Anthon Open Source Community ) is an open community, we welcome participation from all over the world.',
     'ws-aosc?'=>'What is AOSC?',
     'ws-aosc?-text'=>'"AOSC" stands for Anthon Open Source Community. Anthon Open Source Community is a community that
             focuses on improvement of open source software. We are taking action to make open source software
@@ -37,7 +37,7 @@ $langs = array(
     'title'=>'社区门户 - 安同开源社区',
     'beta-alert'=>'此站点目前依然在建设中，页面质量可能时好时坏。敬请谅解。',
     'welcome'=>'欢迎！',
-    'welcome-text'=>'安同开源社区 ( AOSC，Anthon Open Source Community ) 是一个开放的社区，我们欢迎来自全世界的参与者。<br /><br />* 新年快乐，万事如意！',
+    'welcome-text'=>'安同开源社区 ( AOSC，Anthon Open Source Community ) 是一个开放的社区，我们欢迎来自全世界的参与者。',
     'ws-aosc?'=>'安同开源社区是?',
     'ws-aosc?-text'=>'"AOSC" 是安同开源社区 "Anthon Open Source Community" 的缩写。安同开源社区是一个重视改进开源软件体验
             的社区。我们用实际行动让开源软件变得更友好。',
@@ -62,7 +62,7 @@ $langs = array(
     'title'=>'社區門戶 - 安同開源社區',
     'beta-alert'=>'此站點目前依然在建設中，頁面質量可能時好時壞。敬請諒解。',
     'welcome'=>'歡迎！',
-    'welcome-text'=>'安同開源社區 ( AOSC，Anthon Open Source Community ) 是一個開放的社區，我們歡迎來自全世界的參與者。<br /><br />* 新年快樂，萬事如意！',
+    'welcome-text'=>'安同開源社區 ( AOSC，Anthon Open Source Community ) 是一個開放的社區，我們歡迎來自全世界的參與者。',
     'ws-aosc?'=>'安同開源社區是？',
     'ws-aosc?-text'=>'"AOSC" 是安同開源社區 "Anthon Open Source Community" 的縮寫。 安同開源社區是一個重視改進開源軟體體驗
                    的社區。我們用實際行動讓開源軟體變得更友好。',
