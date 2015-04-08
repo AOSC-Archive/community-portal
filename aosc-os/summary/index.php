@@ -21,20 +21,21 @@ $langs = array(
             its final release as a measure to kickstart AOSC OS2 to make CentralPoint and AnthonOS into a unified distribution.',
   ),
   'zh-cn' => array(
-    'aosc-history'=>'她的历史...',
+    'aosc-history'=>'它的历史...',
     'os3-logo'=>'黄色环形徽章',
-    'os3-summary'=>'AOSC OS3是2014-2015年期间构建的版本，她基于AOSC OS2，并且将持续推送一年的更新维护．
-        AOSC OS开始实验性的支持RPM． AOSC OS将会合并AnthonOS与CentralPoint，以AOSC OS with $DE (桌面环境名)和AOSC OS for Servers的方式命名',
+    'os3-summary'=>'AOSC OS3 是 2014-2015 年期间构建的版本，它基于 AOSC OS2，并将被我们持续维护一整年。
+            现在，AOSC OS 开始实验性的支持 RPM。 我们也会对 AnthonOS 和 CentralPoint 进行合并，以 AOSC OS with $DE 
+            (桌面环境名) 和 AOSC OS for Servers 的方式重新命名它们。',
     'os2-logo'=>'蓝色环形徽章',
-    'os2-summary'=>'AOSC OS2是2013-2014年期间构建的版本，这也是社区独立构建的第一代版本．最终，我们产出了两个发行版：',
-    'os2-release-1'=>'AnthonOS, 面向桌面用户',
-    'os2-release-2'=>'CentralPoint, 面向服务器',
+    'os2-summary'=>'AOSC OS2 是 2013-2014 年期间构建的版本，这也是社区独立构建的第一个版本。在那时，我们构建了两个发行版：',
+    'os2-release-1'=>'面向桌面用户的 AnthonOS ;',
+    'os2-release-2'=>'面向小型服务器的 CentralPoint ;',
     'os1-logo'=>'红色环形徽章',
     'os1-summary'=>'AOSC OS1 是一个发行版。',
-    'os1-summary-1'=>'它主要是一个<b>定制化</b> 项目，在2011 - 2013年间开发,这是社区第一代开发项目。在这一代中，只有唯一一个成品项目。',
-    'aosc-summary-2'=>'AnthonOS作为一个桌面发行版',
-    'aosc-summary-3'=>'这一版的AnthonOS仅仅是Debian加上KDE桌面的再分发, 并且在释放最终版后没有任何进一步的维护。
-            当然她敲开了AOSC OS2的大门,是我们能够把 CentralPoint 和 AnthonOS　作为一个整体发布',
+    'os1-summary-1'=>'它仅仅是一个<b>定制化</b>的项目，也是社区的第一代产品。我们在 2011 - 2013 年间开发了它。在这一代中，我们只有这个唯一的项目:',
+    'aosc-summary-2'=>'一个面向桌面用户的 AnthonOS',
+    'aosc-summary-3'=>'这一版的 AnthonOS 仅仅是 Debian 加上 KDE 桌面的再分发，并且在最终释出后，我们没有进行任何的维护。
+            当然，是它让我们敲开了 AOSC OS2 的大门，也使得我们能够把 CentralPoint 和 AnthonOS 作为一个整体进行开发。',
   ),
   'zh-tw' => array(
   ),
