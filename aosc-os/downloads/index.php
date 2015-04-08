@@ -150,18 +150,18 @@ $langs = array(
     'way-tarball-step-1'=>'寻找一个可启动的发行版 LiveCD，必须是 x86_64 架构 (64位系统)。除了 Ubuntu、Debian 等较大的发行版外，ArchLinux、Gentoo 
                   的 Live 镜像也都是不错的选择；',
     'way-tarball-step-2'=>'下载我们提供的 Tarball 发行；',
-    'way-tarball-step-3'=>'自行分区 (你当然可以分别分区给 /home, /boot, 等等)；',
-    'way-tarball-step-4'=>'挂载分区，请用 man 命令自行参阅 mount 手册；',
-    'way-tarball-step-5'=>'解压缩 Tarball 发行（RTFM，请用 man 命令自行参阅 tar 手册），',
-    'way-tarball-step-6'=>'复制宿主机的 DNS 到目标系统（cp /etc/resolv.conf /path/to/mount/point/etc/）；',
+    'way-tarball-step-3'=>'自行分区 (你当然可以分别分区给 /home, /boot, 等等);',
+    'way-tarball-step-4'=>'挂载分区 (请用 man 命令参阅 mount 手册, ',
+    'way-tarball-step-5'=>'解压缩 Tarball 发行 (请用 man 命令参阅 tar 手册，',
+    'way-tarball-step-6'=>'复制宿主机的 DNS 到目标系统 (cp /etc/resolv.conf /path/to/mount/point/etc/);',
     'way-tarball-step-7'=>'挂在并绑定 /dev, /proc, 以及 /sys 目录到目标系统;',
-    'way-tarball-step-8'=>'chroot 以进入目标系统（请自行阅读 chroot 命令手册）；',
-    'way-tarball-step-9'=>'安装GRUB（请自行查阅 GRUB 相关命令的手册）；',
-    'way-tarball-step-10'=>'卸载分区并重启；',
-    'way-tarball-step-11'=>'Duang，它boom掉了（如果没按预期进入系统, 请通过页脚的IRC或者把错误信息提交到',
+    'way-tarball-step-8'=>'chroot 以进入目标系统 (请自行阅读 chroot 命令手册, ',
+    'way-tarball-step-9'=>'安装GRUB (请自行查阅 GRUB 相关命令的手册);',
+    'way-tarball-step-10'=>'卸载分区并重启;',
+    'way-tarball-step-11'=>'Duang，它boom掉了(玩笑)。(如果没按预期进入系统, 请通过页脚的IRC或者把错误信息提交到',
     'bug-tracker'=>'Bug 跟踪平台',
     'install-tips'=>'祝折腾愉快……',
-    'dpkg-gnome'=>'AOSC OS with GNOME。GNOME 是一个完全免费且开源的桌面环境。在GNOME基金会的帮助下，它配套拥有众多应用套件。
+    'dpkg-gnome'=>'AOSC OS with GNOME。GNOME 是一个完全免费且开源的桌面环境。在GNOME基金会的帮助下，它拥有众多的应用套件。
                   GNOME被诸如 Fedora 之类的发行版选为默认的桌面环境。',
     'dl'=>'下载',
     'dl-link'=>'下载最新 Tarball 发行',
@@ -172,46 +172,46 @@ $langs = array(
     'dpkg-cinnamon'=>'AOSC OS with Cinnamon。 Cinnamon 是 GNOME shell 的一个分支项目。Linux Mint 的默认桌面环境便使用了它。它友好且易用。
                   Cinnamon 对机器的性能要求较为苛刻，这个要求与 GNOME 相类似。平心而论，它在鼠标和键盘的适配上，比 GNOME　shell 还要出色。',
     'dpkg-mate'=>'AOSC OS with MATE。 MATE 是 GNOME 2.x 的分支项目, 是给那些喜欢 GNOME 又不适应 GNOME 3 和 GNOME shell 的人准备的。
-                  尽管它是旧项目的分支，它还是很好的适应了新技术，如 UDisks-2 和 UPower 0.99。它的贡献者们也有计划，支持最新的 wayland 显示。',
+                  尽管它是旧项目的分支，它还是很好的适应了新技术，如 UDisks-2 和 UPower 0.99。它的贡献者们也有计划，使它支持最新的 wayland 显示。',
     'dpkg-kde'=>'AOSC OS with (KDE) Plasma。 Plasma 桌面通常以 KDE (K Desktop Environment) 的身份被人熟知,
                   Plasma 桌面环境全部采用 Qt 进行构建。它拥有众多插件，可以让 Plasma 变得更有效率。但与此同时，Plasma 需要更好的处理器和更快的显卡性能。',
     'dpkg-unity'=>'AOSC OS with Unity。 由于 Ubuntu 的普及，Unity 桌面被人熟知。经过 AOSC OS 开发组的努力，
-                  Unity 桌面已经移除了所有 Ubuntu 独有的构件和接口，并添加到AOSC OS中来。长期以来，Unity 被认为是不稳定的，但是对于新手,它仍然十分好用。',
+                  Unity 桌面已经移除了所有 Ubuntu 独有的构件和接口，并添加到 AOSC OS 中来。长期以来，Unity 被认为是不稳定的，但是对于新手,它仍然十分好用。',
     'dpkg-kodi'=>'AOSC OS with Kodi (多媒体中心)。这个发行版是 AOSC OS 为了多媒体中心和基于 Linux 的电视盒而构建的。Kodi 媒体中心通常以
                   XBMC (XBox Media Center) 的身份被人熟知。尽管这只是我们所有努力中的一小步，但这也许是你在 UNIX/Linux 中找到的最好用的多媒体解决方案。',
     'dpkg-kodi-oobp'=>'此发行版的 OOBP (开箱预览版) 仍在开发当中，届时将会在 Beta 2 中发布。',
     'dpkg-pantheon'=>'AOSC OS with Pantheon. Pantheon 桌面是 ElementaryOS 的默认桌面。它被 ElementaryOS 项目组所维护。
                   Pantheon 是一款基于 GTK+ 3 的轻量级桌面环境。尽管它快速美观，它仍然被一些小问题所困扰。谨慎选择它。',
     'dpkg-pantheon-oobp'=>'此发行版的 OOBP (开箱预览版) 仍在开发当中，Pantheon 在换用 GTK+ 3.14 后坏掉了。',
-    'rpm-attention'=>'基于 RPM 管理器的 AOSC OS3是非常实验性质的的构建，一些已知的问题如下：',
-    'rpm-factor-1'=>'1. 相比于DPKG，RPM式构建,有大量的依赖杂项，这些杂项可能由错误的读取了库文件、不正确的ELF可执行，甚至是错误文件所引起',
-    'rpm-factor-2'=>'2. RPM式构建并不支持PackageKit（可视化的软件包管理程序）;',
-    'rpm-gnome'=>'AOSC OS with GNOME, 版本号 3.14。GNOME 是一个完全免费且开源的桌面环境。在GNOME基金会的帮助下，它配套拥有众多应用套件。
-                  GNOME被许多发行版选为默认的桌面环境，如Fedora',
-    'rpm-xfce'=>'AOSC OS with XFCE, 版本号 4.11. XFCE 是一个轻量级, 并且优雅易用的桌面环境。XFCE基于GTK+ 2的工具链接口进行构建。
-                  GTK+ 2也是GTK+ 3的前身，后者正在被GNOME所使用。XFCE相对来说会在老机器上运行的更快，甚至于可以跑在2001年的机器上
-                  （对于AOSC OS来说，这个发行版只要求机器支持安装64位操作系统）。XFCE适配尖端技术，如systemd-logind',
-    'rpm-cinnamon'=>'AOSC OS with Cinnamon, 版本号 2.4. Cinnamon　是一个GNOME shell的分支项目. 它是Linux Mint的默认桌面环境，友好而易用。
-                  Cinnamon对机器性能要求高，其要求可能与GNOME接近。平心而论，它在鼠标和键盘的适配上，做的比GNOME　shell还要优秀',
-    'rpm-mate'=>'AOSC OS with MATE, 版本号 1.8.1. MATE 是GNOME 2.x的分支项目, 是给那些喜欢GNOME又强烈反感GNOME 3和GNOME shell的人所准备。
-                  尽管它是历史遗留桌面分支，它还是很好的适应了新技术：如UDisks-2和UPower 0.99，贡献者们也有计划加入最新的wayland支持',
-    'rpm-kde'=>'AOSC OS with（KDE) Plasma, 版本号 4。 Plasma桌面通常以KDE（K Desktop Environment）的身份被人熟知,
-                  Plasma桌面完全使用Qt构建，并且拥有好用的插件让Plasma更高效的工作。Plasma需要处理器和显卡拥有较好的性能',
-    'rpm-unity'=>'AOSC OS with Unity, 版本号 ７。 Unity desktop桌面被人熟知是因为它是Ubuntu的默认桌面。经过AOSC OS开发组的修bug和打补丁，
-                  Unity桌面已经移除了Ubuntu特有的构件和接口，并且能被你所使用。Unity长期以来被认为是不很稳定，但是对于新手仍是十分好用的',
-    'rpm-kodi'=>'AOSC OS with Kodi 媒体中心, 版本号 14. 这一版AOSC OS是为了多媒体中心或是基于Linux的电视盒而构建. Kodi媒体中心通常被人以
-                  XBMC （XBox Media Center)的身份所熟知, 尽管这只是我们的一小步，但也许这是你能在UNIX/Linux下找到的最好用的多媒体解决方案',
-    'rpm-kodi-oobp'=>'OOBP（开箱预览版)没有就绪: 等待状态, 将会在Beta 2时发布',
-    'rpm-pantheon'=>'AOSC OS with Pantheon. Pantheon 桌面是ElementaryOS的默认桌面，并被其所维护。
-                  Pantheon 是轻量级的基于GTK+ 3的桌面环境。尽管它快速，甚至美观，它仍被一些小问题所困扰。谨慎选择它',
-    'rpm-pantheon-oobp'=>'OOBP(（开箱预览版)没有就绪: 阻碍状态： Pantheon在升级至GTK+ 3.14时坏掉了',
-    'rpm-server'=>'AOSC OS for Servers, 以CentralPoint的名称被人熟知, 是轻量级的紧凑的系统版本，可以用在小规模的服务器上。仅支持RPM软件包管理。',
-    'server-oobp'=>'未就绪的版本: 等待状态, AOSC OS3还不足以稳定到可以为服务器所使用',
+    'rpm-attention'=>'RPM 版本的 AOSC OS3 是一些具有实验性质的构建版本，我们列出了一些已知的问题：',
+    'rpm-factor-1'=>'1. 相比于 DPKG，RPM 版本中软件包之间存在着大量的错误依赖，这些依赖可能由错误的库文件、ELF 和数据文件所引起;',
+    'rpm-factor-2'=>'2. RPM 版本并不支持 PackageKit (可视化的软件包管理程序);',
+    'rpm-gnome'=>'AOSC OS with GNOME。GNOME 是一个完全免费且开源的桌面环境。在GNOME基金会的帮助下，它拥有众多的应用套件。
+                  GNOME被诸如 Fedora 之类的发行版选为默认的桌面环境。',
+    'rpm-xfce'=>'AOSC OS with XFCE。XFCE 是一个优雅易用的轻量级桌面环境。XFCE 使用 GTK+ 2 工具包进行构建。GTK+ 2 是 GTK+ 3 的前身，
+                  后者目前正在被 GNOME 所使用。相比于其它的 AOSC OS 发行版，XFCE 在老机器上运行的更快，甚至在 2001 年的机器上也运行良
+                  好 (这个发行版可能仅仅要求处理器支持 64 位运算)。XFCE 也适配一些最新的技术，比如 systemd-logind。',
+    'rpm-cinnamon'=>'AOSC OS with Cinnamon。 Cinnamon 是 GNOME shell 的一个分支项目。Linux Mint 的默认桌面环境便使用了它。它友好且易用。
+                  Cinnamon 对机器的性能要求较为苛刻，这个要求与 GNOME 相类似。平心而论，它在鼠标和键盘的适配上，比 GNOME　shell 还要出色。',
+    'rpm-mate'=>'AOSC OS with MATE。 MATE 是 GNOME 2.x 的分支项目, 是给那些喜欢 GNOME 又不适应 GNOME 3 和 GNOME shell 的人准备的。
+                  尽管它是旧项目的分支，它还是很好的适应了新技术，如 UDisks-2 和 UPower 0.99。它的贡献者们也有计划，使它支持最新的 wayland 显示。',
+    'rpm-kde'=>'AOSC OS with (KDE) Plasma。 Plasma 桌面通常以 KDE (K Desktop Environment) 的身份被人熟知,
+                  Plasma 桌面环境全部采用 Qt 进行构建。它拥有众多插件，可以让 Plasma 变得更有效率。但与此同时，Plasma 需要更好的处理器和更快的显卡性能。',
+    'rpm-unity'=>'AOSC OS with Unity。 由于 Ubuntu 的普及，Unity 桌面已经被人们熟知。经过 AOSC OS 开发组的努力，
+                  Unity 桌面已经移除了所有 Ubuntu 独有的构件和接口，并添加到AOSC OS中来。长期以来，Unity 被认为是不稳定的，但是对于新手,它仍然十分好用。',
+    'rpm-kodi'=>'AOSC OS with Kodi (多媒体中心)。这个发行版是 AOSC OS 为了多媒体中心和基于 Linux 的电视盒而构建的。Kodi 媒体中心通常以
+                  XBMC (XBox Media Center) 的身份被人熟知。尽管这只是我们所有努力中的一小步，但这也许是你在 UNIX/Linux 中找到的最好用的多媒体解决方案。',
+    'rpm-kodi-oobp'=>'此发行版的 OOBP (开箱预览版) 仍在开发当中，届时将会在 Beta 2 中发布。',
+    'rpm-pantheon'=>'AOSC OS with Pantheon. Pantheon 桌面是 ElementaryOS 的默认桌面。它被 ElementaryOS 项目组所维护。
+                  Pantheon 是一款基于 GTK+ 3 的轻量级桌面环境。尽管它快速美观，它仍然被一些小问题所困扰。谨慎选择它。',
+    'rpm-pantheon-oobp'=>'此发行版的 OOBP (开箱预览版) 仍在开发当中，Pantheon 在换用 GTK+ 3.14 后坏掉了。',
+    'rpm-server'=>'AOSC OS for Servers。它在上一个版本中被称作 CentralPoint。它为轻量级的小型服务器而设计，目前仅支持 RPM 软件包管理。',
+    'server-oobp'=>'该版本受限于 AOSC OS3 的开发,当前的 AOSC OS3 还不够稳定。',
     'legacy-os2'=>'AnthonOS 使用了KDE Plasma 4桌面环境，并面向桌面用户。
-                  AnthonOS 有一个高度定制的交互设计——AnthonUI. AnthonOS将被支持到2015年夏季',
-    'legacy-centralPoint'=>'CentralPoint是面向服务器的发行版本.在Beta 2之后，开发即被中断。
-                  CentralPoint 将继续以AOSC OS for Servers的形式发行，它将直接基于AOSC OS3',
-    'centralPoint-oobp'=>'该构建已被废弃，并不再推荐安装',
+                  AnthonOS 有一个高度定制化的交互设计 —— AnthonUI，AnthonOS 将被支持到 2015 年夏季。',
+    'legacy-centralPoint'=>'CentralPoint 是面向服务器的发行版本。在 Beta 2 之后，此版本的开发已停止。
+                  CentralPoint 将继续以 AOSC OS for Servers 的名称发行，它将直接基于 AOSC OS3。',
+    'centralPoint-oobp'=>'此发行版已被废弃，并不再提供安装。',
   ),
   'zh-tw' => array(
   ),
