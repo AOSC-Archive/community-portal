@@ -37,7 +37,7 @@ $langs = array(
             <li>
             <a href="http://crowdin.net/">Crowdin</a> - localization hosting.</li>
             <li>
-            <a href="http://ustack.com/">United Stack</a> - site host.</li>
+            <a href="http://bbs.pcbeta.com/">Visionsoar (PCBeta)</a> - site host.</li>
           </ul>',
   ),
   'zh-cn' => array(
@@ -76,7 +76,7 @@ $langs = array(
             <li>
             <a href="http://crowdin.net/">Crowdin</a> - 本地化系统托管</li>
             <li>
-            <a href="http://ustack.com/">United Stack</a> - 该站点服务器提供商</li>
+            <a href="http://bbs.pcbeta.com/">远景论坛</a> - 该站点服务器提供商</li>
           </ul>',
   ),
   'zh-tw' => array(
@@ -116,7 +116,7 @@ $langs = array(
             <li>
             <a href="http://crowdin.net/">Crowdin</a> - 本地化系統託管</li>
             <li>
-            <a href="http://ustack.com/">United Stack</a> - 伺服器提供者</li>
+            <a href="http://bbs.pcbeta.com/">PCBeta</a> - 伺服器提供者</li>
           </ul>',
   ),
 );
