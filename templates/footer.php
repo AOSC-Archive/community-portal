@@ -47,7 +47,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
         </div>
         <div class="col-sm-3 col-lg-3">
           <h4 align="left"><?php echo $langs_f[$lang]['acknowledgement'];?></h4>
-            <a href="https://www.ustack.com/">
+            <a href="http://bbs.pcbeta.com/">
               <img src="/img/pcbeta.png" class="img-responsive" width=142px >
             </a>
         </div>
