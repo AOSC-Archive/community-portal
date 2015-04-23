@@ -4,19 +4,19 @@ $langs_f = array(
   'en' => array(
     'main'=>'Main Sites',
     'community'=>'Community Sites',
-    'contact'=>'Contact Us',
+    'contact'=>'Contact Us (Security Contact)',
     'acknowledgement'=>'Acknowledgement',
   ),
   'zh-cn' => array(
     'main'=>'主要站点',
     'community'=>'社区相关',
-    'contact'=>'联系我们',
+    'contact'=>'联系我们（安全消息）',
     'acknowledgement'=>'特别鸣谢',
   ),
   'zh-tw' => array(
     'main'=>'主要站點',
     'community'=>'社區相關',
-    'contact'=>'聯絡我們',
+    'contact'=>'聯絡我們（安全訊息）',
     'acknowledgement'=>'特別鳴謝'
   ),
 );
