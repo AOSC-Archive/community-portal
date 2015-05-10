@@ -332,7 +332,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with GNOME</h2>
                   <p><?php echo $langs[$lang]['dpkg-gnome'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_gnome-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#gnome" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -344,7 +344,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with XFCE</h2>
                   <p><?php echo $langs[$lang]['dpkg-xfce'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_xfce-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#xfce" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -356,7 +356,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with Cinnamon</h2>
                   <p><?php echo $langs[$lang]['dpkg-cinnamon'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_cinnamon-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#cinnamon" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -368,7 +368,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with MATE</h2>
                   <p><?php echo $langs[$lang]['dpkg-mate'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_mate-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#mate" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -380,7 +380,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with Plasma</h2>
                   <p><?php echo $langs[$lang]['dpkg-kde'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_kde-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="javascript:void(0);" class="btn btn-default disabled"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -392,7 +392,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with Unity</h2>
                   <p><?php echo $langs[$lang]['dpkg-unity'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_unity-beta_pichu_dpkg_en-US.tar.xz" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#unity" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -434,7 +434,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with GNOME</h2>
                   <p><?php echo $langs[$lang]['rpm-gnome'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_gnome-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#gnome" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -446,7 +446,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with XFCE</h2>
                   <p><?php echo $langs[$lang]['rpm-xfce'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_xfce-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#xfce" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -458,7 +458,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with Cinnamon</h2>
                   <p><?php echo $langs[$lang]['rpm-cinnamon'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_cinnamon-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#cinnamon" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -470,7 +470,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with MATE</h2>
                   <p><?php echo $langs[$lang]['rpm-mate'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_mate-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#mate" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -482,7 +482,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with Plasma</h2>
                   <p><?php echo $langs[$lang]['rpm-kde'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_kde-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="javascript:void(0);" class="btn btn-default disabled"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
@@ -494,7 +494,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';?>
                   <h2>AOSC OS with Unity</h2>
                   <p><?php echo $langs[$lang]['rpm-unity'];?></p>
                   <a href="http://repo.anthonos.org/os3-releases/01_Beta/01_Tarballs/aosc-os3_unity-beta_pichu_rpm_en-US.tar.xz" class="btn btn-default" class="btn btn-default"><?php echo $langs[$lang]['dl-link'];?></a>
-                  <a href="https://portal.anthonos.org/aosc-os/screenshot/" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
+                  <a href="https://portal.anthonos.org/aosc-os/screenshot/#unity" class="btn btn-default"><?php echo $langs[$lang]['ss-link'];?></a>
                 </div>
               </div>
               <hr class="divider" />
