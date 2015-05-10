@@ -154,15 +154,15 @@ $langs = array(
     'way-tarball-step-4'=>'挂载分区 (请用 man 命令参阅 mount 手册, ',
     'way-tarball-step-5'=>'解压缩 Tarball 发行 (请用 man 命令参阅 tar 手册，',
     'way-tarball-step-6'=>'复制宿主机的 DNS 到目标系统 (cp /etc/resolv.conf /path/to/mount/point/etc/);',
-    'way-tarball-step-7'=>'挂在并绑定 /dev, /proc, 以及 /sys 目录到目标系统;',
+    'way-tarball-step-7'=>'挂载并绑定 /dev, /proc, 以及 /sys 目录到目标系统;',
     'way-tarball-step-8'=>'chroot 以进入目标系统 (请自行阅读 chroot 命令手册, ',
     'way-tarball-step-9'=>'安装GRUB (请自行查阅 GRUB 相关命令的手册);',
     'way-tarball-step-10'=>'卸载分区并重启;',
     'way-tarball-step-11'=>'Duang，它boom掉了(玩笑)。(如果没按预期进入系统, 请通过页脚的IRC或者把错误信息提交到',
     'bug-tracker'=>'Bug 跟踪平台',
     'install-tips'=>'祝折腾愉快……',
-    'dpkg-gnome'=>'AOSC OS with GNOME。GNOME 是一个完全免费且开源的桌面环境。在GNOME基金会的帮助下，它拥有众多的应用套件。
-                  GNOME被诸如 Fedora 之类的发行版选为默认的桌面环境。',
+    'dpkg-gnome'=>'AOSC OS with GNOME。GNOME 是一个完全免费且开源的桌面环境。在 GNOME 基金会的帮助下，它拥有众多的应用套件。
+                  GNOME 被诸如 Fedora 之类的发行版选为默认的桌面环境。',
     'dl'=>'下载',
     'dl-link'=>'下载最新 Tarball 发行',
     'ss-link'=>'截屏',
@@ -175,8 +175,8 @@ $langs = array(
                   尽管它是旧项目的分支，它还是很好的适应了新技术，如 UDisks-2 和 UPower 0.99。它的贡献者们也有计划，使它支持最新的 wayland 显示。',
     'dpkg-kde'=>'AOSC OS with (KDE) Plasma。 Plasma 桌面通常以 KDE (K Desktop Environment) 的身份被人熟知,
                   Plasma 桌面环境全部采用 Qt 进行构建。它拥有众多插件，可以让 Plasma 变得更有效率。但与此同时，Plasma 需要更好的处理器和更快的显卡性能。',
-    'dpkg-unity'=>'AOSC OS with Unity。 由于 Ubuntu 的普及，Unity 桌面被人熟知。经过 AOSC OS 开发组的努力，
-                  Unity 桌面已经移除了所有 Ubuntu 独有的构件和接口，并添加到 AOSC OS 中来。长期以来，Unity 被认为是不稳定的，但是对于新手,它仍然十分好用。',
+    'dpkg-unity'=>'AOSC OS with Unity。 由于 Ubuntu 的普及，Unity 桌面被人熟知。经过 AOSC OS 开发组的努力，已经移除了
+                  Unity 桌面所有 Ubuntu 独有的构件和接口，并添加到 AOSC OS 中来。长期以来，Unity 被认为是不稳定的，但是对于新手,它仍然十分好用。',
     'dpkg-kodi'=>'AOSC OS with Kodi (多媒体中心)。这个发行版是 AOSC OS 为了多媒体中心和基于 Linux 的电视盒而构建的。Kodi 媒体中心通常以
                   XBMC (XBox Media Center) 的身份被人熟知。尽管这只是我们所有努力中的一小步，但这也许是你在 UNIX/Linux 中找到的最好用的多媒体解决方案。',
     'dpkg-kodi-oobp'=>'此发行版的 OOBP (开箱预览版) 仍在开发当中，届时将会在 Beta 2 中发布。',
@@ -186,8 +186,8 @@ $langs = array(
     'rpm-attention'=>'RPM 版本的 AOSC OS3 是一些具有实验性质的构建版本，我们列出了一些已知的问题：',
     'rpm-factor-1'=>'1. 相比于 DPKG，RPM 版本中软件包之间存在着大量的错误依赖，这些依赖可能由错误的库文件、ELF 和数据文件所引起;',
     'rpm-factor-2'=>'2. RPM 版本并不支持 PackageKit (可视化的软件包管理程序);',
-    'rpm-gnome'=>'AOSC OS with GNOME。GNOME 是一个完全免费且开源的桌面环境。在GNOME基金会的帮助下，它拥有众多的应用套件。
-                  GNOME被诸如 Fedora 之类的发行版选为默认的桌面环境。',
+    'rpm-gnome'=>'AOSC OS with GNOME。GNOME 是一个完全免费且开源的桌面环境。在 GNOME 基金会的帮助下，它拥有众多的应用套件。
+                  GNOME 被诸如 Fedora 之类的发行版选为默认的桌面环境。',
     'rpm-xfce'=>'AOSC OS with XFCE。XFCE 是一个优雅易用的轻量级桌面环境。XFCE 使用 GTK+ 2 工具包进行构建。GTK+ 2 是 GTK+ 3 的前身，
                   后者目前正在被 GNOME 所使用。相比于其它的 AOSC OS 发行版，XFCE 在老机器上运行的更快，甚至在 2001 年的机器上也运行良
                   好 (这个发行版可能仅仅要求处理器支持 64 位运算)。XFCE 也适配一些最新的技术，比如 systemd-logind。',
