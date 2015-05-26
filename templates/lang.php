@@ -1,7 +1,7 @@
 <?php
 if (!defined('IN_FRAME')) exit();
 
-$langs_allow = array('en', 'zh-cn', 'zh-tw');
+$langs_allow = array('en');
 define('ALTERNATE_LANGUAGE', 'zh-cn');
 define('LANGUAGE_IN_URL_ARG', true);
 define('LANGUAGE_IN_COOKIE', true);
