@@ -60,6 +60,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/templates/lang.php';
         <div class="col-sm-10">
           <h4 align="left">Anthon Open Source Community</h4>
           <p align="left">Copyleft 2011 - 2015, for every member of the community.</p>
+          <p align="left">Kindly Powered by <a href="https://www.qingcloud.com/">QingCloud</a></p>
           <p align="left">
             <a href="http://www.miibeian.gov.cn/">粤ICP备14040623号</a>
           </p>
